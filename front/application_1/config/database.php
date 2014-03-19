@@ -48,14 +48,25 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
+
+$db['default']['hostname'] = '42.121.236.144';
+$db['default']['username'] = 'figoyang';
+$db['default']['password'] = '2qYP3LVxSB4CdnJD';
+$db['default']['database'] = 'ecar';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
+
+// $db['local']['hostname'] = '127.0.0.1';
+// $db['local']['username'] = 'root';
+// $db['local']['password'] = '123456';
+// $db['local']['database'] = 'ecar';
+// $db['local']['dbdriver'] = 'mysql';
+// $db['local']['dbprefix'] = '';
+// $db['local']['pconnect'] = TRUE;
+// $db['local']['db_debug'] = TRUE;
+
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
 $db['default']['char_set'] = 'utf8';
