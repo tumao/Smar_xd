@@ -1,0 +1,144 @@
+/*
+ * @author : zym
+ * @data   : 2014/02/13/
+ * @desc   : 中大君融
+ *
+ **/
+body{ background:url(../../img/common/bg_twill.gif) repeat;}
+.jr_container .jr_r_head,
+.jr_container .jr_r_foot{ background:url(../../img/education/junrong/jr_con_bg.png) no-repeat;}
+.jr_bd .jr_sub_hd .tit_ico{ background:url(../../img/education/junrong/tit_sprite.gif) no-repeat;}			
+.jr_bd .jr_sub_hd.hd_1 .tit_ico{background-position: 0 0;}
+.jr_bd .jr_sub_hd.hd_2 .tit_ico{background-position: -72px 0;}
+.jr_bd .jr_sub_hd.hd_3 .tit_ico{background-position: -144px 0;}
+.jr_bd .jr_sub_hd.hd_4 .tit_ico{background-position: -216px 0;}
+.jr_bd .jr_sub_hd.hd_5 .tit_ico{background-position: -288px 0;}
+.jr_bd .jr_sub_hd.hd_6 .tit_ico{background-position: -360px 0;}
+.jr_bd .jr_sub_hd.hd_7 .tit_ico{background-position: -432px 0;}
+.jr_bd .jr_sub_hd.hd_8 .tit_ico{background-position: -504px 0;}
+.jr_bd .jr_sub_hd.hd_9 .tit_ico{background-position: -576px 0;}
+.jr_bd .jr_sub_hd.hd_10 .tit_ico{background-position: -648px 0;}
+.jr_bd .jr_sub_hd.hd_11 .tit_ico{background-position: -720px 0;}
+.jr_bd .jr_sub_hd.hd_12 .tit_ico{background-position: -792px 0;}
+.jr_bd .jr_sub_hd.hd_13 .tit_ico{background-position: -848px 0;}
+.jr_bd .jr_sub_hd.hd_14 .tit_ico{background-position: -920px 0;}
+.jr_bd .jr_sub_hd.hd_15 .tit_ico{background-position: -992px 0;}
+/*top*/
+.jr_top{}			
+.jr_top .jr_da_wrap{ padding: 22px 0;}
+.jr_top .jr_da_wrap .da_item{width: 490px; height: 103px;}
+.jr_top .jr_da_wrap .da_item img{width: 490px; height: 103px;}
+.jr_top .jr_banner_wrap{ height: 422px; background:url(../../img/education/junrong/banner_bg.gif) no-repeat center center #FFD83E;}
+.jr_top_form{ width: 256px; height: 318px; padding: 0 22px; position: absolute; top: 50px; right: 0;}
+.jr_top_form .form_wrap{ padding-top: 10px;}
+.jr_top_form .tit{height: 42px; border-bottom: 1px solid #d7ccad; line-height: 42px; font-weight: bold; font-size: 16px; color: #f8f8f8;}
+.jr_top_form .input_wrap{width: 256px; position: relative;}
+.jr_top_form .input_label{display: block; height: 30px; line-height: 30px; color: #fff;}
+.jr_top_form .input_control{}
+.jr_top_form .input_control .input_txt{ width: 235px; height: 18px; padding:6px 5px; border: none; background-color: #fff; line-height: 18px;}
+.jr_top_form .input_msg{height: 30px; line-height: 30px; color: #f00;  position: absolute; top:0; right:10px;}
+.jr_top_form .submit_wrap{margin-top: 20px;}	
+.jr_top_form .submit_wrap .input_btn{width: 245px;height: 40px; border: none; background-color: #f90; color: #fff;}
+/*container	*/
+.jr_container{ padding-bottom: 24px;}
+.jr_container .jr_body{*zoom:1;}
+.jr_container .jr_body:before,
+.jr_container .jr_body:after {display: table; content: ""; height:0; clear:both; visibility: hidden;}
+.jr_container .jr_left{float: left; width: 177px; height: 300px;}
+.jr_container .jr_left .menu_list{width:177px; font-size: 14px;}
+.jr_container .jr_left .menu_item{height: 50px; background: #A7C1E6;}
+.jr_container .jr_left .menu_item.last .menu_hd{border-bottom: none;}
+.jr_container .jr_left .menu_item .menu_hd{display: block; height: 49px; padding-left: 20px; border-bottom: 1px dashed #fff; line-height: 48px; color: #1F76AC;}
+.jr_container .jr_left .menu_item .menu_hd:hover{color: #fff;}
+.jr_container .jr_left .menu_item .menu_hd .arrow{}
+.jr_container .jr_left .menu_item .menu_bd{display: none; width: 170px; background: #2B8CC9; position: absolute; top: 0; left: 177px;}
+.jr_container .jr_left .menu_item .menu_bd_list{padding: 0 16px;}
+.jr_container .jr_left .menu_item .menu_bd_item{height: 40px; border-bottom: 1px dashed #e3e5e5;}
+.jr_container .jr_left .menu_item .menu_bd_item.last{border-bottom:none;}
+.jr_container .jr_left .menu_item .menu_bd_item a{display: block; color: #fff; line-height: 40px;}
+.jr_container .jr_left .menu_item .menu_bd_item a .square{float: left; width: 4px; height: 4px; margin: 18px 6px 0 0; background-color: #fff; overflow: hidden;}
+.jr_container .jr_left .menu_item .menu_bd_item a:hover{color: #ff3;}
+.jr_container .jr_left .menu_item .menu_bd_item a:hover .square{background-color: #ff3;}
+.jr_container .jr_left .menu_item.active,
+.jr_container .jr_left .menu_item.hover{background: #2B8CC9; position:relative;}
+.jr_container .jr_left .menu_item.active .menu_hd,
+.jr_container .jr_left .menu_item.hover .menu_hd{height: 50px; border-bottom: 0;background:url(../../img/education/junrong/015.png) no-repeat 145px 20px; color: #fff; overflow: hidden;}
+.jr_container .jr_left .menu_item.active .menu_hd:hover{color: #fff;}
+.jr_container .jr_left .menu_item.hover .menu_bd{display: block;}
+.jr_container .jr_right{float: left; width: 824px; margin-left: -1px;}
+.jr_container .jr_r_head{height: 26px;background-position: 0px -1px;}
+.jr_container .jr_r_foot{height: 34px;background-position: 0 -27px;}	
+.jr_container .jr_r_body{height: auto!important;height: 600px;min-height: 600px; padding: 0 26px 50px 74px; background:url(../../img/education/junrong/jr_conbd_bg.png) repeat-y;}
+
+.jr_hd{ padding-bottom: 12px; border-bottom: 1px solid #e3e5e5;}
+.jr_hd .txt{ font-size: 20px; color: #f60;}
+.jr_bd{}
+.jr_bd .jr_bd_item{}		
+.jr_bd .jr_sub_hd{height: 35px; margin-top: 35px; border-bottom: 1px solid #e3e5e5; line-height: 35px;}			
+.jr_bd .jr_sub_hd .tit_ico{float: left; width: 71px; height: 35px; margin-right: 10px; background:url(../../img/education/junrong/tit_sprite.gif) no-repeat;}			
+.jr_bd .jr_sub_hd .txt{float: left; font-size: 18px; color: #f60;}	
+.jr_bd .jr_sub_hd.hd_1,
+.jr_bd .jr_sub_hd.hd_2,
+.jr_bd .jr_sub_hd.hd_3,
+.jr_bd .jr_sub_hd.hd_4,
+.jr_bd .jr_sub_hd.hd_5,
+.jr_bd .jr_sub_hd.hd_6{margin-top: 0;}
+.jr_bd .jr_sub_hd.hd_8{margin-top: 88px;}
+.jr_bd .jr_sub_hd.hd_9{margin-top: 65px;}
+.jr_bd .jr_sub_hd.hd_12{margin-top: 10px;}
+.jr_bd .jr_sub_hd.hd_12 .tit_ico{width: 55px;}
+.jr_bd .jr_sub_bd{}			
+.jr_bd .jr_sub_bd.bd_1{padding: 40px 0 60px;}
+.jr_bd .jr_sub_bd.bd_2{padding: 30px 0 65px;}
+.jr_bd .jr_sub_bd.bd_3{padding: 25px 40px 20px 0; line-height: 24px;}
+.jr_bd .jr_sub_bd.bd_4{}
+.jr_bd .jr_sub_bd .jr_tit_1{display: block; margin-top: 20px; font-size: 18px; color: #2B8CC9;}
+.jr_bd .jr_ico_1{float: left; width: 13px; height: 12px;margin: 4px 8px 0 0; background:url(../../img/education/junrong/016.png) no-repeat;}	
+.jr_bd .jr_about_wrap{margin-bottom: 60px; padding: 30px 383px 0 0; background:url(../../img/education/junrong/jr_about_bg.jpg) no-repeat right bottom; line-height: 2em; text-indent: 2em;}		
+.jr_bd .jr_leader_wrap{padding: 25px 0 30px;}
+.jr_bd .jr_leader_wrap .jr_leader_img{ float: left; width: 257px;}
+.jr_bd .jr_leader_wrap .jr_leader_img img{width: 257px;}
+.jr_bd .jr_leader_wrap .jr_leader_info{float: left; width: 405px; margin-left: 20px; _display: inline;}
+.jr_bd .jr_leader_wrap .jr_leader_info li{float: left; padding: 6px 0;}
+.jr_bd .jr_leader_wrap .jr_leader_info .txt{float: left; width:383px; line-height: 18px;}
+.jr_bd .jr_list_1{padding: 20px 0;}		
+.jr_bd .jr_list_1 li{float: left; width: 362px; height: 18px; padding: 7px 0; overflow: hidden;}
+.jr_bd .jr_list_2{padding: 10px 0;}		
+.jr_bd .jr_list_2 li{ padding: 7px 0; line-height: 18px; overflow: hidden;}		
+.jr_bd .jr_list_2 li .txt{float: left; width: 630px; line-height: 18px; overflow: hidden;}	
+.jr_bd .jr_list_3{ padding:5px 0 20px 0;}
+.jr_bd .jr_list_3 li{float: left; width: 90px; height: 90px; margin: 30px 30px 0 0; background-color: #f7f7f7;}
+.jr_bd .jr_list_3 li a{ display: block; padding: 20px;}
+.jr_bd .jr_list_3 li img{ width: 50px; height: 50px;}
+.jr_bd .jr_list_4{padding-top: 10px;}
+.jr_bd .jr_list_4 li{padding: 10px 45px 10px 0; border-bottom: 1px dashed #e3e5e5; line-height: 2em;}
+.jr_bd .jr_list_4 .name{display: block; font-weight: bold; font-size: 14px; color: #2B8CC9;}
+.jr_bd .jr_list_4 .discription{margin-top:5px; }
+.jr_bd .jr_table_1{line-height: 2em;}
+.jr_bd .jr_table_1 td{ vertical-align: top;}
+.jr_bd .jr_table_1 td.left{width: 376px;} 
+.jr_bd .jr_table_1 td.left .bd_4{padding: 20px 60px 25px 0;}
+.jr_bd .jr_table_1 td.right{width: 348px;}
+.jr_bd .jr_table_1 td.right .bd_4{padding: 20px 35px 25px 0;}
+.jr_bd .jr_table_2{}
+.jr_bd .jr_table_2 td{padding:25px 0 20px 0; border-bottom: 1px dashed #e3e5e5; line-height: 2em; vertical-align: top;}
+.jr_bd .jr_table_2 td.last{border-bottom: none;}
+.jr_bd .jr_table_2 .stu_img{float: left; width: 99px;}
+.jr_bd .jr_table_2 .stu_img img{width: 99px;}
+.jr_bd .jr_table_2 .stu_info{float: left; width: 220px; margin-left: 10px;}
+.jr_bd .jr_table_2 .stu_info .name{display: block; font-weight: bold; font-size: 14px; color: #2B8CC9;}
+.jr_bd .jr_table_2 .stu_info .job{}
+.jr_bd .jr_table_2 .stu_info .say{padding-top:8px; color: #999;}
+.jr_bd .jr_table_3{}
+.jr_bd .jr_table_3 th{height: 50px; border-bottom: 2px solid #aaa; background-color: #e3e5e5; color: #525252!important;}
+.jr_bd .jr_table_3 td{height: 36px; border-left: 1px solid #e3e5e5; text-align: center;}
+.jr_bd .jr_table_3 .r_1{}
+.jr_bd .jr_table_3 .r_2 td{ background-color: #f1f2f2;}
+.jr_bd .jr_table_3 .l_1{width: 70px; background-color: #f1f2f2; text-align: center;}
+.jr_bd .jr_table_3 .l_2{width: 95px; padding-left: 10px; text-align: left;}
+.jr_bd .jr_table_3 .l_3{width: 230px; padding-left: 10px; text-align: left; color: #2B8CC9;}
+.jr_bd .jr_table_3 .l_4{width: 70px;}
+.jr_bd .jr_table_3 .l_5{width: 90px;}
+.jr_bd .jr_table_3 .l_6{border-right: 1px solid #e3e5e5;}
+.jr_bd .jr_table_3.tb_3_2{}
+.jr_bd .jr_table_3.tb_3_2 .l_2{background-color: #fff;}

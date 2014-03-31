@@ -1,0 +1,32 @@
+.spot_container{padding: 1px 0 30px;}
+.spot_container .spot_top{height: 546px; background: url(../../../img/abvert/spot/bannner_bg.jpg) no-repeat center center #feb028;}
+
+.spot_top_form{float: right;width: 256px; height: 247px; padding: 0 22px; margin-top: 43px;}
+.spot_top_form .tit{height: 44px; border-bottom: 1px solid #fff; margin-bottom: 20px; line-height: 44px; font-size: 16px; color: #fff;}
+.spot_top_form .input_wrap{margin-bottom: 10px; position: relative;}
+.spot_top_form .input_label{line-height: 30px; color: #fff; position: absolute; left: 3px; top: 0;}
+.spot_top_form .input_control{padding-left:67px;}
+.spot_top_form .input_control .input_txt{width: 170px; padding: 6px 5px; border: none; background-color: #fff;}
+.spot_top_form .input_msg{padding-left: 5px; background-color: #fff; line-height: 30px; color: #f00; position: absolute;left:68px; top: 0;}
+.spot_top_form .submit_wrap{}								
+.spot_top_form .input_btn{width: 180px; height: 36px; border: none; background-color: #f60; font-size: 16px; color: #fff;}
+
+.spot_company_list{padding-top: 10px;}
+.spot_company_item{margin-top: 20px;border: 1px solid #aaa; border-top-color: #dfdfdf; background-color: #fff;box-shadow: 3px 3px 6px rgba(0,0,0,.1);}
+.spot_company_item .item_wrap{}
+.spot_company_item .item_hd{padding: 9px 0; background-color: #f7f7f7; line-height: 27px; position: relative; zoom:1;}
+.spot_company_item .item_hd .img_wrap{float: left; width: 93px; height: 21px; margin: 0 15px 0 22px; padding: 3px; background-color: #fff;}
+.spot_company_item .item_hd .img_wrap img{ width: 93px; height: 21px;}
+.spot_company_item .item_hd .company_name{font-size: 18px; color: #f60;}
+.spot_company_item .item_hd .company_intro{font-size: 14px; color: #999;}
+.spot_company_item .item_hd .state{width: 65px; height: 47px; background: url(../../../img/abvert/spot/002.png) no-repeat; position: absolute; top:-1px ; right:0;}
+.spot_company_item .item_bd{padding: 22px; position: relative;zoom:1;}
+.spot_company_item .item_bd .spot_company_link{width: 133px; height: 47px; margin-top: -24px; background: url(../../../img/abvert/spot/001.png) no-repeat; position: absolute; top: 50%; right: 45px;}
+.spot_company_item .item_bd .company_detail{width: 730px; padding-right: 22px; border-right: 1px solid #dfdfdf;}
+.spot_company_item .spot_company_table{width:730px;line-height: 24px;}
+.spot_company_item .spot_company_table th{width:90px; padding: 6px 0; vertical-align: top; text-align: left;*width:10%;}
+.spot_company_item .spot_company_table th .tit{display: block;width:75px; height: 24px;padding:0 5px; background-color: #f7f7f7; color: #999;}
+.spot_company_item .spot_company_table td{padding: 6px; text-align: left;}
+.spot_company_item .spot_company_table td .strong_1{font-size: 14px; color: #f60;}
+.spot_company_item .spot_company_table td .strong_2{font-size: 16px; color: #f60;}
+.spot_company_item .spot_company_table td a{cursor: default;}

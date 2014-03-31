@@ -1,0 +1,88 @@
+/*信托产品*/
+div, ul, ol, dl, dt, dd, li, P, H1, H2, H3, H4, H5, SPAN {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	color: #247DBA;
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}
+.xtnolbox {
+	border: 1px #E3E3E3 solid;
+	margin-bottom: 14px;
+}
+.layout {
+	width: 1000px;
+	margin: 0 auto;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.xtnolbox {
+	border: 1px #E3E3E3 solid;
+	margin-bottom: 14px;
+}
+.xttitbox {
+	height: 30px;
+	line-height: 32px;
+	border-bottom: 1px #DDD solid;
+	background: url(rhead_bg.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/rhead_bg.png*/ repeat-x bottom;
+}
+.hot-text {
+	font-size: 12px !important;
+	font-weight: normal;
+}
+.xttitbox h2 {
+	font: 16px/28px \5FAE\8F6F\96C5\9ED1;
+	float: left;
+	display: inline;
+	padding-left: 10px;
+	margin-right: 30px;
+	color: #474747;
+}
+.xttitbox .titsublink {
+	float: right;
+	line-height: 28px;
+	padding-right: 6px;
+}
+.hot-text span {
+	color: #F60;
+}
+.hot-text-con {
+	padding: 15px;
+	padding-top: 0;
+	background-color: #F7F7F7;
+}
+.hot-text-list {
+	height: 34px;
+	line-height: 34px;
+	border-bottom: 1px dotted #DDD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

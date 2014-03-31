@@ -1,0 +1,37 @@
+.abvert_vip{
+	position: relative;
+	height: 60px;
+	overflow: hidden;
+}
+.abvert_vip {
+	border:1px solid #CFCFCF;
+	-moz-box-shadow:0px 0px 6px 1px #CFCFCF;
+	-webkit-box-shadow:0px 0px 6px 1px #CFCFCF;
+	box-shadow:0px 0px 6px 1px #CFCFCF;
+	margin-bottom: 10px;
+}
+.abvert_vip .num{
+	position: absolute;
+	right: 5px;
+	bottom: 4px;
+}
+.abvert_vip .num li{
+	margin:0 1px;
+	background:#999;
+	width:25px;
+	height:5px;
+	font-size:0px;
+	float: left;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+.abvert_vip .num li.on{
+	background:#257BB4;
+}
+.height90{
+	height:90px;
+}
+.mt10{
+	margin-top: 10px;
+}

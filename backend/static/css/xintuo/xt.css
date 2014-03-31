@@ -1,0 +1,175 @@
+/*
+ * @author : zym
+ * @data   : 2014/02/10/
+ * @desc   : 信托首页
+ *
+ **/
+.xt_container{padding: 25px 0 20px 0;}
+/*left*/
+.xt_left{float: left; width: 685px; margin-top: -25px;}
+.xt_left_item{ margin-top: 25px; }
+.xt_left_item .xt_prolist_1{margin: 0 0 -1px -1px;}
+.xt_left_item .xt_prolist_1 .item{float: left; width:341px;  border-left: 1px solid #e3e5e5; border-bottom: 1px solid #e3e5e5; cursor: pointer; position: relative;}
+.xt_left_item .xt_prolist_1 .item.hover,
+.xt_left_item .xt_prolist_1 .item:hover{background-color: #f7f7f7;}
+.xt_left_item .xt_prolist_1 .item.hover .pro_wrap .pro_btn,
+.xt_left_item .xt_prolist_1 .item:hover .pro_wrap .pro_btn{display: block;}
+.xt_left_item .xt_prolist_1 .item .state{display: block; width: 52px; height: 37px; position: absolute; top: 1px; right: 0;}
+.xt_left_item .xt_prolist_1 .item .state.s_2{background:url(../../img/xintuo/008.gif) no-repeat;}
+.xt_left_item .xt_prolist_1 .item .state.s_1{background:url(../../img/xintuo/009.gif) no-repeat;}
+.xt_left_item .xt_prolist_1 .pro_wrap{padding: 20px 15px;}
+.xt_left_item .xt_prolist_1 .pro_wrap_left{float: left; width: 80px;}
+.xt_left_item .xt_prolist_1 .pro_wrap_right{float: right; width: 216px;}
+.xt_left_item .xt_prolist_1 .pro_wrap .pro_income_tit{display: block;padding: 4px 0; background-color: #A7C1E7; text-align: center; color: #fff;}
+.xt_left_item .xt_prolist_1 .pro_wrap .pro_income{height: 40px; background-color: #efefef; line-height: 40px; text-align: center; color: #f60; overflow: hidden;}
+.xt_left_item .xt_prolist_1 .pro_wrap .pro_income .num{ margin-right:2px; white-space: nowrap; font-size: 14px;}
+.xt_left_item .xt_prolist_1 .pro_wrap .pro_btn{display: none; height: 18px; margin-top: 4px; padding: 5px 0; background-color: #ff8000; text-align: center; color: #fff;}
+.xt_left_item .xt_prolist_1 .pro_wrap .pro_btn:hover{background-color:  #D93600; color: #fff;}
+.xt_left_item .xt_prolist_1 .pro_wrap .pro_info_wrap{height: 50px;}
+.xt_left_item .xt_prolist_1 .pro_wrap .pro_name{display: block; height: 18px; overflow: hidden;}
+.xt_left_item .xt_prolist_1 .pro_wrap .pro_gift{display: inline-block; margin-left:5px; padding: 0 4px; border-radius: 3px; background-color: #f60; line-height: 18px; color: #fff; _display: inline;}
+.xt_left_item .xt_prolist_1 .pro_wrap .pro_sum{line-height: 32px;}
+.xt_left_item .xt_prolist_1 .pro_wrap .pro_deadline{line-height: 32px;}
+.xt_left_item .xt_prolist_1 .pro_wrap .pro_comment{height: 36px; padding: 10px 0; overflow: hidden;}
+.xt_left_item .tab_hd .tab_control{ float: left;}
+.xt_left_item .tab_hd .tab_control_item{float: left;height: 14px; padding:11px 0 13px; cursor: pointer; position: relative; z-index: 11; *zoom:1;}
+.xt_left_item .tab_hd .tab_control_item span{display:inline-block; height: 14px; border-right: 1px solid #dbdbdb; line-height: 14px;}
+.xt_left_item .tab_hd .tab_control_item.last span{ border-right: none;}
+.xt_left_item .tab_hd .tab_control_item.active{font-weight: bold; color: #f60;}
+.xt_left_item .tab_hd .tab_control_item.active .arrow{display: block;}
+.xt_left_item .tab_hd .tab_control_item .arrow{display: none; width: 0; height: 0; margin-left: -5px; border-color:transparent  transparent #257BB4 transparent ;border-width:0 5px 5px 5px;border-style:none dashed solid dashed; overflow: hidden; position: absolute; bottom: 0; left: 50%;}
+.xt_left_item.xt_tab_1 .tab_hd .tab_control_item span{padding: 0 14px;}
+.xt_left_item.xt_tab_2 .tab_hd .tab_control_item span{padding: 0 9px;}
+.xt_left_item .tab_bd .tab_con{display: none;}
+.xt_left_item .tab_bd .tab_con.active{display: block;}
+.xt_left_item.xt_tab_1 .tab_bd .tab_con{padding-bottom: 10px;}
+.xt_left_item .xt_table_1{}
+.xt_left_item .xt_table_1 tr{}
+.xt_left_item .xt_table_1 tr.hover td,
+.xt_left_item .xt_table_1 tr:hover td{background-color: #f7f7f7;}
+.xt_left_item .xt_table_1 tr.hover .pro_name,
+.xt_left_item .xt_table_1 tr:hover .pro_name{ position: relative; z-index: 100;}
+.xt_left_item .xt_table_1 tr.hover .pro_comment,
+.xt_left_item .xt_table_1 tr:hover .pro_comment{display: block;}
+.xt_left_item .xt_table_1 th{height: 40px; border-bottom: 1px solid #e3e5e5; background-color: #f7f7f7; text-align: left; vertical-align: middle; }
+.xt_left_item .xt_table_1 td{height: 40px; text-align: left; vertical-align: middle;}
+.xt_left_item .xt_table_1 th.tc,
+.xt_left_item .xt_table_1 td.tc{text-align:center;}
+.xt_left_item .xt_table_1 td .num{display: inline-block; width: 22px; height: 22px; background:url(../../img/xintuo/016.gif) no-repeat; line-height: 22px; text-align: center; color: #fff;}
+.xt_left_item .xt_table_1 td .top{background:url(../../img/xintuo/015.gif) no-repeat;}
+.xt_left_item .xt_table_1 .pro_sum{text-align: right;}
+.xt_left_item .xt_table_1 .pro_deadline{text-align: right;}
+.xt_left_item .xt_table_1 .pro_income{padding-right: 25px; text-align: right;}
+.xt_left_item .xt_table_1 .pro_name{height: 18px; padding: 11px 0;}
+.xt_left_item .xt_table_1 .pro_comment{display: none; width: 290px; padding: 10px 17px; border:1px solid #ccc; box-shadow: 2px 2px 4px rgba(0,0,0,.1); background-color: #fff; position: absolute; top:40px; left:0; z-index: 110;}
+.xt_left_item .xt_table_1 .pro_comment .arrow{width: 0; height: 0;border-width:0 9px 9px 9px;border-style:none dashed solid dashed; overflow:hidden; position: absolute; left: 17px;}
+.xt_left_item .xt_table_1 .pro_comment .arrow.a_1{ border-color:transparent  transparent #ccc transparent ; top: -10px;}
+.xt_left_item .xt_table_1 .pro_comment .arrow.a_2{ border-color:transparent  transparent #fff transparent ; top: -9px;}
+.xt_left_item .xt_company_tab{}
+.xt_left_item .xt_company_tab .subtab_hd{ float:left; width: 120px;}	
+.xt_left_item .xt_company_tab .subtab_control{border-bottom: 1px solid #fff;}
+.xt_left_item .xt_company_tab .subtab_control_item{height: 38px; border-width:0 1px 1px 0; border-style: solid; border-color: transparent #e3e5e5 #e3e5e5 transparent; background-color: #fafafa;  *margin-bottom: -2px; position: relative; z-index: 20;}
+.xt_left_item .xt_company_tab .subtab_control_item.active{ border-right-color: #fff; background-color: #fff;}
+.xt_left_item .xt_company_tab .subtab_control_item.active .shadow{ width: 5px; height: 40px; background-color: #f60; overflow: hidden; position: absolute; top: -1px; left: -1px;}
+.xt_left_item .xt_company_tab .subtab_control_item a{display: block; padding:10px 0 10px 18px; color: #525252;}
+.xt_left_item .xt_company_tab .subtab_control_item a:hover{color: #525252;}
+.xt_left_item .xt_company_tab .subtab_bd{float: right; width:550px;}
+.xt_left_item .xt_company_tab .subtab_con{display: none;}
+.xt_left_item .xt_company_tab .subtab_con.active{display: block;}
+.xt_left_item .xt_companty_detail{ padding: 15px 10px;}
+.xt_left_item .xt_companty_detail .com_img{float: left; width: 87px; height: 87px; border: 1px solid #f7f7f7;}
+.xt_left_item .xt_companty_detail .com_img img{width: 87px;height: 87px;}
+.xt_left_item .xt_companty_detail .com_info{float:left;width: 425px; margin-left: 15px; _display: inline;}
+.xt_left_item .xt_companty_detail .com_info .p_1{height: 18px; padding: 16px 0; line-height: 18px;}
+.xt_left_item .xt_companty_detail .com_info .p_2{}
+.xt_left_item .xt_companty_detail .com_info .s_1{ padding-right:30px;}
+.xt_left_item .xt_companty_detail .com_info .s_2{ padding-right:30px;}
+.xt_left_item .xt_companty_detail .com_info .s_4{width: 137px; height:28px; margin-right: 12px; background-color: #f7f7f7; line-height: 28px; text-align: center;}
+.xt_left_item .xt_companty_detail .com_info .s_4 .num{display: inline-block; margin: 0 5px; vertical-align:-1px; font:bold 16px/28px tahoma; color: #f60;}
+.xt_left_item .xt_comprolist_tit{height: 38px; padding-left: 15px; border-top: 1px solid #e3e5e5; border-bottom: 1px solid #e3e5e5; background-color: #f7f7f7; line-height: 38px; font-weight: bold; font-size: 14px; color: #f60;}
+.xt_left_item .xt_comprolist_wrap{padding-bottom: 8px;}
+.xt_left_item .xt_table_2{}
+.xt_left_item .xt_table_2 tr{}
+.xt_left_item .xt_table_2 tr.hover td,
+.xt_left_item .xt_table_2 tr:hover td{background-color: #f7f7f7;}
+.xt_left_item .xt_table_2 th{height: 40px; border-bottom: 1px solid #e3e5e5; text-align: left; vertical-align: middle; }
+.xt_left_item .xt_table_2 td{height: 32px; text-align: left; vertical-align: middle;}
+.xt_left_item .xt_table_2 td .num{display: inline-block; width: 22px; height: 22px; background:url(../../img/xintuo/016.gif) no-repeat; line-height: 22px; text-align: center; color: #fff;}
+.xt_left_item .xt_table_2 td .top{background:url(../../img/xintuo/015.gif) no-repeat;}
+.xt_left_item .xt_table_2 .pro_sum{text-align: right;}
+.xt_left_item .xt_table_2 .pro_deadline{text-align: right;}
+.xt_left_item .xt_table_2 .pro_income{padding-right: 25px; text-align: right;}
+.xt_left_item .xt_table_2 .pro_name{}
+.xt_left_item .xt_qa_wrap{padding: 12px 22px 30px;}
+.xt_left_item .xt_qa_wrap .xt_qa_tit{line-height: 32px; font-weight: bold; font-size: 14px; color: #f60;}						
+.xt_left_item .xt_qa_wrap .xt_qa_txt{float: left; width: 621px; padding: 5px 8px; height: 100px; border: 1px solid #c9c9c9;}				
+.xt_left_item .xt_qa_wrap .xt_qa_txt.no_cur{color: #999;}				
+.xt_left_item .xt_qa_wrap .xt_qa_control{ float: right; margin-top: 10px;}
+.xt_left_item .xt_qa_wrap .xt_qa_control .qa_btn{float: left; width: 111px; height: 36px; background-color: #f60; line-height: 36px; text-align: center; color: #fff;}
+.xt_left_item .xt_qa_wrap .xt_qa_control .qa_btn:hover{ color: #fff;}
+.xt_left_item .xt_qa_list{ padding: 15px 13px; border-top: 1px solid #e3e5e5; background-color: #fafafa;}
+.xt_left_item .xt_qa_list li{float: left; width: 308px; height: 24px; padding-left: 8px; line-height: 24px; overflow: hidden;}
+.xt_left_item .xt_qa_list li .square{float: left; width: 3px; height: 3px; margin:11px 9px 0 0 ; background-color: #2B8CC9; overflow: hidden;}
+/*right*/
+.xt_right{float: right; width: 300px;}
+.xt_right_ad{}
+.xt_right_item{margin-top: 15px; border: 1px solid #e3e5e5; background-color: #fff;}
+.xt_right_item .xt_r_hd{height: 24px; padding: 7px 15px; border-bottom: 1px solid #e3e5e5; background-color: #f7f7f7; font-size: 16px; color: #2B8CC9;}
+.xt_right_item .xt_r_bd{}
+/*xt*/
+.xt_right_item .advantage_list{height: 175px; padding:20px 20px 15px 18px;}
+.xt_right_item .advantage_list .advantage_item{float: left; margin-bottom: 10px; line-height: 19px;}
+.xt_right_item .advantage_list .advantage_item .tit{float: left; width: 59px; height: 19px; padding-left: 8px; background:url(../../img/xintuo/007.gif) no-repeat; color: #F6503F;}
+.xt_right_item .advantage_list .advantage_item .con{float: left; width: 184px; padding-left: 8px;}
+/*zg*/
+.xt_right_item .advantage_list_zg{height: auto; padding:10px 0 5px 30px;}
+.xt_right_item .advantage_list_zg .advantage_item{float: left; margin-bottom:5px; line-height: 19px;}
+.xt_right_item .advantage_list_zg .advantage_item .tit{float: left; width: 45px; height: 45px; background:url(../../img/xintuo/zg_sprite.gif) no-repeat;}
+.xt_right_item .advantage_list_zg .advantage_item .t_1{ background-position: 0 0;}
+.xt_right_item .advantage_list_zg .advantage_item .t_2{ background-position: -46px 0;}
+.xt_right_item .advantage_list_zg .advantage_item .t_3{ background-position: -92px 0;}
+.xt_right_item .advantage_list_zg .advantage_item .t_4{ background-position: -138px 0;}
+.xt_right_item .advantage_list_zg .advantage_item .con{float: left; width: 184px; padding-left:14px; line-height: 45px;}
+/*yyhh*/
+.xt_right_item .advantage_list_yyhh{height: auto; padding:13px 19px;}
+.xt_right_item .advantage_list_yyhh .advantage_item{float: left; margin-bottom:2px; line-height: 19px;}
+.xt_right_item .advantage_list_yyhh .advantage_item .tit{float: left; width: 67px; height: 45px; background:url(../../img/xintuo/yyhh_sprite.png) no-repeat;}
+.xt_right_item .advantage_list_yyhh .advantage_item .t_1{ background-position: 0 0;}
+.xt_right_item .advantage_list_yyhh .advantage_item .t_2{ background-position: -68px 0;}
+.xt_right_item .advantage_list_yyhh .advantage_item .t_3{ background-position: -136px 0;}
+.xt_right_item .advantage_list_yyhh .advantage_item .t_4{ background-position: -204px 0;}
+.xt_right_item .advantage_list_yyhh .advantage_item .con{float: left; width: 177px; height: 45px; padding-left:15px; background-color: #f7f7f7; line-height: 45px;}
+
+.xt_right_item .article_wrap{padding: 10px 20px 15px 18px;}
+.xt_right_item .article_list{}
+.xt_right_item .article_list li{height: 24px;overflow: hidden;}
+.xt_right_item .article_list li a{float: left;width: 250px; height: 18px; padding:3px 0 3px 6px; overflow: hidden;}
+.xt_right_item .article_list li .square{float: left; width: 4px; height: 4px; margin-top: 10px; background-color: #F65040; overflow: hidden; _display: inline;}
+.xt_right_item .xt_prodetail_week{background-color: #FFFEF3;}
+.xt_right_item .xt_prodetail .detail_wrap{height: 145px; padding: 0 18px 0 20px;}
+.xt_right_item .xt_prodetail .pro_info{height: 71px; padding: 8px 0;}
+.xt_right_item .xt_prodetail .pro_name{display: block;height: 18px; padding-bottom: 5px; overflow: hidden;}
+.xt_right_item .xt_prodetail .pro_table_1{}
+.xt_right_item .xt_prodetail .pro_table_1 th{width: 60px; padding: 3px 0; color: #999;}
+.xt_right_item .xt_prodetail .pro_table_1 td{width: 55px; padding: 3px 0; color: #f60;}
+.xt_right_item .xt_prodetail .pro_comment{height: 36px; padding: 10px 0  12px; overflow: hidden;}
+.xt_right_item .xt_prodetail .pro_control{float: right; padding: 10px 20px;}
+.xt_right_item .xt_prodetail .pro_control .count{float:left;margin-right: 15px; _display: inline;}
+.xt_right_item .xt_prodetail .pro_control .btn{float: left; height: 18px;}
+.xt_right_item .xt_prodetail .pro_control .btn .xt_ico_1{float: left; width: 13px; height: 13px;margin:3px 3px 0 0; background:url(../../img/xintuo/006.gif) no-repeat; _display: inline;}
+.xt_right_item .search_list{}
+.xt_right_item .search_list .item{ float: left; width: 298px; padding: 6px 0; border-bottom: 1px solid #e3e5e5;}
+.xt_right_item .search_list .item.last{border-bottom: none;}
+.xt_right_item .search_list .tit{ float: left; width: 58px; text-align: right; color: #999;}
+.xt_right_item .search_list .con{ float: left; width: 240px;}
+.xt_right_item .search_list .con a{ padding:0 10px; line-height: 20px;}
+.xt_right_item .xt_subscribe_hd{ padding: 15px 0 10px 22px; font-size: 16px; color: #2B8CC9;}
+.xt_right_item .subscribe_list{ width: 246px; margin: 0 auto;}
+.xt_right_item .subscribe_list li{height: 20px; padding:6px 0; line-height: 20px;}
+.xt_right_item .subscribe_list li .xt_ico_2{float: left; width: 13px; height: 13px; margin: 4px 7px 0 0; background:url(../../img/xintuo/005.gif) no-repeat; _display: inline;}
+.xt_right_item .subscribe_list li .tel{font-size: 14px; color: #F6503F;}
+.xt_right_item .subscribe_control{ width:252px; margin: 0 auto; padding: 13px 0 18px;}
+.xt_right_item .subscribe_control .subscribe_btn{ float: left; height: 41px; line-height: 40px; color: #fff;}
+.xt_right_item .subscribe_control .subscribe_btn:hover{color: #fff;}
+.xt_right_item .subscribe_control .totel{ width: 76px; padding-left: 45px; background:url(../../img/xintuo/004.gif) no-repeat;}
+.xt_right_item .subscribe_control .toemail{ width: 73px; margin-left: 10px; padding-left: 48px; background:url(../../img/xintuo/003.gif) no-repeat;}								

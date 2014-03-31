@@ -1,0 +1,32 @@
+/*重置浏览器plachehold的颜色*/
+input:-webkit-input-placeholder{
+	color: #ddd;
+}
+input:-moz-placeholder{
+	color: #ddd;
+}
+input:-ms-input-placeholder {
+	color: #ddd !important;
+}
+textarea:-webkit-input-placeholder{
+	color: #ddd;
+}
+textarea:-moz-placeholder{
+	color: #ddd;
+}
+textarea:-ms-input-placeholder {
+	color: #ddd;
+}
+
+label.input_tip {
+	display:inline-block;
+	font-size: 12px;
+	line-height: 16px;
+	color: #aaa;
+	cursor: text;
+	*display:inline;
+	*zoom:1;
+}
+label.input_tip_focus{
+	color: #ddd;	
+}

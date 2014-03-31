@@ -1,0 +1,475 @@
+/*---------------------------------------完美的分割线---------------------------------------*/
+/*header通用部分开始*/
+div.header {
+	width: 100%;
+	font-size:12px;
+}
+.maintop {
+	background: url(toprpx.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/toprpx.png*/ repeat-x;
+	height: 31px;
+	border-bottom: 1px #CECFCE solid;
+}
+
+.maintop .topinter {
+	width: 1000px;
+	margin: 0 auto;
+	z-index: 111;
+	position: relative;
+}
+.topinter .leftbox {
+	float: left;
+	display: inline;
+	overflow: hidden;
+	height: 31px;
+}
+.topinter .leftbox p {
+	word-wrap: break-word;
+}
+.maintop .topinter a {
+	color: #888;
+	text-decoration: none;
+	outline: 0 none;
+	font-size: 12px;
+}
+.maintop .topinter a:hover {
+	color: #0079BD;
+	text-decoration: underline;
+}
+.maintop .topinter .leftbox span.line {
+	border-left: 1px #DEDFDE solid;
+	border-right: 1px #F8F8F8 solid;
+	display: inline-block;
+	height: 35px;
+	overflow: hidden;
+	width: 0;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+.maintop .topinter .rightbox {
+	float: right;
+	display: inline;
+}
+.maintop .topinter ul.sublist {
+	float: left;
+	list-style: none;
+}
+.maintop .topinter ul.sublist li {
+	float: left;
+	display: inline;
+	line-height: 31px;
+	position: relative;
+	height: 31px;
+}
+.maintop .topinter ul.sublist li.line {
+	border-left: 1px #DEDFDE solid;
+	border-right: 1px #F8F8F8 solid;
+	height: 31px;
+	overflow: hidden;
+	width: 0;
+}
+.maintop .topinter .selcenter {
+	padding: 1px 20px 0 12px;
+	background: url(topmymore.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/topmymore.png*/ no-repeat 90% 50%;
+	display: inline-block;
+}
+.maintop .topinter .dark .selcenter{
+	padding: 0 19px 0 11px;
+	border: 1px #DDDDDD solid;
+	background: #fff url(topmymore.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/topmymore.png*/ no-repeat 91% 49%;
+	border-bottom: 0;
+}
+.maintop .topinter li.onself div.popmyself {
+	position: absolute;
+	right: 0px;
+	top: 31px;
+	border: 1px #DDD solid;
+	background: #FFF;
+	line-height: 23px;
+	width: 78px;
+	border-top: 0;
+	display: none;
+}
+.maintop .topinter div.popmyself p {
+	padding-left: 12px;
+}
+.maintop .rightbox a.nollink {
+	padding: 0 10px;
+}
+.maintop .rightbox a.wxus {
+	margin: 0 13px 0 10px;
+	padding-left: 30px;
+	background: url(topwximg.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/topwximg.png*/ no-repeat 0 50%;
+	height:30px;
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+}
+.maintop .rightbox div.popwxour {
+	position: absolute;
+	right: -86px;
+	top: 31px;
+	border: 1px #DDD solid;
+	background: #FFF;
+	line-height: 21px;
+	width: 270px;
+	color: #8F8F8F;
+	display: none;
+}
+.maintop .rightbox div.popwxour i {
+	position: absolute;
+	left: 48%;
+	top: -5px;
+	background: url(toppoparr.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/toppoparr.png*/ no-repeat;
+	width: 14px;
+	height: 5px;
+	overflow: hidden;
+}
+.maintop .rightbox .popwxour .wxinter {
+	padding: 5px;
+	overflow: hidden;
+	zoom: 1;
+	display: none;
+}
+.maintop .rightbox .wximg {
+	float: left;
+	display: inline;
+	width: 97px;
+	background: #FFF;
+}
+.maintop .rightbox .wximg img {
+	border: 0;
+	vertical-align: middle;
+}
+.maintop .rightbox .popwxour .txtwxp {
+	border-top: 1px #E1E1E1 solid;
+	padding-top: 3px;
+	margin-top: 3px;
+}
+.maintop .rightbox .ourphone {
+	margin: 0 10px;
+	padding-left: 20px;
+	background: url(tophonenum.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/tophonenum.png*/ no-repeat 0 50%;
+	color: #FD6400;
+	font-size: 13px;
+}
+/*header通用部分结束*/
+/*---------------------------------------完美的分割线---------------------------------------*/
+/*new-nav导航栏开始部分*/
+.new-nav {
+	height: 37px;
+	background: url(xtnavbg.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/index/xtnavbg.png*/ repeat-x 0 0;
+	overflow: visible;
+	margin-bottom: 15px;
+}
+.new-nav .layout {
+	width: 1000px;
+	margin: 0 auto;
+}
+.new-nav .fl {
+	float: left;
+	display: inline;
+	height: 37px;
+}
+.new-nav .navlist li {
+	float: left;
+	display: block;
+	width: 110px;
+	z-index:9;
+	position:relative;	
+	*position: static;
+}
+.new-nav .navlist li a {
+	text-decoration: none;
+	display: block;
+	width: 110px;
+	height: 37px;
+	color: #FFF;
+	text-align: center;
+	background: url(bgnavline-3.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/index/bgnavline.png*/ no-repeat right 0;
+	font: 14px/37px "Microsoft Yahei";
+	z-index: 99;
+}
+.n-navinter .navlist .on {
+	background: url(bgnavon.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/index/bgnavon.png*/ repeat-x 0 0;
+	color: #0079BD;
+}
+.new-nav .navlist li.dark a{
+	background:url(bgnavhover.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/index/bgnavhover.png*/ repeat-x 0 0;color:#0079BD;
+}
+.new-nav .navlist li.on a {
+	background: url(bgnavon.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/index/bgnavon.png*/ repeat-x 0 0;
+	color: #0079BD;
+}
+.new-nav .n-navinter .navlist .spoptit {
+	background: url("bg-navarr.png")/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/bg-navarr.png*/ no-repeat 0px 0px;
+	display: inline-block;
+	position: absolute;
+	left: 82px;
+	top: -7px;
+	width: 38px;
+	height: 20px;
+	*display:none;
+}
+.new-nav .n-navinter .navlist .spoptit2 {
+	background: url(neww.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/neww.png*/ no-repeat 0px 0px;
+	display: inline-block;
+	position: absolute;
+	left: 82px;
+	top: -7px;
+	width: 38px;
+	height: 20px;
+	*display:none;
+}
+.new-nav .n-navinter .subnavbox {
+	background: url(xtnavbg-deep.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/index/xtnavbg-deep.png*/ repeat-x 0 0;
+	color: #FFF;
+	line-height: 37px;
+	padding: 0 0 0 0;
+	float: right;
+	display: inline;
+}
+.new-nav .n-navinter .subnavbox ul li {
+	float: left;
+	width: 50px;
+	font-size:12px;
+}
+.new-nav .n-navinter .subnavbox ul li.first{
+	text-align: center;
+	color:#ff6;
+}
+.new-nav .n-navinter .subnavbox a.lined{
+	background: url("bgnavline-3.png")/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/index/bgnavline.png*/ no-repeat scroll  69px center transparent;
+}
+.new-nav .n-navinter .subnavbox a.dark{
+    background:url(bgnavhover.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/index/bgnavhover.png*/ repeat-x 0 0;color:#0079BD;
+}
+.new-nav .n-navinter .subnavbox a {
+	text-decoration: none;
+	outline: 0 none;
+	color: #FFF;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	font-size:12px;
+}
+.new-nav .n-navinter .subnavbox  li.on {
+	background: url(bgnavon.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/index/bgnavon.png*/ repeat-x 0 0;
+}
+.n-navinter .subnavbox .line{
+	margin: 0;
+}
+.new-nav .n-navinter .subnavbox .on a {
+	color: #0079BD;
+}
+
+/*new-nav导航栏结束部分*/
+/*---------------------------------------完美的分割线---------------------------------------*/
+/*footer通用部分开始*/
+.footer {
+	border-top: 1px #D6D6D6 solid;
+	padding: 10px 0;
+	text-align: center;
+	line-height: 26px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.footer a {
+	color: #666;
+	text-decoration:none;
+}
+.footer a:hover{
+	text-decoration:underline;
+}
+.footer .jianshuo {
+	color: #999;
+	font-size: 12px;
+}
+.footer .jianshuo span {
+	margin: 0 5px;
+}
+.footer .jianshuo a {
+	color: #999;
+	margin: 0;
+}
+.footer .jianshuo a:hover {
+	color: #C00;
+}
+.footer .site-info a, .footer .site-info a:hover {
+	color: #333;
+	cursor: text;
+	margin: 0;
+}
+/*footer通用部分结束*/
+/*---------------------------------------完美的分割线---------------------------------------*/
+/*在线客服通用部分开始*/
+.kf-right {
+	position: fixed;
+	right: 0;
+	top: 200px;
+	width: 151px;
+	text-align: center;
+	_position: absolute;
+	_bottom: auto;
+	_top: expression(eval(document.documentElement.scrollTop)+200);
+}
+.kf-right-hd {
+	line-height: 30px;
+	overflow: hidden;
+	color: #FFF;
+	padding-left: 10px;
+}
+.kf-right .personQQ {
+	background-image: url("kf_hd.png")/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_hd.png*/;
+	height: 84px;
+	position: relative;
+}
+.kf-right .personQQ a {
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: url(kf_close.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_close.png*/ no-repeat;
+	right: 3px;
+	top: 3px;
+	position: absolute;
+	_right: 2px;
+	text-decoration: none;
+	outline: 0 none;
+	color: #0B6BB7;
+}
+.kf-right-hd a span {
+	display: none;
+}
+.kf-right-ct151 {
+	background: url(ct_hd.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/ct_hd.png*/ repeat-y;
+	padding: 2px 0 8px;
+}
+.kf-right-ct-time {
+	font-size: 13px;
+	color: #666;
+}
+.kf-right-ct151 p {
+	padding-bottom: 8px;
+}
+.kf-right-ct151 p a {
+	background: url(kf_btn_bg.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_btn_bg.png*/ no-repeat;
+	display: block;
+	width: 113px;
+	height: 30px;
+	line-height: 30px;
+	margin: 8px auto 0;
+	text-indent: 20px;
+	text-decoration: none;
+	outline: 0 none;
+	color: #0B6BB7;
+	font-size: 12px;
+}
+.kf-right-ct151 p a:hover {
+	color: #C00;
+	text-decoration:underline;
+}
+.kf-right-ft {
+	background: url(kf_ft.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_ft.png*/;
+	height: 42px;
+}
+/*在线客服通用部分结束*/
+/*在线客服*/
+.kf-right{position:fixed;right:0;top:200px;width:151px;text-align:center;_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop)+200);}
+.kf-right-hd.personQQ{background-image:url(kf_hd.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_hd.png*/;height:84px;position:relative;}
+.kf-right .personQQ{background-image:url(kf_hd.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_hd.png*/;height:84px;position:relative;}
+.kf-right-hd.personQQ a{display:block;width:14px;height:14px;background:url(kf_close.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_close.png*/ no-repeat;right:3px;top:3px;position:absolute;}
+.kf-right .personQQ a{display:block;width:14px;height:14px;background:url(kf_close.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_close.png*/ no-repeat;right:3px;top:3px;position:absolute;_right:2px;}
+.kf-right-hd a span{display:none;}
+.kf-right-ct{ background:url(main_bg.gif)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/main_bg.gif*/ repeat-y;padding:2px 0 8px;}
+.kf-right-ct151{ background:url(ct_hd.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/ct_hd.png*/ repeat-y;padding:2px 0 8px;}
+.kf-right-ct-time{font-size:13px;color:#666;}
+.kf-right-ct p{padding-bottom:8px;}
+.kf-right-ct151 p{padding-bottom:8px;}
+.kf-right-ct p a{background:url(kf_btn_bg.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_btn_bg.png*/ no-repeat;display:block;width:113px;height:30px;line-height:30px;margin:8px auto 0;text-indent:20px;}
+.kf-right-ct151 p a{background:url(kf_btn_bg.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_btn_bg.png*/ no-repeat;display:block;width:113px;height:30px;line-height:30px;margin:8px auto 0;text-indent:20px;}
+.kf-right-ft{background:url(kf_ft.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_ft.png*/;height:42px;}
+
+.kf2-right{ position:fixed; right:5px; top:200px; width:151px; text-align:center;}
+.kf2-right-hd{ background-image:url(kf_hd1.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_hd1.png*/; height:57px; position:relative;}
+.kf2-right-hd a{ display:block; width:14px; height:14px;  right:3px; top:5px; position:absolute;}
+.kf2-right-hd a span{ display:none;}
+.kf2-right-ct{ background:url(kf_body.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_body.png*/ repeat-y; padding:2px 0 8px; font-size:12px; text-align:left;}
+.kf2-right-ct-bg{ background:url(kf_body_bg.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_body_bg.png*/; width:133px; height:128px; margin:0 auto;}
+.kf2-right-ct-bg ul{padding-top:10px;}
+.kf2-right-ct-bg li{ line-height:22px; padding-left:16px; color:#808080;*display:block;*height:22px;_line-height:1.1;}
+.kf2-right-ct-bg li span{ color:#247DBA; font-family:Arial, Helvetica, sans-serif;} 
+.kf2-right-ct-bg li .vnew-on, .vnew-off{float: right;width: 50px;*position:relative;*left:3px;*top:-20px;_top:-15px; }
+.kf2-right-ct-time{font-size:13px; color:#666;}
+.kf2-right-ct p{padding-top:6px; padding-bottom:8px;}
+.kf2-right-ct p a{ background:url(qqbg.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/qqbg.png*/ no-repeat; display:block; width:81px; height:25px; line-height:25px; margin:8px auto 0; text-indent:30px; color:#FFF; font-family:Arial, Helvetica, sans-serif;font-size: 12px}
+.kf2-right-ft{ background:url(kf_foot.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_foot.png*/; height:22px; line-height:22px; font-size:13px;color:#fff; text-align:center;}
+
+.kf-right-man{position:fixed;right:10px;top:200px;width:149px;text-align:center;_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop)+200);}
+.kf-right-hd{background-image:url(kf_hd_bg.png)/*tpa=http://www.jinfuzi.com/static/cmpt/app/images/kf/kf_hd_bg.png*/;height:30px; line-height:30px;position:relative; overflow:hidden; color:#fff; padding-left:10px;}
+.kf-right-hd h3{ float:left;}
+.kf-right-hd a{display:block;width:14px;height:14px;background:url(../images/kf/kf_close1.png) no-repeat;right:7px;top:9px;position:absolute;}
+.kf-right-hd a span{display:none;}
+.kf-right-man .kf-right-info{ background: url(../images/kf/kf_bg_man.jpg) no-repeat right top; text-align:left; font-size:12px; margin:6px 3px 0;padding-left: 5px;}
+.kf-right-ft1{background:url(../images/kf/kf1_ft.png) no-repeat;height:42px;}
+.kf-right-info li{ padding:2px; color:#0165aa;}
+.qqchat a{ background:url(../images/kf/qqchat.png); width:85px; height:24px; overflow:hidden; display:block; margin:10px auto;}
+.qqchat a:hover{ background-position:bottom;}
+.qqchat a span{ display:none;}
+.more-info{ text-align:center; color:#F90; padding:3px;}
+
+
+.kf-right-l {position: fixed;right: 10px; text-align: center; top: 190px;width: 149px;z-index: 999;}
+.kf-right-l .kf-right-info {padding-left:5px; background: url("../../root/images/kf/kf_bg_girl.jpg") no-repeat scroll right top transparent; font-size: 12px; margin: 6px 3px 0; text-align: left;}
+.kf-right-l .kf-right-l-man {background: url(../images/kf/kf_bg_man.jpg) no-repeat right top;}
+.kf-right-l .more-info {padding: 10px 0 2px;white-space:nowrap; *height:50px;}
+.kf-right-l .more-info span {color: #FF9900;font-size: 12px;line-height: 22px;padding: 3px;text-align: center;float: left}
+.kf-right-l .kf-right-ft1 {
+    background: url("../../root/images/kf/kf2_ft.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-size: 13px;
+    height: 26px;
+    line-height: 26px;
+}
+
+
+
+/*---------------------------------------完美的分割线---------------------------------------*/
+.erji_nav.right{ margin-top:-15px;}
+.erji_nav.right .ullist{
+	left:auto;
+	right:0;
+}
+.erji_nav.right .ullist li{
+	border-left: 1px #DDDDDD solid;
+	border-right:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

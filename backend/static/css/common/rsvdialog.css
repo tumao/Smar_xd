@@ -1,0 +1,80 @@
+/*预约浮层*/
+.zhname, .contact, .qqnember {
+	width: 200px;
+	height: 28px;
+	line-height: 28px;
+	border: #CCC solid 1px;
+	padding: 0 10px;
+	color: #CCCCCC;
+}
+.yuyue_but {
+	background: url(../../img/common/rsvdialog/yuyue_orage.jpg);
+	width: 120px;
+	height: 35px;
+	margin-left: 35px;
+	padding: 0;
+	cursor: pointer;
+	border: none;
+}
+
+.btn01 {
+	margin-left: 21px;
+}
+
+.win {
+}
+.yuyue_win {
+	border: #095E8E solid 2px;
+	background: #FFF;
+	height: 250px;
+	overflow: hidden;
+	z-index: 999;
+}
+.yuyue_win h2 {
+	background-color: #277DB6;
+	height: 38px;
+	line-height: 35px;
+	color: #FFF;
+	font-size: 14px;
+	padding: 0 15px;
+	position: relative;
+}
+.yuyue_win h2 span {
+	color: #C6DFF0;
+	font-weight: 100;
+	margin-left: 10px;
+	font-size: 14px;
+}
+.yuyue_win h2 em {
+	position: absolute;
+	right: 10px;
+	top: 6px;
+}
+
+.yuyue_win table {
+	margin: 10px 40px;
+}
+.yuyue_win th {
+	width: 70px;
+	text-align: left;
+	font-weight: 100;
+}
+.yuyue_win td {
+	height: 20px;
+}
+
+.JFZDialog .JFZDialog_Body {
+	padding: 0;
+}
+.JFZDialog .JFZDialog_NoButtons, .JFZDialog .JFZDialog_NoTitle {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+	border-width: 0;
+}
+span.logo {
+	font-size: 28px;
+	color: #F60;
+	font-family: "Microsoft YaHei";
+	line-height: 1;
+}

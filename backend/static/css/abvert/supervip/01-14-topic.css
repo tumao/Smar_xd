@@ -1,0 +1,374 @@
+#md_topic_vip .sprite_bg{
+	background: url(../../../img/abvert/supervip/sprite.png) no-repeat;
+	_background: url(../../../img/abvert/supervip/sprite-ie6.png) no-repeat;
+}
+#md_topic_vip .sprite_01{
+	width:212px;
+	height: 61px;
+	background-position:0 0;
+}
+#md_topic_vip .sprite_02{
+	width:212px;
+	height: 61px;
+	background-position:0 -62px;
+}
+#md_topic_vip .sprite_03{
+	width:212px;
+	height: 61px;
+	background-position:0 -124px;
+}
+#md_topic_vip .sprite_04{
+	width: 80px;
+	height: 25px;
+	background-position:0 -186px;
+}
+#md_topic_vip .sprite_05{
+	width: 107px;
+	height: 25px;
+	background-position:-81px -186px;
+}
+#md_topic_vip .sprite_06{
+	width: 50px;
+	height: 15px;
+	background-position:0 -212px;
+}
+#md_topic_vip .sprite_07{
+	width: 50px;
+	height: 15px;
+	background-position:-51px -212px;
+}
+/*超级VIP模块*/
+#md_topic_vip .unit-1{
+	background:#CFCFCF;
+	position: relative;
+	zoom:1;
+}
+#md_topic_vip .ban_wrap{
+	height: 530px;
+	margin-bottom: 5px;
+	background: #A91501 url(../../../img/abvert/supervip/ban.jpg) no-repeat center top;
+}
+#md_topic_vip .wall_wrap{
+	height:485px;
+	background:#EDEDED;
+	border-bottom: 1px solid #AAA;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+}
+#md_topic_vip .order_online{
+	width:998px;
+	height: auto;
+	margin-left: -500px;
+	background:#FFF;
+	border:1px solid #AAA;
+	border-width:0 1px 0px 1px;
+	position: absolute;
+	bottom: 1px;
+	left: 50%;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+}
+#md_topic_vip .order_online .title{
+	height: 38px;
+	line-height: 40px;
+	color:#999;
+	background:#F7F7F7;
+	text-indent: 210px;
+	border-bottom:2px solid #257BB4;
+	position: relative;
+}
+#md_topic_vip .order_online .icon{
+	position: absolute;
+	left: -11px;
+	top: -12px;
+}
+#md_topic_vip .order_online .jl_list li{
+	width: 249px;
+	height:289px;
+	text-align: center;
+	border-bottom:1px solid #E6E6E6;
+	border-right:1px solid #E6E6E6;
+	position:relative;
+	float: left;
+}
+#md_topic_vip .order_online .jl_list li a img{
+	width:110px;
+	height:135px;
+	margin-top:20px;
+}
+#md_topic_vip .order_online .hover_wrap{
+	height: 100%;
+	width: 270px;
+	padding-left: 15px;
+	background: #EFF4FA;
+	border-right: 1px solid #E6E6E6;
+	text-align: left;
+	z-index: 99999;
+	position: absolute;
+	top: 0;
+	right: -251px;
+	zoom: 1;
+}
+#md_topic_vip .order_online .spec .hover_wrap{
+	right: 212px;
+	border-left: 1px solid #E6E6E6;
+	border-right: none;
+}
+#md_topic_vip .order_online .hover_wrap img{
+	border: 1px solid #E6E6E6;
+}
+#md_topic_vip .order_online .hover_wrap .link_style{
+	margin-top: 20px;
+}
+#md_topic_vip .order_online .hover_wrap .ser_num{
+	margin:15px 0;
+}
+#md_topic_vip .order_online .hover_wrap .youhui_wrap{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+#md_topic_vip .order_online .hover_wrap .erwei_wrap{
+	width: 115px;
+	margin-left: 15px;
+}
+#md_topic_vip .order_online .hover_wrap .c1{
+	color: #999;
+}
+#md_topic_vip .order_online .hover_wrap .c2{
+	color: #2B8CC9;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+#md_topic_vip .order_online .hover_wrap a{
+	text-indent: 27px;
+	line-height: 24px;
+	color: #525252;
+}
+#md_topic_vip .order_online .hover_wrap a.link_phone{
+	cursor: default;
+}
+#md_topic_vip .order_online .jl_list li.spec{
+	width:248px;
+	border-right:none;
+}
+#md_topic_vip .order_online .jl_list li.hover{
+	background:#EFF4FA;	
+	cursor: pointer;
+	z-index: 9999 !important;
+}
+#md_topic_vip .order_online .jl_list .jl{
+	color:#2B8CC9;
+	font-weight: 700;
+	padding:10px 0;
+}
+#md_topic_vip .order_online .jl_list .no_jl{
+	color: #999;
+	font-weight: 700;
+	padding:10px 0;
+}
+#md_topic_vip .order_online .jl_list  .online{
+	color: #F77900;
+}
+#md_topic_vip .order_online .jl_list  .p1{
+	height:18px;
+	padding-bottom:10px;
+}
+#md_topic_vip .order_online .p2 a{
+	color:#FFF;
+	padding: 2px 8px;
+}
+#md_topic_vip .order_online .p2 a.c1{
+	background:#2B8CC9;
+}
+#md_topic_vip .order_online .p2 a.c2{
+	background:#FF8000;
+}
+#md_topic_vip .order_during {
+	width:998px;
+	height:298px;
+	margin:25px auto;
+	background:#FFF;
+	border: 1px solid #AAA;
+	border-width: 0 1px 1px 1px;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+}
+#md_topic_vip .order_during .title {
+	height: 38px;
+	line-height: 40px;
+	color: #999;
+	background:#F7F7F7;
+	text-indent: 210px;
+	border-bottom: 2px solid #257BB4;
+	position: relative;
+}
+#md_topic_vip .order_during .icon {
+	position: absolute;
+	left: -11px;
+	top: -12px;
+}
+#md_topic_vip .order_during li{
+	width: 224px;
+	height: 103px;
+	padding-left:25px;
+	padding-top:25px;
+	border-bottom: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	float: left;
+	position: relative;
+}
+#md_topic_vip .order_during li.spec {
+	width: 223px;
+	border-right: none;
+}
+#md_topic_vip .order_during li .p1{
+	margin-bottom: 15px;
+}
+#md_topic_vip .order_during li .p2{
+	margin-bottom: 10px;
+}
+#md_topic_vip .order_during li .p3{
+	color: #999;
+}
+#md_topic_vip .order_during li .order_wrap{
+	display:none;
+	width:100%;
+	height:129px;
+	line-height:129px;
+	text-align: center;
+	position:absolute;
+	left:0;
+	top:0;
+	background:rgba(0,0,0,0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');
+}
+:root #md_topic_vip .order_during li .order_wrap {
+	filter:none;
+}
+#md_topic_vip .order_during li .order_link{
+	color: #FFF;
+	background:#FF8000;
+	padding: 8px 22px;
+}
+#md_topic_vip .order_during li .zx{
+	color: #525252;
+}
+#md_topic_vip .order_during li .jl_tx{
+	margin-right: 10px;
+}
+#md_topic_vip .order_during li .jl_name{
+	font-size: 14px;
+	color: #1F76AD;
+}
+#md_topic_vip .order_during li .zx_time{
+	margin-left: 10px;
+}
+#md_topic_vip .order_p2p{
+	width:998px;
+	margin:0 auto;
+	margin-bottom:25px;
+	background: #FFF;
+	border: 1px solid #AAA;
+	border-width: 0 1px 1px 1px;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+}
+#md_topic_vip .order_p2p .title {
+	height: 38px;
+	line-height: 40px;
+	color: #999;
+	background: #F7F7F7;
+	text-indent: 210px;
+	border-bottom: 2px solid #257BB4;
+	position: relative;
+}
+#md_topic_vip .order_p2p .icon {
+	position: absolute;
+	left: -11px;
+	top: -12px;
+}
+#md_topic_vip .order_p2p .half_wd{
+	width: 439px;
+	padding-left:20px;
+	padding-right:40px;
+}
+#md_topic_vip .order_p2p .half1{
+	width: 438px; 
+	border-right:1px solid #E6E6E6;
+	padding-bottom:400px;
+	margin-bottom:-400px;
+}
+#md_topic_vip .order_p2p .half_wd li{
+	padding:20px 0;
+}
+#md_topic_vip .order_p2p .half_wd .q{
+	font-size: 18px;
+	font-family: 'Microsoft Yahei';
+	color:#FF8000;
+	font-weight: 700;
+	margin-right:5px;
+}
+#md_topic_vip .order_p2p .half_wd .q_desc{
+	font-size: 14px;
+	color:#2B8CC9;
+}
+#md_topic_vip .order_p2p .half_wd .p2{
+	color:#999;
+	margin-top:12px;
+	margin-left: 26px;
+	padding: 15px;
+	background:#F7F7F7;
+	border:1px solid #E6E6E6;
+}
+#md_topic_vip .order_p2p .half_wd .c1{
+	color: #2B8CC9;
+}
+#md_topic_vip .order_p2p .half_wd .c2{
+	color: #525252;
+	padding:0 5px;
+}
+#md_topic_vip .order_p2p .half_wd .c3{
+	color: #525252;
+}
+#md_topic_vip .order_p2p .a_list li{
+	overflow: hidden;
+	border-bottom: 1px dashed #E6E6E6;
+}
+#md_topic_vip .order_p2p .a_list li.last{
+	border-bottom: none;
+}
+#md_topic_vip .order_p2p .a_list li img{
+	width: 68px;
+	height: 81px;
+}
+#md_topic_vip .order_p2p .half_wd .a{
+	font-size: 18px;
+	font-family: 'Microsoft Yahei';
+	color:#2B8CC9;
+	font-weight: 700;
+	margin-right:15px;
+}
+#md_topic_vip .order_p2p .half_wd .jl_tx{
+	margin-right: 10px;
+}
+#md_topic_vip .order_p2p .half_wd .jl_name{
+	font-size: 14px;
+	color: #1F76AD;
+}
+#md_topic_vip .order_p2p .half_wd .info{
+	color: #999999;
+	margin-top: 20px;
+	margin-left: 112px;
+	font-size: 12px;
+}
+/*弹出的预约框z-index设高*/
+.JFZDialog{
+	z-index: 100000;
+}
+.disNone{
+	display:none;
+}

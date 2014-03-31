@@ -1,0 +1,234 @@
+:root .forex_top_form {filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00000000', EndColorStr='#00000000')\9;}
+/*sprite*/
+.forex_right .dt_hd,
+.forex_right .dd_bd .list_1 .num,
+.forex_right .dd_bd .list_1 .next,
+.forex_right .dd_bd .list_2 .num,
+.forex_right .dd_bd .list_3 .circle,
+.forex_right .dd_bd .list_4 .num,
+.forex_left .left_hd .left_hd_state,
+.forex_detail_item .item_hd .item_hd_con,
+.forex_detail_list .company_detail .company_link,
+.forex_left .left_bd .control_wrap .link_1{ background: url(../../../img/abvert/forex/forex_sprite.png) no-repeat; _background: url(../../../img/abvert/forex/forex_sprite.gif) no-repeat;}
+.forex_right .dt_hd.hd_1{background-position: -164px 0;}
+.forex_right .dt_hd.hd_2{background-position: -164px -20px;}
+.forex_right .dt_hd.hd_3{background-position: -164px -40px;}
+.forex_right .dt_hd.hd_4{background-position: -164px -60px;}
+.forex_right .dd_bd .list_1 .n_1{background-position: 0px 0px;}
+.forex_right .dd_bd .list_1 .n_2{background-position: -41px 0px;}
+.forex_right .dd_bd .list_1 .n_3{background-position: -82px 0px;}
+.forex_right .dd_bd .list_1 .next{background-position: -318px -80px;}
+.forex_right .dd_bd .list_2 .n_1{background-position: 0 -40px;}
+.forex_right .dd_bd .list_2 .n_2{background-position: -41px -40px;}
+.forex_right .dd_bd .list_2 .n_3{background-position: -82px -40px;}
+.forex_right .dd_bd .list_2 .n_4{background-position: -123px -40px;}
+.forex_right .dd_bd .list_3 .circle{background-position: -134px -205px;}
+.forex_right .dd_bd .list_4 .n_1{background-position: -134px -130px;}
+.forex_right .dd_bd .list_4 .n_2{background-position: -134px -155px;}
+.forex_right .dd_bd .list_4 .n_3{background-position: -134px -180px;}
+.forex_left .s_1 .left_hd .left_hd_state{background-position: -164px -80px;}
+.forex_left .s_2 .left_hd .left_hd_state,
+.forex_detail_item .item_hd .item_hd_con{background-position: -164px -131px;}
+.forex_left .s_3 .left_hd .left_hd_state{background-position: -164px -182px;}
+.forex_left .s_1 .left_bd .control_wrap .link_1,
+.forex_left .s_2 .left_bd .control_wrap .link_1{background-position: 0 -130px;}
+.forex_left .s_3 .left_bd .control_wrap .link_1{background-position: 0 -176px;}
+.forex_detail_list .company_detail .company_link{background-position: 0 -80px;}
+
+/*forextop*/
+.forex_container{padding-top:0; font-size: 14px;}
+.forex_top{border-bottom: 5px solid #ededed;}
+.forex_top_da{ background-color: #fff; position: relative;z-index: 1;}
+.forex_top_da .forex_banner{ text-align: center;}
+.forex_top_da .forex_banner .img{display: block; height: 445px;}
+.forex_top_da .banner_list{height: 445px;}
+.forex_top_da .banner_list .banner_item{width: 100%; height: 445px; text-align: center; position: absolute;top:0;left: 0; z-index: 10;}
+.forex_top_da .banner_list .banner_item .img{display: block; height: 445px;}
+.forex_top_da .banner_control{ position: absolute; bottom: 65px; left: 50%; z-index: 11;}
+.forex_top_da .banner_control li{ float: left; width: 10px; height: 10px;margin: 0 4px; border-radius: 5px; background-color: #95815B; cursor: pointer;}
+.forex_top_da .banner_control li.active{background-color: #C80000}
+.forex_top_banner{height: 500px; background: url(../../../img/abvert/forex/forex_banner.png) no-repeat center center #f9bc00;}
+.forex_top_form{float: right;width:250px; height: 430px; margin: 35px 0; padding: 0 38px; background: rgba(0,0,0,.2);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000)\9;}
+.forex_top_form .tit{padding: 20px 0; font-size: 20px; color: #fff;}
+.forex_top_form .input_wrap{padding-top: 5px; font-size: 12px; font-family:tahoma, arial,'Hiragino Sans GB','\5b8b\4f53'; position: relative;zoom:1;}
+.forex_top_form .input_wrap .input_label{height: 25px; line-height: 25px; color: #fff;}
+.forex_top_form .input_wrap .input_control{}
+.forex_top_form .input_wrap .input_txt{width: 230px; padding: 10px 10px 9px; border: none; background: #fff; font-size: 14px;}
+.forex_top_form .input_wrap .input_txt.noenter{color:#999;}
+.forex_top_form .input_wrap .input_msg{display: block; height: 25px; line-height: 25px; color: #FFFF99; position: absolute;top:5px; right: 0;}
+.forex_top_form .submit_wrap{margin-top: 30px;}
+.forex_top_form .submit_wrap .input_control{ height: 40px; background-color: #dfd33b;}
+.forex_top_form .submit_wrap .input_btn{width: 250px; height: 40px; border: none; background-color: #fe262a; font-size: 16px; color: #fff; position: relative; top: -5px;}
+.forex_top_data{ background: url(../../../img/abvert/forex/012.png) repeat;}
+.forex_top_data .layout{height: 80px; background-color:#F0E265; font-size: 20px; color: #7F601E;}
+.forex_top_data .d_1,
+.forex_top_data .d_2,
+.forex_top_data .d_3{float: left;height: 50px; line-height: 50px;}
+.forex_top_data .d_1{padding: 15px 45px 15px 35px; border-right:1px solid #D49C25;}
+.forex_top_data .d_1 img{margin-right: 5px; vertical-align: middle;}
+.forex_top_data .d_2{padding: 15px 35px; border-right:1px solid #D49C25;}
+.forex_top_data .d_3{padding: 15px 0 15px 35px; }
+.forex_top_data .num{display: inline-block; height: 50px; padding: 0 10px 0 20px;*padding-left:10px; background: url(../../../img/abvert/forex/013.png) repeat; vertical-align: middle; font-size: 38px; letter-spacing:12px; color: #FCF472;}
+/*forex_body*/
+.forex_body{ padding-bottom: 20px;}
+/*left*/
+.forex_left{float: left; width:655px;}
+.forex_left .left_wrap{margin-top: 30px; border: 1px solid #dfdfdf; background-color: #fff; box-shadow: 3px 3px 6px rgba(0,0,0,.1);}
+.forex_left .left_hd{ height: 40px; padding-left: 155px; background: #f7f7f7; font-size: 18px; position: relative; zoom:1;}
+.forex_left .left_hd .left_hd_state{width: 153px; height: 50px; line-height: 50px; text-align: center; font-size: 16px; color: #fff; position: absolute; top: -10px; left:0;}
+.forex_left .left_hd .left_hd_state .num{padding: 5px; font-size: 22px;}
+.forex_left .left_hd .left_hd_con{ line-height: 40px; color: #f60;}
+.forex_left .s_3 .left_hd .left_hd_con{ line-height: 40px; color: #525252;}
+.forex_left .left_bd{position: relative; zoom:1;}
+.forex_left .left_bd .img_wrap{float:left;width: 230px; padding: 15px;}
+.forex_left .left_bd .img_wrap img{width: 230px; height: 200px;}
+.forex_left .left_bd .info_wrap{float:left; width: 393px;padding-bottom: 45px;}
+.forex_left .left_bd .table_1{width:100%;margin-top: 5px; font-size: 14px;}
+.forex_left .left_bd .table_1 th{width:70px; padding:8px 0; vertical-align: top; color: #999999;}
+.forex_left .left_bd .table_1 td{padding: 8px 15px 8px 0;}
+.forex_left .left_bd .control_wrap{height:45px; line-height: 45px; position: absolute; bottom: 0; right:0;}
+.forex_left .left_bd .control_wrap .link_1{ float: left; width: 133px; height: 45px; margin-left: 15px; text-indent: -9999px;}
+/*left pagation*/
+.forex_left .left_pagation{margin-top: 20px; padding: 12px 0; border: 1px solid #dfdfdf; background-color: #f7f7f7;}
+.forex_left .left_pagation .pagination{width: 204px; margin: 0 auto;}
+.forex_left .left_pagation .pagination li{ float: left;width: 24px; height: 22px; background-color: #e6e6e6; line-height: 22px; text-align: center;}
+.forex_left .left_pagation .previous{margin-right: 6px;}					
+.forex_left .left_pagation .page{ margin-right: 6px;}
+.forex_left .left_pagation .page.selected{}
+.forex_left .left_pagation .next{}
+.forex_left .left_pagation a{display: block; color: #999;}
+/*right*/
+.forex_right{float: right; width: 323px; margin-top: 30px; border: 1px solid #dfdfdf; background-color: #fff; box-shadow: 3px 3px 6px rgba(0,0,0,.1); position: relative;}
+.forex_right .dl_wrap{height: auto; padding:25px 25px 0;}
+.forex_right .dl_wrap.h_1{height: 264px;}
+.forex_right .dl_wrap.h_2{height: 255px;}
+.forex_right .dl_wrap.h_3{height: 416px;}
+.forex_right .dt_hd{ height: 20px; text-indent: -9999px;}
+.forex_right .dd_bd{}
+.forex_right .dd_bd_1{padding-bottom: 30px;}
+.forex_right .dd_bd .p_info{padding: 20px 0;}
+.forex_right .dd_bd .wx_wrap{padding: 30px 0; text-align: center;}
+.forex_right .dd_bd .wx_wrap img{width: 254px; height: 254px; border: 5px solid #d9d9d9;}
+.forex_right .dd_bd .list_1{padding:3px 0 28px;}
+.forex_right .dd_bd .list_1 li{padding:25px 0 0 55px; position: relative;*zoom:1;}
+.forex_right .dd_bd .list_1 .num{width:40px; height: 40px; text-indent: -9999px; position: absolute; top:28px; left: 0;}
+.forex_right .dd_bd .list_1 .tit{line-height: 22px; font-size: 16px; color: #2B8CC9;}
+.forex_right .dd_bd .list_1 .next{ width: 32px; height: 46px; position: absolute; top:3px; right: 120px;}
+.forex_right .dd_bd .list_1 .con{line-height:24px;}
+.forex_right .dd_bd .list_2{ padding:25px 0 10px;}
+.forex_right .dd_bd .list_2 li{height: 40px;margin-bottom: 10px; padding-left:55px; position: relative;*zoom:1;}
+.forex_right .dd_bd .list_2 .num{width:40px; height: 40px; text-indent: -9999px; position: absolute; left: 0;}
+.forex_right .dd_bd .list_2 .con{line-height: 40px;}
+.forex_right .dd_bd .list_3{border-left: 1px solid #ccc; font-size: 12px; font-family:tahoma, arial,'Hiragino Sans GB','\5b8b\4f53';}
+.forex_right .dd_bd .list_3 li{margin-bottom:5px; padding-left: 20px; position: relative; zoom:1;}
+.forex_right .dd_bd .list_3 .circle{width:13px; height: 13px; position: absolute; left:-7px; top: 6px;}
+.forex_right .dd_bd .list_3 .date{line-height: 24px; color: #999;}
+.forex_right .dd_bd .list_3 .msg{height: 30px; padding-left: 10px; border: 1px solid #ccc; background-color: #f7f7f7; line-height: 30px;}
+.forex_right .dd_bd .list_4{font-size: 12px; font-family:'Hiragino Sans GB','\5b8b\4f53';}
+.forex_right .dd_bd .list_4 li{float:left; height: 24px;margin-right: 25px; *display: inline;}
+.forex_right .dd_bd .list_4 li.last{margin-right: 0;}
+.forex_right .dd_bd .list_4 a{color: #525252;}
+.forex_right .dd_bd .list_4 .num{float: left; width:24px; height: 24px;}
+.forex_right .dd_bd .list_4 .con{float: left;padding: 0 5px; background: #ebebeb; line-height: 24px;}
+.forex_right .article_wrap{ padding: 10px 25px;}
+.forex_right .article_list{font-size: 12px;}
+.forex_right .article_list li{float: left; height: 24px;overflow: hidden;}
+.forex_right .article_list li a{float: left;width: 260px; height: 18px; padding:3px 0 3px 6px; overflow: hidden;}
+.forex_right .article_list li .square{float: left; width: 4px; height: 4px; margin-top: 10px; background-color: #F65040; overflow: hidden; _display: inline;}
+/*detail*/
+.forex_detail{margin-top: 30px; border: 1px solid #aaa; box-shadow: 3px 3px 6px rgba(0,0,0,.1); background-color: #fff;}
+.forex_detail_list{}
+.forex_detail_list .company_detail{padding: 20px 25px 35px;}
+.forex_detail_list .company_detail .company_logo{float: left; width: 125px; height: 52px;}
+.forex_detail_list .company_detail .company_logo img{width: 125px; height: 52px;}
+.forex_detail_list .company_detail .company_tit{float: left;margin-left: 5px; line-height: 52px; font-size: 25px; color: #f60; _display: inline;}
+.forex_detail_list .company_detail .company_link{float: right; width: 162px; height: 49px; text-indent: -9999px;}
+.forex_detail_item{}
+.forex_detail_item .item_hd{ height: 39px; border-top:1px solid #dfdfdf; background: #f7f7f7; position: relative; zoom:1;}
+.forex_detail_item .item_hd .item_hd_con{width: 153px; height: 50px; line-height: 50px; text-align: center; font-size: 16px; color: #fff; position: absolute; top: -10px; left:0;}
+.forex_detail_item .item_bd{padding: 30px 0 35px;}
+.forex_detail_item .item_process{width: 910px; height: 75px; margin: 0 auto;background: url(../../../img/abvert/forex/023.gif) no-repeat left center;}
+.forex_detail_item .item_process .step{float: left;  height: 75px; margin-right: 50px; padding-right: 40px; line-height: 75px; text-align: right; font-size: 14px; color: #f60;font-weight:bold;}
+.forex_detail_item .item_process .s_1{width: 160px;}
+.forex_detail_item .item_process .s_2{width: 150px;}
+.forex_detail_item .item_process .s_3{width: 144px;}
+.forex_detail_item .item_process .s_4{width: 146px; margin-right: 0;}
+.forex_detail_item .item_explain_p{padding:0 30px; line-height: 20px;}
+.forex_detail_item .item_activerule_list{padding: 0 30px; line-height: 24px;}
+.forex_detail_item .item_activerule_list dl{float: left; margin-bottom: 7px;}
+.forex_detail_item .item_activerule_list dt{float: left; width: 80px; height: 24px; margin-right: 12px; background-color: #D4B96A; border-radius: 3px; text-align: center; color: #fff;}
+.forex_detail_item .item_activerule_list dd{ float: left;width: 845px;}
+.forex_detail_item .item_advantage_list{}
+.forex_detail_item .item_advantage_list dl{float: left; width: 189px; height: 110px; padding: 0 30px; border-right:1px dashed #d5d5d5; overflow: hidden;}
+.forex_detail_item .item_advantage_list dl.last{width: 188px; border-right:none;}
+.forex_detail_item .item_advantage_list dt{padding-bottom: 10px; text-align: center; font-size: 16px; color: #f60;}
+.forex_detail_item .item_advantage_list dd{line-height: 20px;}
+.forex_detail_item .item_interested_list{padding: 0 24px;}
+.forex_detail_item .item_interested_list dl{float: left;width: 230px;margin-right:10px;}
+.forex_detail_item .item_interested_list dl.last{margin-right: 0;}
+.forex_detail_item .item_interested_list dt img{width: 230px; height: 200px;}
+.forex_detail_item .item_interested_list dd .tit{display: block; padding: 5px 0; text-align: center; font-size: 14px; color: #f60;}
+.forex_detail_item .item_interested_list dd .con{height: 36px; line-height: 18px;overflow: hidden;}
+/*forex topic*/
+.forex_topic_container{padding: 32px 0 40px; background-color: #ededed;}
+.forex_topic_container .list_1{padding-top: 6px; border: 1px solid #aaa; box-shadow: 3px 3px 6px rgba(0,0,0,.1); background-color: #fff;}
+.forex_topic_container .list_1 .topic_item{}
+.forex_topic_container .list_1 .item_hd{ height: 65px; background-color: #f7f7f7;position: relative;}
+.forex_topic_container .list_1 .item_hd .con{width: 424px; height: 75px;background: url(../../../img/abvert/forex/001.gif) no-repeat left center; position: absolute; top: -10px; left: -19px;}
+.forex_topic_container .list_1 .item_hd .con span{display: block; width: 284px; height: 65px; line-height: 65px; text-align: center; font-size: 25px; color: #fff;}
+.forex_topic_container .list_1 .item_bd{}
+.forex_topic_container .list_1 .item_bd.bd_1{ padding: 60px 41px 64px;}
+.forex_topic_container .list_1 .item_bd.bd_2{ padding: 40px 0 80px;}
+.forex_topic_container .list_1 .item_bd.bd_3{ padding: 35px 0 70px;}
+.forex_topic_container .list_1 .item_bd.bd_4{ padding: 35px 0 0;}
+.forex_topic_container .list_1 .sublist_1{width: 916px; height: 209px;background: url(../../../img/abvert/forex/002.jpg) no-repeat center center; position: relative;}
+.forex_topic_container .list_1 .sublist_1 li{width: 234px; height:64px; padding: 6px 16px; line-height:32px; position: absolute;}
+.forex_topic_container .list_1 .sublist_1 .l_1{top: 0; left: 0;}
+.forex_topic_container .list_1 .sublist_1 .l_2{top: 0; right: 0;}
+.forex_topic_container .list_1 .sublist_1 .l_3{bottom: 5px; left: 0;}
+.forex_topic_container .list_1 .sublist_1 .l_4{bottom: 5px; right: 0;}
+.forex_topic_container .list_1 .tips_1{width: 860px; margin: 0 auto; padding: 18px 28px; border: 1px solid #ededed; background-color: #f7f7f7; font-size: 16px; color: #f60;}
+.forex_topic_container .list_1 .sublist_2{width: 916px; margin: 20px auto 0;}
+.forex_topic_container .list_1 .sublist_2 dl{float:left; padding-left:145px;}
+.forex_topic_container .list_1 .sublist_2 .dl_1{width:173px; background: url(../../../img/abvert/forex/003.png) no-repeat left top;}
+.forex_topic_container .list_1 .sublist_2 .dl_2{width:173px; background: url(../../../img/abvert/forex/004.png) no-repeat left top;}
+.forex_topic_container .list_1 .sublist_2 .dl_3{width: 135px; background: url(../../../img/abvert/forex/005.png) no-repeat left top;}
+.forex_topic_container .list_1 .sublist_2 dt{margin-bottom: 5px; line-height: 2em; font-size: 18px; font-weight: bold;}
+.forex_topic_container .list_1 .sublist_2 dd{line-height: 32px; font-size: 16px;}
+.forex_topic_container .list_1 .qa_list{ width: 916px; margin: 0 auto;}
+.forex_topic_container .list_1 .qa_item{}
+.forex_topic_container .list_1 .qa_item .qa_hd{height: 30px;padding-left: 20px; background: url(../../../img/abvert/forex/011.png) no-repeat left center; line-height: 30px; font-size: 16px; }
+.forex_topic_container .list_1 .qa_item .qa_bd{display: none; margin: 10px 0; padding:10px 15px; border: 1px solid #ededed; background-color: #f7f7f7;line-height: 1.8em; color: #999;position: relative;}
+.forex_topic_container .list_1 .qa_item .qa_bd .arrow{width: 0; height: 0;border-width:0 12px 12px 12px;border-style:none dashed solid dashed;overflow: hidden; position: absolute; left: 20px;} 
+.forex_topic_container .list_1 .qa_item .qa_bd .a_1{border-color:transparent  transparent #ededed transparent ; top: -13px;}
+.forex_topic_container .list_1 .qa_item .qa_bd .a_2{border-color:transparent  transparent #f7f7f7 transparent ; top: -12px;}
+.forex_topic_container .list_1 .qa_item.active .qa_bd{display: block;}											
+.forex_topic_container .tb_1{width: 998px;}
+.forex_topic_container .tb_1 th,
+.forex_topic_container .tb_1 td{padding: 10px 36px;}
+.forex_topic_container .tb_1 thead{ text-align: center; font-size: 20px;}
+.forex_topic_container .tb_1 thead th{border-right: 1px solid #fff; background-color: #efefef;}
+.forex_topic_container .tb_1 thead th.last{border-right:none;}
+.forex_topic_container .tb_1 thead td{border-bottom: 5px solid #fff;background-color: #f7f7f7; color: #f60;}
+.forex_topic_container .tb_1 tbody th,
+.forex_topic_container .tb_1 tbody td{border-right:1px solid #fff; border-bottom: 1px solid #ededed;}
+.forex_topic_container .tb_1 tbody td.last{border-right:none;}
+.forex_topic_container .tb_1 tbody th{text-align: center; font-size: 18px;}
+.forex_topic_container .forex_contact_tit{height: 62px;background: url(../../../img/abvert/forex/008.png) no-repeat left center; }
+.forex_topic_container .forex_contact{padding: 23px;}
+.forex_topic_container .forex_contact .c_1{width: 315px;}
+.forex_topic_container .forex_contact .c_1 dl{float: left; width: 315px; height: 32px; margin-bottom: 25px; line-height: 32px; font-size: 16px;}
+.forex_topic_container .forex_contact .c_1 .num{ width: 32px; height: 32px; margin-right: 10px; background: url(../../../img/abvert/forex/007.gif) no-repeat left center;line-height: 32px; text-align: center; font-size: 20px; color: #fff;}
+.forex_topic_container .forex_contact .c_2{width: 300px; padding: 0 25px; border: 1px solid #ededed; border-top: none; border-bottom: none;}
+.forex_topic_container .forex_contact .input_wrap{margin-bottom: 15px;padding-left: 75px; position: relative;zoom:1;}
+.forex_topic_container .forex_contact .input_label{line-height: 32px; position: absolute; top: 0; left: 0;}
+.forex_topic_container .forex_contact .input_control{}
+.forex_topic_container .forex_contact .input_txt{width: 210px;height: 21px; padding: 5px; border: 1px solid #dcdcdc; background: #fff;font-size: 14px;}
+.forex_topic_container .forex_contact .input_txt.noenter{color:#999;}
+.forex_topic_container .forex_contact .input_msg{width: 213px; height: 28px; padding-left: 5px; background-color: #fff; line-height: 28px; color: #f00; position: absolute; top:3px; left: 76px;}
+.forex_topic_container .forex_contact .submit_wrap{padding-left: 75px;}
+.forex_topic_container .forex_contact .submit_wrap .input_control{ height: 40px;background-color: #dfd33b;}
+.forex_topic_container .forex_contact .input_btn{width: 220px; height: 40px; border: none; background-color: #fe262a; font-size: 16px; color: #fff; position: relative; top: -5px;}
+.forex_topic_container .forex_contact .c_3{ font-size: 18px;}
+.forex_topic_container .forex_contact .c_3 th{padding:18px 10px 18px 20px;}
+.forex_topic_container .forex_contact .c_3 td{ font-size: 22px;}

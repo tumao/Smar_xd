@@ -1,0 +1,55 @@
+/*
+ * @author :zym
+ * @data :2014/02/19/
+ * @desc :信托、私募、有限合伙、资产管理头部banner
+ **/
+:root .xt_banner_wrap .banner_control li,
+:root.xt_banner_stepwrap,
+:root .xt_fastsearch{filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00000000', EndColorStr='#00000000')\9;}
+
+.xt_top{background-color: #fff;}
+.xt_banner_wrap{height: 433px; position: relative; z-index: 20;}
+.xt_banner_wrap .banner_list{}
+.xt_banner_wrap .banner_list .banner_item{width: 100%; height: 433px;position: absolute; top: 0; left: 0; z-index: 21;}
+.xt_banner_wrap .banner_list .banner_item .bg{display: block; cursor: pointer;}
+.xt_banner_wrap .banner_list .banner_item .banner_da{display: block; height: 433px;}
+.xt_banner_wrap .banner_control{margin-left: 290px; position: absolute; bottom:116px; left:50%; z-index: 22;}
+.xt_banner_wrap .banner_control li{float: left; width: 55px; height: 5px; margin-right: 5px;background-color:rgba(0,0,0,.2);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000); overflow: hidden; cursor: pointer; }
+.xt_banner_wrap .banner_control li.active{background-color:rgba(0,0,0,.45);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#73000000, endColorstr=#73000000);}
+.xt_banner_stepwrap{height: 96px; margin-top: 65px;background-color:rgba(0,0,0,.2);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000); position: relative; z-index: 90;}
+.xt_banner_stepwrap .layout{height: 96px; background:url(../../img/common/topbanner/banner_step.png) no-repeat center center;}
+.xt_banner_stepwrap .xt_banner_steps{padding-top: 28px;}
+.xt_banner_stepwrap .xt_banner_steps .item{float: left; width: 120px; padding-left: 62px; _display: inline;}
+.xt_banner_stepwrap .xt_banner_steps .i_1{}
+.xt_banner_stepwrap .xt_banner_steps .i_2{ margin-left: 106px;}
+.xt_banner_stepwrap .xt_banner_steps .i_3{ margin-left: 74px;}
+.xt_banner_stepwrap .xt_banner_steps .i_4{margin-left: 82px;}
+.xt_banner_stepwrap .xt_banner_steps .item .tit{display: block; font-size: 14px; color: #ff9;}
+.xt_banner_stepwrap .xt_banner_steps .item .info{color: #fff;}
+.xt_fastsearch_wrap{width: 300px; height: 230px; margin-left: -500px; padding-top: 42px; position: relative; left: 50%; z-index: 100;}
+.xt_fastsearch_wrap .layout{width: 300px;}
+.xt_fastsearch{width: 256px; height: 230px; padding: 0 22px; background-color:rgba(0,0,0,.2);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000);}
+.xt_fastsearch .xt_fs_hd{line-height: 38px; border-bottom: 1px solid #E9F7FF;}
+.xt_fastsearch .xt_fs_hd a{float: right; color: #FFFF99;}
+.xt_fastsearch .xt_fs_hd .txt{ float: left; font-size: 16px; font-weight: bold; color: #f8f8f8;}
+.xt_fastsearch .xt_fs_bd .input_wrap{ position: relative;}
+.xt_fastsearch .xt_fs_bd .input_wrap.i_1{ margin-top: 22px; z-index: 130;}
+.xt_fastsearch .xt_fs_bd .input_wrap.i_2{ margin-top: 10px; z-index: 120;}
+.xt_fastsearch .xt_fs_bd .input_label{float: left; width: 76px; height: 40px; line-height: 40px; color: #f8f8f8;}
+.xt_fastsearch .xt_fs_bd .input_control{ float: right; width: 180px; }
+.xt_fastsearch .xt_fs_bd .input_control .cmd_wrap{ height: 40px; padding-left: 10px;background-color: #fff; position: relative;z-index: 110;}
+.xt_fastsearch .xt_fs_bd .input_control .cmd_btn{ line-height: 40px; }
+.xt_fastsearch .xt_fs_bd .input_control .cmd_btn .txt{ position: relative;}
+.xt_fastsearch .xt_fs_bd .input_control .cmd_btn .arrow{ width: 0; height: 0;border-color:#999 transparent  transparent transparent ;border-width:5px 5px 0 5px;border-style:solid dashed none dashed;overflow: hidden;position: absolute;top: 17px; right: 10px;}
+.xt_fastsearch .xt_fs_bd .input_control .cmd_con{display: none; background-color: #fff; position: absolute; top:41px; left: 0;}
+.xt_fastsearch .xt_fs_bd .input_control .cmd_con .list{width: 180px;}
+.xt_fastsearch .xt_fs_bd .input_control .cmd_con .list li{display: block; height: 18px; padding:9px 10px; border-bottom: 1px solid #e3e5e5; line-height: 18px; cursor: pointer;}
+.xt_fastsearch .xt_fs_bd .input_control .cmd_con .list li.hover,
+.xt_fastsearch .xt_fs_bd .input_control .cmd_con .list li:hover{background-color: #efefef;}
+.xt_fastsearch .xt_fs_bd .input_control .cmd_con .sum_list{}
+.xt_fastsearch .xt_fs_bd .input_control .cmd_con .annual_list{}
+.xt_fastsearch .xt_fs_bd .input_control .cmd_wrap.active .cmd_btn .arrow{border-color:transparent  transparent #999 transparent ;border-width:0 5px 5px 5px;_border-width:0 6px 6px 6px;border-style:none dashed solid dashed;}
+.xt_fastsearch .xt_fs_bd .input_control .cmd_wrap.active .cmd_con{display: block;}
+.xt_fastsearch .xt_fs_bd .submit_wrap{ margin-top: 20px;}							
+.xt_fastsearch .xt_fs_bd .submit_wrap .input_control{}							
+.xt_fastsearch .xt_fs_bd .submit_wrap .input_btn{width: 179px; height: 35px; border: none; background:url(../../img/common/topbanner/btn_bg_1.gif) no-repeat;}	

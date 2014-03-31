@@ -1,0 +1,177 @@
+/*
+ * @author : zym
+ * @data   : 2014/02/18/
+ * @desc   : 私募首页
+ *
+ **/
+:root .sm_prolist_2 .pro_manager{filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00000000', EndColorStr='#00000000')\9;}
+
+.xt_fastsearch .letter_tab{width: 460px; margin-left: -1px; border: 1px solid #969696;}
+.xt_fastsearch .letter_tab .tab_hd{height: 36px; border-bottom: 1px solid #e6e6e6; background-color: #f7f7f7; position: relative; z-index: 104;}
+.xt_fastsearch .letter_tab .tab_control{}
+.xt_fastsearch .letter_tab .tab_control_item{ float: left; display: inline; width:60px; height: 18px; margin: 0 12px; padding: 9px 0; text-align: center; color: #2B8CC9; cursor: pointer;}
+.xt_fastsearch .letter_tab .tab_control_item:hover,
+.xt_fastsearch .letter_tab .tab_control_item.hover{color: #f60;}
+.xt_fastsearch .letter_tab .tab_control_item.active{color: #f60;}
+.xt_fastsearch .letter_tab .tab_hd .tab_shadow{ width: 60px; height: 3px; background-color: #f60; position: absolute; left:12px; bottom: -1px;}
+.xt_fastsearch .letter_tab .tab_hd .tab_shadow .arrow{width: 0; height: 0; border-color:transparent  transparent #f60 transparent ;	border-width:0 5px 5px 5px;	border-style:none dashed solid dashed; overflow: hidden; position: absolute; top: -5px; left: 25px;}
+.xt_fastsearch .letter_tab .tab_bd a{padding:0 3px; color: #525252;}
+.xt_fastsearch .letter_tab .tab_bd a:hover{background-color: #2b8cc9; color: #fff;}
+.xt_fastsearch .letter_tab .tab_con{display: none;}
+.xt_fastsearch .letter_tab .tab_con.active{display: block;}
+.xt_fastsearch .letter_tab .tc_1{ padding: 10px 0 10px 20px;}
+.xt_fastsearch .letter_tab .tc_1 li{float: left; width: 86px; padding: 6px 0;}
+.xt_fastsearch .letter_tab .tc_1 a{ float: left; }
+.xt_fastsearch .letter_tab .tc_2 .d_dl{ padding: 10px 0 10px 16px; border-bottom: 1px solid #e6e6e6;}
+.xt_fastsearch .letter_tab .tc_2 .d_dl.last{border-bottom: none;}
+.xt_fastsearch .letter_tab .tc_2 .d_dt{ float: left; width: 40px;}
+.xt_fastsearch .letter_tab .tc_2 .d_dd{float: left;}
+.xt_fastsearch .letter_tab .tc_2 .d_dd ul{float:left; width:400px;}
+.xt_fastsearch .letter_tab .tc_2 .d_dd li{ float: left; width:80px; margin-bottom: 3px;}
+.xt_fastsearch .letter_tab .tc_2 .d_dd a{float: left;}
+
+.sm_container{padding: 25px 0 20px 0;}
+/*container top*/
+.sm_prolist_1{}
+.sm_prolist_1 .item{ float: left; width: 250px; margin-right: -1px; border-right: 1px solid #e3e5e5;  position: relative;}
+.sm_prolist_1 .item.last{width:248px;}
+.sm_prolist_1 .item.hover,
+.sm_prolist_1 .item:hover{background-color: #f7f7f7;}
+.sm_prolist_1 .item .state{display: block; width: 52px; height: 37px; position: absolute; top: 1px; right:1px;}
+.sm_prolist_1 .item .s_1{background:url(../../img/xintuo/009.gif) no-repeat;}
+.sm_prolist_1 .item .s_2{background:url(../../img/xintuo/008.gif) no-repeat;}
+.sm_prolist_1 .pro_wrap{padding: 0 20px;}
+.sm_prolist_1 .pro_name{display: block; height: 24px; padding: 14px 0; line-height: 24px; font-size: 16px; overflow: hidden;}															
+.sm_prolist_1 .pro_info_list{ height: 128px;}
+.sm_prolist_1 .pro_info_list .dl_1,
+.sm_prolist_1 .pro_info_list .dl_3{ float: left; width: 100px; margin-bottom: 6px; text-align: center;}
+.sm_prolist_1 .pro_info_list .dl_3{ margin-left: 8px; _display: inline;}
+.sm_prolist_1 .pro_info_list .dl_2{ float: left; height: 24px; line-height: 24px;}
+.sm_prolist_1 .pro_info_list .dl_2 .tit{ float: left; width: 62px; color: #999;}
+.sm_prolist_1 .pro_info_list .dl_2 .con{ float: left; width: 146px; color: #2B8CC9; overflow: hidden;}
+.sm_prolist_1 .pro_income_tit{padding: 4px 0; background-color: #A7C1E7; text-align: center; color: #fff;}
+.sm_prolist_1 .pro_income{height: 40px; background-color: #efefef; line-height: 40px; text-align: center; color: #f60; overflow: hidden;}
+.sm_prolist_1 .pro_income .num{margin-right:2px; white-space: nowrap; font-size: 18px;}
+.sm_prolist_1 .pro_comment{height: 36px; padding: 10px 0; overflow: hidden;}
+.sm_prolist_2{margin: 0 -1px -1px 0;}
+.sm_prolist_2 .item{ float: left; width:341px;  border-right: 1px solid #e3e5e5; border-bottom: 1px solid #e3e5e5; position: relative;}
+.sm_prolist_2 .item.hover,
+.sm_prolist_2 .item:hover{background-color: #f7f7f7;}
+.sm_prolist_2 .item .pro_wrap{padding:16px 12px 20px 20px;}
+.sm_prolist_2 .item .l_1{margin-bottom: 16px; font-size: 14px;}
+.sm_prolist_2 .item .l_2{float: left; margin-bottom: 6px;}
+.sm_prolist_2 .item .l_2 dt{float: left; width: 62px; color: #999;}
+.sm_prolist_2 .item .l_2 dd{float: left; width: 166px;}
+.sm_prolist_2 .item .l_3{ float: left; line-height: 24px;}
+.sm_prolist_2 .item .l_3 dt{float: left; width: 70px; color: #999;}
+.sm_prolist_2 .item .l_3 dd{float: left; width: 72px;}
+.sm_prolist_2 .item .l_4{ float: left; line-height: 24px;}
+.sm_prolist_2 .item .l_4 dt{float: left; width: 58px; color: #999;}
+.sm_prolist_2 .item .l_4 dd{float: left; width: 72px;}
+.sm_prolist_2 .item .pro_imgwrap{float: left; width: 69px; height: 85px; position: relative;}
+.sm_prolist_2 .item .pro_imgwrap img{ width: 69px; height: 85px;}
+.sm_prolist_2 .item .pro_imgwrap .pro_manager{width: 69px; height: 20px; background-color:rgba(0,0,0,.45);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#73000000, endColorstr=#73000000); line-height: 20px; text-align: center; color: #fff; position: absolute; bottom:0 ; left: 0;}
+.sm_prolist_2 .item .pro_infowrap{float: left; width: 228px; height: 85px; margin-left: 10px; overflow: hidden;}
+.sm_prolist_2 .item .sm_control_wrap{margin-top: 10px;}
+.sm_prolist_2 .item .sm_btn{ float: left; width: 85px; height: 18px; padding: 5px 0; line-height: 18px; text-align: center; color: #fff;}
+.sm_prolist_2 .item .sm_btn:hover{ float: left; color: #fff;}
+.sm_prolist_2 .item .sm_btn_1{float: left; background-color: #2B8CC9;}
+.sm_prolist_2 .item .sm_btn_1:hover{background-color: #257BB4;}
+.sm_prolist_2 .item .sm_btn_2{float: left; margin-left: 5px; background-color:#FF7200; _display: inline;}
+.sm_prolist_2 .item .sm_btn_2:hover{background-color:#D93600;}
+											
+/*left*/
+.sm_left{float: left; width: 685px;}
+.sm_left_item{ margin-top: 25px;}
+.sm_left_item .tab_hd .tab_control{ float: left;}
+.sm_left_item .tab_hd .tab_control_item{float: left;height: 14px; padding:11px 0 13px; cursor: pointer; position: relative; z-index: 11; *zoom:1;}
+.sm_left_item .tab_hd .tab_control_item span{display:inline-block; height: 14px;padding: 0 14px; border-right: 1px solid #dbdbdb; line-height: 14px;}
+.sm_left_item .tab_hd .tab_control_item.last span{ border-right: none;}
+.sm_left_item .tab_hd .tab_control_item.active{font-weight: bold; color: #f60;}
+.sm_left_item .tab_hd .tab_control_item.active .arrow{display: block;}
+.sm_left_item .tab_hd .tab_control_item .arrow{display: none; width: 0; height: 0; margin-left: -5px; border-color:transparent  transparent #257BB4 transparent ;border-width:0 5px 5px 5px;border-style:none dashed solid dashed; overflow: hidden; position: absolute; bottom: 0; left: 50%;}
+.sm_left_item .tab_bd .tab_con{display: none;padding-bottom: 10px;}
+.sm_left_item .tab_bd .tab_con.active{display: block;}
+.sm_left_item .sm_table_1{}
+.sm_left_item .sm_table_1 tr{}
+.sm_left_item .sm_table_1 tr.hover td,
+.sm_left_item .sm_table_1 tr:hover td{background-color: #f7f7f7;}
+.sm_left_item .sm_table_1 tr.hover .pro_name,
+.sm_left_item .sm_table_1 tr:hover .pro_name{ position: relative; z-index: 100;}
+.sm_left_item .sm_table_1 tr.hover .pro_comment,
+.sm_left_item .sm_table_1 tr:hover .pro_comment{display: block;}
+.sm_left_item .sm_table_1 th{height: 40px; border-bottom: 1px solid #e3e5e5; background-color: #f7f7f7; text-align: left; vertical-align: middle; }
+.sm_left_item .sm_table_1 td{height: 40px; text-align: left; vertical-align: middle;}
+.sm_left_item .sm_table_1 th.tc,
+.sm_left_item .sm_table_1 td.tc{text-align:center;}
+.sm_left_item .sm_table_1 td .num{display: inline-block; width: 22px; height: 22px; background:url(../../img/common/uc/016.gif) no-repeat; line-height: 22px; text-align: center; color: #fff;}
+.sm_left_item .sm_table_1 td .top{background:url(../../img/common/uc/015.gif) no-repeat;}
+.sm_left_item .sm_table_1 .pro_name{height: 18px; padding: 11px 0;}
+.sm_left_item .sm_table_1 .pro_income{padding-right: 16px;}
+.sm_left_item .sm_table_1 .pro_income.last{padding-right: 25px;}
+.sm_left_item .sm_table_1 .pro_comment{display: none; width: 290px; padding: 10px 17px; border:1px solid #ccc; box-shadow: 2px 2px 4px rgba(0,0,0,.1); background-color: #fff; position: absolute; top:40px; left:0; z-index: 110;}
+.sm_left_item .sm_table_1 .pro_comment .arrow{width: 0; height: 0;border-width:0 9px 9px 9px;border-style:none dashed solid dashed; overflow:hidden; position: absolute; left: 17px;}
+.sm_left_item .sm_table_1 .pro_comment .arrow.a_1{ border-color:transparent  transparent #ccc transparent ; top: -10px;}
+.sm_left_item .sm_table_1 .pro_comment .arrow.a_2{ border-color:transparent  transparent #fff transparent ; top: -9px;}
+.sm_left_item .xt_qa_wrap{padding: 12px 22px 30px;}
+.sm_left_item .xt_qa_wrap .xt_qa_tit{line-height: 32px; font-weight: bold; font-size: 14px; color: #f60;}						
+.sm_left_item .xt_qa_wrap .xt_qa_txt{float: left; width: 621px; padding: 5px 8px; height: 100px; border: 1px solid #c9c9c9;}				
+.sm_left_item .xt_qa_wrap .xt_qa_txt.no_cur{color: #999;}				
+.sm_left_item .xt_qa_wrap .xt_qa_control{ float: right; margin-top: 10px;}
+.sm_left_item .xt_qa_wrap .xt_qa_control .qa_btn{float: left; width: 111px; height: 36px; background-color: #f60; line-height: 36px; text-align: center; color: #fff;}
+.sm_left_item .xt_qa_wrap .xt_qa_control .qa_btn:hover{ color: #fff;}
+.sm_left_item .xt_qa_list{ padding: 15px 13px; border-top: 1px solid #e3e5e5; background-color: #fafafa;}
+.sm_left_item .xt_qa_list li{float: left; width: 308px; height: 24px; padding-left: 8px; line-height: 24px; overflow: hidden;}
+.sm_left_item .xt_qa_list li .square{float: left; width: 3px; height: 3px; margin:11px 9px 0 0 ; background-color: #2B8CC9; overflow: hidden;}
+
+/*right*/
+.sm_right{float: right; width: 300px; margin-top: 25px;}
+.sm_right_ad{ margin-top: 15px;}
+.sm_right_item{margin-bottom: 15px; border: 1px solid #e3e5e5; background-color: #fff;}
+.sm_right_item .sm_r_hd{height: 24px; padding: 7px 15px; border-bottom: 1px solid #e3e5e5; background-color: #f7f7f7; font-size: 16px; color: #2B8CC9;}
+.sm_right_item .sm_r_bd{}
+/*zg*/
+.sm_right_item .advantage_list_sm{height: auto; padding:10px 0 5px 30px;}
+.sm_right_item .advantage_list_sm .advantage_item{float: left; margin-bottom:5px; line-height: 19px;}
+.sm_right_item .advantage_list_sm .advantage_item .tit{float: left; width: 45px; height: 45px; background:url(../../img/simu/sm_sprite.gif) no-repeat;}
+.sm_right_item .advantage_list_sm .advantage_item .t_1{ background-position: 0 0;}
+.sm_right_item .advantage_list_sm .advantage_item .t_2{ background-position: -46px 0;}
+.sm_right_item .advantage_list_sm .advantage_item .t_3{ background-position: -92px 0;}
+.sm_right_item .advantage_list_sm .advantage_item .t_4{ background-position: -138px 0;}
+.sm_right_item .advantage_list_sm .advantage_item .con{float: left; width: 184px; padding-left:14px; line-height: 45px;}
+
+.sm_right_item .article_wrap{padding: 10px 20px 15px 18px;}
+.sm_right_item .article_list{}
+.sm_right_item .article_list li{height: 24px;overflow: hidden;}
+.sm_right_item .article_list li a{float: left;width: 250px; height: 18px; padding:3px 0 3px 6px; overflow: hidden;}
+.sm_right_item .article_list li .square{float: left; width: 4px; height: 4px; margin-top: 10px; background-color: #F65040; overflow: hidden; _display: inline;}
+.sm_right_item .sm_prodetail_week{background-color: #FFFEF3;}
+.sm_right_item .sm_prodetail .detail_wrap{height: 145px; padding: 0 18px 0 20px;}
+.sm_right_item .sm_prodetail .pro_info{height: 71px; padding: 8px 0;}
+.sm_right_item .sm_prodetail .pro_name{display: block;height: 18px; padding-bottom: 5px; overflow: hidden;}
+.sm_right_item .sm_prodetail .pro_infolist{}
+.sm_right_item .sm_prodetail .pro_infolist dl{float: left;}
+.sm_right_item .sm_prodetail .pro_infolist dt{float: left; width: 60px; padding: 3px 0; color: #999;}
+.sm_right_item .sm_prodetail .pro_infolist dd{float: left; width: 55px; padding: 3px 0; color: #f60;}
+.sm_right_item .sm_prodetail .pro_infolist .d_2 dt{width: 90px;}
+.sm_right_item .sm_prodetail .pro_comment{height: 36px; padding: 10px 0  12px; overflow: hidden;}
+.sm_right_item .sm_prodetail .pro_control{float: right; padding: 10px 20px;}
+.sm_right_item .sm_prodetail .pro_control .count{float:left;margin-right: 15px; _display: inline;}
+.sm_right_item .sm_prodetail .pro_control .btn{float: left; height: 18px;}
+.sm_right_item .sm_prodetail .pro_control .btn .xt_ico_1{float: left; width: 13px; height: 13px;margin:3px 3px 0 0; background:url(../../img/xintuo/006.gif) no-repeat; _display: inline;}
+.sm_right_item .search_list{}
+.sm_right_item .search_list .item{ float: left; width: 298px; padding: 6px 0; border-bottom: 1px solid #e3e5e5;}
+.sm_right_item .search_list .item.last{border-bottom: none;}
+.sm_right_item .search_list .tit{ float: left; width: 58px; text-align: right; color: #999;}
+.sm_right_item .search_list .con{ float: left; width: 240px;}
+.sm_right_item .search_list .con a{float: left; padding:0 9px; line-height: 20px; white-space: nowrap;}
+.sm_right_item .subscribe_hd{ padding: 15px 0 10px 22px; font-size: 16px; color: #2B8CC9;}
+.sm_right_item .subscribe_list{ width: 246px; margin: 0 auto;}
+.sm_right_item .subscribe_list li{height: 20px; padding:6px 0; line-height: 20px;}
+.sm_right_item .subscribe_list li .xt_ico_2{float: left; width: 13px; height: 13px; margin: 4px 7px 0 0; background:url(../../img/xintuo/005.gif) no-repeat; _display: inline;}
+.sm_right_item .subscribe_list li .tel{font-size: 14px; color: #F6503F;}
+.sm_right_item .subscribe_control{ width:252px; margin: 0 auto; padding: 13px 0 18px;}
+.sm_right_item .subscribe_control .subscribe_btn{ float: left; height: 41px; line-height: 40px; color: #fff;}
+.sm_right_item .subscribe_control .subscribe_btn:hover{color: #fff;}
+.sm_right_item .subscribe_control .totel{ width: 76px; padding-left: 45px; background:url(../../img/xintuo/004.gif) no-repeat;}
+.sm_right_item .subscribe_control .toemail{ width: 73px; margin-left: 10px; padding-left: 48px; background:url(../../img/xintuo/003.gif) no-repeat;}								

@@ -1,0 +1,86 @@
+/*
+ * @author : zym
+ * @data   : 2014/01/02/
+ * @desc   : 金斧子p2p搜索
+ *
+ **/
+/*search result*/
+.p2p_search_result{ margin-top:15px; border:1px solid #aaa; border-top-color: #e5e5e5; background-color: #fff;box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);}
+.p2p_sr_hd{height: 37px;border-bottom: 2px solid #257bb4; background: #f7f7f7; position: relative; zoom:1; z-index: 100;}
+.p2p_sr_hd .sr_hd_con{ height: 39px; padding: 0 60px; border-bottom: 2px solid #257bb4; background: #2b8cc9; line-height: 38px; font-size: 16px; color: #fff; position: absolute; bottom: -2px;left: -11px; zoom:1;}
+.p2p_sr_hd .sr_hd_shadow{width: 11px; height: 10px; background: url(../../img/common/search/tit_shadow.gif) no-repeat; overflow: hidden; position: absolute; bottom: -12px;left:0;}
+.p2p_sr_hd .sr_hd_info{color: #535353; line-height: 20px; position: absolute; top:9px; left: 190px;}
+.p2p_sr_hd .sr_hd_info .num{ font-size: 18px; color: #f60; vertical-align:-2px;}
+.p2p_sr_hd .sr_hd_reword{height: 16px; position: absolute; top: 10px; right:124px; z-index: 101;}
+.p2p_sr_hd .sr_hd_reword a,
+.p2p_sr_hd .sr_hd_reword a:hover{color: #535353; vertical-align: middle;}
+.p2p_sr_hd .sr_hd_reword .checkbox{width: 14px; height: 14px; margin: 3px 3px 0 0; vertical-align: middle;}
+.p2p_sr_hd .sr_hd_reword a.active .checkbox{background-position: 0 -14px;}
+.p2p_sr_hd .sr_hd_qa{width: 16px; height: 16px; margin:2px 0 0 5px; cursor: pointer;}
+.p2p_sr_hd .sr_hd_qa .ico_qa{width: 16px; height: 16px;background: url(../../img/p2p/019.gif)}
+.p2p_sr_hd .sr_hd_qa .qa_wrap{display: none; width: 316px; padding: 8px; border: 1px solid #aaa; background-color: #fff;box-shadow:2px 2px 4px rgba(0,0,0,.2); position: absolute; top: 27px; left: -150px;}
+.p2p_sr_hd .sr_hd_qa .qa_wrap .arrow{width: 0; height: 0; border-width:0 8px 8px 8px;border-style:none dashed solid dashed;overflow: hidden;position: absolute; left:206px;}
+.p2p_sr_hd .sr_hd_qa .qa_wrap .a_1{border-color:transparent  transparent #aaa transparent ; top: -8px;}
+.p2p_sr_hd .sr_hd_qa .qa_wrap .a_2{border-color:transparent  transparent #fff transparent ; top: -7px;}
+.p2p_sr_hd .sr_hd_qa.active .qa_wrap{display: block;}
+.p2p_sr_hd .sr_hd_paged{position: absolute; top:10px; right: 10px;}
+.p2p_sr_hd .sr_hd_paged a{display: inline-block; width: 16px; height: 16px; margin: 0 3px; border: 1px solid #ccc; text-align: center; line-height: 14px;}
+/*table*/
+.p2p_srtb_hd{width: 998px; height:29px; padding-top: 11px; border-bottom: 1px solid #e1e1e1; background-color: #EFF5FC; color: #2B8CC9; z-index: 99999;}
+.p2p_srtb_hd .pro_platform,
+.p2p_srtb_bd .pro_platform{ width: 128px; padding:0 10px 0 28px;}
+.p2p_srtb_hd .pro_info,
+.p2p_srtb_bd .pro_info{width: 270px;}
+.p2p_srtb_hd .pro_deadline,
+.p2p_srtb_bd .pro_deadline{width: 140px; text-align: center;}
+.p2p_srtb_hd .pro_income,
+.p2p_srtb_bd .pro_income{ width: 140px; text-align: center;}
+.p2p_srtb_hd .pro_process,
+.p2p_srtb_bd .pro_process{ width: 140px; text-align: center;}
+.p2p_srtb_bd .pro_deadline .f_f60,
+.p2p_srtb_bd .pro_income .f_f60{font-size: 16px; font-family: arial;}
+.p2p_srtb_hd .sr_sort{ margin-left:40px;}
+.p2p_srtb_hd .sr_sort span{vertical-align: middle;}
+.p2p_srtb_hd .sr_sort .ico_1{width: 14px; height: 14px; margin:2px 0 0 3px; vertical-align: middle;}
+.p2p_srtb_hd .sr_sort.asc .ico_1{background-position: 0 -84px;}
+.p2p_srtb_hd .sr_sort.desc .ico_1{ background-position: 0 -70px;}
+.p2p_srtb_hd .active .sr_sort.asc .ico_1{background-position: 0 -126px;}
+.p2p_srtb_hd .active .sr_sort.desc .ico_1{ background-position: 0 -112px;}
+.p2p_srtb_bd{}
+.p2p_srtb_bd .d_dl{ padding:22px 0; background: url(../../img/common/bg_dashed.gif) repeat-x 0 bottom;}
+.p2p_srtb_bd .d_dl:hover{ background-color: #f7f7f7;}
+.p2p_srtb_bd .d_dd{line-height: 28px;font-size: 14px;}
+.p2p_srtb_bd .d_dd .tips{display: block; height: 28px; font-size: 12px; color: #999;}
+.p2p_srtb_bd .pro_platform .img_wrap{height: 35px; border: 1px solid #ccc; overflow: hidden;}
+.p2p_srtb_bd .pro_platform .img_wrap img{width: 110px;  height: 35px;}
+.p2p_srtb_bd .pro_platform .pro_company{display: block; border: 1px solid #ccc; border-top: none; background-color: #f7f7f7; line-height: 20px; text-align: center;}
+.p2p_srtb_bd .pro_info{}
+.p2p_srtb_bd .pro_info .reward{ height: 16px; margin: 6px 0 0 5px;}
+.p2p_srtb_bd .pro_info .reward .reward_l{ width:5px; height: 16px; background: url(../../img/p2p/017.gif) no-repeat left;}
+.p2p_srtb_bd .pro_info .reward .reward_txt{padding: 0 5px; height: 16px;background-color: #e6000a; line-height: 16px; font-size: 12px; color: #fff;}
+.p2p_srtb_bd .pro_process .process_wrap{ margin:6px auto;}
+.p2p_srtb_bd .pro_btn{width: 80px;margin: 9px 0 9px 20px;}
+.p2p_srtb_bd .pro_btn a{display: block; width: 80px;height: 30px; line-height: 30px; text-align: center; font-size: 12px;color: #fff;}
+.p2p_srtb_bd .pro_btn .a_1{background-color: #2B8CC9;}
+.p2p_srtb_bd .pro_btn .a_1:hover{ background-color: #FFA319;}
+.p2p_srtb_bd .pro_btn .a_2{ background-color: #999;color: #fff;}
+.p2p_srtb_bd .pro_btn .a_2:hover{ background-color: #999;}
+.p2p_srtb_ft{ height: 50px; background-color: #f7f7f7;}
+.p2p_srtb_ft .pager{ margin: 12px 30px 0 0;}
+.p2p_srtb_ft .pagination li{display: inline; float:left; height: 22px;  margin-right: 3px; background-color: #fff; border: 1px solid #cfcfcf;}
+.p2p_srtb_ft .pagination li a{display: block; padding: 0 7px; line-height: 23px;color: #06c;}
+.p2p_srtb_ft .pagination li a:hover{color: #06c;}
+.p2p_srtb_ft .pagination li.selected a{color: #f60;}
+.p2p_srtb_ft .pagination li.hidden{display: none;}
+.p2p_srtb_ft .total_wrap{padding: 3px 10px; line-height: 18px;}
+.p2p_srtb_ft .jump_wrap span{float: left; line-height: 24px;}
+.p2p_srtb_ft .jump_wrap .jump_txt{float: left; width: 26px; height: 18px; margin: 0 3px; padding: 2px; background-color: #fff; border: 1px solid #dedede; line-height: 18px;}
+.p2p_srtb_ft .jump_wrap .jump_btn{display: inline-block; height:22px; margin-left: 5px; padding: 0 5px;border: 1px solid #9c9c9c; background-color: #fff;  line-height: 22px; color: #333;}
+/*no product*/
+.p2p_srtb_bd .dl_none{padding: 78px 0 78px 334px; font-size: 16px; font-weight: bold; color: #f60;}
+.p2p_srtb_bd .dl_none dd{ padding: 32px 0 32px 100px; background: url(../../img/p2p/020.gif) no-repeat left center;}
+/*no favorite*/
+.p2p_srtb_bd .favorite_none{padding: 70px 0 80px; text-align: center;}
+.p2p_srtb_bd .favorite_none dt{font-size: 16px; font-weight: bold; color: #f60;}
+.p2p_srtb_bd .favorite_none dd{margin-top: 40px;}
+.p2p_srtb_bd .favorite_none .link{display: block; width: 154px; margin: 0 auto; padding: 15px 0; background-color: #f60; font-size: 14px; color: #fff;}

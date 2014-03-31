@@ -1,0 +1,326 @@
+@charset "utf-8";
+.clear{clear:both;}
+/* CSS Document */
+.sm-mod-site {
+	width: 1000px;
+	height: 32px;
+	line-height: 32px;
+	margin: 15px auto 0;
+}
+.sm-mod-site .banfirtxt {
+	width: 100px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	background: #ECF9FF url(../image/xt/topnavtxtbg.png) no-repeat 100% 0;
+	display: inline-block;
+}
+.sm-mod-site .icon-arrl {
+	font-family: 宋体;
+	margin: 0 7px;
+	color: #B6B6B6;
+}
+.header {background:url(../image/advert/ganaotai/header.jpg) no-repeat center top; height:188px; overflow:hidden;}
+.banner_wrap {background:url(../image/advert/ganaotai/banner_bg.jpg) repeat-x left top; overflow:hidden;margin-top: 15px;}
+.banner {width:1280px; margin:0 auto; background:url(../image/advert/ganaotai/banner.jpg) no-repeat center top; height:340px; overflow:hidden; position:relative;}
+.banner .yuyue {width:220px; overflow:hidden; padding:10px; background:#2D85BC; color:#D6E8F2; position:absolute; right:141px; top:35px; background:rgba(45, 133, 188, 0.7)}
+.banner .yuyue P {margin:5px 0 0 0;}
+.banner .yuyue H2 {font-size:16px; font-weight:bold; border-bottom:#BCDBEF solid 1px; padding-bottom:10px; color:#FF0;}
+.banner .yuyue .input01 {width:208px; height:28px; line-height:28px; padding:0 5px; border:#FFF solid 1px; color:#CCC;background:#FFF;}
+.banner .yuyue .yuyue_submit {background:url(../image/advert/ganaotai/yuyue_submit.jpg); width:220px; height:35px; line-height:35px; border:none; cursor:pointer; margin-top:5px;}
+.banner .yuyue span {margin-right:10px;}
+.banner .yuyue P.tel {text-align:center; font-family:微软雅黑; font-size:14px; color:#FFF;}
+
+
+
+.m01 {width:1000px; margin:0 auto;}
+.m01 h2{height:55px; background:url(../image/advert/ganaotai/tit01.jpg) no-repeat left top; position:relative;}
+.m01 h2 span {position:absolute; right:0; top:7px;}
+.m01 h2 a {margin-left:1px;}
+.m01 .con {margin:15px auto; border:#DFDFDF solid 1px;}
+.m01 .con .no1 H3 {font-size:20px; font-family:微软雅黑; color:#F60; background:url(../image/advert/ganaotai/01.jpg) no-repeat left top; background-position:15px 0px; padding-left:50px; height:30px; line-height:30px; margin:15px auto;}
+.m01 .con .no1 .biao {background:#FAFAFA; border-top:#DFDFDF solid 1px; border-bottom:#DFDFDF solid 1px; padding:10px 0;}
+.m01 .con .no1 P {text-align:center; font-size:14px;}
+.m01 .con .no1 P.tit {font-weight:bold;}
+
+.m01 .con .no2 {border-bottom:#DFDFDF solid 1px; padding-bottom:15px;}
+.m01 .con .no2 H3 {font-size:20px; font-family:微软雅黑; color:#F60; background:url(../image/advert/ganaotai/02.jpg) no-repeat left top; background-position:15px 0px; padding-left:50px; height:30px; line-height:30px; margin:15px auto;}
+.m01 .con .no2 P {padding:0 50px; line-height:30px; font-size:14px;}
+
+.m01 .con .no3 H3 {font-size:20px; font-family:微软雅黑; color:#F60; background:url(../image/advert/ganaotai/03.jpg) no-repeat left top; background-position:15px 0px; padding-left:50px; height:30px; line-height:30px; margin:15px auto;}
+
+
+.m02 {width:1000px; margin:0 auto;}
+.m02 h2{height:55px; background:url(../image/advert/ganaotai/tit02.jpg) no-repeat left top; position:relative;}
+.m02 h2 span {position:absolute; right:0; top:7px;}
+.m02 h2 a {margin-left:1px;}
+.m02 .con {margin:15px auto; border:#DFDFDF solid 1px;}
+.m02 .con .no1 {border-bottom:#DFDFDF solid 1px; padding-bottom:10px;}
+.m02 .con .no1 H3 {font-size:20px; font-family:微软雅黑; color:#1F76AE; height:30px; line-height:30px; padding-left:30px; margin:15px auto;}
+.m02 .con .no1 H3 span {color:#F60; font-size:20px;}
+.m02 .con .no1 P {padding:0 32px; line-height:30px; font-size:14px;}
+.m02 .con .no1 P.tips {border:#FFCC66 dashed 1px; color:#F60; background:#FFFDE6; margin:10px 30px; padding:0 15px;}
+
+.m02 .con .no2 {border-bottom:#DFDFDF solid 1px; padding-bottom:15px;}
+.m02 .con .no2 H3 {font-size:20px; font-family:微软雅黑; color:#1F76AE; height:30px; line-height:30px; padding-left:30px; margin:15px auto;}
+.m02 .con .no2 H3 span {color:#F60; font-size:20px;}
+.m02 .con .no2 P {padding:0 32px; line-height:30px; font-size:14px;}
+
+
+.m02 .con .no3 {border-bottom:#DFDFDF solid 1px;}
+.no3{padding-bottom:25px;}
+.m02 .con .no3 H3 {font-size:20px; font-family:微软雅黑; color:#1F76AE; height:30px; line-height:30px; padding-left:30px; margin:15px auto;}
+.m02 .con .no3 H3 span {color:#F60; font-size:20px;}
+.m02 .con .no3 H3 font {color:#999; font-size:20px;}
+.m02 .con .no3 P {padding:0 32px; line-height:30px; font-size:14px;}
+.m02 .con .no3 table {margin:0px 30px 25px 30px; border:#DFDFDF solid 2px; width:880px; overflow:hidden;*border:#DFDFDF solid 1px;}
+.m02 .con .no3 table th {height:35px; line-height:35px; background:#EFF9FF; text-align:left; font-weight:100; color:#1F76AE; border-bottom:#DFDFDF solid 1px; border-right:#DFDFDF solid 1px; padding:0 10px; font-size:14px;}
+.m02 .con .no3 table td {padding:0 10px; line-height:35px; height:35px; border-bottom:#DFDFDF solid 1px; border-right:#DFDFDF solid 1px;}
+.m02 .con .no3 .tit {background:#FAFAFA; color:#1F76AE; font-size:14px;}
+
+.m02 .con .no4 {}
+.m02 .con .no4 H3 {font-size:20px; font-family:微软雅黑; color:#1F76AE; height:30px; line-height:30px; padding-left:30px; margin:15px auto;}
+.m02 .con .no4 H3 span {color:#F60; font-size:20px;}
+.m02 .con .no4 .yuyue {background:#FAFAFA; padding:20px 30px;position:relative;}
+.m02 .con .no4 .yuyue .name {border:#CCC solid 1px; width:180px; height:33px; padding:0 5px; color:#CCC;vertical-align: middle;}
+.m02 .con .no4 .yuyue .tel {border:#CCC solid 1px; width:180px; height:33px; padding:0 5px; color:#CCC;vertical-align: middle;}
+.m02 .con .no4 .yuyue .submit {background:url(../image/advert/ganaotai/but03.jpg); width:111px; height:35px; border:none; cursor:pointer;vertical-align: middle;}
+.m02 .con .no4 .yuyue span {margin-right:10px;}
+
+
+
+.m03 {width:1000px; margin:0 auto;}
+.m03 h2{height:55px; background:url(../image/advert/ganaotai/tit03.jpg) no-repeat left top; position:relative;}
+.m03 h2 span {position:absolute; right:0; top:7px;}
+.m03 h2 a {margin-left:1px;}
+.m03 .con {margin:15px auto; border:#DFDFDF solid 1px;}
+.m03 .con .wenda {padding:15px 20px; border-bottom:#DFDFDF dotted 1px;}
+.m03 .con .wenda h4 {font-weight:bold; font-size:14px; color:#1F76AE; padding:0 30px; height:30px; line-height:30px; background:url(../image/advert/ganaotai/icon01.jpg) no-repeat left center;}
+.m03 .con .wenda P {font-size:14px; color:#666; padding-left:30px; height:30px; line-height:30px; background:url(../image/advert/ganaotai/icon02.jpg) no-repeat left center;}
+.m03 .con .tiwen {padding:20px 50px; background:#FAFAFA;}
+.m03 .con .tiwen .texts {width:875px; height:100px; border:#CCC solid 2px; color:#CCC; padding:10px; font-size:18px;}
+.m03 .con .tiwen P {font-size:14px; line-height:30px; position:relative;}
+.m03 .con .tiwen P font {font-weight:bold; color:#F60; font-size:16px; margin:0 5px;}
+.m03 .con .tiwen P em {position:absolute; right:0; top:5px;}
+.m03 .con .tiwen P em input {background:url(../image/advert/ganaotai/but04.jpg); width:94px; height:31px; border:none; cursor:pointer;}
+.m03 .con .list {padding:10px 20px; border-bottom:#DFDFDF dotted 1px;}
+.m03 .con .list P {background:url(../image/advert/ganaotai/dot.jpg) no-repeat left center; padding-left:10px; position:relative; width:60%; height:30px; line-height:30px;}
+.m03 .con .list P em {font-style:normal; position:absolute; right:20px;}
+.m03 .con .list P em font {color:#F60; font-size:14px; font-weight:bold; margin:0 5px;}
+
+.m04 {width:1000px; margin:0 auto; padding-bottom: 15px; border:#DFDFDF solid 1px; background:url(../image/advert/ganaotai/m04bg.jpg) repeat-x left;}
+.m04 H2 {font-size:22px; font-family:微软雅黑; font-weight:100; color:#1F76AE; height:40px; line-height:40px; padding-left:20px;}
+.m04 H2 font {font-size:18px; font-family:微软雅黑; font-weight:100; color:#F60; height:40px; line-height:40px; padding-left:10px;}
+.m04 .left {border-right:#DFDFDF solid 1px; float:left; width:30%;}
+.m04 .left img {margin:15px 20px;}
+.m04 .con {float:left; border-right:#DFDFDF solid 1px; width:35%;}
+.m04 .con .biao {margin:15px 20px 0px 20px;position:relative;}
+.m04 .con .biao P {height:30px;}
+.m04 .con .biao .name {width:200px; height:35px; line-height:35px; border:#CCC solid 1px; color:#CCC; padding:0 5px; margin-left:5px;vertical-align: middle;}
+.m04 .con .biao .tel {width:200px; height:35px; line-height:35px; border:#CCC solid 1px; color:#CCC; padding:0 5px; margin-left:5px;vertical-align: middle;}
+.m04 .con .biao .submit {background:url(../image/advert/ganaotai/submit_tuan.jpg); width:120px; height:40px; border:none; cursor:pointer; margin:15px 0 0 57px;}
+.m04 .right {float:left;}
+.m04 .right .zhixun {background:url(../image/advert/ganaotai/rexian.jpg); width:276px; height:169px; overflow:hidden; display:block; margin:20px 0 10px 20px;}
+
+.m04 .right .zhixun img {margin:80px 0 0 105px;}
+
+
+
+.footer {height:138px; overflow:hidden; margin-top:20px;}
+
+/*预约框的样式*/
+.JFZDialog .JFZDialog_BodyOuter{
+	background-color: #fff !important;
+}
+.pop-xtpbox .p-xttoptit h2 {
+	padding-left: 10px;
+	height: 38px;
+	line-height: 34px;
+	font-weight: normal;
+	font-family: 'Microsoft Yahei';
+	font-size: 18px;
+}
+.pop-xtpbox .p-typeinfos {
+	padding: 30px 0;
+	text-align: center;
+}
+.JFZDialog .JFZDialog_Body .p-btnxt {
+	border-top: 1px solid #E5E5E5;
+	color: #343434;
+	padding: 6px;
+	text-align: right;
+}
+.JFZDialog .JFZDialog_Body .p-btnxt .p-btnsure {
+	background: url("../image/xt/bgbtn-rpx.png") no-repeat scroll 0 0;
+	color: #FFF;
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	width: 80px;
+	border: none;
+	cursor: pointer;
+	font-size: 12px;
+	font-family: 'Microsoft Yahei';
+}
+.JFZDialog .JFZDialog_Body .p-btnxt .p-btnsure:hover {
+	text-decoration: none;
+	color: #FFF;
+	filter: alpha(opacity=85);
+	opacity: 0.85;
+}
+.errorMessage{
+    color: #FF0000;
+}
+.errorMessage_common{
+	position: absolute;
+    left:56px;
+    padding:5px;
+}
+#form2_error_name{
+	display:inline-block;
+    *display:inline;
+    *zoom:1;
+    position:absolute;
+    top:55px;
+	left:90px;	
+}
+#form2_error_phone{
+	display:inline-block;
+    *display:inline;
+    *zoom:1;
+    position:absolute;
+    top:55px;
+	left:365px;
+}
+/*重置默认*/
+input:-webkit-input-placeholder{
+	color: #ddd;
+}
+input:-moz-placeholder{
+	color: #ddd;
+}
+input:-ms-input-placeholder {
+	color: #ddd !important;
+}
+textarea:-webkit-input-placeholder{
+	color: #ddd;
+}
+textarea:-moz-placeholder{
+	color: #ddd;
+}
+textarea:-ms-input-placeholder {
+	color: #ddd;
+}
+label.input_tip {
+	display:inline-block;
+	font-size: 12px;
+	line-height: 16px;
+	color: #aaa;
+	cursor: text;
+	*display:inline;
+	*zoom:1;
+}
+label.input_tip_focus{
+	color: #ddd;	
+}
+
+	.gat_kaihu{
+		width:90%;
+		margin:0 auto;
+		text-align: center;
+		font:14px/1.5 'Microsoft Yahei';
+	}	
+	.gat_kaihu .kaihu_info{
+		height: 60px;
+		position: relative;
+	}
+	.gat_kaihu .ipt_info{
+		width:200px;
+		height:28px;
+		line-height: 28px;
+		border:1px solid #CFCFCF;
+		*vertical-align:middle;
+	}
+	
+	.gat_kaihu .line{
+		height:0;
+		border-top:1px solid #CFCFCF;
+	}	
+	.gat_kaihu .sub_kaifu{
+		width:80px;
+		height:32px;
+		border:none;
+		text-align: center;
+		color:#fff;
+		background:url(../image/sm/bgbtn-rpx.png)	no-repeat ;
+		display:inline-block;
+		*display:inline;
+		*zoom:1;
+	}
+	.gat_kaihu .p_sub{
+		margin: 15px;
+	}
+	.gat_kaihu .hot_phone{
+		color:red;
+	}
+	.dialog_lb{
+		position: absolute;
+		top: 6px;
+		left: 138px;
+		color:#ccc;
+	}
+	/*预约成功的样式*/
+	.kaihu_succ{
+		width:90%;
+		font:14px/1.5 '微软雅黑';		
+		margin:0 auto;
+	}
+	.kaihu_succ .title{
+		padding-left: 10px;
+		height: 25px;
+		line-height: 34px;
+		font-weight: normal;
+		font-family: 'Microsoft Yahei';
+		font-size: 18px;
+		color:#44484A;
+		margin:5px;
+	}
+	.kaihu_succ .line{
+		height:0;
+		border-top:1px solid #CFCFCF;	
+	}
+	.kaihu_succ .icon_succ{
+		width:36px;
+		height:36px;
+		background:url(../image/sm/ictypeok.jpg) no-repeat;
+		display:inline-block;
+		*display:inline;
+		*zoom:1;
+	}
+	.kaihu_succ .succ_text{
+		line-height: 35px;
+		vertical-align: top;
+		margin-left:10px;
+	}
+	.kaihu_succ .succ_cnt{
+		text-align: center;
+		margin-top:35px;
+	}
+	.kaihu_succ .j_sure{
+		background:url(../image/xt/bgbtn-rpx.png) no-repeat;	
+		color: #FFF;
+		display: inline-block;
+		height: 32px;
+		line-height: 32px;
+		text-align: center;
+		width: 80px;
+		cursor: pointer;
+		font-size: 12px;
+		font-family: 'Microsoft Yahei';
+		text-decoration: none;
+	}
+	.kaihu_succ .j_sure:hover{
+		text-decoration: none;
+	}
+	

@@ -1,0 +1,50 @@
+.thid{ left:-999em;position: absolute;}
+.clear{clear:both; height:0; line-height:0; font-size:0;}
+.clear:after {clear:both;display:block;visibility:hidden;height:0;line-height:0;content:"";} 
+.clear {zoom:1;} 
+
+.magcen{width:1000px;margin: 0 auto;}
+.fl{float:left;display:inline; }
+.fr{float:right;display:inline;}
+
+.rz-banbox{background:url(../image/advert/shrzban.jpg) no-repeat center 0;height: 342px;margin-bottom: 30px}
+.rz-banbox .ban-inter{background:url(../image/advert/shrzban.jpg) no-repeat center 0;height: 342px;position:relative;}
+.rz-banbox .linkshenqing{position:absolute;right:3px;top:248px;width:160px; height:50px;overflow:hidden;}
+
+.rz-mian{font-size: 14px;}
+
+.titmodbox{height: 44px;position:relative;margin-bottom: 10px}
+.tit-about{background:url(../image/advert/titbg01.png) no-repeat 0 0;}
+.tit-why{background:url(../image/advert/titbg02.png) no-repeat 0 0;}
+.tit-rztq{background:url(../image/advert/titbg03.png) no-repeat 0 0;}
+.tit-rzdx{background:url(../image/advert/titbg04.png) no-repeat 0 0;}
+.tit-rzstep{background:url(../image/advert/titbg05.png) no-repeat 0 0;}
+.tit-rzokbox{background:url(../image/advert/titbg06.png) no-repeat 0 0;}
+
+.aboutcon{padding: 10px 15px 20px;}
+.aboutcon p{margin-bottom: 15px;text-indent: 2em;line-height: 30px}
+.aboutcon p strong{color:#2679B2;}
+
+.whycon{margin-bottom: 15px}
+.whycon .why-txt{padding: 25px 15px 0;width: 550px;}
+.whycon .why-txt dt{font:16px/20px \5FAE\8F6F\96C5\9ED1;color:#FF7911;padding-left: 20px;background:url(../image/advert/icondot.png) no-repeat 0 2px;margin-bottom: 6px}
+.whycon .why-txt dd{padding-left: 20px;margin-bottom: 18px}
+.whycon .why-img{padding: 0px 30px 0 0;}
+
+.rztqcon{margin-bottom: 35px}
+.rztqcon .tqinfos{height: 227px;background:url(../image/advert/rztequan.jpg) no-repeat 0 0;margin-bottom: 5px}
+.rztqcon .tqinfovs{height: 352px;background:url(../image/advert/tequanvs.png) no-repeat 0 0;}
+
+.rzdxcon{margin-bottom: 35px}
+.rzdxcon .duixianbox{height: 194px;background:url(../image/advert/rzpptype.png) no-repeat 0 0;}
+
+.rzstepcon{margin-bottom: 35px}
+.rzstepcon .stepbox{height: 162px;background:url(../image/advert/rzstep.png) no-repeat 0 0;}
+
+.rzokboxcon{margin-bottom: 35px; }
+.rzokboxcon ul{margin-left: -15px;overflow:hidden;zoom:1}
+.rzokboxcon li{float:left;display:inline; margin-left: 35px;width: 133px;text-align:center;}
+.rzokboxcon li img{width: 120px;height: 150px;padding: 2px;border:1px #CCCCCC solid;margin-bottom: 5px}
+
+.bombtn{background: #F7F7F7;padding: 20px 0;text-align:center;}
+.bombtn .btnnowsq{display:inline-block; width:160px; height:49px;line-height: 49px;text-align:center;color:#fff;font-size: 16px;font-weight: bold;background:url(../image/advert/btnsqrz.png) no-repeat 0 0;}

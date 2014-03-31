@@ -1,0 +1,286 @@
+
+.thid {
+	left: -999em;
+	position: absolute;
+}
+.clear {
+	clear: both;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}
+.clear:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+	content: "";
+}
+.clear {
+	zoom: 1;
+}
+.f-st {
+	font-family: simsun, "宋体";
+}
+.f-yh {
+	font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+.magcen {
+	width: 1000px;
+	margin: 0 auto;
+}
+.fl {
+	float: left;
+	display: inline;
+}
+.fr {
+	float: right;
+	display: inline;
+}
+
+.c-org {
+	color: #FF6600;
+}
+.c-blue {
+	color: #2076AF;
+}
+.c-yellow {
+	color: #F6FA69;
+}
+.c-greed {
+	color: #009900;
+}
+
+.hdmian {
+	margin: 5px auto;
+}
+.leftcon {
+	width: 682px;
+}
+.sidcon {
+	width: 300px;
+}
+
+.banboxwp {
+	background: url(../image/advert/baiyinkaihu/banrpx.png) repeat-x 0 0;
+	height: 340px;
+}
+.ban-inter {
+	background: url(../image/advert/baiyinkaihu/topbanimg.jpg) no-repeat center 0;
+	height: 335px;
+}
+.banbox {
+	background: url(../image/advert/baiyinkaihu/topbanimg.jpg) no-repeat center 0;
+	height: 335px;
+	position: relative;
+}
+
+.mainnav {
+	overflow: hidden;
+	height: 60px;
+	margin: 0 auto 12px;
+}
+.mainnav ul {
+	margin-left: -1px;
+}
+.mainnav ul li {
+	float: left;
+	display: inline;
+	cursor: pointer;
+	margin-left: 1px;
+	width: 165px;
+	height: 60px;
+	font: 18px/60px '\5FAE\8F6F\96C5\9ED1';
+	color: #fff;
+	text-align: center;
+	background: url(../image/advert/baiyinkaihu/navrpx.png) repeat-x 0 0;
+}
+.mainnav ul li a {
+	color: #fff;
+	display: block;
+}
+.mainnav .on {
+	background-position: 0 -70px;
+}
+
+.magbom15 {
+	margin-bottom: 12px;
+}
+
+.titsbox {
+	background: #F5F5F5;
+	height: 60px;
+	font: 22px/55px '\5FAE\8F6F\96C5\9ED1';
+	color: #FF6600;
+	margin-bottom: 5px;
+	position: relative;
+	overflow: hidden;
+}
+.titsbox .tittxt {
+	height: 60px;
+	background: url(../image/advert/baiyinkaihu/subtitbg.png) no-repeat right 0;
+	float: left;
+	text-indent: 30px;
+	color: #FFFF66;
+	display: inline;
+	margin-right: 5px
+}
+.titsbox .text01 {
+	width: 165px;
+}
+.titsbox .text02 {
+	width: 185px;
+}
+.titsbox .limore {
+	position: absolute;
+	right: 20px;
+	top: 0px;
+	font-size: 12px;
+	color: #2076AF;
+	line-height: 60px;
+}
+
+.hxtbbox {
+}
+.hxtbbox table {
+	width: 100%;
+}
+.hxtbbox table td {
+	border: 1px #DFDFDF solid;
+}
+.hxtbbox table thead td {
+	text-align: center;
+	background: #ECF9FF;
+	height: 35px;
+	color: #333333;
+}
+.hxtbbox table tbody td {
+	padding: 5px 0
+}
+.hxtbbox .txtcen {
+	text-align: center;
+}
+.hxtbbox .txtleft {
+	padding-left: 15px;
+	text-align: left;
+}
+.hxtbbox .txtright {
+	padding-right: 15px;
+	text-align: right;
+}
+.hxtbbox .bggray {
+	background: #F2F2F2
+}
+.hxtbbox .bgyell01 {
+	background: #F2F2F2
+}
+.hxtbbox .bgyell02 {
+	background: #FDFFEB
+}
+
+.sidxtbox {
+	margin-bottom: 10px;
+	background: #F2F2F2;
+	padding: 10px;
+}
+.sidxtbox li {
+	margin-left: 25px;
+	list-style: decimal outside;
+	margin-bottom: 10px
+}
+.sidbombox {
+	margin-bottom: 8px
+}
+.sidwbbox {
+	width: 300px;
+	height: 263px;
+	background: url(../image/advert/baiyinkaihu/sidwbimg.jpg) no-repeat 0 0;
+	position: relative;
+}
+.sidwbbox .linkwb {
+	position: absolute;
+	left: 140px;
+	width: 141px;
+	height: 50px;
+	overflow: hidden;
+	text-indent: -9999em;
+}
+.sidwbbox .wbsina {
+	top: 17px;
+}
+.sidwbbox .wbtx {
+	top: 76px;
+}
+
+.maininfos {
+	padding: 13px;
+	border: 1px #CFCFCF solid;
+}
+.maininfos p {
+	margin-bottom: 12px
+}
+.infodl dt {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2076AF;
+	margin-bottom: 5px;
+}
+.infodl dd {
+	margin-bottom: 15px;
+}
+
+.fixmodbox {
+	background: #D1EDFF;
+	position: fixed;
+	_position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+.fixinter {
+	position: relative;
+	height: 47px;
+	background: url(../image/advert/baiyinkaihu/bgfix.png) no-repeat 0 0;
+}
+.fixinter .linkopenhu {
+	position: absolute;
+	left: 781px;
+	top: 0px;
+	width: 180px;
+	height: 47px;
+	overflow: hidden;
+	text-indent: -9999em;
+}
+
+.footer {
+	padding: 20px 0 70px;
+	text-align: center;
+	line-height: 22px
+}
+.footer a {
+	font-size: 12px;
+	margin: 0 3px;
+	color: #333;
+}
+.footer .jianshuo {
+	color: #999999;
+	font-size: 12px;
+}
+.footer .jianshuo a {
+	color: #999999;
+	margin: 0;
+}
+.footer .jianshuo a:hover {
+	color: #CC0000;
+}
+.footer .jianshuo span {
+	margin: 0 5px;
+}
+.qh_mod_crumb {
+	font-size: 12px;
+	height: 20px;
+	margin: 0 auto 10px;
+	width: 980px;
+}

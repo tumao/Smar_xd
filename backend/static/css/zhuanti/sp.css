@@ -1,0 +1,293 @@
+#md_topic_capture{
+	padding:15px 0;
+}
+#md_topic_capture .slider_lt{
+	width: 680px;
+}
+#md_topic_capture .article_wrap{
+	border: 1px solid #D5D5D5;
+	background:#FFF;
+	font-family:'宋体';
+}
+#md_topic_capture .article_header{
+	padding:20px 30px;
+}
+#md_topic_capture .article_header .title{
+	text-align: center;
+	color: #f60;
+	font-size:22px;
+	font-family: '微软雅黑';
+	font-weight: bolder;
+	padding-bottom: 20px;
+}
+#md_topic_capture .article_header .share_wrap{
+	color: #999;
+	border-bottom: 1px dashed #E2E2E2;
+	padding-bottom: 10px;
+}
+#md_topic_capture .article_header .tip{
+	padding-top:5px;
+}
+#md_topic_capture .article_header .bdshare_tip{
+	margin-top: 5px;
+}
+#md_topic_capture .article_bodyer{
+	padding:0px 30px;
+	min-height:600px;
+	_height:600px;
+	line-height: 2em;
+	margin-bottom: 30px;
+	font-size: 13px; 
+}
+#md_topic_capture .article_bodyer .da_imgwrap{
+	float: left;
+	clear: left;
+	width: 276px; height: 230px;
+	margin:0 15px 10px 0;overflow: hidden;
+} 
+#md_topic_capture .article_bodyer .da_imgwrap img{
+	width: 276px; height: 230px;
+}
+#md_topic_capture .article_bodyer .main_p{
+	margin-top: 5px;
+}
+
+#md_topic_capture .article_footer{
+	border-top:1px solid #D5D5D5;
+	background:#F8F8F8;
+	*zoom: 1;
+}
+#md_topic_capture .article_footer .info{
+	padding:10px 20px;
+	color: #999;
+	line-height: 2;
+}
+#md_topic_capture .erweiCode_wrap{
+	padding:15px 0;
+}
+#md_topic_capture .correlation_wrap{
+	border: 1px solid #D5D5D5;
+	background:#FFF;
+}
+#md_topic_capture .correlation_wrap .h_line{
+	height:1px;
+	border:none;
+	border-top:1px dashed #D5D5D5;
+}
+#md_topic_capture .correlation_article,#md_topic_capture .correlation_faq{
+	padding:0px 30px;
+	margin-top:15px;
+	margin-bottom:20px;
+}
+#md_topic_capture .correlation_wrap .title{
+	font-size: 16px;
+	font-family:'微软雅黑';
+	font-weight:600;
+	color:#F60;
+	padding-bottom:15px;
+}
+#md_topic_capture .correlation_wrap li{
+	color: #999;
+	padding:5px 0;
+	background:url(../../img/zhuanti/sp/bg4.png) no-repeat left center;
+}
+#md_topic_capture .correlation_wrap a{
+	color: #2B8CC9;
+	margin-left: 10px;
+}
+#md_topic_capture .correlation_wrap a:hover{
+	color: #f60;
+}
+#md_topic_capture .correlation_wrap .time{
+	color: #999;
+}
+#md_topic_capture .slider_rt{
+	width: 300px;
+}
+#md_topic_capture .slider_rt .order_wrap{
+	border: 1px solid #D5D5D5;
+	background:#F8F8F8;
+	min-height: 470px;
+	_height:470px;
+}
+#md_topic_capture .slider_rt .h_line{
+	height:0px;
+	border:none;
+	border-top:1px dashed #D5D5D5;
+}
+#md_topic_capture .slider_rt .form_wrap{
+	padding:0 10px;
+}
+#md_topic_capture .slider_rt .title{
+	color: #f60;
+	padding:15px 0;
+	font: 16px/1.5 '微软雅黑';
+}
+#md_topic_capture .slider_rt .form_cnt{
+	padding-left:10px;
+	padding-bottom:10px;
+}
+#md_topic_capture .slider_rt .user_input{
+	background:#FFF;
+	border: 1px solid #CCC;
+	width: 253px;
+	margin:5px 0;
+}
+#md_topic_capture .slider_rt .user_textarea{
+	resize: none;
+	overflow: hidden;
+	width: 233px;
+	height: 72px;
+	padding:10px;
+}
+#md_topic_capture .slider_rt .user_name,#md_topic_capture .slider_rt .user_phone{
+	height:25px;
+	line-height:25px;
+	padding:5px 0;
+	text-indent: 10px;
+}
+#md_topic_capture .slider_rt .user_sub{
+	background:#f60;
+	color:#FFF;
+	width: 255px;
+	border: none;
+	height: 40px;
+	margin-top:5px;
+	cursor: pointer;
+}
+#md_topic_capture .slider_rt .order_tip{
+	padding: 0 10px;
+}
+#md_topic_capture .slider_rt .order_tip .title{
+	padding:5px 0;
+}
+#md_topic_capture .slider_rt .order_tip .list{
+	padding-left: 10px;
+}
+#md_topic_capture .slider_rt .order_tip li{
+	margin: 10px 0;
+	color: #525252;
+	font-family: '宋体';
+	height:19px;
+	background:url(../../img/zhuanti/sp/bg1.png) no-repeat left center;
+	text-indent: 25px;
+}
+#md_topic_capture .slider_rt .entrance{
+	border: 1px solid #D5D5D5;
+	background: #F8F8F8;
+	margin:15px 0;
+	overflow: hidden;
+}
+#md_topic_capture .slider_rt .entrance .title{
+	font-weight: normal;
+	padding:10px;
+}
+#md_topic_capture .slider_rt .entrance .list{
+	background:#FFF;
+}
+#md_topic_capture .slider_rt .entrance li{
+	border-top: 1px dashed #D5D5D5;
+	border-right: 1px dashed #D5D5D5;
+	width:99px;
+	padding:10px 0;
+	text-align:center;
+	float: left;
+}
+#md_topic_capture .slider_rt .entrance a{
+	color:#2B8CC9;
+}
+#md_topic_capture .slider_rt .entrance a:hover{
+	color: #f60;
+}
+#md_topic_capture .slider_rt .entrance .spec{
+	border-right: none;
+	width: 98px;
+}
+#md_topic_capture .slider_rt .rank_wrap{
+	border: 1px solid #D5D5D5;
+	background:#FFF;
+	overflow: hidden;
+}
+#md_topic_capture .slider_rt .tab_wrap{
+	background:#F8F8F8;
+	color:#525252;
+}
+#md_topic_capture .slider_rt .tab_wrap li{
+	width: 98px;
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	border-bottom:1px solid #D5D5D5;
+	cursor:pointer;
+	float: left;
+}
+#md_topic_capture .slider_rt .tab_wrap li.special{
+	width: 100px;
+	border: 1px solid #DEDEDE;
+	border-width: 0 1px 1px 1px;
+}
+#md_topic_capture .slider_rt .tab_wrap li.on{
+	background:#FFF;
+	border-bottom:1px solid #FFF;
+}
+#md_topic_capture .slider_rt .unit{
+	display:none;
+}
+#md_topic_capture .slider_rt .f_db{
+	display:block;
+}
+#md_topic_capture .slider_rt .unit .title{
+	font-family:'宋体';
+	color:#525252;
+	text-indent: 20px;
+	padding:5px 0;
+	*text-indent: 10px;
+}
+#md_topic_capture .slider_rt .unit .i_rank{
+	background:url(../../img/zhuanti/sp/icons.png) no-repeat left center;
+	margin-left: 10px;
+}
+#md_topic_capture .slider_rt .unit .hd_wrap{
+	border-top: 1px solid #D5D5D5;
+	border-bottom: 1px solid #D5D5D5;
+	background:#F8F8F8;
+	padding:10px 0;
+}
+#md_topic_capture .slider_rt .unit .prod_name{
+	margin-left: 15px;
+}
+#md_topic_capture .slider_rt .unit .prod_sy{
+	margin-right: 15px;
+}
+#md_topic_capture .slider_rt .rank_list li{
+	padding:8px 0;
+	border-bottom:1px dashed #DEDEDE;
+}
+#md_topic_capture .slider_rt .rank_list li.last{
+	border-bottom:none;
+}
+#md_topic_capture .slider_rt .rank_list i{
+	width:20px;
+	height:20px;
+	line-height:20px;
+	color:#FFF;
+	text-align:center;
+	font-style: normal;
+	margin:0 15px;
+	background:url(../../img/zhuanti/sp/bg3.png) no-repeat;
+}
+#md_topic_capture .slider_rt .rank_list i.spec{
+	background:url(../../img/zhuanti/sp/bg2.png) no-repeat;
+}
+#md_topic_capture .slider_rt .rank_list a{
+	color: #2B8CC9;
+}
+#md_topic_capture .slider_rt .rank_list a:hover{
+	color:#f60;
+}
+#md_topic_capture .slider_rt .rank_list span{
+	color:#f60;
+	margin-right: 15px;
+}
+
+

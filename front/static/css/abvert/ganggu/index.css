@@ -1,0 +1,131 @@
+#md_topic_gg{}
+#md_topic_gg .bann_wrap{
+	height: 422px;
+	margin-bottom: 20px;
+	background: #B9B0E3 url(../../../img/abvert/ganggu/index/main.jpg) no-repeat center top;
+}
+#md_topic_gg .order_wrap{
+	position: relative;
+}
+#md_topic_gg .form_wrap{
+	position: absolute;
+	right: 35px;
+	top: 55px;
+	width: 246px;
+}
+#md_topic_gg .form_wrap .form_title{
+	margin-bottom: 15px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #FFF;
+	font-size: 16px;
+	font-weight: bolder;
+	color:#FFF;
+}
+#md_topic_gg .form_wrap p{
+	overflow: hidden;
+	padding: 5px 0;
+}
+#md_topic_gg .form_wrap .lbl{
+	width: 64px;
+	float: left;
+	margin-top: 6px;
+	color: #FFF;
+}
+#md_topic_gg .form_wrap .ipt{
+	width: 180px;
+	height: 18px;
+	padding:5px 0;
+	float: right;
+	background: #FFF;
+	border: 1px solid #FFF;
+	text-indent: 5px;
+	vertical-align: middle;
+}
+#md_topic_gg .form_wrap .sub{
+	width: 180px;
+	height: 35px;
+	border: none;
+	background: url(../../../img/abvert/ganggu/index/zixun.png) no-repeat;
+}
+#md_topic_gg .adv_wrap{
+	height: 104px;
+	margin-bottom: 25px;
+	background: url(../../../img/abvert/ganggu/index/adv.png) no-repeat center top;
+}
+#md_topic_gg .zq_wrap li{
+	height: 280px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	border: 1px solid #AAA;
+	background:#FFF;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+}
+#md_topic_gg .zq_title{
+	position: relative;
+	height: 47px;
+	line-height: 47px;
+	padding-left: 22px;
+	background: #F7F7F7;
+	font-family: 'Microsoft Yahei';
+}
+#md_topic_gg .tj{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 65px;
+	height: 47px;
+	background: url(../../../img/abvert/ganggu/index/sprite.png) no-repeat -150px -50px;
+	_background: url(../../../img/abvert/ganggu/index/sprite-ie6.png) no-repeat -150px -50px;
+}
+#md_topic_gg .zq_name{
+	margin-right: 10px;
+	font-size: 18px;
+	color: #f60;
+}
+#md_topic_gg .tj_mg{
+	margin-left: 65px;
+}
+#md_topic_gg .sub_name{
+	font-size: 16px;
+	color: #999;
+}
+#md_topic_gg .order_link{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 133px;
+	height: 47px;
+	background: url(../../../img/abvert/ganggu/index/sprite.png) no-repeat -10px -50px;
+	_background: url(../../../img/abvert/ganggu/index/sprite-ie6.png) no-repeat -10px -50px;
+}
+#md_topic_gg .main_wrap{
+	padding:15px 50px 0 15px;
+}
+#md_topic_gg .main_wrap p{
+	margin-bottom: 20px;
+}
+#md_topic_gg .main_wrap a{
+	padding: 4px;
+	background: #B9B5E1;
+	color: #FFF;
+}
+#md_topic_gg .main_wrap .img_wrap{
+	width: 200px;
+	height: 200px;
+	padding-left: 20px;
+	float: left;
+	margin-right: 20px;
+	background: rgb(247,247,247);
+	overflow: hidden;
+}
+#md_topic_gg .main_wrap .zq_img{
+	padding-top: 70px;
+}
+#md_topic_gg .main_wrap .c1{
+	height: 35px;
+	float: left;
+	color: #999;
+}
+

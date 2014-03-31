@@ -1,0 +1,176 @@
+/*new-nav的样式*/
+.new-nav {
+	height: 37px;
+	background: url(../images/index/xtnavbg.png) repeat-x 0 0;
+	overflow:visible;
+}
+
+.new-nav .layout {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.new-nav .fl {
+	float: left;
+	display: inline;
+	height: 37px;
+}
+
+.new-nav .navlist li {
+	float: left;
+	display: inline-table;
+	width:110px;
+}
+
+.new-nav .navlist li a {
+	display: block;
+	float: left;
+	width: 110px;
+	height: 37px;
+	color: #fff;
+	text-align: center;
+	padding:0 0 0 0;
+	font: 14px/37px Microsoft Yahei;
+	background: url(../images/index/bgnavline.png) no-repeat right 0;
+}
+
+.new-nav .navlist li.dark a{
+	background:url(../images/index/bgnavhover.png) repeat-x 0 0;color:#0079BD;
+}
+
+.new-nav a:hover {
+	 text-decoration: none;
+}
+
+.new-nav .navlist li.on a{
+	background: url(../images/index/bgnavon.png) repeat-x 0 0;
+	color: #0079BD;
+}
+.new-nav .navlist .last {
+	background-position: 0 -999em;
+}
+
+.new-nav .n-navinter .subnavbox {
+	background: url(../images/index/xtnavbg-deep.png) repeat-x 0 0;
+	color: #fff;
+	line-height: 37px;
+	/*padding: 0 12px;*/
+	padding:0 0 0 0;
+	/*width:140px;*/
+}
+
+.new-nav .n-navinter .subnavbox a.lined{
+	background: url("../images/index/bgnavline.png") no-repeat scroll  69px center transparent;
+}
+
+.new-nav .n-navinter .subnavbox ul{
+	display: block;
+}
+
+.new-nav .n-navinter .subnavbox ul li{
+	float: left;
+	width:50px;	
+}
+
+.new-nav .n-navinter .subnavbox a.on{
+	background: url("../images/index/bgnavon.png") repeat-x scroll 0 0 transparent;
+    color: #0079BD;
+    width: 50px;
+    font: 12px;
+    height: 37px;
+    text-align: center;
+}
+
+.new-nav .n-navinter .subnavbox a.dark{
+	
+    background:url(../images/index/bgnavhover.png) repeat-x 0 0;color:#0079BD;
+
+}
+
+.new-nav .fr {
+	float: right;
+	display: inline;
+}
+
+.new-nav .n-navinter .subnavbox a{
+	color: #fff;
+	display: inline-block;
+	position: relative;
+	width: 50px;
+	text-align: center;
+	
+}
+
+/*.new-nav .n-navinter .subnavbox a.line{
+	background:url('../images/line.png'); 
+	background-repeat:no-repeat;
+	background-position:center right;
+	background-position:'x50%';
+}*/
+
+/*.new-nav .n-navinter .subnavbox .line {
+	margin: 0 5px;
+	display: inline-block;
+}*/
+
+.new-nav .n-navinter .navlist .iconhot {
+	/*position: absolute;
+	right: 1019px;
+	top: 130px;*/
+	position: relative;
+	left: 83px;
+	top: -46px;
+	
+	display: inline-block;
+	width: 22px;
+	height: 14px;
+	background: url(../images/index/iconhot2.png) no-repeat 0 0;
+	overflow: hidden;
+}
+
+.new-nav .n-navinter .navlist .spoptit{
+	position: relative;
+	left: 83px;
+	top: -46px;
+	
+	display: inline-block;
+	width: 38px;
+	height: 20px;
+	background: url(../images/bg-navarr.png) no-repeat 0 0;
+}
+.new-nav .n-navinter .navlist .spoptit:hover{
+	background-position: 0 -20px;
+}
+
+.new-nav .clear {
+	clear: both;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}
+
+.new-nav .n-navinter .subnavbox ul li.first {
+    color: #FFFF66;
+    text-align: center;
+}
+
+
+.new-nav .n-navinter .navlist .spoptit2 {
+    background: url("../images/neww.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    left: 973px;
+    position: absolute;
+    top: 123px;
+    width: 38px;
+}
+
+
+
+
+
+
+
+
+
+

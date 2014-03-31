@@ -1,0 +1,555 @@
+/*
+ * @author : hhw
+ * @data   : 2013/11/18/
+ * @desc   : 金斧子首页页面样式改版
+ *
+ **/
+body {
+	background: url(body_bg.png)/*tpa=http://www.jinfuzi.com/static/img/common/body_bg.png*/ repeat;
+}
+a {
+	color: #999;
+}
+a:hover {
+	color: #F60;
+	text-decoration: none;
+}
+/*布局样式*/
+.layout {
+	width: 1000px;
+	margin: 0px auto;
+}
+/*-----------------------------------------------------首页模块------------------------------------------------------*/
+/*logo模块*/
+#md_register_banner {
+	margin-top: 60px;
+}
+#md_register_banner .wrap {
+	height: 35px;
+}
+#md_register_banner .link {
+	margin-top: 8px;
+}
+#md_register_banner .i_logo {
+	width: 224px;
+	height: 38px;
+	background: url(jinfuzi.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/jinfuzi.png*/ no-repeat;
+	vertical-align: middle;
+}
+#md_register_banner .v_line {
+	width: 2px;
+	height: 29px;
+	background: url(register_btn.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_btn.png*/ -130px -60px no-repeat;
+	vertical-align: top;
+	margin: 0 10px;
+}
+#md_register_banner .i_back {
+	width: 21px;
+	height: 21px;
+	background: url(register_btn.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_btn.png*/ -10px -70px no-repeat;
+	vertical-align: -6px;
+	*vertical-align: middle;
+}
+#md_register_banner .rg_txt {
+	font: 20px '微软雅黑';
+	color: #666;
+}
+#md_register_banner .cl_grey {
+	color: #525252;
+	margin-left: 3px;
+}
+#md_register_banner .back {
+	color: #2B8CC9;
+}
+/*脚标模块*/
+#md_register_footer {
+	margin-top: 20px;
+}
+#md_register_footer .wrap {
+	color: #525252;
+}
+#md_register_footer .mg1 {
+	margin-right: 50px;
+}
+#md_register_footer .mg2 {
+	margin-right: 50px;
+}
+#md_register_footer .mg3 {
+	margin-right: 50px;
+}
+/*主体模块*/
+#md_register_main {
+	margin-top: 17px;
+}
+#md_register_main .wrap {
+	width: 1005px;
+	height: 877px;
+	background: url(rg_bg.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/rg_bg.png*/ no-repeat;
+	position: relative;
+}
+#md_register_main .rg_acc {
+	color: #FF6600;
+	font-size: 20px;
+	font-weight: bolder;
+	position: absolute;
+	left: 45px;
+	top: 35px;
+}
+#md_register_main .form_wrap {
+	position: absolute;
+	left: 70px;
+	top: 120px;
+}
+#md_register_main .cnt {
+	width: 330px;
+}
+#md_register_main .form_wrap .cl_red {
+	color: #FF6600;
+}
+#md_register_main .cnt label {
+	margin-top: 10px;
+	width: 85px;
+	text-align: right;
+}
+#md_register_main .form_wrap .icon {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+#md_register_main .form_wrap .placeholder {
+	color: #CCC;
+	font-family: '宋体';
+	width:auto;
+	margin-top:0px;
+	position: absolute;
+	top: 12px;
+	left: 35px;
+}
+#md_register_main .form_wrap .i_err {
+	background: url(register_btn.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_btn.png*/ -10px -10px no-repeat;
+}
+#md_register_main .form_wrap .i_right {
+	background: url(register_btn.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_btn.png*/ -10px -40px no-repeat;
+}
+#md_register_main .form_wrap .user_wrap {
+	width: 245px;
+	height: 42px;
+	margin-bottom: 20px;
+	background: url(register_input.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_input.png*/ -10px -28px no-repeat;
+	position: relative;
+}
+/*获得焦点*/
+#md_register_main .form_wrap .user_focus{
+	background-position:-10px -279px;
+}
+/*输入错误*/
+#md_register_main .form_wrap .user_input_err{
+	background-position:-10px -158px;
+}
+#md_register_main .form_wrap .user_wrap .user_name {
+	border: none;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	width: 205px;
+	height: 20px;
+	padding:10px 0;
+}
+#md_register_main .form_wrap .pwd_wrap {
+	width: 245px;
+	height: 42px;
+	margin-bottom: 20px;
+	background: url(register_input.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_input.png*/ -10px -88px no-repeat;
+	position: relative;
+}
+#md_register_main .form_wrap .pwd_focus{
+	background-position:-10px -328px;	
+}
+#md_register_main .form_wrap .pwd_input_err{
+	background-position:-10px -218px;
+}
+#md_register_main .form_wrap .verifyCode_wrap {
+	width: 150px;
+	height: 42px;
+	margin-bottom: 20px;
+	background: url(register_input.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_input.png*/ -10px -380px no-repeat;
+	position: relative;
+}
+#md_register_main .form_wrap .verifyCode_wrap img{
+	float: right;
+}
+
+#md_register_main .form_wrap .pwd_wrap .pwd {
+	border: none;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	width: 205px;
+	height: 20px;
+	padding:10px 0;
+}
+#md_register_main .form_wrap .verifyCode_wrap .reginput{
+	border: none;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	width: 145px;
+	height: 20px;
+	padding:10px 0;
+}
+#md_register_main .form_wrap .fnc_wrap {
+	margin-bottom: 20px;
+	color: #525252;
+	font-family: "宋体";
+	text-align: center;
+	margin-left: 45px;
+}
+#md_register_main .form_wrap .fnc_wrap .icon_com {
+	width: 13px;
+	height: 13px;
+	vertical-align: middle;
+	cursor: pointer;
+	background: url(login_sprite.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/login_sprite.png*/ -40px -70px no-repeat;
+}
+#md_register_main .form_wrap .fnc_wrap .icon_checked {
+	background-position: -60px -70px;
+}
+#md_register_main .form_wrap .fnc_wrap input {
+	vertical-align: middle;
+}
+#md_register_main .form_wrap .fnc_wrap input.rmb_login {
+	margin-left: 20px;
+}
+#md_register_main .form_wrap .btn_wrap {
+	margin-bottom: 20px;
+	text-align: center;
+	margin-left: 80px;
+}
+#md_register_main .form_wrap .btn_wrap .btn_sub {
+	border: none;
+	width: 251px;
+	height: 47px;
+	line-height: 47px;
+	text-align: center;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bolder;
+	background: url(register_btn.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_btn.png*/ -10px -100px no-repeat;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#md_register_main .form_wrap .fnc_wrap .jfz_xy {
+	color: #257AB3;
+	cursor: help;
+}
+#md_register_main .que_wrap {
+	width: 565px;
+	overflow: hidden;
+	position: absolute;
+	left: 70px;
+	top: 500px;
+}
+#md_register_main .que_wrap .que_title {
+	margin-bottom: 20px;
+	color: #525252;
+	font-size: 16px;
+	font-weight: bolder;
+}
+#md_register_main .que_wrap .q_wrap {
+	margin-top: 10px;
+	padding-top: 15px;
+	border-top: 1px dashed #E3E5E5;
+}
+#md_register_main .que_wrap .que {
+	margin-bottom: 10px;
+}
+#md_register_main .que_wrap .que {
+	color: #2B8CC9;
+}
+#md_register_main  .info_tip {
+	border: 1px solid #D8DADA;
+	padding: 5px;
+	background-color: #FAFAFA;
+	color: #999;
+	margin-top: 10px;
+}
+#md_register_main .que_wrap .ans {
+	color: #999999;
+}
+#md_register_main .que_wrap .que_prex {
+	color: #2B8CC9;
+}
+#md_register_main .que_wrap .ans_prex {
+	color: #525252;
+}
+#md_register_main .sel_wrap {
+	width: 200px;
+	overflow: hidden;
+	position: absolute;
+	right: 70px;
+	top: 35px;
+}
+#md_register_main .sel_title {
+	color: #525252;
+	font-size: 16px;
+	font-weight: bolder;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #E3E5E5;
+}
+#md_register_main .sel_wrap .sel_div {
+	padding: 15px 0;
+	color: #B3B3B3;
+	position: relative;
+	border-bottom: 1px solid #E3E5E5;
+}
+#md_register_main .sel_wrap .sel_div .sel_rs {
+	color: #2B8CC9;
+	font-size: 16px;
+}
+#md_register_main .sel_wrap .sel_div .sel_p {
+	margin-left: 45px;
+}
+#md_register_main .sel_wrap .sel_div .i_com {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 20px;
+	background: url(register_btn.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_btn.png*/ no-repeat;
+}
+#md_register_main .sel_wrap .sel_div .i1 {
+	background-position: -40px -10px;
+}
+#md_register_main .sel_wrap .sel_div .i2 {
+	background-position: -40px -50px;
+}
+#md_register_main .sel_wrap .sel_div .i3 {
+	background-position: -80px -10px;
+}
+#md_register_main .sel_wrap .sel_div .i4 {
+	background-position: -80px -50px;
+}
+#md_register_main .wx_sugg_wrap {
+	width: 210px;
+	overflow: hidden;
+	position: absolute;
+	right: 60px;
+	top: 415px;
+	text-align: center;
+}
+#md_register_main .wx_title {
+	color: #525252;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+#md_register_main .cl_bl {
+	color: #54A3D3;
+}
+#md_register_main .wx_sugg_wrap .cl_grey {
+	color: #525252;
+	margin-top:10px;
+}
+#md_register_main .wx_sugg_wrap .sugg_p {
+	margin-top: 20px;
+}
+#md_register_main .wx_sugg_wrap .sugg_link {
+	width: 202px;
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+	color: #FFF;
+	text-indent: 20px;
+	background: url(register_btn.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_btn.png*/ -10px -250px no-repeat;
+}
+#md_register_main .err_wrap{
+	display: none;
+	width: 268px;
+	border:1px solid #D1D1D1;
+	background:#FFF;
+	position: absolute;
+	left: 415px;
+	top: 120px;
+	z-index: 99999;
+	box-shadow: 2px 2px 5px #F6F6F6;
+	border-radius: 5px;
+}
+#md_register_main .err_wrap .icon_arrow{
+	position: absolute;
+	top: 10px;
+	left: -13px;
+	width:13px;
+	height:22px;
+	background: url(register_btn.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_btn.png*/ -140px -60px no-repeat;
+}
+#md_register_main .pad_wrap {
+	padding-left: 15px;
+	color: #999;
+}
+#md_register_main .pad_wrap .pad {
+	padding: 13px 0;
+}
+#md_register_main .pad_wrap .mg1 {
+	border-bottom: 1px dashed #E1E1E1;
+}
+#md_register_main .pad_wrap .mg2 {
+	border-bottom: 1px dashed #E1E1E1;
+}
+#md_register_main .pad_wrap .i_err {
+	height: 21px;
+	margin-right: 5px;
+	vertical-align: middle;
+	width: 21px;
+	background: url(register_btn.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_btn.png*/ -10px -10px no-repeat;
+}
+#md_register_main .pad_wrap .cl_red {
+	font-size: 14px;
+	color: #E76868;
+}
+#md_register_main .pad_wrap .link_login {
+	color: #2579B2;
+	margin-left: 5px;
+}
+#md_register_main .pad_wrap .link_login:hover{
+	color:#f60;
+}
+#md_register_main .pad_wrap .sugg {
+	color: #525252;
+}
+#md_register_main .pad_wrap .list {
+	margin-left: 15px;
+}
+#md_register_main .pad_wrap .list li {
+	margin: 3px 0;
+}
+#md_register_main .pad_wrap .list .ck{
+	margin-right:5px;
+}
+#md_register_main .succ_wrap {
+	width: 500px;
+	position: absolute;
+	top: 150px;
+	left: 100px;
+}
+#md_register_main .succ_wrap .succ .i_right {
+	width: 48px;
+	height: 48px;
+	vertical-align: middle;
+	margin-right: 5px;
+	background: url(register_btn.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_btn.png*/ -120px -10px no-repeat;
+}
+#md_register_main .succ_wrap .succ {
+	font-size: 18px;
+	text-align: center;
+}
+#md_register_main .succ_wrap .succ .cong {
+	color: #009900;
+}
+#md_register_main .succ_wrap .succ .mail {
+	color: #2B8CC9;
+}
+#md_register_main .succ_wrap .yz_wrap {
+	width: 500px;
+	height: 150px;
+	margin-top: 20px;
+	background-color: #FAFAFA;
+}
+#md_register_main .succ_wrap .yz_wrap .pwd_wrap {
+	padding: 30px 20px 15px 45px;
+}
+
+#md_register_main .succ_wrap .yz_wrap .pwd_txt {
+	color: #525252;
+	font-size: 14px;
+}
+#md_register_main .succ_wrap .yz_wrap .link_com {
+	width: 185px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	color: #FFF;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#md_register_main .succ_wrap .yz_wrap .link_com:hover {
+	text-decoration: none;
+}
+#md_register_main .succ_wrap .yz_wrap .yz_now {
+	background-color: #FF6600;
+	margin-right: 10px;
+}
+#md_register_main .succ_wrap .yz_wrap .yz_later {
+	background-color: #2B8CC9;
+}
+#md_register_main .succ_wrap .yz_wrap .yz_link {
+	margin-top: 20px;
+}
+#md_register_main .xq_wrap {
+	width: 580px;
+	position: absolute;
+	top: 550px;
+	left: 50px;
+}
+#md_register_main .xq_wrap .xq_title {
+	color: #525252;
+	font-size: 16px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #E3E5E5;
+}
+#md_register_main .xq_wrap .list_wrap {
+	margin-top: 20px;
+}
+#md_register_main .xq_wrap .list_wrap li {
+	width: 180px;
+	height: 75px;
+	background-color: #FAFAFA;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	float: left;
+	position: relative;
+}
+#md_register_main .xq_wrap .list_wrap li.no_mg_rt {
+	margin-right: 0px;
+}
+#md_register_main .xq_wrap .list_wrap .i_com {
+	width: 25px;
+	height: 25px;
+	background: url(register_btn.png)/*tpa=http://www.jinfuzi.com/static/img/public/login/register_btn.png*/ no-repeat;
+	position: absolute;
+	top: 20px;
+	left: 15px;
+	
+}
+#md_register_main .xq_wrap .list_wrap .icon1 {
+	background-position: -170px -10px;
+}
+#md_register_main .xq_wrap .list_wrap .icon2 {
+	background-position: -200px -10px;
+}
+#md_register_main .xq_wrap .list_wrap .icon3 {
+	background-position: -230px -10px;
+}
+#md_register_main .xq_wrap .list_wrap .icon4 {
+	background-position: -170px -40px;
+}
+#md_register_main .xq_wrap .list_wrap .icon5 {
+	background-position: -200px -40px;
+}
+#md_register_main .xq_wrap .list_wrap .icon6 {
+	background-position: -230px -40px;
+}
+#md_register_main .xq_wrap .list_wrap .list_p {
+	margin-top: 15px;
+	margin-left: 50px;
+}
+#md_register_main .xq_wrap .list_wrap .prod_name {
+	color: #525252;
+	font-size: 14px;
+}
+#md_register_main .xq_wrap .list_wrap .prod_desc {
+	color: #999;
+	font-size: 12px;
+}
