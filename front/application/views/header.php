@@ -242,17 +242,18 @@
     </div>
 </div>
 <!-- start in topbar -->
-</div><!--首页导航菜单栏模块-->
+</div>
+<!--首页导航菜单栏模块-->
 <div class="md_hd_nav">
     <div class="hd_nav_con layout clearfix">
         <ul class="hd_main_menu" id="yw0">
-<li class="mi-short <?php if( $this->uri->segment(1) == 'main'|| $this->uri->segment(1) == '') echo 'active';?>"><a href="/main/index">信托首页</a></li>
-<li class="mi-long <?php if( $this->uri->segment(1) == 'product') echo 'active';?>"><a href="/product/index">信托产品</a><i class="ico_new"></i></li>
-<li class="mi-long <?php if( $this->uri->segment(1) == 'company') echo 'active';?>"><a href="/company/index">信托公司</a></li>
-<li class="mi-short <?php if( $this->uri->segment(1) == 'lesson') echo 'active';?>"><a href="/lesson/index">信托课堂</a></li>
-<li class="mi-short <?php if( $this->uri->segment(1) == 'guide') echo 'active';?>"><a href="/guide/index">信托导购</a></li>
-<li class="mi-long <?php if( $this->uri->segment(1) == 'consult') echo 'active';?>"><a href="/consult/index">信托咨询</a></li>
-<li class="mi-short <?php if( $this->uri->segment(1) == 'connect') echo 'active';?>"><a href="/connect/index">联系我们</a></li>
+<li class="mi-short <?php if( $this->uri->segment(1) == 'main'|| $this->uri->segment(1) == '') echo 'active';?>"><a href="/">信托首页</a></li>
+<li class="mi-long <?php if( $this->uri->segment(1) == 'product') echo 'active';?>"><a href="/product">信托产品</a><i class="ico_new"></i></li>
+<li class="mi-long <?php if( $this->uri->segment(1) == 'company') echo 'active';?>"><a href="/company">信托公司</a></li>
+<li class="mi-short <?php if( $this->uri->segment(1) == 'lesson') echo 'active';?>"><a href="/lesson">信托课堂</a></li>
+<li class="mi-short <?php if( $this->uri->segment(1) == 'guide') echo 'active';?>"><a href="/guide">信托导购</a></li>
+<li class="mi-long <?php if( $this->uri->segment(1) == 'consult') echo 'active';?>"><a href="/consult">信托咨询</a></li>
+<li class="mi-short <?php if( $this->uri->segment(1) == 'connect') echo 'active';?>"><a href="/connect">联系我们</a></li>
 <!-- <li class="mi-long last"><a href="/question/">理财问答</a><i class="ico_hot"></i></li> -->
 </ul>      
 <!--         <div class="hd_sub_menu"> -->
