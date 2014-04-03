@@ -40,6 +40,12 @@
 
 
 $route['default_controller'] = "main/index/index";
+$route['product'] = "product/index/index";
+$route['company'] = "company/index/index";
+$route['lesson'] = "lesson/index/index";
+$route['guide'] = "company/index/index";
+$route['consult'] = "company/index/index";
+$route['connect'] = "company/index/index";
 $route['404_override'] = '';
 
 
