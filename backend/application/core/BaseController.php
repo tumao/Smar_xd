@@ -9,6 +9,8 @@ class BaseController extends MX_Controller
 	public function __construct()
 	{
 		parent::__construct();
+		$this->_check_user_is_login();
+		$this->load->helper(array('form', 'url'));  
 	}
 	/**
 	 * @params array $data
@@ -110,6 +112,16 @@ class BaseController extends MX_Controller
                 exit;
             }
         }
+    }
+    public function _check_user_is_login(){
+//    	$this->session->set_userdata('uid','111');
+    	if( $this->session->userdata('uid') ){
+    		$this->session->sess_destroy();
+    		return true;
+    	}
+ //   	header("Location:/main/user/login");
+//		redirect("/main/user/login");
+		$this->load->view('111');
     }
 
 
