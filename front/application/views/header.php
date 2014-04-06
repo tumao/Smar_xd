@@ -3,8 +3,7 @@
 	<head>
 		<meta name="renderer" content="webkit">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta property="qc:admins" content="2037021714621665216375" /><!--QQConnect-->
-        <meta name="description" content="找信托产品产品上金斧子网，金斧子网为您提供最新在售信托产品信息，您可以在线预约最专业财富管理顾问，找到最适合自己的信托产品。" />
+        <meta name="description" content="" />
 <meta name="keywords" content="信托产品 2013年信托产品 在售信托产品 最新信托产品 信托产品大全 信托公司 信托指南 固定收益信托" />
 <link rel="Shortcut Icon" href="/static/cmpt/root/image/shortico.png" />
 <link rel="stylesheet" type="text/css" href="/static/css/common/reset.css" />
@@ -23,8 +22,10 @@
 <script type="text/javascript" src="/static//plugin/jquery.jfz.rsvform.js"></script>
 <script type="text/javascript" src="/static/js/common/citys.js"></script>
 <script type="text/javascript" src="/static/js/common/public.js"></script>
+<!--
 <script type="text/javascript" src="/static/cmpt/root/script/plugin/JFZ_Dialog/js/JFZ_dialog.js"></script>
 <script type="text/javascript" src="/static/cmpt/root/js/plugin/jfz_slider/js/JFZ_Slider.js"></script>
+-->
 <title>信托产品-金斧子</title>
                         	</head>
 	<body>
@@ -90,7 +91,7 @@
         <h1 class="logo">
             <a class="logo_link" title="金斧子首页" href="/">金斧子，聪明您的投资</a>        </h1>
         <div class="logo_info">
-            <!-- 选中状态增加active -->
+            <!--
             <div class="city" id="j_city">
                 <div class="city_hd"><span class="f_fl"><a href="javascript:;" class="city_link">全国</a><i class="arrow"></i></span></div>
                 <div class="city_bd">
@@ -208,8 +209,10 @@
                                                 <div class="bt clearfix"><a class="more" href="/main/index/more_city"><i></i>更多城市</a></div>
                     </div>
                 </div>
-            </div>                      
-            <a title="" target="_blank" href="http://www.jinfuzi.com/public/about.html"><span class="info">互联网投资理财第一平台</span></a>        </div>
+            </div>
+            <a title="" target="_blank" href="#html#"><span class="info">互联网投资理财第一平台</span></a>
+            -->
+        </div>
     </div>
     <!-- search -->
     <div class="md_hd_search">
@@ -237,8 +240,10 @@
                 <input type="submit" class="f_fr search_submit" id="" name="" value=""/>                            
             </form>
         </div>
+        <!--
         <div class="search_hot">
             <a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/c-7">中铁信托</a><a title="" target="_blank" href="http://www.jinfuzi.com/index/zq.html">股票开户</a><a title="" target="_blank" href="http://www.jinfuzi.com/advert/xintuo/xtxe.html">小额理财</a><a title="" target="_blank" href="http://www.jinfuzi.com/tg/jj-1.html">基金定投</a>        </div>
+            -->
     </div>
 </div>
 <!-- start in topbar -->
@@ -248,7 +253,7 @@
     <div class="hd_nav_con layout clearfix">
         <ul class="hd_main_menu" id="yw0">
 <li class="mi-short <?php if( $this->uri->segment(1) == 'main'|| $this->uri->segment(1) == '') echo 'active';?>"><a href="/">信托首页</a></li>
-<li class="mi-long <?php if( $this->uri->segment(1) == 'product') echo 'active';?>"><a href="/product">信托产品</a><i class="ico_new"></i></li>
+<li class="mi-long <?php if( $this->uri->segment(1) == 'product') echo 'active';?>"><a href="/product">信托产品</a></li>
 <li class="mi-long <?php if( $this->uri->segment(1) == 'company') echo 'active';?>"><a href="/company">信托公司</a></li>
 <li class="mi-short <?php if( $this->uri->segment(1) == 'lesson') echo 'active';?>"><a href="/lesson">信托课堂</a></li>
 <li class="mi-short <?php if( $this->uri->segment(1) == 'guide') echo 'active';?>"><a href="/guide">信托导购</a></li>

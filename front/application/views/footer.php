@@ -1,99 +1,3 @@
-<!--脚本banner模块-->
-<a title="了解我们" target="_blank" class="md_ft_banner" href="/public/about.html">了解我们</a><!--金斧子联系、服务、介绍等模块-->
-<div class="md_ft_sitemap">
-    <div class="layout clearfix">
-        <div class="ft_server_wrap f_fl">
-            <h2 class="ft_map_tit">金斧子产品及服务</h2>
-            <div class="ft_server_list clearfix">
-                <dl class="s_dl w">
-                    <dt class="s_dt"><a target="_blank" href="/public/search.html">理财产品</a></dt>
-                    <dd class="s_dd">信托、私募、资管、有限合伙等产品的搜索、查找、对比、咨询、预约、购买</dd>
-                </dl>
-                <dl class="s_dl">
-                    <dt class="s_dt"><a target="_blank" href="/question/">理财问答</a></dt>
-                    <dd class="s_dd">在线答疑</dd>
-                </dl>
-                <dl class="s_dl">
-                    <dt class="s_dt"><a target="_blank" href="/guide/">理财资讯</a></dt>
-                    <dd class="s_dd">专业指南</dd>
-                </dl>
-                <dl class="s_dl">
-                    <dt class="s_dt"><a target="_blank" href="/index/zq.html">证券业务</a></dt>
-                    <dd class="s_dd">预约办理</dd>
-                </dl>
-                <dl class="s_dl">
-                    <dt class="s_dt"><a target="_blank" href="/index/qh.html">期货业务</a></dt>
-                    <dd class="s_dd">预约办理</dd>
-                </dl>
-                <dl class="s_dl">
-                    <dt class="s_dt"><a target="_blank" href="/tg/wh-2.html">外汇业务</a></dt>
-                    <dd class="s_dd">预约办理</dd>
-                </dl>
-                <dl class="s_dl">
-                    <dt class="s_dt"><a target="_blank" href="/tg/by-1.html">白银业务</a></dt>
-                    <dd class="s_dd">预约办理</dd>
-                </dl>
-            </div>                  
-        </div>
-        <div class="ft_sitemap_wrap f_fl">
-            <dl class="f_fl first">
-                <dt class="ft_map_tit">关于金斧子</dt>
-                <dd><a target="_blank" href="/public/about.html">公司介绍</a></dd>
-                <dd><a target="_blank" href="/public/about/milestone.html">发展历程</a></dd>
-                <dd><a target="_blank" href="/public/about/finance.html">理财顾问</a></dd>
-                <dd><a target="_blank" href="/public/about/stockholder.html">股东背景</a></dd>
-                <dd><a target="_blank" href="/public/about/news.html">最新动态</a></dd>
-                <dd><a target="_blank" href="/public/about/sitemap.html">网站地图</a></dd>
-            
-            </dl>
-            <dl class="f_fl second">
-                <dt class="ft_map_tit">招商合作</dt>
-                <dd><a target="_blank" href="/public/about/partner.html#zqsm">证券私募</a></dd>
-                <dd><a target="_blank" href="/public/about/partner.html#qhstock">期货外汇</a></dd>
-                <dd><a target="_blank" href="/public/about/partner.html#xt">信托资管</a></dd>
-                <dd><a target="_blank" href="/public/about/partner.html#p2p">网贷P2P</a></dd>
-                <dd><a target="_blank" href="/public/about/friendlink.html">友情链接</a></dd>
-            </dl>
-            <dl class="f_fl third">
-                <dt class="ft_map_tit">联系方式</dt>
-                <dd><a href="/user/qq/qq/1158786149/uid/0.html" target="_blank">在线服务</a></dd>
-                <dd><a target="_blank" href="/public/about/contact.html">其他方式</a></dd>
-            </dl>
-            <dl class="tel">
-                <div class="wrap">
-                    <span class="t1">客服电话</span>
-                    <span class="t2">4000-181-131</span>
-                </div>                      
-            </dl>
-        </div>
-        <div class="ft_sc_wrap f_fl">                   
-            <h2 class="ft_map_tit">关注金斧子</h2>
-            <div class="ft_wx_info clearfix">
-                <div class="img_wrap f_fl"><img src="/static/img/common/wx_zx_116.gif" alt="金斧子官方微信" title="金斧子官方微信"/></div>
-                <div class="txt f_fl">
-                    <span class="t1">金斧子官方微信</span>
-                    <span class="t2">微信扫描二维码，随时随地了解金斧子最新动态，掌握第一手理财资讯。</span>
-                </div>
-            </div>
-            <div class="ft_wb_info clearfix">
-                <div class="weibo f_fl">
-                    <div class="img_wrap f_fl"><img src="/static/img/common/wb_qq.png" alt="" title=""/></div>
-                    <div class="txt f_fl">
-                        <span>QQ微博</span>                           
-                        <a target="_blank" href="http://t.qq.com/jinfuzi000" title="">立即关注</a>
-                    </div>                          
-                </div>
-                <div class="weibo f_fl">
-                    <div class="img_wrap f_fl"><img src="/static/img/common/wb_sina.png" alt="" title=""/></div>
-                    <div class="txt f_fl">
-                        <span>新浪微博</span>                           
-                        <a target="_blank" href="http://weibo.com/tanranjiulu"  title="">立即关注</a>
-                    </div>                          
-                </div>                      
-            </div>                  
-        </div>
-    </div>
-</div><!--金斧子业务推荐和友情连接模块-->
 <!-- 只有route为首页或友情链接不为空时显示 -->
 <div class="md_ft_flink bg_twill">
     <div class="ft_flink_wrap layout">
@@ -207,7 +111,7 @@
     var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
     document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5e2bc3c8a4c0fc8ce0d2765f02689f72' type='text/javascript'%3E%3C/script%3E"));
     </script>
-        
+
 	<div style="display: none">
 	    <a href="http://www.anquan.org/s/www.jinfuzi.com" name="T8W3HDvuKXC1XCBRQNvRn1DaEsNj7xekuMkGl3cYlthVEGbLiG" >安全联盟</a>
 	</div>
