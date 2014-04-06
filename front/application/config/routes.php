@@ -46,6 +46,7 @@ $route['lesson'] = "lesson/index/index";
 $route['guide'] = "company/index/index";
 $route['consult'] = "company/index/index";
 $route['connect'] = "company/index/index";
+$route['redbud-admin'] = "admin/index/index";
 $route['404_override'] = '';
 
 

@@ -97,30 +97,9 @@
 			<a href="javascript:;" title="" target="" class="f_ib"> <img src="/static/img/common/kx.png" alt=""  class="" title=""/> </a>
 		</p>
 	</div>
-</div><!-- Baidu Button BEGIN -->
-<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=2&amp;pos=left&amp;uid=6593288"></script>
-<script type="text/javascript" id="bdshell_js"></script>
-<!-- Baidu Button END -->
-
-<script type="text/javascript">
-    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1858386260fdb629e9ad33f72bf5c9ae' type='text/javascript'%3E%3C/script%3E"));
-</script>
-
-        <script type="text/javascript">
-    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5e2bc3c8a4c0fc8ce0d2765f02689f72' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-
+</div>
 	<div style="display: none">
 	    <a href="http://www.anquan.org/s/www.jinfuzi.com" name="T8W3HDvuKXC1XCBRQNvRn1DaEsNj7xekuMkGl3cYlthVEGbLiG" >安全联盟</a>
 	</div>
-    <script type="text/javascript">
-/*<![CDATA[*/
-jQuery(function($) {
-document.getElementById("bdshell_js").src="http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion="+Math.ceil(new Date()/3600000);
-});
-/*]]>*/
-</script>
 </body>
 </html>
