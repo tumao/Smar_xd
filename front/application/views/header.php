@@ -3,8 +3,7 @@
 	<head>
 		<meta name="renderer" content="webkit">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta property="qc:admins" content="2037021714621665216375" /><!--QQConnect-->
-        <meta name="description" content="找信托产品产品上金斧子网，金斧子网为您提供最新在售信托产品信息，您可以在线预约最专业财富管理顾问，找到最适合自己的信托产品。" />
+        <meta name="description" content="" />
 <meta name="keywords" content="信托产品 2013年信托产品 在售信托产品 最新信托产品 信托产品大全 信托公司 信托指南 固定收益信托" />
 <link rel="Shortcut Icon" href="/static/cmpt/root/image/shortico.png" />
 <link rel="stylesheet" type="text/css" href="/static/css/common/reset.css" />
@@ -23,8 +22,6 @@
 <script type="text/javascript" src="/static//plugin/jquery.jfz.rsvform.js"></script>
 <script type="text/javascript" src="/static/js/common/citys.js"></script>
 <script type="text/javascript" src="/static/js/common/public.js"></script>
-<script type="text/javascript" src="/static/cmpt/root/script/plugin/JFZ_Dialog/js/JFZ_dialog.js"></script>
-<script type="text/javascript" src="/static/cmpt/root/js/plugin/jfz_slider/js/JFZ_Slider.js"></script>
 <title>信托产品-金斧子</title>
                         	</head>
 	<body>
@@ -90,126 +87,7 @@
         <h1 class="logo">
             <a class="logo_link" title="金斧子首页" href="/">金斧子，聪明您的投资</a>        </h1>
         <div class="logo_info">
-            <!-- 选中状态增加active -->
-            <div class="city" id="j_city">
-                <div class="city_hd"><span class="f_fl"><a href="javascript:;" class="city_link">全国</a><i class="arrow"></i></span></div>
-                <div class="city_bd">
-                    <div class="wrap">
-                                                <dl class="hbdb city_com clearfix">
-                            <dt class="f_fl title">华北东北:</dt>
-                            <dd class="f_fl d_list">
-                                <ul class="u_list">
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="2004" href="/public/home/chooseCity.html?city_id=2004">北京</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="2006" href="/public/home/chooseCity.html?city_id=2006">天津</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1203" href="/public/home/chooseCity.html?city_id=1203">沈阳</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1206" href="/public/home/chooseCity.html?city_id=1206">大连</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1419" href="/public/home/chooseCity.html?city_id=1419">长春</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1042" href="/public/home/chooseCity.html?city_id=1042">哈尔滨</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1172" href="/public/home/chooseCity.html?city_id=1172">石家庄</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1237" href="/public/home/chooseCity.html?city_id=1237">太原</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1270" href="/public/home/chooseCity.html?city_id=1270">呼和浩特</a>                                    </li>
-                                                                    </ul>
-                            </dd>
-                        </dl>
-                                                <dl class="hbdb city_com clearfix">
-                            <dt class="f_fl title">华东地区:</dt>
-                            <dd class="f_fl d_list">
-                                <ul class="u_list">
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="2005" href="/public/home/chooseCity.html?city_id=2005">上海</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="2032" href="/public/home/chooseCity.html?city_id=2032">杭州</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="2033" href="/public/home/chooseCity.html?city_id=2033">南京</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1440" href="/public/home/chooseCity.html?city_id=1440">苏州</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1441" href="/public/home/chooseCity.html?city_id=1441">无锡</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1195" href="/public/home/chooseCity.html?city_id=1195">济南</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1005" href="/public/home/chooseCity.html?city_id=1005">厦门</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1085" href="/public/home/chooseCity.html?city_id=1085">宁波</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1007" href="/public/home/chooseCity.html?city_id=1007">福州</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1234" href="/public/home/chooseCity.html?city_id=1234">青岛</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1446" href="/public/home/chooseCity.html?city_id=1446">合肥</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1437" href="/public/home/chooseCity.html?city_id=1437">常州</a>                                    </li>
-                                                                    </ul>
-                            </dd>
-                        </dl>
-                                                <dl class="hbdb city_com clearfix">
-                            <dt class="f_fl title">中部西部:</dt>
-                            <dd class="f_fl d_list">
-                                <ul class="u_list">
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1013" href="/public/home/chooseCity.html?city_id=1013">武汉</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1135" href="/public/home/chooseCity.html?city_id=1135">郑州</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1229" href="/public/home/chooseCity.html?city_id=1229">长沙</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1443" href="/public/home/chooseCity.html?city_id=1443">南昌</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1141" href="/public/home/chooseCity.html?city_id=1141">贵阳</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1014" href="/public/home/chooseCity.html?city_id=1014">西宁</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1100" href="/public/home/chooseCity.html?city_id=1100">成都</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="2007" href="/public/home/chooseCity.html?city_id=2007">重庆</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1044" href="/public/home/chooseCity.html?city_id=1044">西安</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1162" href="/public/home/chooseCity.html?city_id=1162">昆明</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1022" href="/public/home/chooseCity.html?city_id=1022">兰州</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1298" href="/public/home/chooseCity.html?city_id=1298">乌鲁木齐</a>                                    </li>
-                                                                    </ul>
-                            </dd>
-                        </dl>
-                                                <dl class="hbdb city_com clearfix">
-                            <dt class="f_fl title">华南地区:</dt>
-                            <dd class="f_fl d_list">
-                                <ul class="u_list">
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="2031" href="/public/home/chooseCity.html?city_id=2031">广州</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="2002" href="/public/home/chooseCity.html?city_id=2002">深圳</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1012" href="/public/home/chooseCity.html?city_id=1012">佛山</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1004" href="/public/home/chooseCity.html?city_id=1004">珠海</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1008" href="/public/home/chooseCity.html?city_id=1008">东莞</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1321" href="/public/home/chooseCity.html?city_id=1321">三亚</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1311" href="/public/home/chooseCity.html?city_id=1311">海口</a>                                    </li>
-                                                                        <li class="f_fl">
-                                        <a class="city_link" city="1448" href="/public/home/chooseCity.html?city_id=1448">南宁</a>                                    </li>
-                                                                    </ul>
-                            </dd>
-                        </dl>
-                                                <div class="bt clearfix"><a class="more" href="/main/index/more_city"><i></i>更多城市</a></div>
-                    </div>
-                </div>
-            </div>                      
-            <a title="" target="_blank" href="http://www.jinfuzi.com/public/about.html"><span class="info">互联网投资理财第一平台</span></a>        </div>
+        </div>
     </div>
     <!-- search -->
     <div class="md_hd_search">
@@ -237,8 +115,10 @@
                 <input type="submit" class="f_fr search_submit" id="" name="" value=""/>                            
             </form>
         </div>
+        <!--
         <div class="search_hot">
             <a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/c-7">中铁信托</a><a title="" target="_blank" href="http://www.jinfuzi.com/index/zq.html">股票开户</a><a title="" target="_blank" href="http://www.jinfuzi.com/advert/xintuo/xtxe.html">小额理财</a><a title="" target="_blank" href="http://www.jinfuzi.com/tg/jj-1.html">基金定投</a>        </div>
+            -->
     </div>
 </div>
 <!-- start in topbar -->
@@ -248,26 +128,13 @@
     <div class="hd_nav_con layout clearfix">
         <ul class="hd_main_menu" id="yw0">
 <li class="mi-short <?php if( $this->uri->segment(1) == 'main'|| $this->uri->segment(1) == '') echo 'active';?>"><a href="/">信托首页</a></li>
-<li class="mi-long <?php if( $this->uri->segment(1) == 'product') echo 'active';?>"><a href="/product">信托产品</a><i class="ico_new"></i></li>
+<li class="mi-long <?php if( $this->uri->segment(1) == 'product') echo 'active';?>"><a href="/product">信托产品</a></li>
 <li class="mi-long <?php if( $this->uri->segment(1) == 'company') echo 'active';?>"><a href="/company">信托公司</a></li>
 <li class="mi-short <?php if( $this->uri->segment(1) == 'lesson') echo 'active';?>"><a href="/lesson">信托课堂</a></li>
 <li class="mi-short <?php if( $this->uri->segment(1) == 'guide') echo 'active';?>"><a href="/guide">信托导购</a></li>
 <li class="mi-long <?php if( $this->uri->segment(1) == 'consult') echo 'active';?>"><a href="/consult">信托咨询</a></li>
 <li class="mi-short <?php if( $this->uri->segment(1) == 'connect') echo 'active';?>"><a href="/connect">联系我们</a></li>
-<!-- <li class="mi-long last"><a href="/question/">理财问答</a><i class="ico_hot"></i></li> -->
-</ul>      
-<!--         <div class="hd_sub_menu"> -->
-<!--             <div class="hd_submenu_tit"> -->
-<!--                     <span>开户</span> -->
-<!--                     <em class="arrow a_1"></em> -->
-<!--                     <em class="arrow a_2"></em> -->
-<!--             </div> -->
-<!--             <ul class="hd_sub_menulist" id="yw1"> -->
-<!-- <li><a href="/index/zq.html">股票</a></li> -->
-<!-- <li><a href="/index/qh.html">期货</a></li> -->
-<!-- <li><a href="/waihui/hd.html">外汇</a></li> -->
-<!-- <li class="last"><a href="/ganggu/">港股</a></li> -->
-<!-- </ul>             -->
-<!--         </div> -->
+</ul>
+
     </div>
 </div>

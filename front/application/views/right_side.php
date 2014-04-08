@@ -96,20 +96,5 @@
 					</div>												
 	</div>
 </div>
-			<!-- subscribe -->
-			<div class="xt_right_item">						
-				<div class="xt_r_bd">
-					<h5 class="xt_subscribe_hd heiti">信托产品信息<span class="f_f60">免费</span>订阅</h5>
-					<ul class="subscribe_list clearfix">
-						<li><em class="xt_ico_2"></em>第一时间通知您最新的信托计划</li>
-						<li><em class="xt_ico_2"></em>免费为您发送稀缺小额等产品信息</li>
-						<li><em class="xt_ico_2"></em>免费服务热线：<span class="tel">4000-181-131</span></li>
-					</ul>
-					<div class="subscribe_control clearfix">
-						<a category="1" id="dialog_phone" class="subscribe_btn totel" href="javascript:;">订阅到手机</a>
-						<a class="subscribe_btn toemail" category="1" id="dialog_email" href="javascript:;">订阅到邮箱</a>
-					</div>					
-				</div>
-			</div>
 			<!-- right end -->
 		</div>

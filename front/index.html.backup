@@ -1,4 +1,273 @@
-<?php echo $this->load->view('header'); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="renderer" content="webkit">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta property="qc:admins" content="2037021714621665216375" /><!--QQConnect-->
+        <meta name="description" content="找信托产品产品上金斧子网，金斧子网为您提供最新在售信托产品信息，您可以在线预约最专业财富管理顾问，找到最适合自己的信托产品。" />
+<meta name="keywords" content="信托产品 2013年信托产品 在售信托产品 最新信托产品 信托产品大全 信托公司 信托指南 固定收益信托" />
+<link rel="Shortcut Icon" href="static/cmpt/root/image/shortico.png" />
+<link rel="stylesheet" type="text/css" href="static/css/common/reset.css" />
+<link rel="stylesheet" type="text/css" href="static/css/common/global.css" />
+<link rel="stylesheet" type="text/css" href="static/css/common/common.css" />
+<link rel="stylesheet" type="text/css" href="static/plugin/JFZ_Dialog/css/jfz-dialog2.css" />
+<link rel="stylesheet" type="text/css" href="static/css/common/topbanner.css" />
+<link rel="stylesheet" type="text/css" href="static/css/xintuo/xt.css" />
+<link rel="stylesheet" type="text/css" href="static/cmpt/root/script/plugin/JFZ_Dialog/css/JFZ_dialog.css" />
+<link rel="stylesheet" type="text/css" href="static/cmpt/root/js/plugin/jfz_slider/css/JFZ_Slider.css" />
+<script type="text/javascript" src="assets/8b5bc196/jquery.min.js"></script>
+<script type="text/javascript" src="static//plugin/jquery.cookie.js"></script>
+<script type="text/javascript" src="static//plugin/JFZ_Dialog/js/JFZ_dialog2.js"></script>
+<script type="text/javascript" src="static//plugin/jquery.jfz.rsvform.js"></script>
+<script type="text/javascript" src="static/js/common/citys.js"></script>
+<script type="text/javascript" src="static/js/common/public.js"></script>
+<script type="text/javascript" src="static/cmpt/root/script/plugin/JFZ_Dialog/js/JFZ_dialog.js"></script>
+<script type="text/javascript" src="static/cmpt/root/js/plugin/jfz_slider/js/JFZ_Slider.js"></script>
+<title>信托产品-金斧子</title>
+                        	</head>
+	<body>
+	<!-- toolbar -->
+<div class="md_hd_bar bg_twill">
+    <div class="layout clearfix">
+        <!-- login wrap -->
+        <ul class="login_wrap">
+            <li class="hd_login_info login_off">
+                <span>欢迎您光临金斧子！</span>
+                <a href="/public/login.html">登录</a>                <span class="sep">|</span>
+                <a href="/public/register.html">注册</a>            </li>
+            <li class="hd_user_info login_on" style="display:none">
+                <span id="login_name">欢迎您</span>
+                <a href="/public/logout.html">退出登陆</a>                 <span class="sep">|</span>
+                <a href="/ucenter/identity/apply.html">您是理财顾问吗？请认证加入金斧子吧！</a>            </li>
+        </ul>
+        <!-- toolbar menu -->
+        <ul class="tb_list">
+            <li class="sep">|</li>
+            <li class="tb_uc">
+                <div class="tb_menu">
+                    <div class="tb_menu_hd">
+                        <a target="_blank" class="login_on" href="/ucenter.html">个人中心</a>                        <a class="login_off" style="display: none" href="/public/login.html">个人中心</a>                        <i class="arrow"></i>
+                    </div>
+                    <div class="tb_menu_bd"></div>
+                </div>                          
+            </li>
+            <li class="sep">|</li>
+            <li>
+                <a target="_blank" href="/public/about/help.html">帮助</a>            </li>
+            <li class="sep">|</li>
+            <li>
+               <a id="j_collect" title="添加收藏" href="javascript:;">收藏</a>
+            </li>
+            <li class="sep">|</li>
+            <li id="weixin" class="tb_wx">
+                <a href="javascript:;" title="微信关注" target=""><i class="ico_wx"></i>关注我们</a>
+                <div class="popwxour" style="display: none">
+                    <i class="arrow arrow_1"></i>
+                    <i class="arrow arrow_2"></i>
+                    <div class="wxinter clearfix">
+                        <span class="wximg"><a rel="nofollow" href="javascript:;"><img src="/static/img/common/wx_zx_92.gif" alt=""></a></span>
+                        <div class="info">
+                            <p>预约理财顾问，对比金融产品查找证券、期货、银行网点…</p>
+                            <p class="txtwxp">微信号：<span class="f_blue">jinfuzi-wx</span></p>
+                            <p>或直接扫描左侧二维码</p>
+                        </div>                       
+                    </div>
+                </div>
+            </li>
+            <li class="sep">|</li>
+            <li class="tb_tel">
+                <span class="f_f60"><i class="ico_tel"></i>4000-181-131</span>
+            </li>                       
+        </ul>
+    </div>                                      
+</div>
+<!--首页banner模块-->
+<div class="md_hd_logowrap layout clearfix">
+    <!-- logo -->
+    <div class="md_hd_logo">
+        <h1 class="logo">
+            <a class="logo_link" title="金斧子首页" href="/">金斧子，聪明您的投资</a>        </h1>
+        <div class="logo_info">
+            <!-- 选中状态增加active -->
+            <div class="city" id="j_city">
+                <div class="city_hd"><span class="f_fl"><a href="javascript:;" class="city_link">全国</a><i class="arrow"></i></span></div>
+                <div class="city_bd">
+                    <div class="wrap">
+                                                <dl class="hbdb city_com clearfix">
+                            <dt class="f_fl title">华北东北:</dt>
+                            <dd class="f_fl d_list">
+                                <ul class="u_list">
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="2004" href="/public/home/chooseCity.html?city_id=2004">北京</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="2006" href="/public/home/chooseCity.html?city_id=2006">天津</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1203" href="/public/home/chooseCity.html?city_id=1203">沈阳</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1206" href="/public/home/chooseCity.html?city_id=1206">大连</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1419" href="/public/home/chooseCity.html?city_id=1419">长春</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1042" href="/public/home/chooseCity.html?city_id=1042">哈尔滨</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1172" href="/public/home/chooseCity.html?city_id=1172">石家庄</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1237" href="/public/home/chooseCity.html?city_id=1237">太原</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1270" href="/public/home/chooseCity.html?city_id=1270">呼和浩特</a>                                    </li>
+                                                                    </ul>
+                            </dd>
+                        </dl>
+                                                <dl class="hbdb city_com clearfix">
+                            <dt class="f_fl title">华东地区:</dt>
+                            <dd class="f_fl d_list">
+                                <ul class="u_list">
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="2005" href="/public/home/chooseCity.html?city_id=2005">上海</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="2032" href="/public/home/chooseCity.html?city_id=2032">杭州</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="2033" href="/public/home/chooseCity.html?city_id=2033">南京</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1440" href="/public/home/chooseCity.html?city_id=1440">苏州</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1441" href="/public/home/chooseCity.html?city_id=1441">无锡</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1195" href="/public/home/chooseCity.html?city_id=1195">济南</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1005" href="/public/home/chooseCity.html?city_id=1005">厦门</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1085" href="/public/home/chooseCity.html?city_id=1085">宁波</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1007" href="/public/home/chooseCity.html?city_id=1007">福州</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1234" href="/public/home/chooseCity.html?city_id=1234">青岛</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1446" href="/public/home/chooseCity.html?city_id=1446">合肥</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1437" href="/public/home/chooseCity.html?city_id=1437">常州</a>                                    </li>
+                                                                    </ul>
+                            </dd>
+                        </dl>
+                                                <dl class="hbdb city_com clearfix">
+                            <dt class="f_fl title">中部西部:</dt>
+                            <dd class="f_fl d_list">
+                                <ul class="u_list">
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1013" href="/public/home/chooseCity.html?city_id=1013">武汉</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1135" href="/public/home/chooseCity.html?city_id=1135">郑州</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1229" href="/public/home/chooseCity.html?city_id=1229">长沙</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1443" href="/public/home/chooseCity.html?city_id=1443">南昌</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1141" href="/public/home/chooseCity.html?city_id=1141">贵阳</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1014" href="/public/home/chooseCity.html?city_id=1014">西宁</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1100" href="/public/home/chooseCity.html?city_id=1100">成都</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="2007" href="/public/home/chooseCity.html?city_id=2007">重庆</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1044" href="/public/home/chooseCity.html?city_id=1044">西安</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1162" href="/public/home/chooseCity.html?city_id=1162">昆明</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1022" href="/public/home/chooseCity.html?city_id=1022">兰州</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1298" href="/public/home/chooseCity.html?city_id=1298">乌鲁木齐</a>                                    </li>
+                                                                    </ul>
+                            </dd>
+                        </dl>
+                                                <dl class="hbdb city_com clearfix">
+                            <dt class="f_fl title">华南地区:</dt>
+                            <dd class="f_fl d_list">
+                                <ul class="u_list">
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="2031" href="/public/home/chooseCity.html?city_id=2031">广州</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="2002" href="/public/home/chooseCity.html?city_id=2002">深圳</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1012" href="/public/home/chooseCity.html?city_id=1012">佛山</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1004" href="/public/home/chooseCity.html?city_id=1004">珠海</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1008" href="/public/home/chooseCity.html?city_id=1008">东莞</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1321" href="/public/home/chooseCity.html?city_id=1321">三亚</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1311" href="/public/home/chooseCity.html?city_id=1311">海口</a>                                    </li>
+                                                                        <li class="f_fl">
+                                        <a class="city_link" city="1448" href="/public/home/chooseCity.html?city_id=1448">南宁</a>                                    </li>
+                                                                    </ul>
+                            </dd>
+                        </dl>
+                                                <div class="bt clearfix"><a class="more" href="/public/home/chooseCity"><i></i>更多城市</a></div>
+                    </div>
+                </div>
+            </div>                      
+            <a title="" target="_blank" href="http://www.jinfuzi.com/public/about.html"><span class="info">互联网投资理财第一平台</span></a>        </div>
+    </div>
+    <!-- search -->
+    <div class="md_hd_search">
+        <div class="search_wrap">
+            <form id="searchForm" class="search_form clearfix"  action="/xt/list/search" method="get" target="_blank">
+                <!-- 选中状态增加active -->
+                <div class="search_select cmd_wrap f_fl">
+                    <div id="searchButton" class="search_select_hd cmd_btn">
+                        <span id="selected_txt">信托产品</span>
+                        <span class="select_ico"><em class="arrow"></em></span>
+                    </div>
+                    <div id="typeList" class="search_select_bd cmd_con">
+                        <ul class="list">
+                            <li><a href="javascript:;">信托产品</a></li>
+                             <li><a href="javascript:;">资管产品</a></li>
+                            <li><a href="javascript:;">有限合伙</a></li>
+                            <li><a href="javascript:;">阳光私募</a></li>
+                            <li><a href="javascript:;">银行理财</a></li>
+                            <li class=><a href="javascript:;">理财问答</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="hidden" id="serachType" value="0">
+                <input type="text" class="f_fl search_keyword" id="j_search_keyword" name="keyword" autocomplete="off"/>
+                <input type="submit" class="f_fr search_submit" id="" name="" value=""/>                            
+            </form>
+        </div>
+        <div class="search_hot">
+            <a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/c-7">中铁信托</a><a title="" target="_blank" href="http://www.jinfuzi.com/index/zq.html">股票开户</a><a title="" target="_blank" href="http://www.jinfuzi.com/advert/xintuo/xtxe.html">小额理财</a><a title="" target="_blank" href="http://www.jinfuzi.com/tg/jj-1.html">基金定投</a>        </div>
+    </div>
+</div>
+<!-- start in topbar -->
+</div><!--首页导航菜单栏模块-->
+<div class="md_hd_nav">
+    <div class="hd_nav_con layout clearfix">
+        <ul class="hd_main_menu" id="yw0">
+<li class="mi-short active"><a href="/">信托首页</a></li>
+<li class="mi-long"><a href="/">信托产品</a><i class="ico_new"></i></li>
+<li class="mi-long"><a href="/">信托公司</a></li>
+<li class="mi-short"><a href="http://www.jinfuzi.com/xintuo/">信托课堂</a></li>
+<li class="mi-short"><a href="http://www.jinfuzi.com/ziguan/">信托导购</a></li>
+<li class="mi-long"><a href="http://www.jinfuzi.com/yxhh/">信托咨询</a></li>
+<li class="mi-short"><a href="/simu/">联系我们</a></li>
+<!-- <li class="mi-long last"><a href="/question/">理财问答</a><i class="ico_hot"></i></li> -->
+</ul>      
+<!--         <div class="hd_sub_menu"> -->
+<!--             <div class="hd_submenu_tit"> -->
+<!--                     <span>开户</span> -->
+<!--                     <em class="arrow a_1"></em> -->
+<!--                     <em class="arrow a_2"></em> -->
+<!--             </div> -->
+<!--             <ul class="hd_sub_menulist" id="yw1"> -->
+<!-- <li><a href="/index/zq.html">股票</a></li> -->
+<!-- <li><a href="/index/qh.html">期货</a></li> -->
+<!-- <li><a href="/waihui/hd.html">外汇</a></li> -->
+<!-- <li class="last"><a href="/ganggu/">港股</a></li> -->
+<!-- </ul>             -->
+<!--         </div> -->
+    </div>
+</div>
 <!-- 二级菜单 -->
 <!-- <div class="hd_subnav"> -->
 <!--     <div class="layout"> -->
@@ -40,7 +309,7 @@
 			<div class="layout">
 				<!-- fast search -->
 				<div class="xt_fastsearch">
-						<h3 class="xt_fs_hd clearfix"><span class="txt">筛选信托产品</span><a href="/product/index" target="_blank">高级筛选</a></h3>
+						<h3 class="xt_fs_hd clearfix"><span class="txt">筛选信托产品</span><a href="http://www.jinfuzi.com/xintuo/list" target="_blank">高级筛选</a></h3>
 						<div class="xt_fs_bd">											
 							<div class="input_wrap i_1 clearfix">
 								<label class="input_label" for="">投资门槛:</label>
@@ -136,7 +405,7 @@
 						<em class="hd_shadow_1"></em>
 						<em class="hd_shadow_2"></em>
 					</div>
-					<a href="/product/index" target="_blank" class="more"><em class="more_ico"></em>更多</a>
+					<a href="http://www.jinfuzi.com/xintuo/list" target="_blank" class="more"><em class="more_ico"></em>更多</a>
 				</div>
 				<div class="md_uc_bd">
 					<ul class="xt_prolist_1 clearfix">
@@ -252,7 +521,7 @@
 						<li class="tab_control_item" flag="false" sort="bzjx"><em class="arrow"></em><span>本周计息</span></li>
 						<li class="tab_control_item last" flag="false" sort="fifty"><em class="arrow"></em><span>50万起</span></li>
 					</ul>
-					<a href="/product/index" target="_blank" class="more"><em class="more_ico"></em>更多</a>
+					<a href="http://www.jinfuzi.com/xintuo/list" target="_blank" class="more"><em class="more_ico"></em>更多</a>
 				</div>
 				<div class="md_uc_bd tab_bd">
 					<!-- tc_1 -->
@@ -622,9 +891,176 @@
 				</div>
 			</div>				
 			<!-- left item 4 -->
+			<div class="xt_left_item md_uc_box">
+				<div class="md_uc_hd clearfix">
+					<!-- title -->
+					<div class="hd_title">
+						<span class="hd_txt heiti">专家在线</span>
+						<em class="hd_shadow_1"></em>
+						<em class="hd_shadow_2"></em>
+					</div>
+					<a href="/question/" target="_blank" class="more"><em class="more_ico"></em>更多</a>
+				</div>
+				<div class="md_uc_bd">
+					<div class="xt_qa_wrap clearfix">
+						<form class="qa_wrap" id="ask_form">
+							<h4 class="xt_qa_tit">提问</h4>							
+							<textarea class="xt_qa_txt" name='WdQuestion[title]' id="WdQuestion_content"></textarea>
+						    <input type="hidden" name="WdQuestion[cate_id]" value="3" />
+							<div class="xt_qa_control">
+								<a class="qa_btn" href="javascript:;"  id="ask">提交问答</a>
+							</div>
+						</form>
+					</div>
+					<div class="xt_qa_list">
+						<ul class="clearfix">
+															<li>
+									<em class="square"></em>
+									<a target="_blank" href="/question/detail-2846803.html">证劵公司可以卖信托产品吗？</a>
+								</li>
+															<li>
+									<em class="square"></em>
+									<a target="_blank" href="/question/detail-2845646.html">现在买信托理财产品安全吗？</a>
+								</li>
+															<li>
+									<em class="square"></em>
+									<a target="_blank" href="/question/detail-2844691.html">如何购买信托产品？</a>
+								</li>
+															<li>
+									<em class="square"></em>
+									<a target="_blank" href="/question/detail-2844369.html">信托产品怎么买?</a>
+								</li>
+															<li>
+									<em class="square"></em>
+									<a target="_blank" href="/question/detail-2844367.html">信托为什么收益那么高?</a>
+								</li>
+															<li>
+									<em class="square"></em>
+									<a target="_blank" href="/question/detail-2843641.html">信托产品产品会亏吗？</a>
+								</li>
+													</ul>
+					</div>
+				</div>
+			</div>
 			<!-- left end -->
 		</div>
-		<?php $this->load->view('right_side');?>
+
+		<!-- right -->
+		<div class="xt_right">
+			<!-- ad -->
+			<div class="xt_right_ad">
+				<a href="/advert/xintuo.html" target="_blank">
+					<img alt="" src="../static/img/xintuo/da_1.jpg">
+				</a>
+			</div>
+			<!-- article -->
+			<div class="xt_right_item">
+				<h5 class="xt_r_hd heiti">信托－高端投资客的首选</h5>
+				<div class="xt_r_bd">
+					<div class="advantage_list bg_dashed clearfix">
+						<dl class="advantage_item">
+							<dt class="tit">投资灵活</dt>
+							<dd class="con">唯一可投资实业领域的金融产品</dd>
+						</dl>
+						<dl class="advantage_item">
+							<dt class="tit">收益较高</dt>
+							<dd class="con">益数倍于银行定期存款</dd>
+						</dl>
+						<dl class="advantage_item">
+							<dt class="tit">风险可控</dt>
+							<dd class="con">融资方资产抵押，多重安全保障</dd>
+						</dl>
+						<dl class="advantage_item">
+							<dt class="tit">期限明确</dt>
+							<dd class="con">一般1-3年，令投资计划性更强</dd>
+						</dl>
+						<dl class="advantage_item">
+							<dt class="tit">资金安全</dt>
+							<dd class="con">保管银行开设专户、专款专用</dd>
+						</dl>
+						<dl class="advantage_item">
+							<dt class="tit">发售期短</dt>
+							<dd class="con">一般一两周可以结束，限人限量</dd>
+						</dl>
+					</div>
+					<!-- article list-->
+									</div>
+			</div>
+			<!-- 本周最优项目 -->
+			<div class="xt_right_item">
+	<h5 class="xt_r_hd heiti">本周最优项目</h5>
+	<div class="xt_r_bd xt_prodetail xt_prodetail_week">
+		<div class="detail_wrap bg_dashed">
+			<div class="pro_info bg_dashed">
+				<a href="http://www.jinfuzi.com/product/0112698" class="pro_name" target="_blank">天宜28号</a>
+				<table class="pro_table_1">
+					<tbody><tr>
+						<th>预期收益：</th>
+						<td>9.00%</td>
+						<th></th>
+						<td></td>
+					</tr>
+					<tr>
+						<th>投资金额：</th>
+						<td>2400万 </td>
+						<th>投资期限：</th>
+						<td>>12个月</td>
+					</tr>
+				</tbody></table>
+			</div>								
+			<p class="pro_comment">
+				<span class="f_999">点评：</span>50万起，期限灵活，央企集团旗下信托发行，宜信连带责任担保			</p> 
+		</div>							 
+		<div class="clearfix">
+			<div class="pro_control">
+				<span class="count">已预约 <span class="f_f60">12</span> 人</span>
+				<a href="http://www.jinfuzi.com/product/0112698" target="_blank" class="btn"><i class="xt_ico_1"></i>我要预约</a>
+			</div>       							
+		</div>							
+	</div>
+</div>
+
+			<!-- 2日内成立计息项目 -->
+						<!-- fast search -->
+	        <div class="xt_right_item">
+	<h5 class="xt_r_hd heiti">快速搜索</h5>
+	<div class="xt_r_bd">
+		<div class="search_list clearfix">
+							<dl class="item ">
+					<dt class="tit">期限：</dt>
+					<dd class="con">
+						<a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-0-0-1-0-0-1">1年内</a><a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-0-0-2-0-0-1">1-2年</a><a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-0-0-3-0-0-1">2-3年</a><a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-0-0-4-0-0-1">3年以上</a>					</dd>
+				</dl>
+							<dl class="item ">
+					<dt class="tit">收益：</dt>
+					<dd class="con">
+						<a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-0-1-0-0-0-1">小于6%</a><a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-0-2-0-0-0-1">6-8%</a><a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-0-3-0-0-0-1">8-10%</a><a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-0-4-0-0-0-1">大于10%</a>					</dd>
+				</dl>
+							<dl class="item last">
+					<dt class="tit">门槛：</dt>
+					<dd class="con">
+						<a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-1-0-0-0-0-1">小于50万</a><a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-2-0-0-0-0-1">50-100万</a><a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-3-0-0-0-0-1">100-300万</a><a title="" target="_blank" href="http://www.jinfuzi.com/xintuo/list-0-0-0-0-0-4-0-0-0-0-1">大于300万</a>					</dd>
+				</dl>
+					</div>												
+	</div>
+</div>
+			<!-- subscribe -->
+			<div class="xt_right_item">						
+				<div class="xt_r_bd">
+					<h5 class="xt_subscribe_hd heiti">信托产品信息<span class="f_f60">免费</span>订阅</h5>
+					<ul class="subscribe_list clearfix">
+						<li><em class="xt_ico_2"></em>第一时间通知您最新的信托计划</li>
+						<li><em class="xt_ico_2"></em>免费为您发送稀缺小额等产品信息</li>
+						<li><em class="xt_ico_2"></em>免费服务热线：<span class="tel">4000-181-131</span></li>
+					</ul>
+					<div class="subscribe_control clearfix">
+						<a href="javascript:;" class="subscribe_btn totel" id="dialog_phone" category="1">订阅到手机</a>
+						<a href="javascript:;" id="dialog_email" category="1" class="subscribe_btn toemail">订阅到邮箱</a>
+					</div>					
+				</div>
+			</div>
+			<!-- right end -->
+		</div>
 	</div>			
 </div>
 <style>
@@ -882,6 +1318,33 @@
 })(jQuery);
 
 
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--<script type='text/javascript' src='http://tb.53kf.com/kf.php?arg=10018445&style=1'></script>-->
+<script type="text/javascript">
+    document.write("<script type='text/javascript' src='http://tb.53kf.com/kf.php?arg=10018445&style=1'><\/script>");
 </script>
 <!-- <div style='display:none;'><a href='http://www.53kf.com'>在线客服系统</a></div> -->
 <?php echo $this->load->view('footer'); ?>
