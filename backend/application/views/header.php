@@ -1,23 +1,47 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>后台管理系统</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>resources/themes/default/easyui.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>resources/themes/icon.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>resources/style/main.css ">
-	<link rel="stylesheet" type="text/css" href="/resources/style/common.css">
-	<link rel="stylesheet" type="text/css" href="/resources/style/global.css">
-	<link rel="stylesheet" type="text/css" href="/resources/style/theme.css">
-	<link rel="stylesheet" type="text/css" href="/resources/style/icon.css">
-	<script type="text/javascript" src="<?php echo base_url(); ?>resources/jquery.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>resources/jquery.easyui.min.js"></script>
-	<?php if( $this->uri->segment(2) == 'store'){ ?>
-	<script type="text/javascript" src="<?php echo base_url(); ?>resources/js/store.js"></script>
-	<?php }else if( $this->uri->segment(2) == 'userinfo'){ ?>
-	<script type="text/javascript" src="<?php echo base_url(); ?>resources/js/userinfo.js"></script>
-	<?php } ?>
-	
-</head>
-<body>
-	
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>后台</title>
+		<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
+		<meta name="description" content="站长素材提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- basic styles -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+		<!-- page specific plugin styles -->
+
+		<!-- fonts -->
+
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>

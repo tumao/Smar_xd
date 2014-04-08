@@ -1,10 +1,18 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
-
-function index()
-	{
-
+class User extends BaseController{
+	
+	public function __construct(){
+		parent::__construct();
+//		$this->load->model('user_model');
+	}
+	
+	function index(){
+		echo 'user index';exit;
+	}
+	
+	function login(){
+		echo 'user login ';exit;
 	}
 }
 

@@ -9,8 +9,8 @@ class BaseController extends MX_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->_check_user_is_login();
-		$this->load->helper(array('form', 'url'));  
+		$this->load->helper(array('form', 'url'));
+		$this->_check_login();
 	}
 	/**
 	 * @params array $data
@@ -113,15 +113,17 @@ class BaseController extends MX_Controller
             }
         }
     }
-    public function _check_user_is_login(){
-//    	$this->session->set_userdata('uid','111');
+    public function _check_login(){
     	if( $this->session->userdata('uid') ){
-    		$this->session->sess_destroy();
     		return true;
     	}
- //   	header("Location:/main/user/login");
-//		redirect("/main/user/login");
-		$this->load->view('111');
+    	if( $_SERVER['REQUEST_URI'] != "/main/user/login"){
+    		header('location:/main/user/login');
+    	}
+    }
+    public function _user_logout(){
+    	$this->session->sess_destroy();
+    	header('location:/main/user/login');
     }
 
 
