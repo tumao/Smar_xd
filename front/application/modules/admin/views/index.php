@@ -32,12 +32,12 @@
         <div class="row">
             <div class="col-xs-12">
                 <!-- PAGE CONTENT BEGINS -->
-                {blog_template}
-                <p>{name}</p>
-                <p>{introduce}</p>
-                <p>{full_name}</p>
+                <?php foreach($blog_template as $key=>$value) { ?>
+                <p><?php echo $value['name'] ?></p>
+                <p><?php echo $value['introduce'] ?></p>
+                <p><?php echo $value['full_name'] ?></p>
                 <br />
-                {/blog_template}
+                <?php } ?>
                 <!-- PAGE CONTENT ENDS -->
             </div><!-- /.col -->
         </div><!-- /.row -->

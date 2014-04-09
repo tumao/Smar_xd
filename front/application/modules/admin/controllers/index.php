@@ -22,8 +22,8 @@ class Index extends BaseController {
             var_dump($row->name);
         }
         */
-        $this->parser->parse('index', $data);
-		//$this->load->view('index');
+
+		$this->load->view('index', $data);
 	}
 
 }
