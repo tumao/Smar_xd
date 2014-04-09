@@ -83,7 +83,7 @@ a:hover{text-decoration:none;color:#f60;cursor:pointer;}
 
 .md_hd_logo .logo_info .city_bd{display:none;border:1px solid #969696;background-color:#fff;box-shadow:2px 2px 4px rgba(0,0,0,.2);position:absolute;top:19px;left:-10px;z-index:101;}
 .md_hd_logo .logo_info .city_bd .wrap{width:460px;background-color:#fff;}
-.md_hd_logo .logo_info .city_bd .wrap .bt{background-color:#F7F7F7;height:32px;line-height:32px;t}
+.md_hd_logo .logo_info .city_bd .wrap .bt{background-color:#F7F7F7;height:32px;line-height:32px;}
 .md_hd_logo .logo_info .city_bd .wrap .bt .more{float:right;margin-right:10px;}
 .md_hd_logo .logo_info .city_bd .wrap .bt .more i{float:left;margin:10px 5px 0 0;}
 .md_hd_logo .logo_info .city_bd .wrap .city_com{padding:10px 0;border-bottom:1px solid #E6E6E6;line-height:20px;}
@@ -157,8 +157,8 @@ a:hover{text-decoration:none;color:#f60;cursor:pointer;}
 .hd_subnav_con .subnav_list li.active .act_shadow{height:3px;background-color:#1F76AE;width:90px;position:absolute;left:0;bottom:-1px;}
 .hd_subnav_con .subnav_list li.active .arrow{width:0;height:0;overflow:hidden;border-color:transparent transparent #1F76AE transparent;border-width:0 5px 5px 5px;border-style:none dashed solid dashed;position:absolute;left:40px;top:-5px;}
 .hd_subnav_con .subnav_list.right{float:right;}
-.hd_subnav_con .subnav_msg{float:right;line-height:32px;font-size:12px;color:#f60;font-family:tahoma,arial,'Hiragino Sans GB',宋体,sans-serif;}
-.hd_subnav_con .subnav_msg_left{float:left;line-height:32px;font-size:12px;color:#f60;font-family:tahoma,arial,'Hiragino Sans GB',宋体,sans-serif;}
+.hd_subnav_con .subnav_msg{float:right;line-height:32px;font-size:12px;color:#f60;font-family:tahoma,arial,'Hiragino Sans GB','宋体',sans-serif;}
+.hd_subnav_con .subnav_msg_left{float:left;line-height:32px;font-size:12px;color:#f60;font-family:tahoma,arial,'Hiragino Sans GB','宋体',sans-serif;}
 /*breadcrumb nav*/
 .md_hd_breadnav{ background-color: #f8f8f8;}
 .md_hd_breadnav .layout{height: 38px; }

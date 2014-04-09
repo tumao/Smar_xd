@@ -32,7 +32,12 @@
         <div class="row">
             <div class="col-xs-12">
                 <!-- PAGE CONTENT BEGINS -->
-
+                {blog_template}
+                <p>{name}</p>
+                <p>{introduce}</p>
+                <p>{full_name}</p>
+                <br />
+                {/blog_template}
                 <!-- PAGE CONTENT ENDS -->
             </div><!-- /.col -->
         </div><!-- /.row -->
