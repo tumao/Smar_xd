@@ -9,8 +9,9 @@
         <ul class="breadcrumb">
             <li>
                 <i class="icon-home home-icon"></i>
-                <a href="#">Home</a>
+                <a href="/redbud_admin">Home</a>
             </li>
+            <li class="active">信托公司管理</li>
         </ul><!-- .breadcrumb -->
 
         <div class="nav-search" id="nav-search">
@@ -27,12 +28,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <!-- PAGE CONTENT BEGINS -->
-                <?php foreach($blog_template as $key=>$value) { ?>
-                <p><?php echo $value['name'] ?></p>
-                <p><?php echo $value['introduce'] ?></p>
-                <p><?php echo $value['full_name'] ?></p>
-                <br />
-                <?php } ?>
+
                 <!-- PAGE CONTENT ENDS -->
             </div><!-- /.col -->
         </div><!-- /.row -->

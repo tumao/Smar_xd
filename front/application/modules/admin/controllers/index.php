@@ -26,6 +26,28 @@ class Index extends BaseController {
 		$this->load->view('index', $data);
 	}
 
+    public function product() {
+        $this->load->view('product');
+    }
+    public function company() {
+        $this->load->view('company');
+    }
+    public function course() {
+        $this->load->view('course');
+    }
+    public function daogou() {
+        $this->load->view('daogou');
+    }
+    public function zixun() {
+        $this->load->view('zixun');
+    }
+    public function contactus() {
+        $this->load->view('contactus');
+    }
+    public function editaccount() {
+        $this->load->view('editaccount');
+    }
+
 }
 
 /* End of file welcome.php */

@@ -46,7 +46,14 @@ $route['lesson'] = "lesson/index/index";
 $route['guide'] = "company/index/index";
 $route['consult'] = "company/index/index";
 $route['connect'] = "company/index/index";
-$route['redbud-admin'] = "admin/index/index";
+$route['redbud_admin'] = "admin/index/index";
+$route['redbud_admin/product'] = "admin/index/product";
+$route['redbud_admin/company'] = "admin/index/company";
+$route['redbud_admin/course'] = "admin/index/course";
+$route['redbud_admin/daogou'] = "admin/index/daogou";
+$route['redbud_admin/zixun'] = "admin/index/zixun";
+$route['redbud_admin/contactus'] = "admin/index/contactus";
+$route['redbud_admin/editaccount'] = "admin/index/editaccount";
 $route['404_override'] = '';
 
 
