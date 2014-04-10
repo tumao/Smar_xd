@@ -10,7 +10,7 @@ class AbaseController extends MX_Controller
 	{
 		parent::__construct();
 		$this->load->helper(array('form', 'url'));
-		$this->_check_login();
+		// $this->_check_login();
 	}
 	/**
 	 * @params array $data
@@ -119,13 +119,13 @@ class AbaseController extends MX_Controller
     	}
     	//指向登陆页面
     	if( $_SERVER['REQUEST_URI'] != "/main/user/login"){
-    		header('location:/main/user/login');
+ //   		header('location:/main/user/login');
     	}
     }
     public function _user_logout(){
     	$this->session->sess_destroy();
     	//指向登陆页面
-    	header('location:/main/user/login');
+//    	header('location:/main/user/login');
     }
 
 

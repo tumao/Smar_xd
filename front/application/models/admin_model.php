@@ -13,7 +13,7 @@ class Admin_model extends BaseModel {
 	/*验证，用户名，密码是否匹配*/
 	public function _check_user( $email, $passwd){
 		//md5(密码+密码的第三位到最后)
-		$user_data = $this->search('user',
+		$user_data = $this->db->search('user',
 			array('email'=>$email, 'passwd' => md5($passwd.substr($passwd, 3))),
 			null,1);
 
@@ -27,14 +27,14 @@ class Admin_model extends BaseModel {
 	/*修改密码*/
 	public function chg_passwd( $email, $npasswd){
 		//md5(密码+密码的第三位到最后)
-		$id = $this->updataWhere('user',
+		$id = $this->db->updataWhere('user',
 				array( 'passwd' => md5($npasswd.substr($npasswd, 3)) ), 
 				array('email' => $email));
 
 		return true;
 	}
 	
-	/*创建用户*/
+	// 创建用户
 	public function create_user( $email, $passwd, $user_name, $privi = 'user'){
 		if( $privi == 'user'){
 			$privi = USER;
@@ -47,7 +47,7 @@ class Admin_model extends BaseModel {
 			'email'		=> $email,
 			'passwd'	=> md5($passwd.substr($passwd, 3)),
 			'user_name'	=> $user_name,
-			'privilege'	=>
+			'privilege'	=> $privi
 			);
 		$result = $this->search('user', $data, null, 1);
 		if( !empty( $result)){
