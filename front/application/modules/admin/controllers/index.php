@@ -4,6 +4,8 @@ class Index extends AbaseController {
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('admin_model');
+        $this->load->helper(array('form', 'url'));  
+        $this->load->library('form_validation');
 	}
 	
 	public function index()
@@ -47,6 +49,23 @@ class Index extends AbaseController {
     }
     public function editaccount() {
         $this->load->view('editaccount');
+    }
+
+    public function login(){
+        
+         if( $user_name = $this->input->get_post('username')  ){
+            // $passwd = $this->input->get_post('password');
+            $result = $this->admin_model->search('user',array('user_name'=>$user_name),null,1);
+            header("Location:/admin/index/product"); 
+            if( !empty( $result)){
+                // $this->_user_logout();exit;
+               $this->session->set_userdata($result);
+               // redirect('/redbud_admin','refresh');
+               header("Location:/admin/index/product");
+               return;
+            }
+         }
+        $this->load->view('login');
     }
 
 }

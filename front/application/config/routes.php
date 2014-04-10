@@ -46,6 +46,8 @@ $route['lesson'] = "lesson/index/index";
 $route['guide'] = "company/index/index";
 $route['consult'] = "company/index/index";
 $route['connect'] = "company/index/index";
+
+$route['login']	= "admin/index/login";
 $route['redbud_admin'] = "admin/index/index";
 $route['redbud_admin/product'] = "admin/index/product";
 $route['redbud_admin/company'] = "admin/index/company";

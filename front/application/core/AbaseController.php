@@ -10,7 +10,7 @@ class AbaseController extends MX_Controller
 	{
 		parent::__construct();
 		$this->load->helper(array('form', 'url'));
-		// $this->_check_login();
+		$this->_check_login();
 	}
 	/**
 	 * @params array $data
@@ -114,18 +114,18 @@ class AbaseController extends MX_Controller
         }
     }
     public function _check_login(){
-    	if( $this->session->userdata('uid') ){
-    		return true;
+    	if( $this->session->userdata('user_name')){
+    		return ;
     	}
     	//指向登陆页面
-    	if( $_SERVER['REQUEST_URI'] != "/main/user/login"){
- //   		header('location:/main/user/login');
+    	if( $_SERVER['REQUEST_URI'] != "/login"){
+    		header('location:/login');
     	}
     }
     public function _user_logout(){
     	$this->session->sess_destroy();
     	//指向登陆页面
-//    	header('location:/main/user/login');
+   	header('location:/admin/index/login');
     }
 
 

@@ -6,17 +6,14 @@ if (! defined ( 'BASEPATH' ))
 class Admin_model extends BaseModel {
 	public function __construct() {
 		parent::__construct ();
-		$this->db = $this->load->database ( 'default', TRUE );
+		$this->db = $this->load->database( 'default', TRUE );
 		$this->load->helper ( 'date' );
 	}
 
 	/*验证，用户名，密码是否匹配*/
-	public function _check_user( $email, $passwd){
+	public function _check_user( $user_name, $passwd){
 		//md5(密码+密码的第三位到最后)
-		$user_data = $this->db->search('user',
-			array('email'=>$email, 'passwd' => md5($passwd.substr($passwd, 3))),
-			null,1);
-
+		$user_data = $this->db->search('user',array('user_name'=>$user_name, 'passwd' => md5($passwd.substr($passwd, 3))),	null,1);
 		unset( $user_data['passwd']);
 		if( !empty( $user_data)){
 			return $user_data;
