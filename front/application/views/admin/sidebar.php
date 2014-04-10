@@ -35,49 +35,49 @@
 
 <ul class="nav nav-list">
     <li>
-        <a href="index.html">
+        <a href="/redbud_admin">
             <i class="icon-dashboard"></i>
             <span class="menu-text"> 控制台 </span>
         </a>
     </li>
-    <li>
-        <a href="index.html">
+    <li <?php if($this->uri->segment(2) == 'product') echo 'class="active"';?>>
+        <a href="/redbud_admin/product">
             <i class="icon-file-alt"></i>
             <span class="menu-text"> 信托产品 </span>
         </a>
     </li>
-    <li>
-        <a href="index.html">
+    <li <?php if($this->uri->segment(2) == 'company') echo 'class="active"';?>>
+        <a href="/redbud_admin/company">
             <i class="icon-file-alt"></i>
             <span class="menu-text"> 信托公司 </span>
         </a>
     </li>
-    <li>
-        <a href="index.html">
+    <li <?php if($this->uri->segment(2) == 'course') echo 'class="active"';?>>
+        <a href="/redbud_admin/course">
             <i class="icon-file-alt"></i>
             <span class="menu-text"> 信托课堂 </span>
         </a>
     </li>
-    <li>
-        <a href="index.html">
+    <li <?php if($this->uri->segment(2) == 'daogou') echo 'class="active"';?>>
+        <a href="/redbud_admin/daogou">
             <i class="icon-file-alt"></i>
             <span class="menu-text"> 信托导购 </span>
         </a>
     </li>
-    <li>
-        <a href="index.html">
+    <li <?php if($this->uri->segment(2) == 'zixun') echo 'class="active"';?>>
+        <a href="/redbud_admin/zixun">
             <i class="icon-file-alt"></i>
             <span class="menu-text"> 信托咨询 </span>
         </a>
     </li>
-    <li>
-        <a href="index.html">
+    <li <?php if($this->uri->segment(2) == 'contactus') echo 'class="active"';?>>
+        <a href="/redbud_admin/contactus">
             <i class="icon-file-alt"></i>
             <span class="menu-text"> 联系我们 </span>
         </a>
     </li>
 
-    <li class="active open">
+    <li class="<?php if($this->uri->segment(2) == 'editaccount') echo 'active';?> open">
         <a href="#" class="dropdown-toggle">
             <i class="icon-file-alt"></i>
             <span class="menu-text">
@@ -88,8 +88,8 @@
         </a>
 
         <ul class="submenu">
-            <li class="active">
-                <a href="blank.html">
+            <li <?php if($this->uri->segment(2) == 'editaccount') echo 'class="active"';?>>
+                <a href="/redbud_admin/editaccount">
                     <i class="icon-double-angle-right"></i>
                     编辑账户
                 </a>
