@@ -305,10 +305,11 @@
 			$.ajax({
 				'url'	:'login',
 				'data'	:{'password':passwd,'username':username},
-				'dataType'	: 'json',
 				'method'	: "post", 
-				'success'	: function(){
-
+				'success'	: function( txt ){
+					if( txt == 1){
+						location.reload();
+					}
 				}
 			});
 		});

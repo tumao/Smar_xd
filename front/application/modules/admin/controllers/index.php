@@ -52,17 +52,17 @@ class Index extends AbaseController {
     }
 
     public function login(){
-        
-         if( $user_name = $this->input->get_post('username')  ){
-            // $passwd = $this->input->get_post('password');
-            $result = $this->admin_model->search('user',array('user_name'=>$user_name),null,1);
-            header("Location:/admin/index/product"); 
+        if( $this->session->userdata('user_name')){
+            // header("Location:/admin/index/index");
+            redirect('/admin/index/index');
+        }
+        if( $user_name = $this->input->get_post('username')  ){
+            $passwd = $this->input->get_post('password');
+            $result = $this->admin_model->search('user',array('user_name'=>$user_name, 'password' => $passwd), null, 1);
             if( !empty( $result)){
-                // $this->_user_logout();exit;
                $this->session->set_userdata($result);
-               // redirect('/redbud_admin','refresh');
-               header("Location:/admin/index/product");
-               return;
+               echo 1;
+               exit;
             }
          }
         $this->load->view('login');

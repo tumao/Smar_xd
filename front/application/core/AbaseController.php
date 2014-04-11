@@ -115,17 +115,18 @@ class AbaseController extends MX_Controller
     }
     public function _check_login(){
     	if( $this->session->userdata('user_name')){
-    		return ;
+    		// $this->session->sess_destroy();
+    		return true;
     	}
     	//指向登陆页面
     	if( $_SERVER['REQUEST_URI'] != "/login"){
-    		header('location:/login');
+    		redirect('/login');
     	}
     }
     public function _user_logout(){
     	$this->session->sess_destroy();
     	//指向登陆页面
-   	header('location:/admin/index/login');
+   		// header('location:/login');
     }
 
 
