@@ -27,15 +27,11 @@
         <div class="row">
             <div class="col-xs-12">
                 <!-- PAGE CONTENT BEGINS -->
-                <?php foreach($blog_template as $key=>$value) { ?>
-                <p><?php echo $value['name'] ?></p>
-                <p><?php echo $value['introduce'] ?></p>
-                <p><?php echo $value['full_name'] ?></p>
-                <br />
-                <?php } ?>
+
                 <!-- PAGE CONTENT ENDS -->
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.page-content -->
 </div><!-- /.main-content -->
 <?php echo $this->load->view('admin/footer'); ?>
+<!-- page specific plugin scripts -->

@@ -16,6 +16,13 @@
 
     <!-- page specific plugin styles -->
 
+    <link rel="stylesheet" href="/static/admin/css/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" href="/static/admin/css/chosen.css" />
+    <link rel="stylesheet" href="/static/admin/css/datepicker.css" />
+    <link rel="stylesheet" href="/static/admin/css/bootstrap-timepicker.css" />
+    <link rel="stylesheet" href="/static/admin/css/daterangepicker.css" />
+
+
     <!-- fonts -->
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />

@@ -56,6 +56,7 @@ $route['redbud_admin/daogou'] = "admin/index/daogou";
 $route['redbud_admin/zixun'] = "admin/index/zixun";
 $route['redbud_admin/contactus'] = "admin/index/contactus";
 $route['redbud_admin/editaccount'] = "admin/index/editaccount";
+$route['redbud_admin/upsertproduct'] = "admin/index/upsert_product";
 $route['404_override'] = '';
 
 

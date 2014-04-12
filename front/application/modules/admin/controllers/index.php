@@ -32,6 +32,10 @@ class Index extends AbaseController {
     public function product() {
         $this->load->view('product');
     }
+
+    public function upsert_product() {
+        $this->load->view("upsertproduct");
+    }
     public function company() {
         $this->load->view('company');
     }
