@@ -29,8 +29,12 @@
             <div class="col-xs-12">
             <div class="row">
             <div class="col-xs-12">
-            <h3 class="header smaller lighter blue">信托产品列表</h3>
-
+            <div class="header" style="line-height: 48px;">
+                <h3 class="smaller lighter blue" style="display: inline;">信托产品列表</h3>
+                <button class="btn btn-primary" style="float: right;margin-right: 10px;">
+                    <i class="icon-plus align-top bigger-125"></i>添加
+                </button>
+            </div>
             <div class="table-responsive">
             <table id="sample-table-2" class="table table-striped table-bordered table-hover">
             <thead>
@@ -87,7 +91,7 @@
                             <i class="icon-zoom-in bigger-130"></i>
                         </a>
 
-                        <a class="green" href="#">
+                        <a class="green" href="/redbud_admin/upsertproduct">
                             <i class="icon-pencil bigger-130"></i>
                         </a>
 
