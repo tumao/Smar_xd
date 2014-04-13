@@ -36,7 +36,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 产品简称 </label>
 
     <div class="col-sm-9">
-        <input type="text" name="short_name" id="short_name" class="col-xs-10 col-sm-5" value="<?php echo $product['short_name'] ?>" />
+        <input type="text" name="short_name" id="short_name" class="col-xs-10 col-sm-5" value="<?php echo $product['short_name']; ?>" />
     </div>
 </div>
 
@@ -46,7 +46,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> 产品全称 </label>
 
     <div class="col-sm-9">
-        <input type="text" name="full_name" id="full_name" class="col-xs-10 col-sm-5" value="<?php echo $product['full_name'] ?>"  />
+        <input type="text" name="full_name" id="full_name" class="col-xs-10 col-sm-5" value="<?php echo $product['full_name']; ?>"  />
     </div>
 </div>
 
@@ -54,14 +54,14 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-3"> 发售日期 </label>
 
     <div class="col-sm-9 input-group">
-        <input class="date-picker col-xs-10 col-sm-5" name="sell_date" id="form-field-3" type="text" data-date-format="yyyy-mm-dd" />
+        <input class="date-picker col-xs-10 col-sm-5" name="sell_date" id="sell_date" type="text" data-date-format="yyyy-mm-dd" value="<?php echo $product['sell_date']; ?>" />
     </div>
 </div>
 
 <div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="form-field-4"> 产品简介 </label>
     <div class="col-sm-9">
-        <input type="text" id="tip" name="tip" class="col-xs-10 col-sm-5" value="<?php echo $product['tip'] ?>" />
+        <input type="text" id="tip" name="tip" class="col-xs-10 col-sm-5" value="<?php echo $product['tip']; ?>" />
     </div>
 </div>
 
@@ -71,10 +71,10 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-5"> 信托公司 </label>
     <div class="col-sm-9">
         <select id="form-field-5" class="col-xs-10 col-sm-5">
-            <option value="">&nbsp;</option>
-            <option value="AL">Alabama</option>
-            <option value="AK">Alaska</option>
-            <option value="AZ">Arizona</option>
+            <option value="<?php echo $product['company_name']; ?>"><?php echo $product['company_name']; ?></option>
+            <?php foreach ($product['company_group'] as $val) { ?>
+                <option value="<?php echo $val['name']; ?>"><?php echo $val['name']; ?></option>
+            <?php  } ?>
         </select>
     </div>
 </div>
@@ -125,7 +125,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-10"> 利息分配 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="productinfo" class="col-xs-10 col-sm-5" name="" value="????<?php echo $product['productinfo']; ?>" />
+        <input type="text" id="productinfo" class="col-xs-10 col-sm-5" name="" value="<?php echo $product['interest_distribution_name']; ?>" />
     </div>
 </div>
 
@@ -135,7 +135,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-11"> 投资行业 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="form-field-11" class="col-xs-10 col-sm-5" name="" value="????<?php echo $product['productinfo']; ?>" />
+        <input type="text" id="invest_name" class="col-xs-10 col-sm-5" name="invest_name" value="<?php echo $product['invest_name']; ?>" />
     </div>
 </div>
 
@@ -145,7 +145,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-12"> 信托类型 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="form-field-12" class="col-xs-10 col-sm-5" value="???<?php echo $product['productinfo']; ?>" />
+        <input type="text" id="xintuo_name" class="col-xs-10 col-sm-5" value="<?php echo $product['xintuo_name']; ?>" />
     </div>
 </div>
 

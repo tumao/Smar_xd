@@ -54,24 +54,48 @@ class Index extends AbaseController {
     public function upsert_product() {
         $this->load->model('products_model');
         $pid = $this->input->get_post('pid');
+        $company_group = $this->company_list();
         // $product = array();
         if( $pid ){
             $product = $this->products_model->search('products',array('id' => $pid), null,1);
+            $company = $this->company_list( $product['companyid']);
+            $product['company_name'] = $company[0]['name'];
+            $product['company_group'] = $company_group;
+            if( $product['interest_distribution_id'] != ''){
+                $product['interest_distribution_name'] = $this->get_iint_name($product['interest_distribution_id']);
+            }else{
+                $product['interest_distribution_name'] = '';
+            }
+            if( $product['invest_orientation_id']){
+                $product['invest_name'] = $this->get_invest_name( $product['invest_orientation_id']);
+            }else{
+                $product['invest_name'] = '';
+            }
+            if( $product['xintuo_type_id']){
+                $product['xintuo_name'] = $this->get_xt_name( $product['xintuo_type_id']);
+            }else{
+                $product['xintuo_name'] = '';
+            }
         }else{
+            
             $product = array(
                     'id'  =>'',
                     'short_name' =>'',
                     'full_name'  =>'',
-                    // 'sell_date'  =>'',
+                    'sell_date'  =>'',
                     'tip'  =>'',
-                    // // 'companyid'  =>'',
+                    'company_name'  => '',
+                    'company_group'  => $company_group,
                     'circulation'  =>'',
                     'duration'  =>'',
                     'income_rate'  =>'',
                     'min_sub_amount'  =>'',
-                    // // 'interest_' distribution_id,
+                    // // 'interest_distribution_id,
+                    'interest_distribution_name' =>'',
                     // // 'invest_orientation_id'  =>'',
+                    'invest_name'=>'',
                     // // 'xintuo_type_id'  =>'',
+                    'xintuo_name'=>'',
                     'income_explain'  =>'',
                     'pledge_object'  =>'',
                     'pledge_rate'  =>'',
@@ -97,6 +121,23 @@ class Index extends AbaseController {
             unset( $_REQUEST['id']);
         }
         $data = $_REQUEST;
+        if( $data['company_name']){
+            $data['companyid'] = $this->get_company_id( $data['company_name']);
+            unset( $data['company_name']);
+        }
+        //???????
+        if( $data['interest_distribution_name']){
+            $data['interest_distribution_id'] = $this->get_iint_id( $data['interest_distribution_name']);
+            unset( $data['interest_distribution_name']);
+        }
+        if( $data['invest_name']){
+            $data['invest_orientation_id'] = $this->get_invest_id( $data['invest_name']);
+            unset( $data['invest_name']);
+        }
+        if( $data['xintuo_name']){
+            $data['xintuo_type_id'] =  $this->get_xt_id( $data['xintuo_name']);
+            unset( $data['xintuo_name']);
+        }
         $id = $this->products_model->upsert('products',$data);
         return $id;
     }
@@ -147,11 +188,70 @@ class Index extends AbaseController {
         $company = $this->products_model->search('company',array('id'=>$id),null,1);
         return $company['name'];
     }
-    private function company_list(){
+    private function company_list( $id = null){
         $this->load->model('products_model');
+        if( $id ){                              //获取某个公司的信息
+            $condition = array( 'id' => $id);
+        }else{                                  //获取所有公司的信息
+            $condition = array('id <> ' => '');
+        }
         $company = $this->products_model->search('company', array('id <> ' => ''),'id desc');
         return $company;
     }
+    private function get_company_id( $company_name){
+        $this->load->model('products_model');
+        $company = $this->products_model->search('commpany',array('name'=>$company_name),null,1);
+        return $company['id'];
+    }
+    private function get_iint_name( $iint_id ){
+        $this->load->model('products_model');
+        $condition = array(
+                'id' => $iint_id
+            );
+        $iint = $this->products_model->search('iint',$condition,null,1);
+        if( empty($iint)){
+            $iint['name'] = '';
+        }
+        return $iint['name'];
+    }
+    private function get_iint_id( $iint_name){
+        $this->load->model('products_model');
+        $iint = $this->products_model->search('iint',array('name'=> $iint_name),null,1);
+        if( empty( $iint)){     //如果搜索的没有则添加
+            $id = $this->products_model->upsert('iint',array('name'=>$iint_name));
+            $iint['id'] = $id;
+        }
+        return $iint['id'];
+    }
+    private function get_invest_name( $inv_id){
+        $this->load->model('products_model');
+        $inv = $this->products_model->search('investorientation',array('id' => $inv_id),null,1);
+        return $inv['name'];
+    }
+    private function get_invest_id( $inv_name){
+        $this->load->model('products_model');
+        $inv = $this->products_model->search('investorientation',array('name'=> $inv_name),null,1);
+        if( empty( $inv)){          //如果搜索的没有则添加
+            $id = $this->products_model->upsert('investorientation',array('name'=>$inv_name));
+            $inv['id'] = $id;
+        }
+        return $inv['id'];
+    }
+    private function get_xt_name( $xt_id){
+        $this->load->model('products_model');
+        $xt = $this->products_model->search('xintuo_type',array('id'=>$xt_id),null,1);
+        return $xt['name'];
+    }
+    private function get_xt_id( $xt_name){
+        $this->load->model('products_model');
+        $xt = $this->products_model->search('xintuo_type',array('name'=>$xt_name),null,1);
+        if( empty( $xt)){
+            $id = $this->products_model->upsert('xintuo_type',array('name'=> $xt_name));
+            $xt['id'] = $id;
+        }
+        return $xt['id'];
+    }
+
 
 }
 

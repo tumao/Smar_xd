@@ -6,16 +6,19 @@ var PropApp = (function($){
 				'id',
 				'short_name',
 				'full_name',
-				// sell_date,
+				'sell_date',
 				'tip',
-				// companyid,
+				'company_name',
 				'circulation',
 				'duration',
 				'income_rate',
 				'min_sub_amount',
 				// interest_ distribution_id,
+				'interest_distribution_name',
 				// invest_orientation_id,
+				'invest_name',
 				// xintuo_type_id,
+				'xintuo_name',
 				'income_explain',
 				'pledge_object',
 				'pledge_rate',
@@ -35,10 +38,24 @@ var PropApp = (function($){
 			// alert(xform[x].val());
 		}
 
+
 		if(  !$.isNumeric( formdata.circulation) ){
-			alert('预计发行规模 位数字！');
+			alert('预计发行规模 为数字！');
 			return;
 		}
+		else if(  !$.isNumeric( formdata.min_sub_amount) ){
+			alert('最低认购金额 为数字！');
+			return;
+		}
+		else if(  !$.isNumeric( formdata.duration) ){
+			alert('存续期 为数字！');
+			return;
+		}
+		else if(  !$.isNumeric( formdata.income_rate) ){
+			alert('预期年收益率 为数字！');
+			return;
+		}
+		
 		else if( formdata.short_name == ''){
 			alert('产品简称不可为空！');
 			return ;
