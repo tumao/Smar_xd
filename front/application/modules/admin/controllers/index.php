@@ -62,7 +62,7 @@ class Index extends AbaseController {
         }
         if( $user_name = $this->input->get_post('username')  ){
             $passwd = $this->input->get_post('password');
-            $result = $this->admin_model->search('user',array('user_name'=>$user_name, 'password' => $passwd), null, 1);
+            $result = $this->admin_model->search('user',array('user_name'=>$user_name, 'passwd' => $passwd), null, 1);
             if( !empty( $result)){
                $this->session->set_userdata($result);
                echo 1;

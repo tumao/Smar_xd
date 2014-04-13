@@ -541,18 +541,7 @@
 
         </ul>
         <div class="tb-support-dropdown fr">
-       <span class="fl index-top-checkbox" style="width:auto;">
-       	 <a href="javascript:void(0);" class="nocheck" id="holidayLink">
-             <input type="checkbox" name="" id='holidayChck'>
-             18号派发红包</a>
-     	 <a class="nocheck" href="http://www.jinfuzi.com/xintuo/xtlist-0-1-0-0-0-0-0-0-0-0-1"><input value="1"
-                                                                                                     type="checkbox"
-                                                                                                     name="" id=""/>政信类</a>
-     	 <a class="nocheck" href="http://www.jinfuzi.com/xintuo/xtlist-1-0-0-0-0-0-0-0-0-0-1"><input value="1"
-                                                                                                     type="checkbox"
-                                                                                                     name=""
-                                                                                                     id=""/>在售</a>
-       </span>
+
             <span class="fl" id='pageMark'> 1/678 </span>
       <span class="index-top-pages fl" id='top_pages_link'>
       	<a class="index-top-lastpage" href="http://www.jinfuzi.com/xintuo/xtlist"></a>
