@@ -35,9 +35,58 @@ var PropApp = (function($){
 			// alert(xform[x].val());
 		}
 
-		if( formdata.short_name == ''){
-			alert('产品简称不可空');
+		if(  !$.isNumeric( formdata.circulation) ){
+			alert('预计发行规模 位数字！');
+			return;
 		}
+		else if( formdata.short_name == ''){
+			alert('产品简称不可为空！');
+			return ;
+		}
+		else if( formdata.full_name == ''){
+			alert('产品简称不可为空！');
+		}
+		else if( formdata.tip == ''){
+			alert('产品简介不可为空！');
+		}
+		else if( formdata.duration == ''){
+			alert('存续期  不可为空！');
+		}
+		else if( formdata.income_rate == ''){
+			alert('预期年收益率  不可为空！');
+		}
+
+		else if( formdata.pledge_object == ''){
+			alert('抵押物 不可为空！');
+		}
+		else if( formdata.pledge_rate == ''){
+			alert('抵押率 不可为空！');
+		}
+		else if( formdata.productinfo == ''){
+			alert('产品简介 不可为空！');
+		}
+		else if( formdata.purpose_info == ''){
+			alert('投资方向 不可为空！');
+		}
+		else if( formdata.risk_control_info == ''){
+			alert('风险控制 不可为空！');
+		}
+		else if( formdata.payment_info == ''){
+			alert('还款来源 不可为空！');
+		}
+		else if( formdata.guarantor_info == ''){
+			alert('担保方介绍 不可为空！');
+		}
+		else if( formdata.financingpart_info == ''){
+			alert('融资方介绍 不可为空！');
+		}
+		else if( formdata.depositary_info == ''){
+			alert('受托人 不可为空！');
+		}
+		else if( formdata.more_info == ''){
+			alert('相关信息 不可为空！');
+		}
+
 
 		$.ajax({
 			'url':'/admin/index/save_product',
