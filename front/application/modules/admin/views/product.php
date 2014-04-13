@@ -5,7 +5,7 @@
         <script type="text/javascript">
             try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
         </script>
-
+ <?php //var_dump( $result); ?> 
         <ul class="breadcrumb">
             <li>
                 <i class="icon-home home-icon"></i>
@@ -31,7 +31,7 @@
             <div class="col-xs-12">
             <div class="header" style="line-height: 48px;">
                 <h3 class="smaller lighter blue" style="display: inline;">信托产品列表</h3>
-                <button class="btn btn-primary" style="float: right;margin-right: 10px;">
+                <button class="btn btn-primary" style="float: right;margin-right: 10px;" onclick="PropApp.addpage()">
                     <i class="icon-plus align-top bigger-125"></i>添加
                 </button>
             </div>
@@ -63,7 +63,8 @@
             </thead>
 
             <tbody>
-            <?php for($i = 0; $i<100; $i++) { ?>
+                <?php $sum = count( $result); ?>
+            <?php for($i = 0; $i < $sum; $i++) { ?>
             <tr>
                 <td class="center">
                     <label>
@@ -73,25 +74,25 @@
                 </td>
 
                 <td>
-                    <a href="#">北风<?php echo $i;?></a>
+                    <a href="#"><?php echo $result[$i]['short_name'];?></a>
                 </td>
-                <td>$58</td>
-                <td class="hidden-480">6,100</td>
-                <td>Feb 19</td>
+                <td><?php echo $result[$i]['min_sub_amount']; ?></td>
+                <td class="hidden-480"><?php echo $result[$i]['duration']; ?></td>
+                <td><?php echo $result[$i]['income_rate']; ?></td>
 
                 <td class="hidden-480">
-                    <span class="label label-sm label-inverse arrowed-in">Flagged</span>
+                    <span class="label label-sm label-inverse arrowed-in"><?php echo $result[$i]['sell_date'];?></span>
                 </td>
-                <td><?php echo $i;?></td>
-                <td><?php echo $i;?></td>
-                <td><?php echo $i;?></td>
+                <td><?php echo $result[$i]['purpose_info']; ?></td>
+                <td><?php echo $result[$i]['xintuo_type_name']; ?></td>
+                <td><?php echo $result[$i]['company_name']; ?></td>
                 <td>
                     <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
                         <a class="blue" href="#">
                             <i class="icon-zoom-in bigger-130"></i>
                         </a>
 
-                        <a class="green" href="/redbud_admin/upsertproduct">
+                        <a class="green" href="/redbud_admin/upsertproduct?pid=<?php echo $result[$i]['id']; ?>">
                             <i class="icon-pencil bigger-130"></i>
                         </a>
 

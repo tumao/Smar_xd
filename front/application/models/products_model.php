@@ -10,33 +10,33 @@ class Products_model extends BaseModel {
 		$this->load->helper ( 'date' );
 	}
 
-	/*产品列表*/
-	public function products_list( $id = null , $order = 'id asc'){
-		$condition = array();
-		$condition['isdel'] = 0;
-		if(　$id ){
-			$condition['id'] = $id;
-		}
-		$result = $this->search('products', $condition, $order);
-		return $result;
-	}
+	// /*产品列表*/
+	// public function products_list( $id = null , $order = 'id asc'){
+	// 	$condition = array();
+	// 	// $condition['isdel'] = 0;
+	// 	if($id != null){
+	// 		$condition['id'] = $id;
+	// 	}
+	// 	$result = $this->db->search('products', $condition, $order);
+	// 	return $result;
+	// }
 
-	/*删除产品*/
-	public function del_produ( $id ){
-		$this->delete('products', array('id' => $id));
-		return true;
-	}
+	// /*删除产品*/
+	// public function del_produ( $id ){
+	// 	$this->delete('products', array('id' => $id));
+	// 	return true;
+	// }
 
-	/*修改产品*/
-	public function edit_produ( $id, $data ){
-		$this->updateWhere( 'products', $data, array('id' => $id) );
-		return true;
-	}
+	// /*修改产品*/
+	// public function edit_produ( $id, $data ){
+	// 	$this->updateWhere( 'products', $data, array('id' => $id) );
+	// 	return true;
+	// }
 
-	/*添加产品*/
-	public function add_produ( $data){
-		$id = $this->upsert('products', $data);
-		return $id;
+	// /*添加产品*/
+	// public function add_produ( $data){
+	// 	$id = $this->upsert('products', $data);
+	// 	return $id;
 
-	}
+	// }
 }
