@@ -12,6 +12,10 @@ class Index extends BaseController {
 	public function main(){
 		$this->load->view('index');
 	}
+
+    public function productdetail() {
+        $this->load->view('productdetail');
+    }
 }
 
 /* End of file welcome.php */

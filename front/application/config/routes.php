@@ -41,7 +41,9 @@
 
 $route['default_controller'] = "main/index/index";
 $route['product'] = "product/index/index";
+$route['productdetail'] = "product/index/productdetail";
 $route['company'] = "company/index/index";
+$route['company/detail'] = "company/index/detail";
 $route['lesson'] = "lesson/index/index";
 $route['guide'] = "company/index/index";
 $route['consult'] = "company/index/index";

@@ -1,6 +1,5 @@
 <?php echo $this->load->view('header');?>
-
-                                                    <div class="sm-mod-site">
+    <div class="sm-mod-site">
   <span class="banfirtxt">当前位置：</span>
 <a href="{$this->createUrl('/xt/default/index')}">首页</a>
 <span class="icon-arrl">&gt;&gt;</span>

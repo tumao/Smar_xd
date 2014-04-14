@@ -10,6 +10,10 @@ class Index extends BaseController {
 		$this->load->view('index');
 	}
 
+    public function detail() {
+        $this->load->view('detail');
+    }
+
 }
 
 /* End of file welcome.php */
