@@ -145,10 +145,71 @@ class Index extends AbaseController {
         $this->load->view('company');
     }
     public function course() {
-        $this->load->view('course');
+        $this->load->model('course_model');
+        $result = $this->course_model->search('course',array('id <> ' => ''),'id asc');
+        $data['result'] = $result;
+        $this->load->view('course',$data);
+    }
+    //cid 获得文章详情
+    public function upsert_course(){
+        $this->load->model('course_model');
+        $id = $this->input->get_post('cid');
+        if( $id){
+            $result = $this->course_model->search('course',array('id' => $id),null,1);
+        }else{
+            $result = array(
+                    'title' => '',
+                    'id'    => '',
+                    'content'   => ''
+                );
+        }
+        
+        $data['result'] = $result;
+        $this->load->view('upsertcourse', $data);
+    }
+    public function save_course(){
+        $data = $_REQUEST;
+        if( !$_REQUEST['id']){
+            unset( $_REQUEST['id']);
+        }
+        $data = $_REQUEST;
+        $data['ctime'] = date('Y-m-d H:i:s',time());
+        $this->load->model('course_model');
+        $id = $this->course_model->upsert('course',$data);
+        return $id;
     }
     public function daogou() {
-        $this->load->view('daogou');
+        $this->load->model('daogou_model');
+        $result = $this->daogou_model->search('daogou',array('id <>'=> ''),'id asc');
+
+        $data['result'] = $result;
+        $this->load->view('daogou',$data);
+    }
+    public function upsert_daogou(){
+        $this->load->model('daogou_model');
+        $id = $this->input->get_post('cid');
+        if( $id){
+            $result = $this->daogou_model->search('daogou',array('id' => $id),null,1);
+        }else{
+            $result = array(
+                    'title' => '',
+                    'id'    => '',
+                    'content'   => ''
+                );
+        }
+        $data['result'] = $result;
+        $this->load->view('upsertdaogou', $data);
+    }
+    public function save_daogou(){
+        $this->load->model('daogou_model');
+        $data = $_REQUEST;
+        if( !$data['id']){
+            unset( $data['id']);
+        }
+        var_dump( $data);
+        $data['ctime'] = date('Y-m-d H:i:s',time());
+        $id = $this->daogou_model->upsert('daogou',$data);
+        return $id;
     }
     public function zixun() {
         $this->load->view('zixun');
