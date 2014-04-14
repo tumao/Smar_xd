@@ -45,7 +45,11 @@ $route['productdetail'] = "product/index/productdetail";
 $route['company'] = "company/index/index";
 $route['company/detail'] = "company/index/detail";
 $route['lesson'] = "lesson/index/index";
-$route['guide'] = "company/index/index";
+$route['lesson/lessoninfo'] = "lesson/index/less_info";
+
+$route['guide'] = "guide/index/index";
+$route['guide/guideinfo'] = "guide/index/daogou_info";
+
 $route['consult'] = "company/index/index";
 $route['connect'] = "company/index/index";
 

@@ -4,24 +4,20 @@
   <span class="banfirtxt">当前位置：</span>
 <a href="{$this->createUrl('/xt/default/index')}">首页</a>
 <span class="icon-arrl">&gt;&gt;</span>
-<a href="http://www.jinfuzi.com/xintuo/company">信托导购</a>
+<a href="http://www.jinfuzi.com/xintuo/company">信托课堂</a>
 </div>
 <div class="xtmain">
 
     <div class="col01box fl">
 
         <div class="alljsbox">
-            <h2>信托导购</h2>
+            <h2>信托课堂</h2>
 
             <div class="jzallmap">
                 <ul class="">
-                    <?php foreach($result as $val){ ?>
-                    <li style="font-size:14px;">
-                        <a href="/guide/guideinfo?id=<?php echo $val['id']; ?>">
-                            <?php echo $val['title']; ?>
-                        </a>
-                    </li>
-                    <?php } ?>
+                  <p><?php echo $result['title']; ?> </p>
+                  <?php echo $result['ctime']; ?>
+                  <div><?php echo $result['content']; ?></div>
                 </ul>
             </div>
 

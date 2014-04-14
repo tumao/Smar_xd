@@ -15,13 +15,9 @@
 
             <div class="jzallmap">
                 <ul class="">
-                    <?php foreach($result as $val){ ?>
-                    <li style="font-size:14px;">
-                        <a href="/guide/guideinfo?id=<?php echo $val['id']; ?>">
-                            <?php echo $val['title']; ?>
-                        </a>
-                    </li>
-                    <?php } ?>
+                  <p><?php echo $result['title']; ?> </p>
+                  <?php echo $result['ctime']; ?>
+                  <div><?php echo $result['content']; ?></div>
                 </ul>
             </div>
 
