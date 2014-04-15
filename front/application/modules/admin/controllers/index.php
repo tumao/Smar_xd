@@ -136,7 +136,42 @@ class Index extends AbaseController {
         return $id;
     }
     public function company() {
-        $this->load->view('company');
+        $this->load->model("company_model");
+        $condition = array(
+            'isdel' => 0
+        );
+        $result = $this->company_model->search('company', $condition,'id desc');
+        $data['result'] = $result;
+
+        $this->load->view('company', $data);
+    }
+    public function upsertcompany() {
+        $this->load->model('company_model');
+        $pid = $this->input->get_post('pid');
+        if( $pid ){
+            $company = $this->company_model->search('company',array('id' => $pid), null,1);
+        }else{
+            $company = array(
+                'id'  =>'',
+                'name' =>'',
+                'introduce' => '',
+                'register_capital' => '',
+                'full_name'  =>'',
+                'en_name'  =>'',
+                'chairman'  =>'',
+                'manage_director'  =>'',
+                'is_listed'  =>'',
+                'register_time'  =>'',
+                'area'  =>'',
+                'major_stockholder'  =>'',
+                'address'  =>'',
+                'isdel'  =>''
+            );
+        }
+
+
+        $data['company'] = $company;
+        $this->load->view('upsertcompany', $data);
     }
     public function course() {
         $this->load->view('course');
