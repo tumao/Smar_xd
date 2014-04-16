@@ -30,13 +30,13 @@
 <div class="row">
 <div class="col-xs-12">
 <!-- PAGE CONTENT BEGINS -->
-<form name="x-form"  class="form-horizontal" id="x-form" role="form">
-<input type="hidden" name="id" id="id" value="<?php echo $company['id']; ?>">
+<form name="x-form"  class="form-horizontal" id="x-form" role="form" action="/redbud_admin/savecompany" method="post">
+<input type="hidden" name="company[id]" id="id" value="<?php echo $company['id']; ?>">
 <div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="name"> 产品简称 </label>
 
     <div class="col-sm-9">
-        <input type="text" name="name" id="short_name" class="col-xs-10 col-sm-5" value="<?php echo $company['name']; ?>" />
+        <input type="text" name="company[name]" id="short_name" class="col-xs-10 col-sm-5" value="<?php echo $company['name']; ?>" />
     </div>
 </div>
 
@@ -46,7 +46,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="full_name"> 产品全称 </label>
 
     <div class="col-sm-9">
-        <input type="text" name="full_name" id="full_name" class="col-xs-10 col-sm-5" value="<?php echo $company['full_name']; ?>"  />
+        <input type="text" name="company[full_name]" id="full_name" class="col-xs-10 col-sm-5" value="<?php echo $company['full_name']; ?>"  />
     </div>
 </div>
 
@@ -54,14 +54,14 @@
     <label class="col-sm-3 control-label no-padding-right" for="register_capital"> 注册资本 </label>
 
     <div class="col-sm-9 input-group">
-        <input class="col-xs-10 col-sm-5" name="register_capital" id="register_capital" type="text"  value="<?php echo $company['register_capital']; ?>" />
+        <input class="col-xs-10 col-sm-5" name="company[register_capital]" id="register_capital" type="text"  value="<?php echo $company['register_capital']; ?>" />
     </div>
 </div>
 
 <div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="en_name"> 英文名称 </label>
     <div class="col-sm-9">
-        <input type="text" id="en_name" name="en_name" class="col-xs-10 col-sm-5" value="<?php echo $company['en_name']; ?>" />
+        <input type="text" id="en_name" name="company[en_name]" class="col-xs-10 col-sm-5" value="<?php echo $company['en_name']; ?>" />
     </div>
 </div>
 
@@ -70,7 +70,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="chairman"> 董事长 </label>
     <div class="col-sm-9">
-        <input type="text" id="chairman" name="chairman" class="col-xs-10 col-sm-5" value="<?php echo $company['chairman']; ?>" />
+        <input type="text" id="chairman" name="company[chairman]" class="col-xs-10 col-sm-5" value="<?php echo $company['chairman']; ?>" />
     </div>
 </div>
 
@@ -80,19 +80,21 @@
     <label class="col-sm-3 control-label no-padding-right" for="manage_director"> 总经理 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="manage_director" class="col-xs-10 col-sm-5" name="manage_director" value="<?php echo $company['manage_director']; ?>" />
+        <input type="text" id="manage_director" class="col-xs-10 col-sm-5" name="company[manage_director]" value="<?php echo $company['manage_director']; ?>" />
     </div>
 </div>
 
 <div class="space-4"></div>
 
-<div class="form-group">
-    <label class="col-sm-3 control-label no-padding-right" for="is_listed"> 是否上市 </label>
-
-    <div class="col-sm-9">
-        <input type="text" id="is_listed" class="col-xs-10 col-sm-5" name="is_listed" value="<?php echo $company['is_listed']; ?>" />
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="is_listed"> 是否上市 </label>
+        <div class="col-sm-9">
+            <select id="is_listed" class="col-xs-10 col-sm-5" name="company[is_listed]">
+                <option value="0" <?php if($company['is_listed'] == 1) echo 'selected'; ?>>是</option>
+                <option value="1" <?php if($company['is_listed'] == 0) echo 'selected'; ?>>否</option>
+            </select>
+        </div>
     </div>
-</div>
 
 <div class="space-4"></div>
 
@@ -100,7 +102,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="register_time"> 注册时间 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="register_time" class="date-picker col-xs-10 col-sm-5" name="register_time" data-date-format="yyyy-mm-dd" value="<?php echo $company['register_time']; ?>" />
+        <input type="text" id="register_time" class="date-picker col-xs-10 col-sm-5" name="company[register_time]" data-date-format="yyyy-mm-dd" value="<?php echo $company['register_time']; ?>" />
     </div>
 </div>
 
@@ -110,7 +112,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="area"> 地区 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="area" class="col-xs-10 col-sm-5" name="area" value="<?php echo $company['area']; ?>" />
+        <input type="text" id="area" class="col-xs-10 col-sm-5" name="company[area]" value="<?php echo $company['area']; ?>" />
     </div>
 </div>
 
@@ -120,7 +122,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="major_stockholder"> 大股东 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="major_stockholder" class="col-xs-10 col-sm-5" name="major_stockholder" value="<?php echo $company['major_stockholder']; ?>" />
+        <input type="text" id="major_stockholder" class="col-xs-10 col-sm-5" name="company[major_stockholder]" value="<?php echo $company['major_stockholder']; ?>" />
     </div>
 </div>
 
@@ -130,7 +132,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="address"> 注册地址 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="address" class="col-xs-10 col-sm-5" name="address" value="<?php echo $company['address']; ?>" />
+        <input type="text" id="address" class="col-xs-10 col-sm-5" name="company[address]" value="<?php echo $company['address']; ?>" />
     </div>
 </div>
 
@@ -139,7 +141,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="introduce"> 公司简介 </label>
     <div class="col-sm-9">
-        <textarea id="introduce" class="autosize-transition col-xs-10 col-sm-9" name="introduce" style="height: 80px;">
+        <textarea id="introduce" class="autosize-transition col-xs-10 col-sm-9" name="company[introduce]" style="height: 80px;">
             <?php echo $company['introduce']; ?>
         </textarea>
     </div>

@@ -42,6 +42,7 @@
     <!-- ace settings handler -->
     <script type="text/javascript" src = "/resources/js/jquery.min.js"></script>
     <script src="/static/admin/js/ace-extra.min.js"></script>
+    <script type="text/javascript" src="/static/admin/js/bootstrap-wysiwyg.min.js"></script>
     <script type="text/javascript" src="/resources/js/product.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->

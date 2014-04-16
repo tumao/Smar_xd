@@ -45,21 +45,34 @@ $route['productdetail'] = "product/index/productdetail";
 $route['company'] = "company/index/index";
 $route['company/detail'] = "company/index/detail";
 $route['lesson'] = "lesson/index/index";
-$route['guide'] = "company/index/index";
+$route['lesson/lessoninfo'] = "lesson/index/less_info";
+
+$route['guide'] = "guide/index/index";
+$route['guide/guideinfo'] = "guide/index/daogou_info";
+
 $route['consult'] = "company/index/index";
 $route['connect'] = "company/index/index";
 
 $route['login']	= "admin/index/login";
 $route['redbud_admin'] = "admin/index/index";
 $route['redbud_admin/product'] = "admin/index/product";
+
 $route['redbud_admin/company'] = "admin/index/company";
-$route['redbud_admin/course'] = "admin/index/course";
+$route['redbud_admin/upsertcompany'] = "admin/index/upsertcompany";
+$route['redbud_admin/savecompany'] = "admin/index/save_company";
+
 $route['redbud_admin/daogou'] = "admin/index/daogou";
+$route['redbud_admin/upsertdaogou'] = "admin/index/upsert_daogou";
+
 $route['redbud_admin/zixun'] = "admin/index/zixun";
 $route['redbud_admin/contactus'] = "admin/index/contactus";
 $route['redbud_admin/editaccount'] = "admin/index/editaccount";
 $route['redbud_admin/upsertproduct'] = "admin/index/upsert_product";
-$route['redbud_admin/upsertcompany'] = "admin/index/upsertcompany";
+
+//course
+$route['redbud_admin/course'] = "admin/index/course";
+$route['redbud_admin/upsertcourse'] = "admin/index/upsert_course";
+
 $route['404_override'] = '';
 
 
