@@ -144,9 +144,9 @@ class Index extends AbaseController {
         $result = $this->company_model->search('company', $condition,'id desc');
         $data['result'] = $result;
 
-        echo '<pre>';
-        var_dump($result);
-        echo '</pre>';
+        // echo '<pre>';
+        // var_dump($result);
+        // echo '</pre>';
         $this->load->view('company', $data);
     }
     public function upsertcompany() {
@@ -255,7 +255,7 @@ class Index extends AbaseController {
         if( !$data['id']){
             unset( $data['id']);
         }
-        var_dump( $data);
+        // var_dump( $data);
         $data['ctime'] = date('Y-m-d H:i:s',time());
         $id = $this->daogou_model->upsert('daogou',$data);
         return $id;
