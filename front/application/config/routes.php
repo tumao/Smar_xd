@@ -56,7 +56,10 @@ $route['connect'] = "company/index/index";
 $route['login']	= "admin/index/login";
 $route['redbud_admin'] = "admin/index/index";
 $route['redbud_admin/product'] = "admin/index/product";
+
 $route['redbud_admin/company'] = "admin/index/company";
+$route['redbud_admin/upsertcompany'] = "admin/index/upsertcompany";
+$route['redbud_admin/savecompany'] = "admin/index/save_company";
 
 $route['redbud_admin/daogou'] = "admin/index/daogou";
 $route['redbud_admin/upsertdaogou'] = "admin/index/upsert_daogou";

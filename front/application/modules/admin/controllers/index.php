@@ -136,8 +136,63 @@ class Index extends AbaseController {
         return $id;
     }
     public function company() {
-        $this->load->view('company');
+        $this->output->cache(1/60);
+        $this->load->model("company_model");
+        $condition = array(
+            'isdel' => 0
+        );
+        $result = $this->company_model->search('company', $condition,'id desc');
+        $data['result'] = $result;
+
+        echo '<pre>';
+        var_dump($result);
+        echo '</pre>';
+        $this->load->view('company', $data);
     }
+    public function upsertcompany() {
+        $pid = $this->input->get_post('pid');
+        if( $pid ){
+            $this->load->model('company_model');
+            $company = $this->company_model->search('company',array('id' => $pid), null,1);
+        }else{
+            $company = array(
+                'id'  =>'',
+                'name' =>'',
+                'introduce' => '',
+                'register_capital' => '',
+                'full_name'  =>'',
+                'en_name'  =>'',
+                'chairman'  =>'',
+                'manage_director'  =>'',
+                'is_listed'  =>'',
+                'register_time'  =>'',
+                'area'  =>'',
+                'major_stockholder'  =>'',
+                'address'  =>'',
+                'isdel'  =>''
+            );
+        }
+
+
+        $data['company'] = $company;
+        $this->load->view('upsertcompany', $data);
+    }
+
+    public function save_company() {
+        $this->load->model('company_model');
+
+        $company = $_REQUEST['company'];
+        if($company['id'] == '') {
+            unset($company['id']);
+        }
+        $id = $this->company_model->upsert('company',$company);
+        //$time = time();
+        //$this->db->cache_delete('redbud_admin', 'company');
+
+        //redirect("/redbud_admin/company?now=".$time);
+        redirect("/redbud_admin/company");
+    }
+
     public function course() {
         $this->load->model('course_model');
         $result = $this->course_model->search('course',array('id <> ' => ''),'id asc');
