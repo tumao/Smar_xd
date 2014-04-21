@@ -136,7 +136,7 @@ class Index extends AbaseController {
         return $id;
     }
     public function company() {
-        $this->output->cache(1/60);
+        //$this->output->cache(1/60);
         $this->load->model("company_model");
         $condition = array(
             'isdel' => 0
@@ -144,9 +144,11 @@ class Index extends AbaseController {
         $result = $this->company_model->search('company', $condition,'id desc');
         $data['result'] = $result;
 
+        /*
         echo '<pre>';
         var_dump($result);
         echo '</pre>';
+        */
         $this->load->view('company', $data);
     }
     public function upsertcompany() {
@@ -182,6 +184,17 @@ class Index extends AbaseController {
         $this->load->model('company_model');
 
         $company = $_REQUEST['company'];
+        $company['is_listed'] = intval($company['is_listed']);
+        /*
+        $register_time = $company['register_time'];
+        $mysql_time = strtotime($register_time);
+        $company['register_time'] = $mysql_time;
+        echo '<pre>';
+        var_dump($company);
+        echo '</pre>';
+        exit;
+        */
+
         if($company['id'] == '') {
             unset($company['id']);
         }

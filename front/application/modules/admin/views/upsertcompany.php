@@ -90,8 +90,8 @@
         <label class="col-sm-3 control-label no-padding-right" for="is_listed"> 是否上市 </label>
         <div class="col-sm-9">
             <select id="is_listed" class="col-xs-10 col-sm-5" name="company[is_listed]">
-                <option value="0" <?php if($company['is_listed'] == 1) echo 'selected'; ?>>是</option>
-                <option value="1" <?php if($company['is_listed'] == 0) echo 'selected'; ?>>否</option>
+                <option value="1" <?php if($company['is_listed'] == 1) echo 'selected'; ?>>是</option>
+                <option value="0" <?php if($company['is_listed'] == 0) echo 'selected'; ?>>否</option>
             </select>
         </div>
     </div>
