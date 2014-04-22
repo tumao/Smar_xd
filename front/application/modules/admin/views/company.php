@@ -72,17 +72,13 @@
                                     </label>
                                 </td>
 
-                                <td>
-                                    <a href="#"><?php echo $result[$i]['name'];?></a>
-                                </td>
+                                <td><a href="#"><?php echo $result[$i]['name'];?></a></td>
                                 <td><?php echo $result[$i]['register_capital']; ?></td>
                                 <td class="hidden-480"><?php echo $result[$i]['chairman']; ?></td>
                                 <td><?php echo $result[$i]['manage_director']; ?></td>
 
-                                <td class="hidden-480">
-                                    <span class="label label-sm label-inverse arrowed-in"><?php echo $result[$i]['major_stockholder'];?></span>
-                                </td>
-                                <td><?php echo $result[$i]['is_listed']; ?></td>
+                                <td><?php echo $result[$i]['major_stockholder'];?></td>
+                                <td><?php if($result[$i]['is_listed']== "1") echo "是"; else echo "否"; ?></td>
                                 <td><?php echo $result[$i]['register_time']; ?></td>
                                 <td><?php echo $result[$i]['area']; ?></td>
                                 <td>

@@ -3,23 +3,12 @@
 class Index extends AbaseController {
 	public function __construct(){
 		parent::__construct();
-		// $this->load->model('admin_model');
-        $this->load->helper(array('form', 'url'));  
+        $this->load->helper(array('form', 'url'));
         $this->load->library('form_validation');
 	}
 	
 	public function index()
 	{
-        /*
-        $this->load->library('parser');
-
-        $data = $this->db->get('company')->result_array();
-        $data = array(
-            'blog_template' => $data,
-        );
-
-		$this->load->view('index', $data);
-        */
         $this->load->view('index');
 	}
 
@@ -49,7 +38,6 @@ class Index extends AbaseController {
         $this->load->model('products_model');
         $pid = $this->input->get_post('pid');
         $company_group = $this->company_list();
-        // $product = array();
         if( $pid ){
             $product = $this->products_model->search('products',array('id' => $pid), null,1);
             $company = $this->company_list( $product['companyid']);
@@ -144,9 +132,9 @@ class Index extends AbaseController {
         $result = $this->company_model->search('company', $condition,'id desc');
         $data['result'] = $result;
 
-        // echo '<pre>';
-        // var_dump($result);
-        // echo '</pre>';
+        echo '<pre>';
+        var_dump($result);
+        echo '</pre>';
         $this->load->view('company', $data);
     }
     public function upsertcompany() {
@@ -186,10 +174,6 @@ class Index extends AbaseController {
             unset($company['id']);
         }
         $id = $this->company_model->upsert('company',$company);
-        //$time = time();
-        //$this->db->cache_delete('redbud_admin', 'company');
-
-        //redirect("/redbud_admin/company?now=".$time);
         redirect("/redbud_admin/company");
     }
 
@@ -255,43 +239,13 @@ class Index extends AbaseController {
         if( !$data['id']){
             unset( $data['id']);
         }
-        // var_dump( $data);
+        var_dump( $data);
         $data['ctime'] = date('Y-m-d H:i:s',time());
         $id = $this->daogou_model->upsert('daogou',$data);
         return $id;
     }
     public function zixun() {
-        $this->load->model('daogou_model');
-        $result = $this->daogou_model->search('zixun',array( 'id <> '=>''),'id asc');
-
-        $data['result'] = $result;
-        $this->load->view('zixun',$data);
-    }
-    public function upsert_zixun(){
-
-        $this->load->model('daogou_model');
-        $id = $this->input->get_post('cid');
-        if( $id ){
-            $result = $this->daogou_model->search('zixun',array('id'=>$id),null,1);
-        }else{
-            $result = array(
-                    'title'     => '',
-                    'content'   => '',
-                    'id'        => '',
-                    'ctime'     =>  ''
-                );
-        }
-        $data['result'] = $result;
-        $this->load->view('upsertzixun',$data);
-    }
-    public function save_zixun(){
-        $this->load->model('daogou_model');
-        $data = $_REQUEST;
-        if( !$data['id']){
-            unset( $data['id']);
-        }
-        $data['ctime'] = date('Y-m-d H:i:s',time());
-        $id = $this->daogou_model->upsert('zixun',$data);
+        $this->load->view('zixun');
     }
     public function contactus() {
         $this->load->view('contactus');
