@@ -3,23 +3,12 @@
 class Index extends AbaseController {
 	public function __construct(){
 		parent::__construct();
-		// $this->load->model('admin_model');
-        $this->load->helper(array('form', 'url'));  
+        $this->load->helper(array('form', 'url'));
         $this->load->library('form_validation');
 	}
 	
 	public function index()
 	{
-        /*
-        $this->load->library('parser');
-
-        $data = $this->db->get('company')->result_array();
-        $data = array(
-            'blog_template' => $data,
-        );
-
-		$this->load->view('index', $data);
-        */
         $this->load->view('index');
 	}
 
@@ -49,7 +38,6 @@ class Index extends AbaseController {
         $this->load->model('products_model');
         $pid = $this->input->get_post('pid');
         $company_group = $this->company_list();
-        // $product = array();
         if( $pid ){
             $product = $this->products_model->search('products',array('id' => $pid), null,1);
             $company = $this->company_list( $product['companyid']);
@@ -136,7 +124,7 @@ class Index extends AbaseController {
         return $id;
     }
     public function company() {
-        //$this->output->cache(1/60);
+        $this->output->cache(1/60);
         $this->load->model("company_model");
         $condition = array(
             'isdel' => 0
@@ -144,11 +132,9 @@ class Index extends AbaseController {
         $result = $this->company_model->search('company', $condition,'id desc');
         $data['result'] = $result;
 
-        /*
         echo '<pre>';
         var_dump($result);
         echo '</pre>';
-        */
         $this->load->view('company', $data);
     }
     public function upsertcompany() {
@@ -184,25 +170,10 @@ class Index extends AbaseController {
         $this->load->model('company_model');
 
         $company = $_REQUEST['company'];
-        $company['is_listed'] = intval($company['is_listed']);
-        /*
-        $register_time = $company['register_time'];
-        $mysql_time = strtotime($register_time);
-        $company['register_time'] = $mysql_time;
-        echo '<pre>';
-        var_dump($company);
-        echo '</pre>';
-        exit;
-        */
-
         if($company['id'] == '') {
             unset($company['id']);
         }
         $id = $this->company_model->upsert('company',$company);
-        //$time = time();
-        //$this->db->cache_delete('redbud_admin', 'company');
-
-        //redirect("/redbud_admin/company?now=".$time);
         redirect("/redbud_admin/company");
     }
 

@@ -65,6 +65,8 @@ $route['redbud_admin/daogou'] = "admin/index/daogou";
 $route['redbud_admin/upsertdaogou'] = "admin/index/upsert_daogou";
 
 $route['redbud_admin/zixun'] = "admin/index/zixun";
+$route['redbud_admin/upsertzixun'] = "admin/index/upsert_zixun";
+
 $route['redbud_admin/contactus'] = "admin/index/contactus";
 $route['redbud_admin/editaccount'] = "admin/index/editaccount";
 $route['redbud_admin/upsertproduct'] = "admin/index/upsert_product";
