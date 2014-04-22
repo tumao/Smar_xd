@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <!-- PAGE CONTENT BEGINS -->
-                <h3 class="smaller lighter blue" style="display: inline;">信托导购列表</h3>
+                 <h3 class="smaller lighter blue" style="display: inline;">信托导购列表</h3>
                 <button class="btn btn-primary" style="float: right;margin-right: 10px;" onclick="Poc.addpage()">
                     <i class="icon-plus align-top bigger-125"></i>添加
                 </button>
