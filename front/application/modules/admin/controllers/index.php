@@ -132,9 +132,9 @@ class Index extends AbaseController {
         $result = $this->company_model->search('company', $condition,'id desc');
         $data['result'] = $result;
 
-        echo '<pre>';
-        var_dump($result);
-        echo '</pre>';
+        // echo '<pre>';
+        // var_dump($result);
+        // echo '</pre>';
         $this->load->view('company', $data);
     }
     public function upsertcompany() {
@@ -239,13 +239,43 @@ class Index extends AbaseController {
         if( !$data['id']){
             unset( $data['id']);
         }
-        var_dump( $data);
+        // var_dump( $data);
         $data['ctime'] = date('Y-m-d H:i:s',time());
         $id = $this->daogou_model->upsert('daogou',$data);
         return $id;
     }
     public function zixun() {
-        $this->load->view('zixun');
+        $this->load->model('daogou_model');
+        $result = $this->daogou_model->search('zixun',array( 'id <> '=>''),'id asc');
+
+        $data['result'] = $result;
+        $this->load->view('zixun',$data);
+    }
+    public function upsert_zixun(){
+
+        $this->load->model('daogou_model');
+        $id = $this->input->get_post('cid');
+        if( $id ){
+            $result = $this->daogou_model->search('zixun',array('id'=>$id),null,1);
+        }else{
+            $result = array(
+                    'title'     => '',
+                    'content'   => '',
+                    'id'        => '',
+                    'ctime'     =>  ''
+                );
+        }
+        $data['result'] = $result;
+        $this->load->view('upsertzixun',$data);
+    }
+    public function save_zixun(){
+        $this->load->model('daogou_model');
+        $data = $_REQUEST;
+        if( !$data['id']){
+            unset( $data['id']);
+        }
+        $data['ctime'] = date('Y-m-d H:i:s',time());
+        $id = $this->daogou_model->upsert('zixun',$data);
     }
     public function contactus() {
         $this->load->view('contactus');
