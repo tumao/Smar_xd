@@ -59,7 +59,6 @@ class Index extends AbaseController {
                 $product['xintuo_name'] = '';
             }
         }else{
-            
             $product = array(
                     'id'  =>'',
                     'short_name' =>'',
@@ -175,6 +174,16 @@ class Index extends AbaseController {
         }
         $id = $this->company_model->upsert('company',$company);
         redirect("/redbud_admin/company");
+    }
+
+    public function del_company() {
+        $this->load->model('company_model');
+        $id = $_POST['id'];
+        if($id == '') {
+            return;
+        } else {
+            $this->company_model->delete('company', array('id' => $id));
+        }
     }
 
     public function course() {

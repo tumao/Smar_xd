@@ -30,7 +30,7 @@
                 <!-- PAGE CONTENT BEGINS -->
                 <div class="header" style="line-height: 48px;">
                     <h3 class="smaller lighter blue" style="display: inline;">信托公司列表</h3>
-                    <button class="btn btn-primary" style="float: right;margin-right: 10px;" onclick="PropApp.addpage()">
+                    <button class="btn btn-primary" style="float: right;margin-right: 10px;" onclick="location.href='/redbud_admin/upsertcompany'">
                         <i class="icon-plus align-top bigger-125"></i>添加
                     </button>
                 </div>
@@ -91,7 +91,7 @@
                                             <i class="icon-pencil bigger-130"></i>
                                         </a>
 
-                                        <a class="red" href="#">
+                                        <a class="red" href="#" onclick="delete_company('<?php echo $result[$i]['id'];?>')">
                                             <i class="icon-trash bigger-130"></i>
                                         </a>
                                     </div>
@@ -204,5 +204,21 @@
             if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
             return 'left';
         }
-    })
+    });
+
+    function delete_company(id) {
+        if (confirm("确认要删除这条数据?") ) {
+            $.ajax(
+                {
+                    type: "post",
+                    url:"/redbud_admin/delcompany",
+                    data:"id=" + id,
+                    success: function(msg) {
+                        window.location.reload();
+                    }
+                }
+            );
+        } else {
+        }
+    }
 </script>
