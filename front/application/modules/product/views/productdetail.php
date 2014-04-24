@@ -1,8 +1,8 @@
 <?php echo $this->load->view('header'); ?>
 <div class="sm-mod-site">
     <span class="banfirtxt">当前位置：</span>
-    <a href="http://www.jinfuzi.com/xintuo/">首页</a><span class="icon-arrl">&gt;&gt;</span>
-    <a href="http://www.jinfuzi.com/xintuo/list">信托产品列表</a><span class="icon-arrl">&gt;&gt;</span>
+    <a href="/">首页</a><span class="icon-arrl">&gt;&gt;</span>
+    <a href="/product">信托产品列表</a><span class="icon-arrl">&gt;&gt;</span>
     <a href="http://www.jinfuzi.com/product/014245">中城建六局亳州市政BT项目</a>
 </div>
 <div class="layout">

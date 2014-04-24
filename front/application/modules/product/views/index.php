@@ -5,8 +5,8 @@
 
     <div class="sm-mod-site">
         <span class="banfirtxt">当前位置：</span>
-        <a href="http://www.jinfuzi.com/xintuo/">首页</a><span class="icon-arrl">&gt;&gt;</span><a
-            href="http://www.jinfuzi.com/xintuo/xtlist">信托产品列表</a>
+        <a href="/">首页</a><span class="icon-arrl">&gt;&gt;</span><a
+            href="/product">信托产品列表</a>
     </div>
 
     <div class="layout select mt10 shadow">
@@ -23,13 +23,13 @@
 			                		<a href='http://www.jinfuzi.com/xintuo/xtlist'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-1-0-0-0-0-1'>50万以下</a>
+			                		<a href='/product/index?min_sub_mount=500000'>50万以下</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-2-0-0-0-0-1'>50-100万</a>
+			                		<a href='/product/index?from=50000&to=1000000'>50-100万</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-3-0-0-0-0-1'>100-300万</a>
+			                		<a href='/index/list?from=1000000&to=300000'>100-300万</a>
 			                	</span>
 			                			                	<span class=>
 			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-4-0-0-0-0-1'>300万以上</a>

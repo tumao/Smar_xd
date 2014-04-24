@@ -25,7 +25,7 @@
 	<div class="xt_banner_wrap">
 		<ul class="banner_list">
 							<li class="banner_item" style="display: ;">				
-					<a class="bg" href="http://www.jinfuzi.com/product/0112698" target="_blank">
+					<a class="bg" href="/product" target="_blank">
 						<span class="banner_da" style="background:url(http://static.jinfuzi.com/edit/image/006_1392985080.jpg) no-repeat center center;">
 							
 						</span>
@@ -53,11 +53,11 @@
 										<div class="cmd_con">
 											<!-- li鼠标移上去增加hover类 -->
 											<ul class="sum_list list">
-																									<li data_value="0" data_text="不限">不限</li>
-																									<li data_value="1" data_text="50万以下">50万以下</li>
-																									<li data_value="2" data_text="50-100万">50-100万</li>
-																									<li data_value="3" data_text="100-300万">100-300万</li>
-																									<li data_value="4" data_text="300万以上">300万以上</li>
+												<li data_value="0" data_text="不限">不限</li>
+												<li data_value="1" data_text="50万以下">50万以下</li>
+												<li data_value="2" data_text="50-100万">50-100万</li>
+												<li data_value="3" data_text="100-300万">100-300万</li>
+												<li data_value="4" data_text="300万以上">300万以上</li>
 													
 											</ul>
 										</div>
@@ -76,11 +76,11 @@
 										<div class="cmd_con">
 											<!-- li鼠标移上去增加hover类 -->
 											<ul class="annual_list list">
-																									<li data_value="0" data_text="不限">不限</li>
-																									<li data_value="1" data_text="6%以下">6%以下</li>
-																									<li data_value="2" data_text="6%-8%">6%-8%</li>
-																									<li data_value="3" data_text="8%-10%">8%-10%</li>
-																									<li data_value="4" data_text="10%以上">10%以上</li>
+												<li data_value="0" data_text="不限">不限</li>
+												<li data_value="1" data_text="6%以下">6%以下</li>
+												<li data_value="2" data_text="6%-8%">6%-8%</li>
+												<li data_value="3" data_text="8%-10%">8%-10%</li>
+												<li data_value="4" data_text="10%以上">10%以上</li>
 																								
 											</ul>
 										</div>
@@ -89,8 +89,8 @@
 							</div>
 							<div class="submit_wrap clearfix">								
 								<div class="input_control">
-									<a href="http://www.jinfuzi.com/xintuo/list" id="search_submit" target="_blank">
-										<input type="submit" value=""  class="input_btn heiti">
+									<a href="/" id="search_submit" target="_blank">
+										<input type="submit" value="提交"  class="input_btn heiti" style="background-color:blue;">
 									</a>
 								</div>														
 							</div>
@@ -756,7 +756,7 @@
 
 	function search() {
 		var url = "/xintuo/list-0-0-0-0-0-{init_capital}-{prd_exp_profit}-0-0-0-1.html";
-		var default_url = "http://www.jinfuzi.com/xintuo/xtlist";
+		var default_url = "/";
 		var capital_pattern = /\{init_capital\}/,
 			profit_pattern = /\{prd_exp_profit\}/;
 		
