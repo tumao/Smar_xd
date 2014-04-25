@@ -141,6 +141,7 @@ class Index extends AbaseController {
         if( $pid ){
             $this->load->model('company_model');
             $company = $this->company_model->search('company',array('id' => $pid), null,1);
+            $company['register_time'] = date('Y-m-d', strtotime($company['register_time']));
         }else{
             $company = array(
                 'id'  =>'',
@@ -167,10 +168,15 @@ class Index extends AbaseController {
 
     public function save_company() {
         $this->load->model('company_model');
+        $this->load->library('pinyin_mini');
 
         $company = $_REQUEST['company'];
         if($company['id'] == '') {
             unset($company['id']);
+        }
+        $first_character = $this->pinyin_mini->to_first($company['name']);
+        if($first_character != false) {
+            $company['first_character'] = $first_character;
         }
         $id = $this->company_model->upsert('company',$company);
         redirect("/redbud_admin/company");

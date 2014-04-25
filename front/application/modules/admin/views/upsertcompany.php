@@ -12,7 +12,7 @@
             <a href="#">Home</a>
         </li>
         <li>
-            <a href="#">信托产品</a>
+            <a href="#">信托公司</a>
         </li>
     </ul><!-- .breadcrumb -->
 
@@ -33,7 +33,7 @@
 <form name="x-form"  class="form-horizontal" id="x-form" role="form" action="/redbud_admin/savecompany" method="post">
 <input type="hidden" name="company[id]" id="id" value="<?php echo $company['id']; ?>">
 <div class="form-group">
-    <label class="col-sm-3 control-label no-padding-right" for="name"> 产品简称 </label>
+    <label class="col-sm-3 control-label no-padding-right" for="name"> 公司简称 </label>
 
     <div class="col-sm-9">
         <input type="text" name="company[name]" id="short_name" class="col-xs-10 col-sm-5" value="<?php echo $company['name']; ?>" />
@@ -43,7 +43,7 @@
 <div class="space-4"></div>
 
 <div class="form-group">
-    <label class="col-sm-3 control-label no-padding-right" for="full_name"> 产品全称 </label>
+    <label class="col-sm-3 control-label no-padding-right" for="full_name"> 公司全称 </label>
 
     <div class="col-sm-9">
         <input type="text" name="company[full_name]" id="full_name" class="col-xs-10 col-sm-5" value="<?php echo $company['full_name']; ?>"  />
