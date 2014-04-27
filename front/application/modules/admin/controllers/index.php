@@ -176,7 +176,7 @@ class Index extends AbaseController {
         }
         $first_character = $this->pinyin_mini->to_first($company['name']);
         if($first_character != false) {
-            $company['first_character'] = $first_character;
+            $company['first_character'] = strtoupper($first_character);
         }
         $id = $this->company_model->upsert('company',$company);
         redirect("/redbud_admin/company");
