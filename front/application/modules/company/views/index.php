@@ -28,7 +28,7 @@
                     <?php
                         foreach($formatted_companylist[$company_letter[$i]] as $key=>$value) {
                     ?>
-                    <a href="http://www.jinfuzi.com/xintuo/c-11"><?php echo $value['name']; ?></a>
+                    <a href="/company/detail?cid=<?php echo $value['id']?>"><?php echo $value['name']; ?></a>
                     <?php } ?>
                 </div>
                 <?php } ?>
@@ -44,7 +44,7 @@
                             if(array_key_exists($v, $formatted_companylist)) {
                                 foreach($formatted_companylist[$v] as $k1 => $v1) {
                             ?>
-                            <a href="http://www.jinfuzi.com/xintuo/c-8"><?php echo $v1['name']?></a>
+                            <a href="/company/detail?cid=<?php echo $v1['id']?>"><?php echo $v1['name']?></a>
                         <?php
                                 }
                             }
@@ -61,7 +61,7 @@
                             if(array_key_exists($v, $formatted_companylist)) {
                                 foreach($formatted_companylist[$v] as $k1 => $v1) {
                             ?>
-                                <a href="http://www.jinfuzi.com/xintuo/c-8"><?php echo $v1['name']?></a>
+                                <a href="/company/detail?cid=<?php echo $v1['id']?>"><?php echo $v1['name']?></a>
                             <?php
                                 }
                             }
@@ -78,7 +78,7 @@
                             if(array_key_exists($v, $formatted_companylist)) {
                                 foreach($formatted_companylist[$v] as $k1 => $v1) {
                             ?>
-                                <a href="http://www.jinfuzi.com/xintuo/c-8"><?php echo $v1['name']?></a>
+                                <a href="/company/detail?cid=<?php echo $v1['id']?>"><?php echo $v1['name']?></a>
                             <?php
                                 }
                             }
@@ -95,7 +95,7 @@
                             if(array_key_exists($v, $formatted_companylist)) {
                                 foreach($formatted_companylist[$v] as $k1 => $v1) {
                             ?>
-                                <a href="http://www.jinfuzi.com/xintuo/c-8"><?php echo $v1['name']?></a>
+                                <a href="/company/detail?cid=<?php echo $v1['id']?>"><?php echo $v1['name']?></a>
                             <?php
                                 }
                             }

@@ -34,7 +34,21 @@ class Index extends BaseController {
 	}
 
     public function detail() {
-        $this->load->view('detail');
+        $company_id = $_GET['cid'];
+        $this->load->model("company_model");
+        $condition = array(
+            'isdel' => 0,
+            'id' => $company_id
+        );
+
+        $company = $this->company_model->search('company', $condition)[0];
+        $data['company'] = $company;
+        /*
+        echo '<pre>';
+        var_dump($company);exit;
+        */
+
+        $this->load->view('detail', $data);
     }
 
 }
