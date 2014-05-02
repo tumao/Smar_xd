@@ -12,10 +12,98 @@
         <div class="alljsbox">
             <h2>全国信托公司列表</h2>
 
-            <div class="suoyinbox"><p class="suoyinnum">拼音索引：<em class="on">A</em><em class="">B</em><em class="">C</em><em class="">D</em><em class="">F</em><em class="">G</em><em class="">H</em><em class="">J</em><em class="">K</em><em class="">L</em><em class="">M</em><em class="">P</em><em class="">S</em><em class="">T</em><em class="">W</em><em class="">X</em><em class="">Y</em><em class="">Z</em></p><div class="suoyincon" style=""><a href="http://www.jinfuzi.com/xintuo/c-8">爱建信托</a><a href="http://www.jinfuzi.com/xintuo/c-11">安信信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-10">渤海信托</a><a href="http://www.jinfuzi.com/xintuo/c-13">北方信托</a><a href="http://www.jinfuzi.com/xintuo/c-26">北京国投</a><a href="http://www.jinfuzi.com/xintuo/c-30">百瑞信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-37">长城新盛信托</a><a href="http://www.jinfuzi.com/xintuo/c-39">重庆信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-43">东莞信托</a><a href="http://www.jinfuzi.com/xintuo/c-44">大业信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-49">方正东亚信托</a><a href="http://www.jinfuzi.com/xintuo/c-56">国联信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-21">国民信托</a><a href="http://www.jinfuzi.com/xintuo/c-28">甘肃信托</a><a href="http://www.jinfuzi.com/xintuo/c-33">长安信托</a><a href="http://www.jinfuzi.com/xintuo/c-34">国投信托</a><a href="http://www.jinfuzi.com/xintuo/c-46">国元信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-12">杭州工商信托</a><a href="http://www.jinfuzi.com/xintuo/c-51">华澳信托</a><a href="http://www.jinfuzi.com/xintuo/c-54">华宝信托</a><a href="http://www.jinfuzi.com/xintuo/c-58">华宸信托</a><a href="http://www.jinfuzi.com/xintuo/c-60">华能贵诚</a><a href="http://www.jinfuzi.com/xintuo/c-63">湖南信托</a><a href="http://www.jinfuzi.com/xintuo/c-65">华融国际信托</a><a href="http://www.jinfuzi.com/xintuo/c-72">华鑫信托</a><a href="http://www.jinfuzi.com/xintuo/c-67">华润信托</a><a href="http://www.jinfuzi.com/xintuo/c-70">华信信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-14">金谷信托</a><a href="http://www.jinfuzi.com/xintuo/c-17">吉林信托</a><a href="http://www.jinfuzi.com/xintuo/c-18">江苏信托</a><a href="http://www.jinfuzi.com/xintuo/c-19">建信信托</a><a href="http://www.jinfuzi.com/xintuo/c-23">交银国际信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-29">昆仑信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-32">陆家嘴信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-79">民生信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-36">平安信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-15">苏州信托</a><a href="http://www.jinfuzi.com/xintuo/c-38">四川信托</a><a href="http://www.jinfuzi.com/xintuo/c-42">山东信托</a><a href="http://www.jinfuzi.com/xintuo/c-47">陕国投</a><a href="http://www.jinfuzi.com/xintuo/c-52">上海信托</a><a href="http://www.jinfuzi.com/xintuo/c-57">山西信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-16">天津信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-20">五矿国际信托</a><a href="http://www.jinfuzi.com/xintuo/c-24">外贸信托</a><a href="http://www.jinfuzi.com/xintuo/c-31">万向信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-41">西部信托</a><a href="http://www.jinfuzi.com/xintuo/c-45">新华信托</a><a href="http://www.jinfuzi.com/xintuo/c-50">厦门信托</a><a href="http://www.jinfuzi.com/xintuo/c-55">新时代信托</a><a href="http://www.jinfuzi.com/xintuo/c-61">兴业国际信托</a><a href="http://www.jinfuzi.com/xintuo/c-64">西藏信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-22">英大信托</a><a href="http://www.jinfuzi.com/xintuo/c-27">云国投</a><a href="http://www.jinfuzi.com/xintuo/c-69">粤财信托</a></div><div class="suoyincon" style="display:none"><a href="http://www.jinfuzi.com/xintuo/c-6">中融信托</a><a href="http://www.jinfuzi.com/xintuo/c-7">中铁信托</a><a href="http://www.jinfuzi.com/xintuo/c-9">中原信托</a><a href="http://www.jinfuzi.com/xintuo/c-25">中信信托</a><a href="http://www.jinfuzi.com/xintuo/c-35">中诚信托</a><a href="http://www.jinfuzi.com/xintuo/c-40">中海信托</a><a href="http://www.jinfuzi.com/xintuo/c-48">中航信托</a><a href="http://www.jinfuzi.com/xintuo/c-53">中泰信托</a><a href="http://www.jinfuzi.com/xintuo/c-59">浙金信托</a><a href="http://www.jinfuzi.com/xintuo/c-62">中江信托</a><a href="http://www.jinfuzi.com/xintuo/c-66">紫金信托</a><a href="http://www.jinfuzi.com/xintuo/c-68">中粮信托</a><a href="http://www.jinfuzi.com/xintuo/c-74">中投信托</a></div></div>            
+            <div class="suoyinbox">
+                <p class="suoyinnum">拼音索引：
+                    <?php
+                    $company_letter = array_keys($formatted_companylist);
+                    for($i = 0; $i < count($company_letter); $i++) {
+                    ?>
+                    <em <?php if($i == 0) echo 'class="on"';?>><?php echo $company_letter[$i]; ?></em>
+                    <?php } ?>
+                </p>
+                <?php
+                for($i = 0; $i < count($formatted_companylist); $i++) {
+                ?>
+                <div class="suoyincon" style="<?php if($i != 0) echo 'display:none'?>">
+                    <?php
+                        foreach($formatted_companylist[$company_letter[$i]] as $key=>$value) {
+                    ?>
+                    <a href="/company/detail?cid=<?php echo $value['id']?>"><?php echo $value['name']; ?></a>
+                    <?php } ?>
+                </div>
+                <?php } ?>
+            </div>
             <div class="jzallmap">
                 <ul class="">
-                    <li><p class="sypingyin">A B C D E F</p><p class="sylists"><a href="http://www.jinfuzi.com/xintuo/c-8">爱建信托</a><a href="http://www.jinfuzi.com/xintuo/c-11">安信信托</a><a href="http://www.jinfuzi.com/xintuo/c-10">渤海信托</a><a href="http://www.jinfuzi.com/xintuo/c-13">北方信托</a><a href="http://www.jinfuzi.com/xintuo/c-26">北京国投</a><a href="http://www.jinfuzi.com/xintuo/c-30">百瑞信托</a><a href="http://www.jinfuzi.com/xintuo/c-37">长城新盛信托</a><a href="http://www.jinfuzi.com/xintuo/c-39">重庆信托</a><a href="http://www.jinfuzi.com/xintuo/c-43">东莞信托</a><a href="http://www.jinfuzi.com/xintuo/c-44">大业信托</a><a href="http://www.jinfuzi.com/xintuo/c-49">方正东亚信托</a><a href="http://www.jinfuzi.com/xintuo/c-56">国联信托</a></p></li><li><p class="sypingyin">G H I J K L</p><p class="sylists"><a href="http://www.jinfuzi.com/xintuo/c-21">国民信托</a><a href="http://www.jinfuzi.com/xintuo/c-28">甘肃信托</a><a href="http://www.jinfuzi.com/xintuo/c-33">长安信托</a><a href="http://www.jinfuzi.com/xintuo/c-34">国投信托</a><a href="http://www.jinfuzi.com/xintuo/c-46">国元信托</a><a href="http://www.jinfuzi.com/xintuo/c-12">杭州工商信托</a><a href="http://www.jinfuzi.com/xintuo/c-51">华澳信托</a><a href="http://www.jinfuzi.com/xintuo/c-54">华宝信托</a><a href="http://www.jinfuzi.com/xintuo/c-58">华宸信托</a><a href="http://www.jinfuzi.com/xintuo/c-60">华能贵诚</a><a href="http://www.jinfuzi.com/xintuo/c-63">湖南信托</a><a href="http://www.jinfuzi.com/xintuo/c-65">华融国际信托</a><a href="http://www.jinfuzi.com/xintuo/c-72">华鑫信托</a><a href="http://www.jinfuzi.com/xintuo/c-67">华润信托</a><a href="http://www.jinfuzi.com/xintuo/c-70">华信信托</a><a href="http://www.jinfuzi.com/xintuo/c-14">金谷信托</a><a href="http://www.jinfuzi.com/xintuo/c-17">吉林信托</a><a href="http://www.jinfuzi.com/xintuo/c-18">江苏信托</a><a href="http://www.jinfuzi.com/xintuo/c-19">建信信托</a><a href="http://www.jinfuzi.com/xintuo/c-23">交银国际信托</a><a href="http://www.jinfuzi.com/xintuo/c-29">昆仑信托</a><a href="http://www.jinfuzi.com/xintuo/c-32">陆家嘴信托</a></p></li><li><p class="sypingyin">N M O P Q R S</p><p class="sylists"><a href="http://www.jinfuzi.com/xintuo/c-79">民生信托</a><a href="http://www.jinfuzi.com/xintuo/c-36">平安信托</a><a href="http://www.jinfuzi.com/xintuo/c-15">苏州信托</a><a href="http://www.jinfuzi.com/xintuo/c-38">四川信托</a><a href="http://www.jinfuzi.com/xintuo/c-42">山东信托</a><a href="http://www.jinfuzi.com/xintuo/c-47">陕国投</a><a href="http://www.jinfuzi.com/xintuo/c-52">上海信托</a><a href="http://www.jinfuzi.com/xintuo/c-57">山西信托</a></p></li><li><p class="sypingyin">T U V W X Y Z</p><p class="sylists"><a href="http://www.jinfuzi.com/xintuo/c-16">天津信托</a><a href="http://www.jinfuzi.com/xintuo/c-20">五矿国际信托</a><a href="http://www.jinfuzi.com/xintuo/c-24">外贸信托</a><a href="http://www.jinfuzi.com/xintuo/c-31">万向信托</a><a href="http://www.jinfuzi.com/xintuo/c-41">西部信托</a><a href="http://www.jinfuzi.com/xintuo/c-45">新华信托</a><a href="http://www.jinfuzi.com/xintuo/c-50">厦门信托</a><a href="http://www.jinfuzi.com/xintuo/c-55">新时代信托</a><a href="http://www.jinfuzi.com/xintuo/c-61">兴业国际信托</a><a href="http://www.jinfuzi.com/xintuo/c-64">西藏信托</a><a href="http://www.jinfuzi.com/xintuo/c-22">英大信托</a><a href="http://www.jinfuzi.com/xintuo/c-27">云国投</a><a href="http://www.jinfuzi.com/xintuo/c-69">粤财信托</a><a href="http://www.jinfuzi.com/xintuo/c-6">中融信托</a><a href="http://www.jinfuzi.com/xintuo/c-7">中铁信托</a><a href="http://www.jinfuzi.com/xintuo/c-9">中原信托</a><a href="http://www.jinfuzi.com/xintuo/c-25">中信信托</a><a href="http://www.jinfuzi.com/xintuo/c-35">中诚信托</a><a href="http://www.jinfuzi.com/xintuo/c-40">中海信托</a><a href="http://www.jinfuzi.com/xintuo/c-48">中航信托</a><a href="http://www.jinfuzi.com/xintuo/c-53">中泰信托</a><a href="http://www.jinfuzi.com/xintuo/c-59">浙金信托</a><a href="http://www.jinfuzi.com/xintuo/c-62">中江信托</a><a href="http://www.jinfuzi.com/xintuo/c-66">紫金信托</a><a href="http://www.jinfuzi.com/xintuo/c-68">中粮信托</a><a href="http://www.jinfuzi.com/xintuo/c-74">中投信托</a></p></li>              </ul>
+                    <li>
+                        <p class="sypingyin">A B C D E F G</p>
+                        <p class="sylists">
+                        <?php
+                        $array1 = array('A','B','C', 'D', 'E', 'F', 'G');
+                        foreach($array1 as $v){
+                            if(array_key_exists($v, $formatted_companylist)) {
+                                foreach($formatted_companylist[$v] as $k1 => $v1) {
+                            ?>
+                            <a href="/company/detail?cid=<?php echo $v1['id']?>"><?php echo $v1['name']?></a>
+                        <?php
+                                }
+                            }
+                        }
+                        ?>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="sypingyin">H I J K L M N</p>
+                        <p class="sylists">
+                        <?php
+                        $array1 = array('H','I','J', 'K', 'L', 'M', 'N');
+                        foreach($array1 as $v){
+                            if(array_key_exists($v, $formatted_companylist)) {
+                                foreach($formatted_companylist[$v] as $k1 => $v1) {
+                            ?>
+                                <a href="/company/detail?cid=<?php echo $v1['id']?>"><?php echo $v1['name']?></a>
+                            <?php
+                                }
+                            }
+                        }
+                        ?>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="sypingyin">O P Q R S T</p>
+                        <p class="sylists">
+                        <?php
+                        $array1 = array('O','P','Q', 'R', 'S', 'T');
+                        foreach($array1 as $v){
+                            if(array_key_exists($v, $formatted_companylist)) {
+                                foreach($formatted_companylist[$v] as $k1 => $v1) {
+                            ?>
+                                <a href="/company/detail?cid=<?php echo $v1['id']?>"><?php echo $v1['name']?></a>
+                            <?php
+                                }
+                            }
+                        }
+                        ?>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="sypingyin">U V W X Y Z</p>
+                        <p class="sylists">
+                        <?php
+                        $array1 = array('U','V','W', 'X', 'Y', 'Z');
+                        foreach($array1 as $v){
+                            if(array_key_exists($v, $formatted_companylist)) {
+                                foreach($formatted_companylist[$v] as $k1 => $v1) {
+                            ?>
+                                <a href="/company/detail?cid=<?php echo $v1['id']?>"><?php echo $v1['name']?></a>
+                            <?php
+                                }
+                            }
+                        }
+                        ?>
+                        </p>
+                    </li>
+                </ul>
             </div>
 
         </div>

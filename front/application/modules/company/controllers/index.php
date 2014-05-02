@@ -7,11 +7,48 @@ class Index extends BaseController {
 	
 	public function index()
 	{
-		$this->load->view('index');
+        $this->load->model("company_model");
+        $condition = array(
+            'isdel' => 0
+        );
+        $companylist = $this->company_model->search('company', $condition,'first_character asc');
+        $formatted_companylist = array();
+        $letter_array = array();
+
+        foreach($companylist as $key => $company) {
+            //if(array_key_exists( $company['first_character'], $formatted_companylist)) {
+            $formatted_companylist[$company['first_character']][] = $company;
+        }
+
+        /*
+        foreach($companylist as $key => $company) {
+            if(!array_search($company['first_character'], $letter_array)) {
+                array_push($letter_array, $company['first_character']);
+            }
+        }
+        echo '<pre>';
+        var_dump($formatted_companylist);exit;
+        */
+        $data['formatted_companylist'] = $formatted_companylist;
+		$this->load->view('index', $data);
 	}
 
     public function detail() {
-        $this->load->view('detail');
+        $company_id = $_GET['cid'];
+        $this->load->model("company_model");
+        $condition = array(
+            'isdel' => 0,
+            'id' => $company_id
+        );
+
+        $company = $this->company_model->search('company', $condition)[0];
+        $data['company'] = $company;
+        /*
+        echo '<pre>';
+        var_dump($company);exit;
+        */
+
+        $this->load->view('detail', $data);
     }
 
 }
