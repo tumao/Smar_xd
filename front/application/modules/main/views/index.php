@@ -140,7 +140,8 @@
 				</div>
 				<div class="md_uc_bd">
 					<ul class="xt_prolist_1 clearfix">
-													<li class="item">
+						<?php foreach ($prod['prod_elite'] as $elite) { ?>
+							<li class="item">
 								<div class="pro_wrap clearfix">
 									<div class="pro_wrap_left">
 										<span class="pro_income_tit">预期收益</span>
@@ -163,76 +164,8 @@
 								<!-- 预售s_2 在售s_1 -->
 								<span class="state s_1"></span>
 							</li>
-													<li class="item">
-								<div class="pro_wrap clearfix">
-									<div class="pro_wrap_left">
-										<span class="pro_income_tit">预期收益</span>
-										<p class="pro_income"><span class="num">9.00%</span></p>
-										<a href="http://www.jinfuzi.com/product/0113050" class="pro_btn" target="_blank">预 约</a>
-									</div>
-									<div class="pro_wrap_right">
-										<p class="pro_info_wrap bg_dashed">
-											<a href="http://www.jinfuzi.com/product/0113050" class="pro_name" target="_blank">
-												天宜1号													<span class="pro_gift">返现6000元</span>
-																							</a>
-											<span class="pro_sum">投资金额：<em class="f_f60">100万</em></span>      
-											<span class="pro_deadline">投资期限：<em class="f_f60">24个月</em></span>
-										</p>
-										<p class="pro_comment">
-											<span class="f_999">点评：</span>
-											南京基础设施建设，应收账款抵押，丰盛集团担保，嘉盛集团补足承...										</p>
-									</div>
-								</div>
-								<!-- 预售s_2 在售s_1 -->
-								<span class="state s_1"></span>
-							</li>
-													<li class="item">
-								<div class="pro_wrap clearfix">
-									<div class="pro_wrap_left">
-										<span class="pro_income_tit">预期收益</span>
-										<p class="pro_income"><span class="num">9.60%</span></p>
-										<a href="http://www.jinfuzi.com/product/0113164" class="pro_btn" target="_blank">预 约</a>
-									</div>
-									<div class="pro_wrap_right">
-										<p class="pro_info_wrap bg_dashed">
-											<a href="http://www.jinfuzi.com/product/0113164" class="pro_name" target="_blank">
-												长信47号													<span class="pro_gift">返现8000元</span>
-																							</a>
-											<span class="pro_sum">投资金额：<em class="f_f60">100万</em></span>      
-											<span class="pro_deadline">投资期限：<em class="f_f60">24个月</em></span>
-										</p>
-										<p class="pro_comment">
-											<span class="f_999">点评：</span>
-											期限灵活，移民安置项目，政府应收帐质押，双AA+级主体连带担...										</p>
-									</div>
-								</div>
-								<!-- 预售s_2 在售s_1 -->
-								<span class="state s_1"></span>
-							</li>
-													<li class="item">
-								<div class="pro_wrap clearfix">
-									<div class="pro_wrap_left">
-										<span class="pro_income_tit">预期收益</span>
-										<p class="pro_income"><span class="num">9.00%</span></p>
-										<a href="http://www.jinfuzi.com/product/0113172" class="pro_btn" target="_blank">预 约</a>
-									</div>
-									<div class="pro_wrap_right">
-										<p class="pro_info_wrap bg_dashed">
-											<a href="http://www.jinfuzi.com/product/0113172" class="pro_name" target="_blank">
-												鑫创3号													<span class="pro_gift">返现4500元</span>
-																							</a>
-											<span class="pro_sum">投资金额：<em class="f_f60">100万</em></span>      
-											<span class="pro_deadline">投资期限：<em class="f_f60">14个月</em></span>
-										</p>
-										<p class="pro_comment">
-											<span class="f_999">点评：</span>
-											股权质押担保，连带责任担保，结构化设计										</p>
-									</div>
-								</div>
-								<!-- 预售s_2 在售s_1 -->
-								<span class="state s_1"></span>
-							</li>
-																	</ul>							
+						<?php } ?>	
+						</ul>							
 				</div>
 			</div>
 			<!-- left item 2 -->

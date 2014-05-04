@@ -20,19 +20,19 @@
             <dt>起始资金：</dt>
             <dd>
 			            				                	<span class=bx>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist'>不限</a>
+			                		<a href='javascript:void(0)'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='/product/index?min_sub_mount=500000'>50万以下</a>
+			                		<a href='javascript:void(0)'>50万以下</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='/product/index?from=50000&to=1000000'>50-100万</a>
+			                		<a href='javascript:void(0)'>50-100万</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='/index/list?from=1000000&to=300000'>100-300万</a>
+			                		<a href='javascript:void(0)'>100-300万</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-4-0-0-0-0-1'>300万以上</a>
+			                		<a href='javascript:void(0)'>300万以上</a>
 			                	</span>
 
             </dd>
@@ -42,20 +42,20 @@
         <dl class="clearfix">
             <dt>产品期限：</dt>
             <dd>
-			            				                	<span class=bx>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist'>不限</a>
+			                	<span class=bx>
+			                		<a href='javascript:void(0)'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-1-0-0-1'>12个月以下</a>
+			                		<a href='javascript:void(0)'>12个月以下</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-2-0-0-1'>12-24个月</a>
+			                		<a href='javascript:void(0)'>12-24个月</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-3-0-0-1'>24-36个月</a>
+			                		<a href='javascript:void(0)'>24-36个月</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-4-0-0-1'>36个月以上</a>
+			                		<a href='javascript:void(0)'>36个月以上</a>
 			                	</span>
 
             </dd>
@@ -66,19 +66,19 @@
             <dt>预期收益：</dt>
             <dd>
 			            				                	<span class=bx>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist'>不限</a>
+			                		<a href='javascript:void(0)'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-1-0-0-0-1'>6%以下</a>
+			                		<a href='javascript:void(0)'>6%以下</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-2-0-0-0-1'>6%-8%</a>
+			                		<a href='javascript:void(0)'>6%-8%</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-3-0-0-0-1'>8%-10%</a>
+			                		<a href='javascript:void(0)'>8%-10%</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-4-0-0-0-1'>10%以上</a>
+			                		<a href='javascript:void(0)'>10%以上</a>
 			                	</span>
 
             </dd>
@@ -89,22 +89,22 @@
             <dt>收益分配：</dt>
             <dd>
 			            				                	<span class=bx>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist'>不限</a>
+			                		<a href='javascript:void(0)'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-1-0-0-0-0-0-0-0-1'>按月付息</a>
+			                		<a href='javascript:void(0)'>按月付息</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-2-0-0-0-0-0-0-0-1'>按季付息</a>
+			                		<a href='javascript:void(0)'>按季付息</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-3-0-0-0-0-0-0-0-1'>半年付息</a>
+			                		<a href='javascript:void(0)'>半年付息</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-4-0-0-0-0-0-0-0-1'>按年付息</a>
+			                		<a href='javascript:void(0)'>按年付息</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-5-0-0-0-0-0-0-0-1'>到期付息</a>
+			                		<a href='javascript:void(0)'>到期付息</a>
 			                	</span>
 
             </dd>
@@ -115,19 +115,19 @@
             <dt>抵(质)押率：</dt>
             <dd>
 			            				                	<span class=bx>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist'>不限</a>
+			                		<a href='javascript:void(0)'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-1-0-0-0-0-0-0-1'>30%以下</a>
+			                		<a href='javascript:void(0)'>30%以下</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-2-0-0-0-0-0-0-1'>30%-40%</a>
+			                		<a href='javascript:void(0)'>30%-40%</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-3-0-0-0-0-0-0-1'>40%-50%</a>
+			                		<a href='javascript:void(0)'>40%-50%</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-4-0-0-0-0-0-0-1'>50%以上</a>
+			                		<a href='javascript:void(0)'>50%以上</a>
 			                	</span>
 
             </dd>
@@ -138,25 +138,25 @@
             <dt>投资方向：</dt>
             <dd>
 			            				                	<span class=bx>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist'>不限</a>
+			                		<a href='javascript:void(0)'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-1-0-0-0-0-0-1'>房地产</a>
+			                		<a href='javascript:void(0)'>房地产</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-2-0-0-0-0-0-1'>金融</a>
+			                		<a href='javascript:void(0)'>金融</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-3-0-0-0-0-0-1'>基础设施</a>
+			                		<a href='javascript:void(0)'>基础设施</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-4-0-0-0-0-0-1'>工商企业</a>
+			                		<a href='javascript:void(0)'>工商企业</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-5-0-0-0-0-0-1'>工矿企业</a>
+			                		<a href='javascript:void(0)'>工矿企业</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-6-0-0-0-0-0-1'>其他</a>
+			                		<a href='javascript:void(0)'>其他</a>
 			                	</span>
 
             </dd>
@@ -165,8 +165,6 @@
     </ul>
     </div>
     <div class="ft have-select">
-        <span class="tjtit">已选条件：</span>
-        您未选择任何筛选条件
         <span class="productsNB">共
     <a href="" id='listSearchItemCount'>10158</a>
     款产品满足条件</span>
@@ -180,285 +178,7 @@
     <div class="p-daikuancon">
     <div class="abc-list">
     <dd>
-    <ul>
-    <li><a target="_self" title="" class="selectedCheckbox" href="#"><input value="0" id="0"
-                                                                            checked="checked"
-                                                                            type="checkbox"
-                                                                            name="coms[]"/><label
-                for="0">不限</label></a></li>
-    <li><a target="_self" title="中投信托有限责任公司" class="" href="#"><input value="74" id="74"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="74">中投信托</label></a></li>
-    <li><a target="_self" title="华宝信托有限责任公司" class="" href="#"><input value="54" id="54"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="54">华宝信托</label></a></li>
-    <li><a target="_self" title="中泰信托有限责任公司" class="" href="#"><input value="53" id="53"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="53">中泰信托</label></a></li>
-    <li><a target="_self" title="上海国际信托有限公司" class="" href="#"><input value="52" id="52"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="52">上海信托</label></a></li>
-    <li><a target="_self" title="华澳国际信托有限公司" class="" href="#"><input value="51" id="51"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="51">华澳信托</label></a></li>
-    <li><a target="_self" title="厦门国际信托有限公司" class="" href="#"><input value="50" id="50"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="50">厦门信托</label></a></li>
-    <li><a target="_self" title="方正东亚信托有限责任公司" class="" href="#"><input value="49" id="49"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="49">方正东亚信托</label></a></li>
-    <li><a target="_self" title="中航信托股份有限公司" class="" href="#"><input value="48" id="48"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="48">中航信托</label></a></li>
-    <li><a target="_self" title="陕西省国际信托股份有限公司" class="" href="#"><input value="47" id="47"
-                                                                         type="checkbox"
-                                                                         name="coms[]"/><label
-                for="47">陕国投</label></a></li>
-    <li><a target="_self" title="安徽国元信托有限责任公司" class="" href="#"><input value="46" id="46"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="46">国元信托</label></a></li>
-    <li><a target="_self" title="新华信托股份有限公司" class="" href="#"><input value="45" id="45"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="45">新华信托</label></a></li>
-    <li><a target="_self" title="大业信托有限责任公司" class="" href="#"><input value="44" id="44"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="44">大业信托</label></a></li>
-    <li><a target="_self" title="东莞信托有限公司" class="" href="#"><input value="43" id="43"
-                                                                    type="checkbox"
-                                                                    name="coms[]"/><label
-                for="43">东莞信托</label></a></li>
-    <li><a target="_self" title="山东省国际信托有限公司" class="" href="#"><input value="42" id="42"
-                                                                       type="checkbox"
-                                                                       name="coms[]"/><label
-                for="42">山东信托</label></a></li>
-    <li><a target="_self" title="西部信托有限公司" class="" href="#"><input value="41" id="41"
-                                                                    type="checkbox"
-                                                                    name="coms[]"/><label
-                for="41">西部信托</label></a></li>
-    <li><a target="_self" title="新时代信托股份有限公司" class="" href="#"><input value="55" id="55"
-                                                                       type="checkbox"
-                                                                       name="coms[]"/><label
-                for="55">新时代信托</label></a></li>
-    <li><a target="_self" title="国联信托股份有限公司" class="" href="#"><input value="56" id="56"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="56">国联信托</label></a></li>
-    <li><a target="_self" title="山西信托有限责任公司" class="" href="#"><input value="57" id="57"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="57">山西信托</label></a></li>
-    <li><a target="_self" title="大连华信信托股份有限公司" class="" href="#"><input value="70" id="70"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="70">华信信托</label></a></li>
-    <li><a target="_self" title="广东粤财信托有限公司" class="" href="#"><input value="69" id="69"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="69">粤财信托</label></a></li>
-    <li><a target="_self" title="中粮信托有限责任公司" class="" href="#"><input value="68" id="68"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="68">中粮信托</label></a></li>
-    <li><a target="_self" title="华润深国投信托有限公司" class="" href="#"><input value="67" id="67"
-                                                                       type="checkbox"
-                                                                       name="coms[]"/><label
-                for="67">华润信托</label></a></li>
-    <li><a target="_self" title="华鑫国际信托有限公司" class="" href="#"><input value="72" id="72"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="72">华鑫信托</label></a></li>
-    <li><a target="_self" title="紫金信托有限责任公司" class="" href="#"><input value="66" id="66"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="66">紫金信托</label></a></li>
-    <li><a target="_self" title="华融国际信托有限责任公司" class="" href="#"><input value="65" id="65"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="65">华融国际信托</label></a></li>
-    <li><a target="_self" title="西藏信托有限公司" class="" href="#"><input value="64" id="64"
-                                                                    type="checkbox"
-                                                                    name="coms[]"/><label
-                for="64">西藏信托</label></a></li>
-    <li><a target="_self" title="湖南省信托有限责任公司" class="" href="#"><input value="63" id="63"
-                                                                       type="checkbox"
-                                                                       name="coms[]"/><label
-                for="63">湖南信托</label></a></li>
-    <li><a target="_self" title="中江国际信托股份有限公司" class="" href="#"><input value="62" id="62"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="62">中江信托</label></a></li>
-    <li><a target="_self" title="兴业国际信托有限公司" class="" href="#"><input value="61" id="61"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="61">兴业国际信托</label></a></li>
-    <li><a target="_self" title="华能贵诚信托有限公司" class="" href="#"><input value="60" id="60"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="60">华能贵诚</label></a></li>
-    <li><a target="_self" title="浙商金汇信托股份有限公司" class="" href="#"><input value="59" id="59"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="59">浙金信托</label></a></li>
-    <li><a target="_self" title="华宸信托有限责任公司" class="" href="#"><input value="58" id="58"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="58">华宸信托</label></a></li>
-    <li><a target="_self" title="中海信托股份有限公司" class="" href="#"><input value="40" id="40"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="40">中海信托</label></a></li>
-    <li><a target="_self" title="重庆国际信托有限公司" class="" href="#"><input value="39" id="39"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="39">重庆信托</label></a></li>
-    <li><a target="_self" title="四川信托有限公司" class="" href="#"><input value="38" id="38"
-                                                                    type="checkbox"
-                                                                    name="coms[]"/><label
-                for="38">四川信托</label></a></li>
-    <li><a target="_self" title="五矿国际信托有限公司" class="" href="#"><input value="20" id="20"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="20">五矿国际信托</label></a></li>
-    <li><a target="_self" title="建信信托有限责任公司" class="" href="#"><input value="19" id="19"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="19">建信信托</label></a></li>
-    <li><a target="_self" title="江苏省国际信托有限责任公司" class="" href="#"><input value="18" id="18"
-                                                                         type="checkbox"
-                                                                         name="coms[]"/><label
-                for="18">江苏信托</label></a></li>
-    <li><a target="_self" title="吉林省信托有限责任公司" class="" href="#"><input value="17" id="17"
-                                                                       type="checkbox"
-                                                                       name="coms[]"/><label
-                for="17">吉林信托</label></a></li>
-    <li><a target="_self" title="天津信托有限责任公司" class="" href="#"><input value="16" id="16"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="16">天津信托</label></a></li>
-    <li><a target="_self" title="苏州信托有限公司" class="" href="#"><input value="15" id="15"
-                                                                    type="checkbox"
-                                                                    name="coms[]"/><label
-                for="15">苏州信托</label></a></li>
-    <li><a target="_self" title="中国金谷国际信托有限责任公司" class="" href="#"><input value="14" id="14"
-                                                                          type="checkbox"
-                                                                          name="coms[]"/><label
-                for="14">金谷信托</label></a></li>
-    <li><a target="_self" title="北方国际信托股份有限公司" class="" href="#"><input value="13" id="13"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="13">北方信托</label></a></li>
-    <li><a target="_self" title="杭州工商信托股份有限公司" class="" href="#"><input value="12" id="12"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="12">杭州工商信托</label></a></li>
-    <li><a target="_self" title="安信信托投资股份有限公司" class="" href="#"><input value="11" id="11"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="11">安信信托</label></a></li>
-    <li><a target="_self" title="渤海国际信托有限公司" class="" href="#"><input value="10" id="10"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="10">渤海信托</label></a></li>
-    <li><a target="_self" title="中原信托有限公司" class="" href="#"><input value="9" id="9"
-                                                                    type="checkbox"
-                                                                    name="coms[]"/><label
-                for="9">中原信托</label></a></li>
-    <li><a target="_self" title="上海爱建信托有限责任公司" class="" href="#"><input value="8" id="8"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="8">爱建信托</label></a></li>
-    <li><a target="_self" title="中铁信托有限责任公司" class="" href="#"><input value="7" id="7"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="7">中铁信托</label></a></li>
-    <li><a target="_self" title="中融国际信托有限公司" class="" href="#"><input value="6" id="6"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="6">中融信托</label></a></li>
-    <li><a target="_self" title="国民信托有限公司" class="" href="#"><input value="21" id="21"
-                                                                    type="checkbox"
-                                                                    name="coms[]"/><label
-                for="21">国民信托</label></a></li>
-    <li><a target="_self" title="英大国际信托有限责任公司" class="" href="#"><input value="22" id="22"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="22">英大信托</label></a></li>
-    <li><a target="_self" title="新疆长城新盛信托有限责任公司" class="" href="#"><input value="37" id="37"
-                                                                          type="checkbox"
-                                                                          name="coms[]"/><label
-                for="37">长城新盛信托</label></a></li>
-    <li><a target="_self" title="平安信托有限责任公司" class="" href="#"><input value="36" id="36"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="36">平安信托</label></a></li>
-    <li><a target="_self" title="中诚信托有限责任公司" class="" href="#"><input value="35" id="35"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="35">中诚信托</label></a></li>
-    <li><a target="_self" title="国投信托有限公司" class="" href="#"><input value="34" id="34"
-                                                                    type="checkbox"
-                                                                    name="coms[]"/><label
-                for="34">国投信托</label></a></li>
-    <li><a target="_self" title="长安国际信托股份有限公司" class="" href="#"><input value="33" id="33"
-                                                                        type="checkbox"
-                                                                        name="coms[]"/><label
-                for="33">长安信托</label></a></li>
-    <li><a target="_self" title="陆家嘴国际信托有限公司" class="" href="#"><input value="32" id="32"
-                                                                       type="checkbox"
-                                                                       name="coms[]"/><label
-                for="32">陆家嘴信托</label></a></li>
-    <li><a target="_self" title="万向信托有限公司" class="" href="#"><input value="31" id="31"
-                                                                    type="checkbox"
-                                                                    name="coms[]"/><label
-                for="31">万向信托</label></a></li>
-    <li><a target="_self" title="百瑞信托有限责任公司" class="" href="#"><input value="30" id="30"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="30">百瑞信托</label></a></li>
-    <li><a target="_self" title="昆仑信托有限责任公司" class="" href="#"><input value="29" id="29"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="29">昆仑信托</label></a></li>
-    <li><a target="_self" title="甘肃省信托有限责任公司" class="" href="#"><input value="28" id="28"
-                                                                       type="checkbox"
-                                                                       name="coms[]"/><label
-                for="28">甘肃信托</label></a></li>
-    <li><a target="_self" title="云南国际信托有限公司" class="" href="#"><input value="27" id="27"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="27">云国投</label></a></li>
-    <li><a target="_self" title="北京国际信托有限公司" class="" href="#"><input value="26" id="26"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="26">北京国投</label></a></li>
-    <li><a target="_self" title="中信信托有限责任公司" class="" href="#"><input value="25" id="25"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="25">中信信托</label></a></li>
-    <li><a target="_self" title="中国对外经济贸易信托有限公司" class="" href="#"><input value="24" id="24"
-                                                                          type="checkbox"
-                                                                          name="coms[]"/><label
-                for="24">外贸信托</label></a></li>
-    <li><a target="_self" title="交银国际信托有限公司" class="" href="#"><input value="23" id="23"
-                                                                      type="checkbox"
-                                                                      name="coms[]"/><label
-                for="23">交银国际信托</label></a></li>
-    <li><a target="_self" title="​中国民生信托有限公司" class="" href="#"><input value="79" id="79"
-                                                                       type="checkbox"
-                                                                       name="coms[]"/><label
-                for="79">民生信托</label></a></li>
-    </ul>
+   
     </dd>
     <div class="clear"></div>
     </div>
@@ -536,7 +256,7 @@
     <div class="tb-tabbar-wrap  shadow " id="J_TabBarWrap">
         <ul class="tb-tabbar fl" id="J_TabBar">
             <li class="tb-first selected">
-                <a class="ptlb-tab" href="http://www.jinfuzi.com/xintuo/xtlist"> 普通列表 </a>
+                <a class="ptlb-tab" href="javascript:void(0)"> 产品列表 </a>
             </li>
 
         </ul>
@@ -544,8 +264,8 @@
 
             <span class="fl" id='pageMark'> 1/678 </span>
       <span class="index-top-pages fl" id='top_pages_link'>
-      	<a class="index-top-lastpage" href="http://www.jinfuzi.com/xintuo/xtlist"></a>
-	    <a class="index-top-nextpage" href="http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-0-0-0-2"></a>
+      	<a class="index-top-lastpage" href=""></a>
+	    <a class="index-top-nextpage" href="javascript:void(0)"></a>
       </span>
         </div>
         <div class="clear">
@@ -584,7 +304,11 @@
         <td id="index-producs-name">
 
             <div class="pdnamepop">
+<<<<<<< HEAD
                 <a title="<?php echo $products[$i]['full_name']?>" target="_blank" href="http://www.jinfuzi.com/product/014245"><?php echo $products[$i]['short_name']?></a>
+=======
+                <a title="中融信托-中国城建六局集合资金信托计划2" target="_blank" href="">中城建六局亳州市政BT项目</a>
+>>>>>>> 4fe2ab6d8ea98f43f270650139324b37a1c1d1b4
 
                 <div style="left:150px; z-index:9999; display: none" class="namepopcon shadow">
                     <span class="popiconarr"></span>
@@ -650,9 +374,349 @@
         <td><a href="http://www.jinfuzi.com/xintuo/c-6" target="_blank">中融信托</a></td>
         <td><a class="index-details" href="http://www.jinfuzi.com/product/014245" target="_blank">查看详情</a></td>
     </tr>
+<<<<<<< HEAD
     <?php
     }
     ?>
+=======
+    <tr class="bgf7f7f7">
+        <td><span class="index-NB-yellow">2</span></td>
+        <td id="index-producs-name">
+
+            <div class="pdnamepop">
+                <a title="金谷信托-宏远物流信托贷款集合资金信托计划" target="_blank"
+                   href="http://www.jinfuzi.com/product/0110260">宏远物流贷款</a>
+
+                <div style="left:150px; z-index:9999; display: none" class="namepopcon shadow">
+                    <span class="popiconarr"></span>
+
+                    <p class="poptits">金谷信托-宏远物流信托贷款集合资金信托计划</p>
+
+                    <div class="xtinfotb inter-xttb">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th width="150">信托公司：</th>
+                                <td width="180">金谷信托</td>
+                                <th width="120">投资行业：</th>
+                                <td width="120">工商企业</td>
+                            </tr>
+                            <tr>
+                                <th width="120">发售日期：</th>
+                                <td>2014-04-04</td>
+                                <th width="120">预期收益：</th>
+                                <td>9.00%</td>
+                            </tr>
+                            <tr>
+                                <th width="120">预计发行规模(万)：</th>
+                                <td>38000万</td>
+                                <th width="120">最低认购资金(万)：</th>
+                                <td>100万</td>
+                            </tr>
+
+                            <tr>
+                                <th valign="top" rowspan="3">收益说明</th>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed">
+                                    100-300万(不含)
+                                </td>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 9%</td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed">
+                                    300(含)-600万(不含)
+                                </td>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 9.5%</td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed">
+                                    600万及以上
+                                </td>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 10%</td>
+                            </tr>
+
+                            <tr>
+                                <th valign="top">风险控制</th>
+                                <td colspan="3">1、抵押担保。<br/>宏远物流以其拥有的位于北京市丰台区方庄路5号房产（产权面积
+                                    产权面积55,848.22平米）及及北京市顺义区南法信镇顺平路北侧土地（土地使用权面积23,425.9平米）为借款本息偿还提供抵押担保。<br/><br/>2、保证担保。
+                                    <br/>（1）宏远航城为借款本息偿还提供连带责任保证担保；<br/>（2）宏远物流法定代表人陈远先生提供无限连带责任保证担保；<br/><br/>3、质押担保。<br/>（1）陈远先生与孙贵满女士以其持有的宏远物流陈远先生与孙贵满女士以其持有的宏远物流100%股权提供质押担保。<br/>（2）海航（北京）物流有限公司100%股权为借款本息偿还提供股权提供质押担保。
+                                </td>
+                            </tr>
+                            <tr>
+                                <th valign="top">产品说明</th>
+                                <td colspan="3"><br/></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="zaishou" href="javascript:;">出售中</a>
+            <a class="ping" href="javascript:;">评
+                <span class="shadow di_hidd" style="display: none">北京丰台区房产抵押，北京顺义区土地抵押，充足股权质押！</span><i class='di_hidd'
+                                                                                                        style="display: none"></i>
+            </a>
+        </td>
+        <td>100万</td>
+        <td>18个月</td>
+        <td>9.00%
+        </td>
+        <td>2014-04-04</td>
+        <td>工商企业</td>
+        <td>贷款类</td>
+
+        <td><a href="http://www.jinfuzi.com/xintuo/c-14" target="_blank">金谷信托</a></td>
+        <td><a class="index-details" href="http://www.jinfuzi.com/product/0110260" target="_blank">查看详情</a></td>
+    </tr>
+    <tr>
+        <td><span class="index-NB-yellow">3</span></td>
+        <td id="index-producs-name">
+
+            <div class="pdnamepop">
+                <a title="长安信托-云南御景新城项目合伙企业投资集合资金信托计划" target="_blank" href="http://www.jinfuzi.com/product/0112825">云南御景新城项目</a>
+
+                <div style="left:150px; z-index:9999; display: none" class="namepopcon shadow">
+                    <span class="popiconarr"></span>
+
+                    <p class="poptits">长安信托-云南御景新城项目合伙企业投资集合资金信托计划</p>
+
+                    <div class="xtinfotb inter-xttb">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th width="150">信托公司：</th>
+                                <td width="180">长安信托</td>
+                                <th width="120">投资行业：</th>
+                                <td width="120">房地产</td>
+                            </tr>
+                            <tr>
+                                <th width="120">发售日期：</th>
+                                <td>2014-04-04</td>
+                                <th width="120">预期收益：</th>
+                                <td>10.00%</td>
+                            </tr>
+                            <tr>
+                                <th width="120">预计发行规模(万)：</th>
+                                <td>14800万</td>
+                                <th width="120">最低认购资金(万)：</th>
+                                <td>100万</td>
+                            </tr>
+
+                            <tr>
+                                <th valign="top" rowspan="2">收益说明</th>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed">
+                                    100-300万(不含)
+                                </td>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 10%</td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed">
+                                    300万及以上
+                                </td>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 10.8%</td>
+                            </tr>
+
+                            <tr>
+                                <th valign="top">风险控制</th>
+                                <td colspan="3">
+                                    1、受托人与北京中安信邦资产管理有限公司签署《有限合伙份额附条件转让合同》，合同约定如委托贷款借款人云南御行中天房地产开发有限公司未能按期支付委贷本息，北京中安信邦资产管理有限公司对受托人持有的合伙企业有限合伙份额进行溢价回购。<br/><br/>2、委托贷款借款人云南御行中天房地产开发有限公司提供抵押物，并办理抵押登记手续；抵押物面积合计为
+                                    160455.71平方米，抵押物价值合计30342万元，本金抵押率为49.44%。<br/><br/>3、北京市恒盛投资有限公司为借款人按期偿还委托贷款本息提供连带责任保证担保。<br/><br/>4、实际控制人(王云凯夫妇)为借款人按期偿还委托贷款本息提供连带责任保证担保。
+                                </td>
+                            </tr>
+                            <tr>
+                                <th valign="top">产品说明</th>
+                                <td colspan="3"><br/></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="zaishou" href="javascript:;">出售中</a>
+            <a class="ping" href="javascript:;">评
+                <span class="shadow di_hidd" style="display: none">中信集团旗下资管公司兜底回购，3亿元优质抵押物，多方实力担保！</span><i
+                    class='di_hidd' style="display: none"></i>
+            </a>
+            <a class="di" href="javascript:;">抵<span class="shadow di_hidd" style="display: none">抵押率49.44%</span><i
+                    class='di_hidd' style="display: none"></i></a>
+        </td>
+        <td>100万</td>
+        <td>24个月</td>
+        <td>10.00%
+        </td>
+        <td>2014-04-04</td>
+        <td>房地产</td>
+        <td>贷款类</td>
+
+        <td><a href="http://www.jinfuzi.com/xintuo/c-33" target="_blank">长安信托</a></td>
+        <td><a class="index-details" href="http://www.jinfuzi.com/product/0112825" target="_blank">查看详情</a></td>
+    </tr>
+    <tr class="bgf7f7f7">
+        <td><span class="index-NB">4</span></td>
+        <td id="index-producs-name">
+
+            <div class="pdnamepop">
+                <a title="华融信托-四川金土地股权投资暨回购集合资金信托计划（第五期）" target="_blank" href="http://www.jinfuzi.com/product/0110371">四川金土地股权投资5期</a>
+
+                <div style="left:150px; z-index:9999; display: none" class="namepopcon shadow">
+                    <span class="popiconarr"></span>
+
+                    <p class="poptits">华融信托-四川金土地股权投资暨回购集合资金信托计划（第五期）</p>
+
+                    <div class="xtinfotb inter-xttb">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th width="150">信托公司：</th>
+                                <td width="180">华融国际信托</td>
+                                <th width="120">投资行业：</th>
+                                <td width="120">工商企业</td>
+                            </tr>
+                            <tr>
+                                <th width="120">发售日期：</th>
+                                <td>2014-04-04</td>
+                                <th width="120">预期收益：</th>
+                                <td>9.50%</td>
+                            </tr>
+                            <tr>
+                                <th width="120">预计发行规模(万)：</th>
+                                <td>40000万</td>
+                                <th width="120">最低认购资金(万)：</th>
+                                <td>100万</td>
+                            </tr>
+
+                            <tr>
+                                <th valign="top" rowspan="3">收益说明</th>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed">
+                                    100-300万(不含)
+                                </td>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 9.5%</td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed">
+                                    300(含)-800万(不含)
+                                </td>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 10%</td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed">
+                                    800万及以上
+                                </td>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 10.5%</td>
+                            </tr>
+
+                            <tr>
+                                <th valign="top">风险控制</th>
+                                <td colspan="3">
+                                    （1）科创控股集团有限公司以其持有的四川科创医药集团有限公司71.80%股权质押，医药集团总资产113.43亿元，净资产62.31亿元，营业收入111.97亿元，净利润9.1亿元。<br/>（2）科创控股集团有限公司及实际控制人何俊明夫妇为股权回购提供连带责任保证。<br/>（3）设立资金监管。开设监管账户，对信托资金的使用事先审核，确保其用于向眉山科创进行增资补充流动资金等。<br/>（4）设立资金提前归集条款。信托计划到期前30天开始进行信托本金的归集。
+                                </td>
+                            </tr>
+                            <tr>
+                                <th valign="top">产品说明</th>
+                                <td colspan="3"><br/></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="zaishou" href="javascript:;">出售中</a>
+            <a class="ping" href="javascript:;">评
+                <span class="shadow di_hidd" style="display: none">中国企业500强集团担保，充足股权质押，集团控制人连带责任担保！</span><i
+                    class='di_hidd' style="display: none"></i>
+            </a>
+        </td>
+        <td>100万</td>
+        <td>24个月</td>
+        <td>9.50%
+        </td>
+        <td>2014-04-04</td>
+        <td>工商企业</td>
+        <td>股权类</td>
+
+        <td><a href="http://www.jinfuzi.com/xintuo/c-65" target="_blank">华融国际信托</a></td>
+        <td><a class="index-details" href="http://www.jinfuzi.com/product/0110371" target="_blank">查看详情</a></td>
+    </tr>
+    <tr>
+        <td><span class="index-NB">5</span></td>
+        <td id="index-producs-name">
+
+            <div class="pdnamepop">
+                <a title="陆家嘴信托-甬鑫1号集合资金信托计划" target="_blank" href="http://www.jinfuzi.com/product/0113257">甬鑫1号</a>
+
+                <div style="left:150px; z-index:9999; display: none" class="namepopcon shadow">
+                    <span class="popiconarr"></span>
+
+                    <p class="poptits">陆家嘴信托-甬鑫1号集合资金信托计划</p>
+
+                    <div class="xtinfotb inter-xttb">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th width="150">信托公司：</th>
+                                <td width="180">陆家嘴信托</td>
+                                <th width="120">投资行业：</th>
+                                <td width="120">其他</td>
+                            </tr>
+                            <tr>
+                                <th width="120">发售日期：</th>
+                                <td>2014-04-04</td>
+                                <th width="120">预期收益：</th>
+                                <td>6.00%</td>
+                            </tr>
+                            <tr>
+                                <th width="120">预计发行规模(万)：</th>
+                                <td>5000万</td>
+                                <th width="120">最低认购资金(万)：</th>
+                                <td>100万</td>
+                            </tr>
+
+                            <tr>
+                                <th valign="top" rowspan="1">收益说明</th>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed">
+                                    100万及以上
+                                </td>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 6%</td>
+                            </tr>
+
+                            <tr>
+                                <th valign="top">风险控制</th>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <th valign="top">产品说明</th>
+                                <td colspan="3"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="zaishou" href="javascript:;">出售中</a>
+            <a class="ping" href="javascript:;">评
+                <span class="shadow di_hidd" style="display: none">上海陆家嘴金融发展有限公司旗下信托公司发行，组合投资，收益稳定！</span><i
+                    class='di_hidd' style="display: none"></i>
+            </a>
+        </td>
+        <td>100万</td>
+        <td>12个月</td>
+        <td>6.00%
+        </td>
+        <td>2014-04-04</td>
+        <td>其他</td>
+        <td>组合类</td>
+
+        <td><a href="javascript:void(0)" target="_blank">陆家嘴信托</a></td>
+        <td><a class="index-details" href="javascript:void(0)" target="_blank">查看详情</a></td>
+    </tr>
+>>>>>>> 4fe2ab6d8ea98f43f270650139324b37a1c1d1b4
     </tbody>
     </table>
 
@@ -660,18 +724,14 @@
         <div class="index-pager">
             <ul class="paging-a">
                 <li class="pagination">
-                    <a class="pre-disabled" target="_self" href="http://www.jinfuzi.com/xintuo/xtlist"></a>
-                    <a class="nowPages" target="_self" href="http://www.jinfuzi.com/xintuo/xtlist">1</a>
-                    <a class="" target="_self" href="http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-0-0-0-2">2</a>
-                    <a class="" target="_self" href="http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-0-0-0-3">3</a>
-                    <a class="" target="_self" href="http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-0-0-0-4">4</a>
-                    <a class="" target="_self" href="http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-0-0-0-5">5</a>
+                    <a class="pre-disabled" target="_self" href="javascript:void(0)"></a>
+                    <a class="nowPages" target="_self" href="javascript:void(0)">1</a>
+                    <a class="" target="_self" href="javascript:void(0)">2</a>
                     <a class="next" target="_self"
-                       href="http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-0-0-0-2">下一页</a>
+                       href="javascript:void(0)">下一页</a>
                 </li>
                 <li class="jump-page-wrap"> 共 <em id='prdTotalCount'>678</em> 页 到
-                    <input type="text" maxlength="4" autocomplete="off" class="pnum" id="pageNum"
-                           data-href="/xintuo/xtlist">
+                    <input type="text" maxlength="4" autocomplete="off" class="pnum" id="pageNum" data-href="">
                     页
                 </li>
                 <li class="btn-wrap">
