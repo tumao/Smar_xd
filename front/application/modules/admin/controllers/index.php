@@ -316,6 +316,39 @@ class Index extends AbaseController {
          }
         $this->load->view('login');
     }
+
+
+    /**
+     * 投资方向
+     */
+    public function investorientation() {
+        $this->load->model('investorientation_model');
+        $result = $this->investorientation_model->search('investorientation', array(), null);
+        $data['result'] = $result;
+        $this->load->view('investorientation_list', $data);
+    }
+
+    /**
+     * 信托类型列表
+     */
+    public function xintuotype() {
+        $this->load->model('xintuo_type_model');
+        $result = $this->xintuo_type_model->search('xintuo_type', array(), null);
+        $data['result'] = $result;
+        $this->load->view('xintuotype_list', $data);
+    }
+
+    /**
+     * 利息分配方式列表
+     */
+    public function iint() {
+        $this->load->model('iint_model');
+        $result = $this->iint_model->search('iint', array(), null);
+        $data['result'] = $result;
+        $this->load->view('iint_list', $data);
+    }
+
+
     //信托类型Id获取信托类型名字
     private function xt_type( $id){
         $this->load->model('products_model');
@@ -337,6 +370,7 @@ class Index extends AbaseController {
         $company = $this->products_model->search('company', array('id <> ' => ''),'id desc');
         return $company;
     }
+
     private function get_company_id( $company_name){
         $this->load->model('products_model');
         $company = $this->products_model->search('commpany',array('name'=>$company_name),null,1);
@@ -353,6 +387,7 @@ class Index extends AbaseController {
         }
         return $iint['name'];
     }
+
     private function get_iint_id( $iint_name){
         $this->load->model('products_model');
         $iint = $this->products_model->search('iint',array('name'=> $iint_name),null,1);

@@ -76,6 +76,10 @@ $route['redbud_admin/upsertproduct'] = "admin/index/upsert_product";
 $route['redbud_admin/course'] = "admin/index/course";
 $route['redbud_admin/upsertcourse'] = "admin/index/upsert_course";
 
+$route['redbud_admin/investorientation'] = "admin/index/investorientation";
+$route['redbud_admin/xintuotype'] = "admin/index/xintuotype";
+$route['redbud_admin/iint'] = "admin/index/iint";
+
 $route['404_override'] = '';
 
 

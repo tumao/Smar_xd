@@ -76,6 +76,24 @@
             <span class="menu-text"> 联系我们 </span>
         </a>
     </li>
+    <li <?php if($this->uri->segment(2) == 'investorientation') echo 'class="active"';?>>
+        <a href="/redbud_admin/investorientation">
+            <i class="icon-file-alt"></i>
+            <span class="menu-text"> 投资行业管理 </span>
+        </a>
+    </li>
+    <li <?php if($this->uri->segment(2) == 'xintuotype') echo 'class="active"';?>>
+        <a href="/redbud_admin/xintuotype">
+            <i class="icon-file-alt"></i>
+            <span class="menu-text"> 信托类型管理 </span>
+        </a>
+    </li>
+    <li <?php if($this->uri->segment(2) == 'iint') echo 'class="active"';?>>
+        <a href="/redbud_admin/iint">
+            <i class="icon-file-alt"></i>
+            <span class="menu-text"> 利息分配方式管理 </span>
+        </a>
+    </li>
 
     <li class="<?php if($this->uri->segment(2) == 'editaccount') echo 'active';?> open">
         <a href="#" class="dropdown-toggle">
