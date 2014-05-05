@@ -7,13 +7,13 @@ class Index extends BaseController {
 	}
 	
 	public function index()
-<<<<<<< HEAD
 	{
         $this->load->model("products_model");
         $condition = array(
             'isdel' => 0
         );
         $result = $this->products_model->search('products', $condition,'id desc');
+        $count = count($result);
         foreach ($result as & $val) {
             if( $val['xintuo_type_id']){
                 $val['xintuo_type_name'] = $this->xt_type($val['xintuo_type_id']);
@@ -27,9 +27,10 @@ class Index extends BaseController {
             }
         }
         $data['products'] = $result;
+        $data['count'] = $count;
 		$this->load->view('index', $data);
-=======
-	{	
+
+        /*
 		$limit = $this->input->get_post('limit');
 		// $page = $this->input->get_post('page');
 		// $offset = (　$page - 1 )*$rows;
@@ -39,7 +40,7 @@ class Index extends BaseController {
 		// $result = $this->products_model->search('products', $condition, ' `id` asc', $offset, $limit);
 		// $data['result'] = $result;
 		$this->load->view('index');
->>>>>>> 4fe2ab6d8ea98f43f270650139324b37a1c1d1b4
+        */
 	}
 	public function main(){
 		$this->load->view('index');

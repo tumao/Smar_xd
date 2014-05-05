@@ -328,6 +328,31 @@ class Index extends AbaseController {
         $this->load->view('investorientation_list', $data);
     }
 
+    public function upsert_investorientation() {
+        $this->load->model('investorientation_model');
+        $id = $this->input->get_post('pid');
+        if( $id ){
+            $result = $this->investorientation_model->search('investorientation',array('id'=>$id),null,1);
+        }else{
+            $result = array(
+                'id'        => '',
+                'name'     =>  ''
+            );
+        }
+        $data['result'] = $result;
+        $this->load->view('upsertinvestorientation',$data);
+    }
+
+    public function save_investorientation() {
+        $this->load->model('investorientation_model');
+        $data = $_REQUEST['result'];
+        if(!$data['id']){
+            unset( $data['id']);
+        }
+        $id = $this->investorientation_model->upsert('investorientation',$data);
+        redirect("/redbud_admin/investorientation");
+    }
+
     /**
      * 信托类型列表
      */
@@ -338,6 +363,31 @@ class Index extends AbaseController {
         $this->load->view('xintuotype_list', $data);
     }
 
+    public function upsert_xintuotype() {
+        $this->load->model('xintuo_type_model');
+        $id = $this->input->get_post('pid');
+        if( $id ){
+            $result = $this->xintuo_type_model->search('xintuo_type',array('id'=>$id),null,1);
+        }else{
+            $result = array(
+                'id'        => '',
+                'name'     =>  ''
+            );
+        }
+        $data['result'] = $result;
+        $this->load->view('upsertxintuotype',$data);
+    }
+
+    public function save_xintuotype() {
+        $this->load->model('xintuo_type_model');
+        $data = $_REQUEST['result'];
+        if(!$data['id']){
+            unset( $data['id']);
+        }
+        $id = $this->xintuo_type_model->upsert('xintuo_type',$data);
+        redirect("/redbud_admin/xintuotype");
+    }
+
     /**
      * 利息分配方式列表
      */
@@ -346,6 +396,31 @@ class Index extends AbaseController {
         $result = $this->iint_model->search('iint', array(), null);
         $data['result'] = $result;
         $this->load->view('iint_list', $data);
+    }
+
+    public function upsert_iint() {
+        $this->load->model('iint_model');
+        $id = $this->input->get_post('pid');
+        if( $id ){
+            $result = $this->iint_model->search('iint',array('id'=>$id),null,1);
+        }else{
+            $result = array(
+                'id'        => '',
+                'name'     =>  ''
+            );
+        }
+        $data['result'] = $result;
+        $this->load->view('upsertiint',$data);
+    }
+
+    public function save_iint() {
+        $this->load->model('iint_model');
+        $data = $_REQUEST['result'];
+        if(!$data['id']){
+            unset( $data['id']);
+        }
+        $id = $this->iint_model->upsert('iint',$data);
+        redirect("/redbud_admin/iint");
     }
 
 

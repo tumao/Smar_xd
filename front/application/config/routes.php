@@ -77,8 +77,16 @@ $route['redbud_admin/course'] = "admin/index/course";
 $route['redbud_admin/upsertcourse'] = "admin/index/upsert_course";
 
 $route['redbud_admin/investorientation'] = "admin/index/investorientation";
+$route['redbud_admin/upsertinvestorientation'] = "admin/index/upsert_investorientation";
+$route['redbud_admin/saveinvestorientation'] = "admin/index/save_investorientation";
+
 $route['redbud_admin/xintuotype'] = "admin/index/xintuotype";
+$route['redbud_admin/upsertxintuotype'] = "admin/index/upsert_xintuotype";
+$route['redbud_admin/savexintuotype'] = "admin/index/save_xintuotype";
+
 $route['redbud_admin/iint'] = "admin/index/iint";
+$route['redbud_admin/upsertiint'] = "admin/index/upsert_iint";
+$route['redbud_admin/saveiint'] = "admin/index/save_iint";
 
 $route['404_override'] = '';
 

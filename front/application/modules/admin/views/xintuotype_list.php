@@ -30,7 +30,7 @@
                 <!-- PAGE CONTENT BEGINS -->
                 <div class="header" style="line-height: 48px;">
                     <h3 class="smaller lighter blue" style="display: inline;">信托类型列表</h3>
-                    <button class="btn btn-primary" style="float: right;margin-right: 10px;" onclick="location.href='/redbud_admin/upsertcompany'">
+                    <button class="btn btn-primary" style="float: right;margin-right: 10px;" onclick="location.href='/redbud_admin/upsertxintuotype'">
                         <i class="icon-plus align-top bigger-125"></i>添加
                     </button>
                 </div>
@@ -139,17 +139,10 @@
             },
 
             "aoColumns": [
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                //null, null,null, null, null, null, null, null,
-                { "bSortable": false }
+                {"bSortable": false},
+                {"bSortable": true},
+                {"bSortable": true},
+                {"bSortable": false}
             ]
         } );
 

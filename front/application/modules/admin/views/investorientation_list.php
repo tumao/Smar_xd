@@ -30,7 +30,7 @@
                 <!-- PAGE CONTENT BEGINS -->
                 <div class="header" style="line-height: 48px;">
                     <h3 class="smaller lighter blue" style="display: inline;">投资行业列表</h3>
-                    <button class="btn btn-primary" style="float: right;margin-right: 10px;" onclick="location.href='/redbud_admin/upsertcompany'">
+                    <button class="btn btn-primary" style="float: right;margin-right: 10px;" onclick="location.href='/redbud_admin/upsertinvestorientation'">
                         <i class="icon-plus align-top bigger-125"></i>添加
                     </button>
                 </div>
@@ -66,7 +66,7 @@
                                 <td><?php echo $result[$i]['name']; ?></td>
                                 <td>
                                     <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-                                        <a class="green" href="/redbud_admin/upsertcompany?pid=<?php echo $result[$i]['id']; ?>">
+                                        <a class="green" href="/redbud_admin/upsertinvestorientation?pid=<?php echo $result[$i]['id']; ?>">
                                             <i class="icon-pencil bigger-130"></i>
                                         </a>
                                     </div>
@@ -140,17 +140,10 @@
             },
 
             "aoColumns": [
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                { "bSortable": false },
-                //null, null,null, null, null, null, null, null,
-                { "bSortable": false }
+                {"bSortable": false},
+                {"bSortable": true},
+                {"bSortable": true},
+                {"bSortable": false}
             ]
         } );
 
