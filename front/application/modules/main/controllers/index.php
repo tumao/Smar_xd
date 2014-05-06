@@ -12,7 +12,7 @@ class Index extends BaseController {
 		$prod_elite = $this->products_model->search('products',array('elite'=>1),'id asc','4');
 		$prod['prod_elite'] = $prod_elite;
 		//产品收益排行，待修改
-		$prod_sort	= $this->products_model->search('products',array(),'id asc','5');
+		$prod_sort	= $this->products_model->search('products',array(),'id asc','6');
 		$prod['prod_sort'] = $prod_sort;
 		//热门机构，待修改
 		$hot_company = $this->products_model->search('company',array(),'id asc','5');
@@ -25,7 +25,8 @@ class Index extends BaseController {
 		$this->load->view('more_citys');
 	}
 
-/*	public function data(){
+	public function data(){
+		$sort = $this->input->get_post('sort');
 		//精选
 		$prod = array();
 		$prod_elite = $this->products_model->search('products',array('elite'=>1),'id asc');
@@ -36,12 +37,9 @@ class Index extends BaseController {
 		//热门机构，待修改
 		$hot_company = $this->products_model->search('company',array(),'id asc','5');
 		$prod['hot_company'] = $hot_company;
-		// echo "<pre>";
-		// var_dump( $hot_company);
-		// echo "</pre>";
+		exit(json_encode( $hot_company));
 
-
-	}*/
+	}
 
 }
 

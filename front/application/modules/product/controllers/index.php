@@ -56,7 +56,10 @@ class Index extends BaseController {
 	}
 
     public function productdetail() {
-        $this->load->view('productdetail');
+    	$pid = $this->input->get_post('pid');
+    	$prod_detail = $this->products_model->search('products',array('id'=> $pid),null,1);
+    	$data['prod_detail'] = $prod_detail;
+        $this->load->view('productdetail',$data);
     }
 
     //信托类型Id获取信托类型名字

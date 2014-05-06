@@ -19,6 +19,7 @@
         <dl class="clearfix">
             <dt>起始资金：</dt>
             <dd>
+<<<<<<< HEAD
 			            				                	<span class=bx>
 			                		<a href='<?php $tempparams = $params; $tempparams[1] = 0; echo '/'. implode('-', $tempparams);?>'>不限</a>
 			                	</span>
@@ -34,6 +35,23 @@
 			                			                	<span class=>
 			                		<a href='<?php $tempparams[1] = 4; echo '/'. implode('-', $tempparams); ?>'>300万以上</a>
 			                	</span>
+=======
+            	<span class=bx>
+            		<a href='javascript:void(0)'>不限</a>
+            	</span>
+            			                	<span class=>
+            		<a href='javascript:void(0)'>50万以下</a>
+            	</span>
+            			                	<span class=>
+            		<a href='javascript:void(0)'>50-100万</a>
+            	</span>
+            			                	<span class=>
+            		<a href='javascript:void(0)'>100-300万</a>
+            	</span>
+            			                	<span class=>
+            		<a href='javascript:void(0)'>300万以上</a>
+            	</span>
+>>>>>>> 54bf44605f50048cbd7514e365e22d9a131d5349
 
             </dd>
         </dl>
