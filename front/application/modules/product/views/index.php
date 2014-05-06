@@ -20,19 +20,19 @@
             <dt>起始资金：</dt>
             <dd>
 			            				                	<span class=bx>
-			                		<a href='javascript:void(0)'>不限</a>
+			                		<a href='<?php $tempparams = $params; $tempparams[1] = 0; echo '/'. implode('-', $tempparams);?>'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>50万以下</a>
+			                		<a href='<?php $tempparams[1] = 1; echo '/'. implode('-', $tempparams); ?>'>50万以下</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>50-100万</a>
+			                		<a href='<?php $tempparams[1] = 2; echo '/'. implode('-', $tempparams); ?>'>50-100万</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>100-300万</a>
+			                		<a href='<?php $tempparams[1] = 3; echo '/'. implode('-', $tempparams); ?>'>100-300万</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>300万以上</a>
+			                		<a href='<?php $tempparams[1] = 4; echo '/'. implode('-', $tempparams); ?>'>300万以上</a>
 			                	</span>
 
             </dd>
@@ -43,19 +43,19 @@
             <dt>产品期限：</dt>
             <dd>
 			                	<span class=bx>
-			                		<a href='javascript:void(0)'>不限</a>
+			                		<a href='<?php $tempparams = $params; $tempparams[2] = 0; echo '/'. implode('-', $tempparams); ?>'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>12个月以下</a>
+			                		<a href='<?php $tempparams[2] = 1; echo '/'. implode('-', $tempparams); ?>'>12个月以下</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>12-24个月</a>
+			                		<a href='<?php $tempparams[2] = 2; echo '/'. implode('-', $tempparams); ?>'>12-24个月</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>24-36个月</a>
+			                		<a href='<?php $tempparams[2] = 3; echo '/'. implode('-', $tempparams); ?>'>24-36个月</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>36个月以上</a>
+			                		<a href='<?php $tempparams[2] = 4; echo '/'. implode('-', $tempparams); ?>'>36个月以上</a>
 			                	</span>
 
             </dd>
@@ -66,19 +66,19 @@
             <dt>预期收益：</dt>
             <dd>
 			            				                	<span class=bx>
-			                		<a href='javascript:void(0)'>不限</a>
+			                		<a href='<?php $tempparams = $params; $tempparams[3] = 0; echo '/'. implode('-', $tempparams); ?>'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>6%以下</a>
+			                		<a href='<?php $tempparams[3] = 1; echo '/'. implode('-', $tempparams); ?>'>6%以下</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>6%-8%</a>
+			                		<a href='<?php $tempparams[3] = 2; echo '/'. implode('-', $tempparams); ?>'>6%-8%</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>8%-10%</a>
+			                		<a href='<?php $tempparams[3] = 3; echo '/'. implode('-', $tempparams); ?>'>8%-10%</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>10%以上</a>
+			                		<a href='<?php $tempparams[3] = 4; echo '/'. implode('-', $tempparams); ?>'>10%以上</a>
 			                	</span>
 
             </dd>
@@ -89,22 +89,22 @@
             <dt>收益分配：</dt>
             <dd>
 			            				                	<span class=bx>
-			                		<a href='javascript:void(0)'>不限</a>
+			                		<a href='<?php $tempparams = $params; $tempparams[4] = 0; echo '/'. implode('-', $tempparams); ?>'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>按月付息</a>
+			                		<a href='<?php $tempparams[4] = 1; echo '/'. implode('-', $tempparams); ?>'>按月付息</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>按季付息</a>
+			                		<a href='<?php $tempparams[4] = 2; echo '/'. implode('-', $tempparams); ?>'>按季付息</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>半年付息</a>
+			                		<a href='<?php $tempparams[4] = 3; echo '/'. implode('-', $tempparams); ?>'>半年付息</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>按年付息</a>
+			                		<a href='<?php $tempparams[4] = 4; echo '/'. implode('-', $tempparams); ?>'>按年付息</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>到期付息</a>
+			                		<a href='<?php $tempparams[4] = 5; echo '/'. implode('-', $tempparams); ?>'>到期付息</a>
 			                	</span>
 
             </dd>
@@ -115,19 +115,19 @@
             <dt>抵(质)押率：</dt>
             <dd>
 			            				                	<span class=bx>
-			                		<a href='javascript:void(0)'>不限</a>
+			                		<a href='<?php $tempparams = $params; $tempparams[5] = 0; echo '/'. implode('-', $tempparams); ?>'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>30%以下</a>
+			                		<a href='<?php $tempparams[5] = 1; echo '/'. implode('-', $tempparams); ?>'>30%以下</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>30%-40%</a>
+			                		<a href='<?php $tempparams[5] = 2; echo '/'. implode('-', $tempparams); ?>'>30%-40%</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>40%-50%</a>
+			                		<a href='<?php $tempparams[5] = 3; echo '/'. implode('-', $tempparams); ?>'>40%-50%</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>50%以上</a>
+			                		<a href='<?php $tempparams[5] = 4; echo '/'. implode('-', $tempparams); ?>'>50%以上</a>
 			                	</span>
 
             </dd>
@@ -138,25 +138,25 @@
             <dt>投资方向：</dt>
             <dd>
 			            				                	<span class=bx>
-			                		<a href='javascript:void(0)'>不限</a>
+			                		<a href='<?php $tempparams = $params; $tempparams[6] = 0; echo '/'. implode('-', $tempparams); ?>'>不限</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>房地产</a>
+			                		<a href='<?php $tempparams[6] = 1; echo '/'. implode('-', $tempparams); ?>'>房地产</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>金融</a>
+			                		<a href='<?php $tempparams[6] = 2; echo '/'. implode('-', $tempparams); ?>'>金融</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>基础设施</a>
+			                		<a href='<?php $tempparams[6] = 3; echo '/'. implode('-', $tempparams); ?>'>基础设施</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>工商企业</a>
+			                		<a href='<?php $tempparams[6] = 4; echo '/'. implode('-', $tempparams); ?>'>工商企业</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>工矿企业</a>
+			                		<a href='<?php $tempparams[6] = 5; echo '/'. implode('-', $tempparams); ?>'>工矿企业</a>
 			                	</span>
 			                			                	<span class=>
-			                		<a href='javascript:void(0)'>其他</a>
+			                		<a href='<?php $tempparams[6] = 6; echo '/'. implode('-', $tempparams); ?>'>其他</a>
 			                	</span>
 
             </dd>
@@ -262,10 +262,21 @@
         </ul>
         <div class="tb-support-dropdown fr">
 
-            <span class="fl" id='pageMark'> 1/678 </span>
+            <span class="fl" id='pageMark'> <?php echo $params[11]; ?>/<?php echo $pagenum?> </span>
       <span class="index-top-pages fl" id='top_pages_link'>
-      	<a class="index-top-lastpage" href=""></a>
-	    <a class="index-top-nextpage" href="javascript:void(0)"></a>
+      	<a class="index-top-lastpage" <?php $tempparams = $params; if($tempparams[11] > 1) {
+            $tempparams[11] -= 1;
+            echo 'href="/'. implode('-', $tempparams).'"';
+        } else {
+            echo 'style="cursor:auto;"';
+        }?>></a>
+	    <a class="index-top-nextpage" <?php
+            $tempparams = $params;
+            if($tempparams[11] < $pagenum) {
+                $tempparams[11] +=1;
+                echo 'href="/'. implode('-', $tempparams).'"';
+            }
+        ?>></a>
       </span>
         </div>
         <div class="clear">
@@ -379,14 +390,43 @@
         <div class="index-pager">
             <ul class="paging-a">
                 <li class="pagination">
+
+                    <?php $tempparams = $params; if($tempparams[11] > 1) {
+                        $tempparams[11] -= 1;
+                    ?>
+                    <a class="linksup" target="_self" href="/<?php echo implode('-', $tempparams);?>">上一页</a>
+                    <?php } else { ?>
                     <a class="pre-disabled" target="_self" href="javascript:void(0)"></a>
-                    <a class="nowPages" target="_self" href="javascript:void(0)">1</a>
-                    <a class="" target="_self" href="javascript:void(0)">2</a>
+                    <?php }?>
+
+                    <?php
+                    for($i = (($params[11] - 5) > 0 ? ($params[11] - 5) : 1); $i < $params[11] ; $i++) {
+                    ?>
+                    <a class="<?php if($i == $params[11]) echo 'nowPages'; ?>" target="_self" href="<?php
+                    $tempparams = $params; $tempparams[11] = $i; echo '/' . implode('-', $tempparams);
+                    ?>"><?php echo $i ?></a>
+
+                    <?php
+                    }?>
+
+                    <a class="nowPages" target="_self" href="/<?php echo implode('-', $params);?>"><?php echo $params[11];?></a>
+
+                    <?php
+                    for($i = $params[11] + 1; $i <= ($pagenum > ($params[11] + 4) ? ($params[11] + 4) : $pagenum); $i++) { ?>
+                        <a class="<?php if($i == $params[11]) echo 'nowPages'; ?>" target="_self" href="<?php
+                    $tempparams = $params; $tempparams[11] = $i; echo '/' . implode('-', $tempparams);
+                    ?>"><?php echo $i ?></a>
+                    <?php
+                    }
+                    ?>
+
                     <a class="next" target="_self"
                        href="javascript:void(0)">下一页</a>
                 </li>
-                <li class="jump-page-wrap"> 共 <em id='prdTotalCount'>678</em> 页 到
-                    <input type="text" maxlength="4" autocomplete="off" class="pnum" id="pageNum" data-href="">
+                <li class="jump-page-wrap"> 共 <em id='prdTotalCount'><?php echo $pagenum;?></em> 页 到
+                    <input type="text" maxlength="4" autocomplete="off" class="pnum" id="pageNum" data-href="<?php
+                    echo implode('-', $params);
+                    ?>">
                     页
                 </li>
                 <li class="btn-wrap">
@@ -437,7 +477,7 @@
             var data_href = page.attr('data-href');
             var href = data_href.replace(/(\-\d+)$/, '-' + page.attr('value'))
             if (!(/(\-\d+)$/.test(data_href))) {
-                href = data_href + "-0-0-0-0-0-0-0-0-0-0-" + page.attr('value');
+                href = data_href + "<?php $tempparams = $params; $tempparams[0] = ""; $tempparams[11] = ""; echo implode('-', $tempparams); ?>" + page.attr('value');
             }
             window.location.href = href;
 

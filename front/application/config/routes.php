@@ -89,7 +89,7 @@ $route['redbud_admin/iint'] = "admin/index/iint";
 $route['redbud_admin/upsertiint'] = "admin/index/upsert_iint";
 $route['redbud_admin/saveiint'] = "admin/index/save_iint";
 
-$route['404_override'] = '';
+$route['404_override'] = 'errors/page_missing';
 
 
 /* End of file routes.php */
