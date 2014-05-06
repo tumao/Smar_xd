@@ -15,11 +15,11 @@
 <!--     </div>    -->
 <!-- </div> -->
 
-						<script type="text/javascript">
-	jQuery(function(){
-		$("div.JFZ_Slider").jfz_slider();
-	});
-</script>
+// <script type="text/javascript">
+// 	jQuery(function(){
+// 		$("div.JFZ_Slider").jfz_slider();
+// 	});
+// </script>
 <div class="xt_top">
 	<!-- banner -->
 	<div class="xt_banner_wrap">

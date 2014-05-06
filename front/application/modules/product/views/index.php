@@ -19,21 +19,21 @@
         <dl class="clearfix">
             <dt>起始资金：</dt>
             <dd>
-			            				                	<span class=bx>
-			                		<a href='javascript:void(0)'>不限</a>
-			                	</span>
-			                			                	<span class=>
-			                		<a href='javascript:void(0)'>50万以下</a>
-			                	</span>
-			                			                	<span class=>
-			                		<a href='javascript:void(0)'>50-100万</a>
-			                	</span>
-			                			                	<span class=>
-			                		<a href='javascript:void(0)'>100-300万</a>
-			                	</span>
-			                			                	<span class=>
-			                		<a href='javascript:void(0)'>300万以上</a>
-			                	</span>
+            	<span class=bx>
+            		<a href='javascript:void(0)'>不限</a>
+            	</span>
+            			                	<span class=>
+            		<a href='javascript:void(0)'>50万以下</a>
+            	</span>
+            			                	<span class=>
+            		<a href='javascript:void(0)'>50-100万</a>
+            	</span>
+            			                	<span class=>
+            		<a href='javascript:void(0)'>100-300万</a>
+            	</span>
+            			                	<span class=>
+            		<a href='javascript:void(0)'>300万以上</a>
+            	</span>
 
             </dd>
         </dl>
