@@ -166,7 +166,7 @@
     </div>
     <div class="ft have-select">
         <span class="productsNB">共
-    <a href="" id='listSearchItemCount'>10158</a>
+    <a href="" id='listSearchItemCount'><?php echo $count;?></a>
     款产品满足条件</span>
     </div>
     <div class="clear">
@@ -295,24 +295,27 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td><span class="index-NB-yellow">1</span></td>
+    <?php
+    for($i = 0; $i < count($products); $i++) {
+
+    ?>
+    <tr <?php if(($i+1)%2==0) echo 'class="bgf7f7f7"';?>>
+        <td><span class="<?php $c = $i<3?"index-NB-yellow":"index-NB"; echo $c;?>"><?php echo $i+1;?></span></td>
         <td id="index-producs-name">
 
             <div class="pdnamepop">
-                <a title="中融信托-中国城建六局集合资金信托计划2" target="_blank" href="">中城建六局亳州市政BT项目</a>
-
+                <a title="<?php echo $products[$i]['full_name']?>" target="_blank" href="http://www.jinfuzi.com/product/014245"><?php echo $products[$i]['short_name']?></a>
                 <div style="left:150px; z-index:9999; display: none" class="namepopcon shadow">
                     <span class="popiconarr"></span>
 
-                    <p class="poptits">中融信托-中国城建六局集合资金信托计划</p>
+                    <p class="poptits"><?php echo $products[$i]['full_name']?></p>
 
                     <div class="xtinfotb inter-xttb">
                         <table>
                             <tbody>
                             <tr>
                                 <th width="150">信托公司：</th>
-                                <td width="180">中融信托</td>
+                                <td width="180"><?php echo $products[$i]['company_name']?></td>
                                 <th width="120">投资行业：</th>
                                 <td width="120">基础设施</td>
                             </tr>
@@ -355,362 +358,20 @@
                     </div>
                 </div>
             </div>
-
-
-            <a class="zaishou" href="javascript:;">预售</a>
-            <a class="ping" href="javascript:;">评
-                <span class="shadow di_hidd" style="display: none">中城建六局实力担保，亳州财政局出具回购承诺函，回购资金严格监管！</span><i
-                    class='di_hidd' style="display: none"></i>
-            </a>
         </td>
-        <td>100万</td>
-        <td>24个月</td>
-        <td>9.00%
-        </td>
-        <td>2014-04-10</td>
+        <td><?php if($products[$i]['min_sub_amount']>=10000) echo $products[$i]['min_sub_amount']/10000 . "万"; else echo $products[$i]['min_sub_amount'];?></td>
+        <td><?php echo $products[$i]['duration'];?>个月</td>
+        <td><?php echo $products[$i]['income_rate'];?>.00%</td>
+        <td><?php echo date('Y-m-d',strtotime($products[$i]['sell_date']));?></td>
         <td>基础设施</td>
         <td>贷款类</td>
 
         <td><a href="http://www.jinfuzi.com/xintuo/c-6" target="_blank">中融信托</a></td>
         <td><a class="index-details" href="http://www.jinfuzi.com/product/014245" target="_blank">查看详情</a></td>
     </tr>
-    <tr class="bgf7f7f7">
-        <td><span class="index-NB-yellow">2</span></td>
-        <td id="index-producs-name">
-
-            <div class="pdnamepop">
-                <a title="金谷信托-宏远物流信托贷款集合资金信托计划" target="_blank"
-                   href="http://www.jinfuzi.com/product/0110260">宏远物流贷款</a>
-
-                <div style="left:150px; z-index:9999; display: none" class="namepopcon shadow">
-                    <span class="popiconarr"></span>
-
-                    <p class="poptits">金谷信托-宏远物流信托贷款集合资金信托计划</p>
-
-                    <div class="xtinfotb inter-xttb">
-                        <table>
-                            <tbody>
-                            <tr>
-                                <th width="150">信托公司：</th>
-                                <td width="180">金谷信托</td>
-                                <th width="120">投资行业：</th>
-                                <td width="120">工商企业</td>
-                            </tr>
-                            <tr>
-                                <th width="120">发售日期：</th>
-                                <td>2014-04-04</td>
-                                <th width="120">预期收益：</th>
-                                <td>9.00%</td>
-                            </tr>
-                            <tr>
-                                <th width="120">预计发行规模(万)：</th>
-                                <td>38000万</td>
-                                <th width="120">最低认购资金(万)：</th>
-                                <td>100万</td>
-                            </tr>
-
-                            <tr>
-                                <th valign="top" rowspan="3">收益说明</th>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed">
-                                    100-300万(不含)
-                                </td>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 9%</td>
-                            </tr>
-                            <tr>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed">
-                                    300(含)-600万(不含)
-                                </td>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 9.5%</td>
-                            </tr>
-                            <tr>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed">
-                                    600万及以上
-                                </td>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 10%</td>
-                            </tr>
-
-                            <tr>
-                                <th valign="top">风险控制</th>
-                                <td colspan="3">1、抵押担保。<br/>宏远物流以其拥有的位于北京市丰台区方庄路5号房产（产权面积
-                                    产权面积55,848.22平米）及及北京市顺义区南法信镇顺平路北侧土地（土地使用权面积23,425.9平米）为借款本息偿还提供抵押担保。<br/><br/>2、保证担保。
-                                    <br/>（1）宏远航城为借款本息偿还提供连带责任保证担保；<br/>（2）宏远物流法定代表人陈远先生提供无限连带责任保证担保；<br/><br/>3、质押担保。<br/>（1）陈远先生与孙贵满女士以其持有的宏远物流陈远先生与孙贵满女士以其持有的宏远物流100%股权提供质押担保。<br/>（2）海航（北京）物流有限公司100%股权为借款本息偿还提供股权提供质押担保。
-                                </td>
-                            </tr>
-                            <tr>
-                                <th valign="top">产品说明</th>
-                                <td colspan="3"><br/></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-
-            <a class="zaishou" href="javascript:;">出售中</a>
-            <a class="ping" href="javascript:;">评
-                <span class="shadow di_hidd" style="display: none">北京丰台区房产抵押，北京顺义区土地抵押，充足股权质押！</span><i class='di_hidd'
-                                                                                                        style="display: none"></i>
-            </a>
-        </td>
-        <td>100万</td>
-        <td>18个月</td>
-        <td>9.00%
-        </td>
-        <td>2014-04-04</td>
-        <td>工商企业</td>
-        <td>贷款类</td>
-
-        <td><a href="http://www.jinfuzi.com/xintuo/c-14" target="_blank">金谷信托</a></td>
-        <td><a class="index-details" href="http://www.jinfuzi.com/product/0110260" target="_blank">查看详情</a></td>
-    </tr>
-    <tr>
-        <td><span class="index-NB-yellow">3</span></td>
-        <td id="index-producs-name">
-
-            <div class="pdnamepop">
-                <a title="长安信托-云南御景新城项目合伙企业投资集合资金信托计划" target="_blank" href="http://www.jinfuzi.com/product/0112825">云南御景新城项目</a>
-
-                <div style="left:150px; z-index:9999; display: none" class="namepopcon shadow">
-                    <span class="popiconarr"></span>
-
-                    <p class="poptits">长安信托-云南御景新城项目合伙企业投资集合资金信托计划</p>
-
-                    <div class="xtinfotb inter-xttb">
-                        <table>
-                            <tbody>
-                            <tr>
-                                <th width="150">信托公司：</th>
-                                <td width="180">长安信托</td>
-                                <th width="120">投资行业：</th>
-                                <td width="120">房地产</td>
-                            </tr>
-                            <tr>
-                                <th width="120">发售日期：</th>
-                                <td>2014-04-04</td>
-                                <th width="120">预期收益：</th>
-                                <td>10.00%</td>
-                            </tr>
-                            <tr>
-                                <th width="120">预计发行规模(万)：</th>
-                                <td>14800万</td>
-                                <th width="120">最低认购资金(万)：</th>
-                                <td>100万</td>
-                            </tr>
-
-                            <tr>
-                                <th valign="top" rowspan="2">收益说明</th>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed">
-                                    100-300万(不含)
-                                </td>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 10%</td>
-                            </tr>
-                            <tr>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed">
-                                    300万及以上
-                                </td>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 10.8%</td>
-                            </tr>
-
-                            <tr>
-                                <th valign="top">风险控制</th>
-                                <td colspan="3">
-                                    1、受托人与北京中安信邦资产管理有限公司签署《有限合伙份额附条件转让合同》，合同约定如委托贷款借款人云南御行中天房地产开发有限公司未能按期支付委贷本息，北京中安信邦资产管理有限公司对受托人持有的合伙企业有限合伙份额进行溢价回购。<br/><br/>2、委托贷款借款人云南御行中天房地产开发有限公司提供抵押物，并办理抵押登记手续；抵押物面积合计为
-                                    160455.71平方米，抵押物价值合计30342万元，本金抵押率为49.44%。<br/><br/>3、北京市恒盛投资有限公司为借款人按期偿还委托贷款本息提供连带责任保证担保。<br/><br/>4、实际控制人(王云凯夫妇)为借款人按期偿还委托贷款本息提供连带责任保证担保。
-                                </td>
-                            </tr>
-                            <tr>
-                                <th valign="top">产品说明</th>
-                                <td colspan="3"><br/></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-
-            <a class="zaishou" href="javascript:;">出售中</a>
-            <a class="ping" href="javascript:;">评
-                <span class="shadow di_hidd" style="display: none">中信集团旗下资管公司兜底回购，3亿元优质抵押物，多方实力担保！</span><i
-                    class='di_hidd' style="display: none"></i>
-            </a>
-            <a class="di" href="javascript:;">抵<span class="shadow di_hidd" style="display: none">抵押率49.44%</span><i
-                    class='di_hidd' style="display: none"></i></a>
-        </td>
-        <td>100万</td>
-        <td>24个月</td>
-        <td>10.00%
-        </td>
-        <td>2014-04-04</td>
-        <td>房地产</td>
-        <td>贷款类</td>
-
-        <td><a href="http://www.jinfuzi.com/xintuo/c-33" target="_blank">长安信托</a></td>
-        <td><a class="index-details" href="http://www.jinfuzi.com/product/0112825" target="_blank">查看详情</a></td>
-    </tr>
-    <tr class="bgf7f7f7">
-        <td><span class="index-NB">4</span></td>
-        <td id="index-producs-name">
-
-            <div class="pdnamepop">
-                <a title="华融信托-四川金土地股权投资暨回购集合资金信托计划（第五期）" target="_blank" href="http://www.jinfuzi.com/product/0110371">四川金土地股权投资5期</a>
-
-                <div style="left:150px; z-index:9999; display: none" class="namepopcon shadow">
-                    <span class="popiconarr"></span>
-
-                    <p class="poptits">华融信托-四川金土地股权投资暨回购集合资金信托计划（第五期）</p>
-
-                    <div class="xtinfotb inter-xttb">
-                        <table>
-                            <tbody>
-                            <tr>
-                                <th width="150">信托公司：</th>
-                                <td width="180">华融国际信托</td>
-                                <th width="120">投资行业：</th>
-                                <td width="120">工商企业</td>
-                            </tr>
-                            <tr>
-                                <th width="120">发售日期：</th>
-                                <td>2014-04-04</td>
-                                <th width="120">预期收益：</th>
-                                <td>9.50%</td>
-                            </tr>
-                            <tr>
-                                <th width="120">预计发行规模(万)：</th>
-                                <td>40000万</td>
-                                <th width="120">最低认购资金(万)：</th>
-                                <td>100万</td>
-                            </tr>
-
-                            <tr>
-                                <th valign="top" rowspan="3">收益说明</th>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed">
-                                    100-300万(不含)
-                                </td>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 9.5%</td>
-                            </tr>
-                            <tr>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed">
-                                    300(含)-800万(不含)
-                                </td>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 10%</td>
-                            </tr>
-                            <tr>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed">
-                                    800万及以上
-                                </td>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 10.5%</td>
-                            </tr>
-
-                            <tr>
-                                <th valign="top">风险控制</th>
-                                <td colspan="3">
-                                    （1）科创控股集团有限公司以其持有的四川科创医药集团有限公司71.80%股权质押，医药集团总资产113.43亿元，净资产62.31亿元，营业收入111.97亿元，净利润9.1亿元。<br/>（2）科创控股集团有限公司及实际控制人何俊明夫妇为股权回购提供连带责任保证。<br/>（3）设立资金监管。开设监管账户，对信托资金的使用事先审核，确保其用于向眉山科创进行增资补充流动资金等。<br/>（4）设立资金提前归集条款。信托计划到期前30天开始进行信托本金的归集。
-                                </td>
-                            </tr>
-                            <tr>
-                                <th valign="top">产品说明</th>
-                                <td colspan="3"><br/></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-
-            <a class="zaishou" href="javascript:;">出售中</a>
-            <a class="ping" href="javascript:;">评
-                <span class="shadow di_hidd" style="display: none">中国企业500强集团担保，充足股权质押，集团控制人连带责任担保！</span><i
-                    class='di_hidd' style="display: none"></i>
-            </a>
-        </td>
-        <td>100万</td>
-        <td>24个月</td>
-        <td>9.50%
-        </td>
-        <td>2014-04-04</td>
-        <td>工商企业</td>
-        <td>股权类</td>
-
-        <td><a href="http://www.jinfuzi.com/xintuo/c-65" target="_blank">华融国际信托</a></td>
-        <td><a class="index-details" href="http://www.jinfuzi.com/product/0110371" target="_blank">查看详情</a></td>
-    </tr>
-    <tr>
-        <td><span class="index-NB">5</span></td>
-        <td id="index-producs-name">
-
-            <div class="pdnamepop">
-                <a title="陆家嘴信托-甬鑫1号集合资金信托计划" target="_blank" href="http://www.jinfuzi.com/product/0113257">甬鑫1号</a>
-
-                <div style="left:150px; z-index:9999; display: none" class="namepopcon shadow">
-                    <span class="popiconarr"></span>
-
-                    <p class="poptits">陆家嘴信托-甬鑫1号集合资金信托计划</p>
-
-                    <div class="xtinfotb inter-xttb">
-                        <table>
-                            <tbody>
-                            <tr>
-                                <th width="150">信托公司：</th>
-                                <td width="180">陆家嘴信托</td>
-                                <th width="120">投资行业：</th>
-                                <td width="120">其他</td>
-                            </tr>
-                            <tr>
-                                <th width="120">发售日期：</th>
-                                <td>2014-04-04</td>
-                                <th width="120">预期收益：</th>
-                                <td>6.00%</td>
-                            </tr>
-                            <tr>
-                                <th width="120">预计发行规模(万)：</th>
-                                <td>5000万</td>
-                                <th width="120">最低认购资金(万)：</th>
-                                <td>100万</td>
-                            </tr>
-
-                            <tr>
-                                <th valign="top" rowspan="1">收益说明</th>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed">
-                                    100万及以上
-                                </td>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 6%</td>
-                            </tr>
-
-                            <tr>
-                                <th valign="top">风险控制</th>
-                                <td colspan="3"></td>
-                            </tr>
-                            <tr>
-                                <th valign="top">产品说明</th>
-                                <td colspan="3"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-
-            <a class="zaishou" href="javascript:;">出售中</a>
-            <a class="ping" href="javascript:;">评
-                <span class="shadow di_hidd" style="display: none">上海陆家嘴金融发展有限公司旗下信托公司发行，组合投资，收益稳定！</span><i
-                    class='di_hidd' style="display: none"></i>
-            </a>
-        </td>
-        <td>100万</td>
-        <td>12个月</td>
-        <td>6.00%
-        </td>
-        <td>2014-04-04</td>
-        <td>其他</td>
-        <td>组合类</td>
-
-        <td><a href="javascript:void(0)" target="_blank">陆家嘴信托</a></td>
-        <td><a class="index-details" href="javascript:void(0)" target="_blank">查看详情</a></td>
-    </tr>
+    <?php
+    }
+    ?>
     </tbody>
     </table>
 

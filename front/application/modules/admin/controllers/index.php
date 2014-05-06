@@ -316,6 +316,114 @@ class Index extends AbaseController {
          }
         $this->load->view('login');
     }
+
+
+    /**
+     * 投资方向
+     */
+    public function investorientation() {
+        $this->load->model('investorientation_model');
+        $result = $this->investorientation_model->search('investorientation', array(), null);
+        $data['result'] = $result;
+        $this->load->view('investorientation_list', $data);
+    }
+
+    public function upsert_investorientation() {
+        $this->load->model('investorientation_model');
+        $id = $this->input->get_post('pid');
+        if( $id ){
+            $result = $this->investorientation_model->search('investorientation',array('id'=>$id),null,1);
+        }else{
+            $result = array(
+                'id'        => '',
+                'name'     =>  ''
+            );
+        }
+        $data['result'] = $result;
+        $this->load->view('upsertinvestorientation',$data);
+    }
+
+    public function save_investorientation() {
+        $this->load->model('investorientation_model');
+        $data = $_REQUEST['result'];
+        if(!$data['id']){
+            unset( $data['id']);
+        }
+        $id = $this->investorientation_model->upsert('investorientation',$data);
+        redirect("/redbud_admin/investorientation");
+    }
+
+    /**
+     * 信托类型列表
+     */
+    public function xintuotype() {
+        $this->load->model('xintuo_type_model');
+        $result = $this->xintuo_type_model->search('xintuo_type', array(), null);
+        $data['result'] = $result;
+        $this->load->view('xintuotype_list', $data);
+    }
+
+    public function upsert_xintuotype() {
+        $this->load->model('xintuo_type_model');
+        $id = $this->input->get_post('pid');
+        if( $id ){
+            $result = $this->xintuo_type_model->search('xintuo_type',array('id'=>$id),null,1);
+        }else{
+            $result = array(
+                'id'        => '',
+                'name'     =>  ''
+            );
+        }
+        $data['result'] = $result;
+        $this->load->view('upsertxintuotype',$data);
+    }
+
+    public function save_xintuotype() {
+        $this->load->model('xintuo_type_model');
+        $data = $_REQUEST['result'];
+        if(!$data['id']){
+            unset( $data['id']);
+        }
+        $id = $this->xintuo_type_model->upsert('xintuo_type',$data);
+        redirect("/redbud_admin/xintuotype");
+    }
+
+    /**
+     * 利息分配方式列表
+     */
+    public function iint() {
+        $this->load->model('iint_model');
+        $result = $this->iint_model->search('iint', array(), null);
+        $data['result'] = $result;
+        $this->load->view('iint_list', $data);
+    }
+
+    public function upsert_iint() {
+        $this->load->model('iint_model');
+        $id = $this->input->get_post('pid');
+        if( $id ){
+            $result = $this->iint_model->search('iint',array('id'=>$id),null,1);
+        }else{
+            $result = array(
+                'id'        => '',
+                'name'     =>  ''
+            );
+        }
+        $data['result'] = $result;
+        $this->load->view('upsertiint',$data);
+    }
+
+    public function save_iint() {
+        $this->load->model('iint_model');
+        $data = $_REQUEST['result'];
+        if(!$data['id']){
+            unset( $data['id']);
+        }
+        $id = $this->iint_model->upsert('iint',$data);
+        redirect("/redbud_admin/iint");
+    }
+
+
     //信托类型Id获取信托类型名字
     private function xt_type( $id){
         $this->load->model('products_model');
@@ -337,6 +445,7 @@ class Index extends AbaseController {
         $company = $this->products_model->search('company', array('id <> ' => ''),'id desc');
         return $company;
     }
+
     private function get_company_id( $company_name){
         $this->load->model('products_model');
         $company = $this->products_model->search('commpany',array('name'=>$company_name),null,1);
@@ -353,6 +462,7 @@ class Index extends AbaseController {
         }
         return $iint['name'];
     }
+
     private function get_iint_id( $iint_name){
         $this->load->model('products_model');
         $iint = $this->products_model->search('iint',array('name'=> $iint_name),null,1);
