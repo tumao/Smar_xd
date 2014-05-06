@@ -150,15 +150,17 @@
 									</div>
 									<div class="pro_wrap_right">
 										<p class="pro_info_wrap bg_dashed">
-											<a href="http://www.jinfuzi.com/product/0112698" class="pro_name" target="_blank">
-												天宜28号													<span class="pro_gift">返现2500元（100万以上）</span>
+											<a href="/productdetail?pid=<?php echo $elite['id']; ?>" class="pro_name" target="_blank">
+												<?php echo $elite['short_name']; ?>
+												<span class="pro_gift">返现2500元（100万以上）</span>
 																							</a>
-											<span class="pro_sum">投资金额：<em class="f_f60">50万</em></span>      
-											<span class="pro_deadline">投资期限：<em class="f_f60">12个月</em></span>
+											<span class="pro_sum">投资金额：<em class="f_f60"><?php echo $elite['min_sub_amount']; ?>万</em></span>      
+											<span class="pro_deadline">投资期限：<em class="f_f60"> <?php echo $elite['duration']; ?>个月</em></span>
 										</p>
 										<p class="pro_comment">
 											<span class="f_999">点评：</span>
-											50万起，期限灵活，央企集团旗下信托发行，宜信连带责任担保										</p>
+											<?php echo $elite['purpose_info']; ?>
+										</p>
 									</div>
 								</div>
 								<!-- 预售s_2 在售s_1 -->
@@ -179,11 +181,11 @@
 					</div>
 					<!-- tab control -->
 					<ul class="tab_control">				
-						<li class="tab_control_item active" flag="true" sort="high"><em class="arrow"></em><span>高收益</span></li>	
+						<!-- <li class="tab_control_item active" flag="true" sort="high"><em class="arrow"></em><span>高收益</span></li>	
 						<li class="tab_control_item" flag="false" sort="year"><em class="arrow"></em><span>一年期</span></li>
 						<li class="tab_control_item" flag="false" sort="zx"><em class="arrow"></em><span>政信类</span></li>
 						<li class="tab_control_item" flag="false" sort="bzjx"><em class="arrow"></em><span>本周计息</span></li>
-						<li class="tab_control_item last" flag="false" sort="fifty"><em class="arrow"></em><span>50万起</span></li>
+						<li class="tab_control_item last" flag="false" sort="fifty"><em class="arrow"></em><span>50万起</span></li> -->
 					</ul>
 					<a href="/product/index" target="_blank" class="more"><em class="more_ico"></em>更多</a>
 				</div>
@@ -202,97 +204,23 @@
 								</tr>										
 							</thead>
 							<tbody>
-																	<tr class="">
-										<td class="tc"><span class="num top">1</span></td>
+								<?php foreach ($prod['prod_sort'] as $key => $val) {?>
+								<tr class="">
+									<td class="tc"><span class="num top"><?php echo $key; ?></span></td>
 										<td>
 											<div class="pro_name">
-												<a href="http://www.jinfuzi.com/product/0112791" target="_blank">连云港水榭花都项目</a>
+												<a href="/productdetail?pid=<?php echo $val['id']; ?>" target="_blank"><?php echo $val['short_name']; ?></a>
 											</div>
 										</td>
-										<td>
-																							<a href="http://www.jinfuzi.com/xintuo/c-10" target="_blank">
-													渤海信托												</a>
-																					</td>
-										<td class="pro_sum"><span class="f_f60">100万</span></td>
-										<td class="pro_deadline">24个月</td>
-										<td class="pro_income"><span class="f_f60">10.00%</span></td>
-									</tr>	
-																	<tr class="">
-										<td class="tc"><span class="num top">2</span></td>
-										<td>
-											<div class="pro_name">
-												<a href="http://www.jinfuzi.com/product/0112825" target="_blank">昆明御景新城项目</a>
-											</div>
-										</td>
-										<td>
-																							<a href="http://www.jinfuzi.com/xintuo/c-21" target="_blank">
-													国民信托												</a>
-																					</td>
-										<td class="pro_sum"><span class="f_f60">100万</span></td>
-										<td class="pro_deadline">24个月</td>
-										<td class="pro_income"><span class="f_f60">10.00%</span></td>
-									</tr>	
-																	<tr class="">
-										<td class="tc"><span class="num top">3</span></td>
-										<td>
-											<div class="pro_name">
-												<a href="http://www.jinfuzi.com/product/0113000" target="_blank">辽滨沿海集合资金</a>
-											</div>
-										</td>
-										<td>
-																							<a href="http://www.jinfuzi.com/xintuo/c-49" target="_blank">
-													方正东亚信托												</a>
-																					</td>
-										<td class="pro_sum"><span class="f_f60">100万</span></td>
-										<td class="pro_deadline">24个月</td>
-										<td class="pro_income"><span class="f_f60">10.00%</span></td>
-									</tr>	
-																	<tr class="">
-										<td class="tc"><span class="num ">4</span></td>
-										<td>
-											<div class="pro_name">
-												<a href="http://www.jinfuzi.com/product/0113063" target="_blank">银象132号</a>
-											</div>
-										</td>
-										<td>
-																							<a href="http://www.jinfuzi.com/xintuo/c-62" target="_blank">
-													中江信托												</a>
-																					</td>
-										<td class="pro_sum"><span class="f_f60">100万</span></td>
-										<td class="pro_deadline">24个月</td>
-										<td class="pro_income"><span class="f_f60">10.00%</span></td>
-									</tr>	
-																	<tr class="">
-										<td class="tc"><span class="num ">5</span></td>
-										<td>
-											<div class="pro_name">
-												<a href="http://www.jinfuzi.com/product/0113144" target="_blank">华锦121号</a>
-											</div>
-										</td>
-										<td>
-																							<a href="http://www.jinfuzi.com/xintuo/c-45" target="_blank">
-													新华信托												</a>
-																					</td>
-										<td class="pro_sum"><span class="f_f60">100万</span></td>
-										<td class="pro_deadline">12个月</td>
-										<td class="pro_income"><span class="f_f60">9.50%</span></td>
-									</tr>	
-																	<tr class="">
-										<td class="tc"><span class="num ">6</span></td>
-										<td>
-											<div class="pro_name">
-												<a href="http://www.jinfuzi.com/product/0113190" target="_blank">东银实业三期</a>
-											</div>
-										</td>
-										<td>
-																							<a href="http://www.jinfuzi.com/xintuo/c-49" target="_blank">
-													方正东亚信托												</a>
-																					</td>
-										<td class="pro_sum"><span class="f_f60">100万</span></td>
-										<td class="pro_deadline">12个月</td>
-										<td class="pro_income"><span class="f_f60">9.50%</span></td>
-									</tr>	
-																							</tbody>
+									<td>
+										<a href="http://www.jinfuzi.com/xintuo/c-10" target="_blank">渤海信托</a>
+									</td>
+									<td class="pro_sum"><span class="f_f60">100万</span></td>
+									<td class="pro_deadline">24个月</td>
+									<td class="pro_income"><span class="f_f60">10.00%</span></td>
+								</tr>
+								<?php } ?>
+							</tbody>
 						</table>
 					</div>
 					<!-- tc_2 -->
