@@ -8,7 +8,6 @@ class Index extends BaseController {
 
 	public function index()
 	{
-        $this->load->model("products_model");
         $condition = array(
             'isdel' => 0
         );
