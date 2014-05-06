@@ -25,7 +25,8 @@ class Index extends BaseController {
 		$this->load->view('more_citys');
 	}
 
-/*	public function data(){
+	public function data(){
+		$sort = $this->input->get_post('sort');
 		//精选
 		$prod = array();
 		$prod_elite = $this->products_model->search('products',array('elite'=>1),'id asc');
@@ -36,12 +37,9 @@ class Index extends BaseController {
 		//热门机构，待修改
 		$hot_company = $this->products_model->search('company',array(),'id asc','5');
 		$prod['hot_company'] = $hot_company;
-		// echo "<pre>";
-		// var_dump( $hot_company);
-		// echo "</pre>";
+		exit(json_encode( $hot_company));
 
-
-	}*/
+	}
 
 }
 
