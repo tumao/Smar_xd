@@ -23,12 +23,118 @@ class Index extends BaseController {
             'isdel' => 0
         );
 
+        switch($params[1]) {
+            case 1:
+                $condition['min_sub_amount <']=500000;
+                break;
+            case 2:
+                $condition['min_sub_amount <'] = 1000000;
+                $condition['min_sub_amount >='] = 500000;
+                break;
+            case 3:
+                $condition['min_sub_amount <'] = 3000000;
+                $condition['min_sub_amount >='] = 1000000;
+                break;
+            case 4:
+                $condition['min_sub_amount >='] = 3000000;
+                break;
+            default:
+                break;
+        }
+
+        switch($params[2]) {
+            case 1:
+                $condition['duration <'] = 12;
+                break;
+            case 2:
+                $condition['duration <'] = 24;
+                $condition['duration >='] = 12;
+                break;
+            case 3:
+                $condition['duration <'] = 36;
+                $condition['duration >='] = 24;
+                break;
+            case 4:
+                $condition['duration >='] = 36;
+                break;
+            default:
+                break;
+        }
+
+        switch($params[3]) {
+            case 1:
+                $condition['income_rate <'] = 6;
+                break;
+            case 2:
+                $condition['income_rate <'] = 8;
+                $condition['income_rate >='] = 6;
+                break;
+            case 3:
+                $condition['income_rate <'] = 10;
+                $condition['income_rate >='] = 8;
+                break;
+            case 4:
+                $condition['income_rate >='] = 10;
+                break;
+            default:
+                break;
+        }
+
+        switch($params[4]) {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            default:
+                break;
+        }
+
+        switch($params[5]) {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            default:
+                break;
+        }
+
+        switch($params[6]) {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            default:
+                break;
+        }
+
         $count_result = $this->products_model->search('products', $condition, 'id desc');
         $count = count($count_result);
         $pagenum = ceil($count/$limit);
 
+        /*
         if(!intval($params[11]) || $params[11] > $pagenum)
             redirect('404_override');
+        */
+
+
 
         $result = $this->products_model->search('products', $condition,'id desc', $limit, '', $params[11]);
         foreach ($result as & $val) {
@@ -49,6 +155,7 @@ class Index extends BaseController {
         $data['count'] = $count;
         $data['pagenum'] = $pagenum;
         $data['params'] = $params;
+        $data['limit'] = $limit;
 		$this->load->view('index', $data);
 	}
 	public function main(){

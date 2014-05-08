@@ -46,10 +46,10 @@
 							<div class="center">
 								<h1>
 									<i class="icon-leaf green"></i>
-									<span class="red">Ace</span>
+									<span class="red">Redbud</span>
 									<span class="white">Application</span>
 								</h1>
-								<h4 class="blue">&copy; Company Name</h4>
+								<h4 class="blue">&copy; 跃盈财富</h4>
 							</div>
 
 							<div class="space-6"></div>
@@ -99,6 +99,7 @@
 												</fieldset>
 											</form>
 
+                                            <!--
 											<div class="social-or-login center">
 												<span class="bigger-110">Or Login Using</span>
 											</div>
@@ -116,8 +117,9 @@
 													<i class="icon-google-plus"></i>
 												</a>
 											</div>
+											-->
 										</div><!-- /widget-main -->
-
+                                        <!--
 										<div class="toolbar clearfix">
 											<div>
 												<a href="#" onclick="show_box('forgot-box'); return false;" class="forgot-password-link">
@@ -133,6 +135,7 @@
 												</a>
 											</div>
 										</div>
+										-->
 									</div><!-- /widget-body -->
 								</div><!-- /login-box -->
 
@@ -298,22 +301,32 @@
 		</script>
 	<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 <script type="text/javascript">
-	$(document).ready(function(){
+    $(document).ready(function(){
+        $(document).keydown(function(e) {
+            if(e.which == 13) {
+                submit();
+            }
+        });
+
 		$("button").click(function(){
-			var passwd = $("#password").val();
-			var username = $("#username").val();
-			$.ajax({
-				'url'	:'login',
-				'data'	:{'password':passwd,'username':username},
-				'method'	: "post", 
-				'success'	: function( txt ){
-					if( txt == 1){
-						location.reload();
-					}
-				}
-			});
+            submit();
 		});
 	});
+
+    function submit() {
+        var passwd = $("#password").val();
+        var username = $("#username").val();
+        $.ajax({
+            'url'	:'login',
+            'data'	:{'password':passwd,'username':username},
+            'method'	: "post",
+            'success'	: function( txt ){
+                if( txt == 1){
+                    location.reload();
+                }
+            }
+        });
+    }
 
 </script>
 
