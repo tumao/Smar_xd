@@ -336,13 +336,13 @@
 											<a target="_blank" href="http://www.jinfuzi.com/xintuo/c-6"><img width="50" height="50" src="/static/cmpt/root/image/xt/comlogo/6.jpg" alt="中融国际信托有限公司" /></a>										</div>
 										<div class="com_info">
 											<p class="p_1 clearfix">
-												<?php// var_dump( $value); ?>
-												<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span><?php echo $value['register_capital'] ?></span>
-												<span class="s_2 f_fl"><span class="f_999">股东背景：</span>中央企业控股</span>
-												<span class="s_3 f_fl"><span class="f_999">公司所在地：</span>黑龙江</span>
+												<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span><?php echo $prod['hot_company'][0]['register_capital'] ?></span>
+												<!-- <span class="s_2 f_fl"><span class="f_999">股东背景：</span>中央企业控股</span> -->
+												<span class="s_3 f_fl"><span class="f_999">公司所在地：</span>  <?php echo $prod['hot_company'][0]['area']; ?></span>
 											</p>
 											<p class="p_2 clearfix">
-												<span class="s_4 f_fl">产品数量<span class="num">585</span>款</span>
+												<?php //var_dump( $prod['hot_company'][0]['products']); ?>
+												<span class="s_4 f_fl">产品数量<span class="num"><?php echo $prod['hot_company'][0]['count'] ?></span>款</span>
 												<span class="s_4 f_fl">平均收益率<span class="num">9.03%</span></span>
 											</p>
 										</div>
@@ -359,54 +359,17 @@
 												</tr>										
 											</thead>
 											<tbody>
-																								<tr>															
+												<?php //var_dump( $prod['hot_company'][0]['products']); ?>
+												<?php foreach ($prod['hot_company'][0]['products'] as $key => $prd) { ?>
+												<tr>															
 													<td class="pro_name">
-														<a href="http://www.jinfuzi.com/product/0113205" target="_blank">丹阳安居1号</a>
+														<a href="http://www.jinfuzi.com/product/0113205" target="_blank"><?php echo $prd['short_name']; ?></a>
 													</td>															
-													<td class="pro_sum"><span class="f_f60">100万</span></td>
-													<td class="pro_deadline">24个月</td>
-													<td class="pro_income"><span class="f_f60">9.20%</span></td>
+													<td class="pro_sum"><span class="f_f60"><?php echo $prd['min_sub_amount']; ?>万</span></td>
+													<td class="pro_deadline"><?php echo $prd['duration']; ?>个月</td>
+													<td class="pro_income"><span class="f_f60"><?php echo $prd['income_rate'] ?></span></td>
 												</tr>
-																								<tr>															
-													<td class="pro_name">
-														<a href="http://www.jinfuzi.com/product/0113206" target="_blank">融石新源燕府</a>
-													</td>															
-													<td class="pro_sum"><span class="f_f60">100万</span></td>
-													<td class="pro_deadline">24个月</td>
-													<td class="pro_income"><span class="f_f60">10.00%</span></td>
-												</tr>
-																								<tr>															
-													<td class="pro_name">
-														<a href="http://www.jinfuzi.com/product/0113202" target="_blank">镇江交投一期</a>
-													</td>															
-													<td class="pro_sum"><span class="f_f60">100万</span></td>
-													<td class="pro_deadline">24个月</td>
-													<td class="pro_income"><span class="f_f60">9.00%</span></td>
-												</tr>
-																								<tr>															
-													<td class="pro_name">
-														<a href="http://www.jinfuzi.com/product/0113173" target="_blank">大华融享1期</a>
-													</td>															
-													<td class="pro_sum"><span class="f_f60">100万</span></td>
-													<td class="pro_deadline">24个月</td>
-													<td class="pro_income"><span class="f_f60">10.00%</span></td>
-												</tr>
-																								<tr>															
-													<td class="pro_name">
-														<a href="http://www.jinfuzi.com/product/0113177" target="_blank">中城建1号</a>
-													</td>															
-													<td class="pro_sum"><span class="f_f60">100万</span></td>
-													<td class="pro_deadline">24个月</td>
-													<td class="pro_income"><span class="f_f60">9.50%</span></td>
-												</tr>
-																								<tr>															
-													<td class="pro_name">
-														<a href="http://www.jinfuzi.com/product/0113166" target="_blank">宜居发展3号</a>
-													</td>															
-													<td class="pro_sum"><span class="f_f60">100万</span></td>
-													<td class="pro_deadline">24个月</td>
-													<td class="pro_income"><span class="f_f60">9.50%</span></td>
-												</tr>
+												<?php } ?>												
 																									
 											</tbody>
 										</table>
@@ -653,17 +616,23 @@
 				var _this = $(this);
 				var _index = _this.parent().parent().parent().find('.subtab_control_item').index(this);
 				var _content = _this.parent().parent().parent().find('div.subtab_con');
-				if(_this.attr('flag')=='false'){
-						// $.get('/xt/default/xtComAjax?sort='+$(this).attr('sort'), function(data){
-						// 	_content.eq(_index).append(data);
+				if(_this.attr('flag')=='true'){
+					/*	$.get('/xt/default/xtComAjax?sort='+$(this).attr('sort'), function(data){
+							_content.eq(_index).append(data);
 							
-						// })
+						})*/
 					$.ajax({
 						'url' : '/main/index/hot_company?sort='+$(this).attr('sort'),
 						'type'	: 'post',
 						'dataType': 'json',
 						'success' : function(data){
-							_content.eq(_index).append(data);
+							var con;
+							_content.eq(_index).empty();
+							for( var i=0; i<data.length; i++){
+								// data[i].name;
+								
+							}
+							_content.eq(_index).append(con);
 						}
 					});
 
