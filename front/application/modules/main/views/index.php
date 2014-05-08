@@ -630,6 +630,50 @@
 							_content.eq(_index).empty();
 							for( var i=0; i<data.length; i++){
 								// data[i].name;
+								con = '<div class="subtab_con active">'+
+										'<div class="xt_companty_detail clearfix">'+
+											'<div class="com_img">'+
+												'<a target="_blank" href="http://www.jinfuzi.com/xintuo/c-6"><img width="50" height="50" src="/static/cmpt/root/image/xt/comlogo/6.jpg" alt="中融国际信托有限公司" /></a></div>'+
+											'<div class="com_info">'+
+												'<p class="p_1 clearfix">'+
+													'<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span><?php //echo $prod['hot_company'][0]['register_capital'] ?></span>'+
+													'<span class="s_3 f_fl"><span class="f_999">公司所在地：</span>  <?php //echo $prod['hot_company'][0]['area']; ?></span>'+
+												'</p>'+
+												'<p class="p_2 clearfix">'+
+													<?php //var_dump( $prod['hot_company'][0]['products']); ?>
+													'<span class="s_4 f_fl">产品数量<span class="num"><?php //echo $prod['hot_company'][0]['count'] ?></span>款</span>'+
+													'<span class="s_4 f_fl">平均收益率<span class="num">9.03%</span></span>'+
+												'</p>'
+											'</div>'+
+										'</div>'+
+										'<div class="xt_comprolist_wrap">'+
+											'<div class="xt_comprolist_tit clearfix">旗下信托产品</div>'+
+											'<table width="550" border="0" cellspacing="0" cellpadding="0" class="xt_table_2">'+
+												'<thead>'+
+													'<tr>'+
+														'<th width="*">产品名称</th>'+
+														'<th width="76" class="pro_sum">投资金额</th>'+
+														'<th width="82" class="pro_deadline">投资期限</th>'+
+														'<th width="84" class="pro_income">预期收益</th>'+
+													'</tr>'+
+												'</thead>'+
+												'<tbody>'+
+													<?php //var_dump( $prod['hot_company'][0]['products']); ?>
+													<?php //foreach ($prod['hot_company'][0]['products'] as $key => $prd) { ?>
+													'<tr>'+
+														'<td class="pro_name">'+
+															'<a href="http://www.jinfuzi.com/product/0113205" target="_blank"><?php echo $prd['short_name']; ?></a>'+
+														'</td>'+
+														'<td class="pro_sum"><span class="f_f60"><?php echo $prd['min_sub_amount']; ?>万</span></td>'+
+														'<td class="pro_deadline"><?php echo $prd['duration']; ?>个月</td>'+
+														'<td class="pro_income"><span class="f_f60"><?php echo $prd['income_rate'] ?></span></td>'+
+													'</tr>'+
+													<?php //} ?>												
+																										
+												'</tbody>'+
+											'</table>'+
+										'</div>'+
+									'</div>';
 								
 							}
 							_content.eq(_index).append(con);
