@@ -15,7 +15,7 @@ class Index extends BaseController {
 		$prod_sort	= $this->products_model->search('products',array(),'id asc','6');
 		$prod['prod_sort'] = $prod_sort;
 		//热门机构，待修改
-		$hot_company = $this->products_model->search('company',array(),'id asc','5');
+		$hot_company = $this->products_model->search('company',array('ishot'=>1),'id asc','10');
 		$prod['hot_company'] = $hot_company;
 		$data['prod'] = $prod;
 		$this->load->view('index',$data);
@@ -39,6 +39,21 @@ class Index extends BaseController {
 		$prod['hot_company'] = $hot_company;
 		exit(json_encode( $hot_company));
 
+	}
+	public function hot_company(){
+		$sort = $this->input->get_post('sort');
+
+		$company = array();
+		$hot_company = $this->products_model->search('company',array('ishot'=>1),'id asc');
+		foreach ($hot_company as & $company) {
+			$company['products'] = $this->fetch_prod_by_cid( $company['id']);
+		}
+		exit( json_encode( $hot_company));
+	}
+
+	public function fetch_prod_by_cid( $cid){
+		$products = $this->products_model->search('products',array('companyid'=>$cid),'id asc');
+		return $products;
 	}
 
 }

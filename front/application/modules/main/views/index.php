@@ -320,57 +320,13 @@
 						<div class="xt_company_tab subtab clearfix">
 							<div class="subtab_hd">	
 								<ul class="subtab_control">	
-													
-										<li class="subtab_control_item active" flag="true" sort="6">
+									<?php foreach ($prod['hot_company'] as $value) { ?>		
+										<li class="subtab_control_item active" flag="true" sort="<?php $value['id'] ?>">
 											<em class="shadow"></em>
-											<a href="javascript:;">中融信托</a>
+											<a href="javascript:;"><?php echo $value['name']; ?></a>
 										</li>
-													
-										<li class="subtab_control_item " flag="false" sort="7">
-											<em class="shadow"></em>
-											<a href="javascript:;">中铁信托</a>
-										</li>
-													
-										<li class="subtab_control_item " flag="false" sort="20">
-											<em class="shadow"></em>
-											<a href="javascript:;">五矿国际信托</a>
-										</li>
-													
-										<li class="subtab_control_item " flag="false" sort="22">
-											<em class="shadow"></em>
-											<a href="javascript:;">英大信托</a>
-										</li>
-													
-										<li class="subtab_control_item " flag="false" sort="24">
-											<em class="shadow"></em>
-											<a href="javascript:;">外贸信托</a>
-										</li>
-													
-										<li class="subtab_control_item " flag="false" sort="29">
-											<em class="shadow"></em>
-											<a href="javascript:;">昆仑信托</a>
-										</li>
-													
-										<li class="subtab_control_item " flag="false" sort="30">
-											<em class="shadow"></em>
-											<a href="javascript:;">百瑞信托</a>
-										</li>
-													
-										<li class="subtab_control_item " flag="false" sort="34">
-											<em class="shadow"></em>
-											<a href="javascript:;">国投信托</a>
-										</li>
-													
-										<li class="subtab_control_item " flag="false" sort="40">
-											<em class="shadow"></em>
-											<a href="javascript:;">中海信托</a>
-										</li>
-													
-										<li class="subtab_control_item " flag="false" sort="48">
-											<em class="shadow"></em>
-											<a href="javascript:;">中航信托</a>
-										</li>
-																	</ul>
+									<?php } ?>
+								</ul>
 							</div>
 							<div class="subtab_bd">
 								<!-- sub_tc_1 -->
@@ -380,7 +336,8 @@
 											<a target="_blank" href="http://www.jinfuzi.com/xintuo/c-6"><img width="50" height="50" src="/static/cmpt/root/image/xt/comlogo/6.jpg" alt="中融国际信托有限公司" /></a>										</div>
 										<div class="com_info">
 											<p class="p_1 clearfix">
-												<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span>160000</span>
+												<?php// var_dump( $value); ?>
+												<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span><?php echo $value['register_capital'] ?></span>
 												<span class="s_2 f_fl"><span class="f_999">股东背景：</span>中央企业控股</span>
 												<span class="s_3 f_fl"><span class="f_999">公司所在地：</span>黑龙江</span>
 											</p>
@@ -697,10 +654,19 @@
 				var _index = _this.parent().parent().parent().find('.subtab_control_item').index(this);
 				var _content = _this.parent().parent().parent().find('div.subtab_con');
 				if(_this.attr('flag')=='false'){
-						$.get('/xt/default/xtComAjax?sort='+$(this).attr('sort'), function(data){
-							_content.eq(_index).append(data);
+						// $.get('/xt/default/xtComAjax?sort='+$(this).attr('sort'), function(data){
+						// 	_content.eq(_index).append(data);
 							
-						})
+						// })
+					$.ajax({
+						'url' : '/main/index/hot_company?sort='+$(this).attr('sort'),
+						'type'	: 'post',
+						'dataType': 'json',
+						'success' : function(data){
+							_content.eq(_index).append(data);
+						}
+					});
+
 						_this.attr('flag', 'true');
 				}
 			
