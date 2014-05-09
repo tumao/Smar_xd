@@ -48,11 +48,11 @@ class Index extends BaseController {
 		$sort = $this->input->get_post('sort');
 
 		$company = array();
-		$hot_company = $this->products_model->search('company',array('ishot'=>1),'id asc');
-		foreach ($hot_company as & $company) {
-			$company['products'] = $this->fetch_prod_by_cid( $company['id']);
-			$company['p_count'] = $this->count_product( $company['id']);
-		}
+		$hot_company = $this->products_model->search('company',array('ishot'=>1),'id asc',1);
+		// foreach ($hot_company as & $company) {
+			$hot_company['products'] = $this->fetch_prod_by_cid( $hot_company['id']);
+			$hot_company['p_count'] = $this->count_product( $hot_company['id']);
+		// }
 		exit( json_encode( $hot_company));
 	}
 
