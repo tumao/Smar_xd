@@ -359,7 +359,6 @@
 												</tr>										
 											</thead>
 											<tbody>
-												<?php //var_dump( $prod['hot_company'][0]['products']); ?>
 												<?php foreach ($prod['hot_company'][0]['products'] as $key => $prd) { ?>
 												<tr>															
 													<td class="pro_name">
@@ -617,21 +616,14 @@
 				var _index = _this.parent().parent().parent().find('.subtab_control_item').index(this);
 				var _content = _this.parent().parent().parent().find('div.subtab_con');
 				if(1){
-					/*	$.get('/xt/default/xtComAjax?sort='+$(this).attr('sort'), function(data){
-							_content.eq(_index).append(data);
-							
-						})*/
 					$.ajax({
 						'url' : '/main/index/hot_company?sort='+$(this).attr('sort'),
 						'type'	: 'post',
 						'dataType': 'json',
 						'success' : function(data){
-							console.log(data);
 							var con;
 							_content.eq(_index).empty();
-							// for( var i=0; i<data.length; i++){
-								// data[i].name;
-								con = '<div class="subtab_con active">'+
+								con = /*'<div class="subtab_con active">'+*/
 										'<div class="xt_companty_detail clearfix">'+
 											'<div class="com_img">'+
 												'<a target="_blank" href="http://www.jinfuzi.com/xintuo/c-6"><img width="50" height="50" src="/static/cmpt/root/image/xt/comlogo/6.jpg" alt="中融国际信托有限公司" /></a></div>'+
@@ -641,10 +633,9 @@
 													'<span class="s_3 f_fl"><span class="f_999">公司所在地：</span>  '+data.area+'</span>'+
 												'</p>'+
 												'<p class="p_2 clearfix">'+
-													<?php //var_dump( $prod['hot_company'][0]['products']); ?>
-													'<span class="s_4 f_fl">产品数量<span class="num">'+data.count+'</span>款</span>'+
-													'<span class="s_4 f_fl">平均收益率<span class="num">'+data.income_rate+'</span></span>'+
-												'</p>'
+													'<span class="s_4 f_fl">产品数量<span class="num">'+data.p_count+'</span>款</span>'+
+													'<span class="s_4 f_fl">平均收益率<span class="num">'+11+'</span></span>'+
+												'</p>'+
 											'</div>'+
 										'</div>'+
 										'<div class="xt_comprolist_wrap">'+
@@ -659,12 +650,11 @@
 													'</tr>'+
 												'</thead>'+
 												'<tbody>';
-													
-												var con1;
+												var con1='';
 												for(var i=0; i<data.products.length; i++){
 												con1+='<tr>'+
 														'<td class="pro_name">'+
-															'<a href="http://www.jinfuzi.com/product/0113205" target="_blank">'+data.products[i].short_name+'</a>'+
+															'<a href="" target="_blank">'+data.products[i].short_name+'</a>'+
 														'</td>'+
 														'<td class="pro_sum"><span class="f_f60">'+data.products[i].min_sub_amount+'万</span></td>'+
 														'<td class="pro_deadline">'+data.products[i].duration+'个月</td>'+
@@ -673,11 +663,9 @@
 													}												
 											var con2='</tbody>'+
 											'</table>'+
-										'</div>'+
-									'</div>';
-								
-							// }
-							_content.eq(_index).append(con);
+										'</div>'/*+
+									'</div>'*/;
+							_content.eq(_index).append(con+con1+con2);
 						}
 					});
 
