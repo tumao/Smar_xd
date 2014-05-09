@@ -184,7 +184,7 @@
 						<li class="tab_control_item active" flag="true" sort="high"><em class="arrow"></em><span>高收益</span></li>	
 						<li class="tab_control_item" flag="false" sort="year"><em class="arrow"></em><span>一年期</span></li>
 						<li class="tab_control_item" flag="false" sort="zx"><em class="arrow"></em><span>政信类</span></li>
-						<li class="tab_control_item" flag="false" sort="bzjx"><em class="arrow"></em><span>本周计息</span></li>
+						<!-- <li class="tab_control_item" flag="false" sort="bzjx"><em class="arrow"></em><span>本周计息</span></li> -->
 						<li class="tab_control_item last" flag="false" sort="fifty"><em class="arrow"></em><span>50万起</span></li>
 					</ul>
 					<a href="/product/index" target="_blank" class="more"><em class="more_ico"></em>更多</a>
@@ -559,21 +559,22 @@
                         	'dataType':'json',
                         	'type': 'post',
                         	'success':function(data){
+                        		console.log( data);
                         		_content.find('div.tab_con').find("tbody").empty();
                         		var con;
                         		for( var i=0; i<data.length;i++){
                         			con = "<tr><td class='tc'><span class='num top'>"+ i+"</span></td>"+
 										"<td>"+
 											"<div class='pro_name'>"+
-												"<a href='/productdetail?pid="+data[i].id+"' target='_blank'>"+data[i].name+"</a>"+
+												"<a href='/productdetail?pid="+data[i].id+"' target='_blank'>"+data[i].short_name+"</a>"+
 											"</div>"+
 										"</td>"+
 									"<td>"+
-										"<a href='' target='_blank'>渤海信托</a>"+
+										"<a href='' target='_blank'>"+data[i].company_name+"</a>"+
 									"</td>"+
 									"<td class='pro_sum'><span class='f_f60'>100万</span></td>"+
-									"<td class='pro_deadline'>24个月</td>"+
-									"<td class='pro_income'><span class='f_f60'>10.00%</span></td></tr>";
+									"<td class='pro_deadline'>"+data[i].duration+"个月</td>"+
+									"<td class='pro_income'><span class='f_f60'>"+data[i].income_rate+"%</span></td></tr>";
 									_content.find('div.tab_con').find("tbody").append(con);
                         		}
                         		// console.log( data[0].id);
@@ -634,7 +635,7 @@
 												'</p>'+
 												'<p class="p_2 clearfix">'+
 													'<span class="s_4 f_fl">产品数量<span class="num">'+data.p_count+'</span>款</span>'+
-													'<span class="s_4 f_fl">平均收益率<span class="num">'+11+'</span></span>'+
+													/*'<span class="s_4 f_fl">平均收益率<span class="num">'+11+'</span></span>'+*/
 												'</p>'+
 											'</div>'+
 										'</div>'+
