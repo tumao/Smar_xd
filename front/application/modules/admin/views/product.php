@@ -1,5 +1,6 @@
 <?php echo $this->load->view('admin/header');?>
 <?php echo $this->load->view('admin/sidebar');?>
+<script type="text/javascript" src="/resources/js/product.js"></script>
 <div class="main-content">
     <div class="breadcrumbs" id="breadcrumbs">
         <script type="text/javascript">
@@ -98,9 +99,9 @@
                         <a class="red" href="javascript:void(0)" onclick="PropApp.delproduct(<?php echo $result[$i]['id']; ?>)">
                             <i class="icon-trash bigger-130"></i>
                         </a>
-                        <a class="blue" href="javascript:void(0)" onclick="">
+                        <a class="blue" href="javascript:void(0)"  >
                             <label>
-                                <input type="checkbox" class="ace" />
+                                <input type="checkbox" class="ace" onclick="PropApp.paddElite(this)" value="<?php echo $result[$i]['id']; ?>" <?php if($result[$i]['elite']==1) echo "checked"; ?>/>
                                 <span class="lbl">精选</span>
                             </label>
                         </a>
@@ -115,9 +116,9 @@
                             <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
                                 <li>
                                     <a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="icon-zoom-in bigger-120"></i>
-																				</span>
+										<span class="blue">
+											<i class="icon-zoom-in bigger-120"></i>
+										</span>
                                     </a>
                                 </li>
 

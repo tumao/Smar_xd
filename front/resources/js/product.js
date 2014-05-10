@@ -144,14 +144,19 @@ var PropApp = (function($){
 			});
 		}
 	};
-	this.paddElite = function(pid){
+	this.paddElite = function(obj_check){
+		// console.log(pid);
+		var stat = $(obj_check).prop('checked');
+		var pid = $(obj_check).val();
 		$.ajax({
-			url:'/admin/index/product_add_elite?pid='+pid
-			type:'get'
+			url:'/admin/index/product_add_elite',
+			type:'get',
+			data : {'pid':pid,'stat':stat},
 		});
 	};
 	this.addpage = function(){
 		window.location.href = "/redbud_admin/upsertproduct";
-	}
+	};
 	return this;
 })(jQuery);
+

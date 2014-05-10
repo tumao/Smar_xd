@@ -40,7 +40,7 @@ class BaseModel extends CI_Model
 			}
 		}
 		$this->db->update($table,$data);
-		//echo $this->db->last_query();
+		// echo $this->db->last_query();exit;
 	}
 
 	public function upsert($table,$data)
