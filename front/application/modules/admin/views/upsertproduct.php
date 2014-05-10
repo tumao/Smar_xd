@@ -70,7 +70,7 @@
 <div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="form-field-5"> 信托公司 </label>
     <div class="col-sm-9">
-        <select id="form-field-5" class="col-xs-10 col-sm-5">
+        <select id="form-field-5" name="company_name" class="col-xs-10 col-sm-5">
             <option value="<?php echo $product['company_name']; ?>"><?php echo $product['company_name']; ?></option>
             <?php foreach ($product['company_group'] as $val) { ?>
                 <option value="<?php echo $val['name']; ?>"><?php echo $val['name']; ?></option>
@@ -125,7 +125,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-10"> 利息分配 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="productinfo" class="col-xs-10 col-sm-5" name="" value="<?php echo $product['interest_distribution_name']; ?>" />
+        <input type="text" id="interest_distribution_name" class="col-xs-10 col-sm-5" name="interest_distribution_name" value="<?php echo $product['interest_distribution_name']; ?>" />
     </div>
 </div>
 

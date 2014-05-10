@@ -120,7 +120,7 @@ class Index extends AbaseController {
             unset( $data['xintuo_name']);
         }
         $id = $this->products_model->upsert('products',$data);
-        return $id;
+        echo $id;
     }
     public function company() {
         $this->output->cache(1/60);
@@ -448,7 +448,7 @@ class Index extends AbaseController {
 
     private function get_company_id( $company_name){
         $this->load->model('products_model');
-        $company = $this->products_model->search('commpany',array('name'=>$company_name),null,1);
+        $company = $this->products_model->search('company',array('name'=>$company_name),null,1);
         return $company['id'];
     }
     private function get_iint_name( $iint_id ){

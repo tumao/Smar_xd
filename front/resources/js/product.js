@@ -34,11 +34,9 @@ var PropApp = (function($){
 		var formdata = {};
 		for( x in fields ){
 			formdata[fields[x]] = $(xform[fields[x]]).val();
-			// console.log( formdata.short_name);
+			console.log( formdata);
 			// alert(xform[x].val());
 		}
-
-
 		if(  !$.isNumeric( formdata.circulation) ){
 			alert('预计发行规模 为数字！');
 			return;
@@ -57,51 +55,65 @@ var PropApp = (function($){
 		}
 		
 		else if( formdata.short_name == ''){
-			alert('产品简称不可为空！');
+			alert('产品名 不可为空！');
 			return ;
 		}
 		else if( formdata.full_name == ''){
-			alert('产品简称不可为空！');
+			alert('产品全名 不可为空！');
+			return false;
 		}
 		else if( formdata.tip == ''){
 			alert('产品简介不可为空！');
+			return false;
 		}
 		else if( formdata.duration == ''){
 			alert('存续期  不可为空！');
+			return false;
 		}
 		else if( formdata.income_rate == ''){
 			alert('预期年收益率  不可为空！');
+			return false;
 		}
 
 		else if( formdata.pledge_object == ''){
 			alert('抵押物 不可为空！');
+			return false;
 		}
 		else if( formdata.pledge_rate == ''){
 			alert('抵押率 不可为空！');
+			return false;
 		}
 		else if( formdata.productinfo == ''){
-			alert('产品简介 不可为空！');
+			alert('产品说明 不可为空！');
+			return false;
 		}
 		else if( formdata.purpose_info == ''){
 			alert('投资方向 不可为空！');
+			return false;
 		}
 		else if( formdata.risk_control_info == ''){
 			alert('风险控制 不可为空！');
+			return false;
 		}
 		else if( formdata.payment_info == ''){
 			alert('还款来源 不可为空！');
+			return false;
 		}
 		else if( formdata.guarantor_info == ''){
 			alert('担保方介绍 不可为空！');
+			return false;
 		}
 		else if( formdata.financingpart_info == ''){
 			alert('融资方介绍 不可为空！');
+			return false;
 		}
 		else if( formdata.depositary_info == ''){
 			alert('受托人 不可为空！');
+			return false;
 		}
 		else if( formdata.more_info == ''){
 			alert('相关信息 不可为空！');
+			return false;
 		}
 
 
@@ -109,8 +121,10 @@ var PropApp = (function($){
 			'url':'/admin/index/save_product',
 			'data':formdata,
 			'type':'POST',
-			'success':function(){
-				window.location.href = "/redbud_admin/product";
+			'success':function(id){
+				if(id){
+					window.location.href = "/redbud_admin/product";
+				}
 			}
 		});
 

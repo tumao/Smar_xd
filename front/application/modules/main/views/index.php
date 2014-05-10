@@ -549,17 +549,12 @@
 			$(this).click(function(event){
 				var _this = $(this);
 				var _content = $("div.xt_tab_1");
-				if(_this.attr('flag')=='false'){
-						// $.get('/main/index/data?sort='+$(this).attr('sort'),function(data){
-						// 	console.log( data.id);
-						// 	// _content.find('div.tab_con').eq(i).find("tbody").append(data);
-      //                   });
+				if(1){
                         $.ajax({
                         	'url':'/main/index/data?sort='+$(this).attr('sort'),
                         	'dataType':'json',
                         	'type': 'post',
                         	'success':function(data){
-                        		console.log( data);
                         		_content.find('div.tab_con').find("tbody").empty();
                         		var con;
                         		for( var i=0; i<data.length;i++){
@@ -577,7 +572,6 @@
 									"<td class='pro_income'><span class='f_f60'>"+data[i].income_rate+"%</span></td></tr>";
 									_content.find('div.tab_con').find("tbody").append(con);
                         		}
-                        		// console.log( data[0].id);
                         		
                         	}
                         });

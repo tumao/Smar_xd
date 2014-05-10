@@ -28,31 +28,18 @@ class Index extends BaseController {
 	public function more_city(){
 		$this->load->view('more_citys');
 	}
-
-	// public function data(){
-	// 	$sort = $this->input->get_post('sort');
-	// 	//精选
-	// 	$prod = array();
-	// 	// $prod_elite = $this->products_model->search('products',array('elite'=>1),'id asc');
-	// 	// $prod['prod_elite'] = $prod_elite;
-	// 	// //产品收益排行，待修改
-	// 	// $prod_sort	= $this->products_model->search('products',array(),'id asc','5');
-	// 	// $prod['prod_sort'] = $prod_sort;
-	// 	//热门机构，待修改
-	// 	$hot_company = $this->products_model->search('company',array(),'id asc','5');
-	// 	$prod['hot_company'] = $hot_company;
-	// 	exit(json_encode( $hot_company));
-
-	// }
+	//信托产品收益排行
 	public function data(){
 		if( $this->input->get_post('sort')=='year'){
-			$products = $this->products_model->search('products',array(),'duration desc',5);
+			$products = $this->products_model->search('products',array(),'duration desc',6);
 		}else if( $this->input->get_post('sort')=='zx'){
-			$products = $this->products_model->search('products',array('xintuo_type_id'=>1),'id desc',5);
+			$products = $this->products_model->search('products',array('xintuo_type_id'=>1),'id desc',6);
 		}else if($this->input->get_post('sort')=='bzjx'){
-			$products = $this->products_model->search('products',array(),' desc',5);
+			$products = $this->products_model->search('products',array(),' desc',6);
 		}else if($this->input->get_post('sort')=='fifty'){
-			$products = $this->products_model->search('products',array(),'min_sub_amount desc',5);
+			$products = $this->products_model->search('products',array(),'min_sub_amount desc',6);
+		}else if($this->input->get_post('sort')=='high'){
+			$products = $this->products_model->search('products',array(),'income_rate desc',6);
 		}
 
 		foreach ($products as $key => &$val) {
@@ -62,6 +49,7 @@ class Index extends BaseController {
 		exit(json_encode( $products));
 		
 	}
+	//热门信托机构
 	public function hot_company(){
 		$sort = $this->input->get_post('sort');
 

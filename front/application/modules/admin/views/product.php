@@ -118,17 +118,17 @@
 
                                 <li>
                                     <a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="icon-edit bigger-120"></i>
-																				</span>
+										<span class="green">
+											<i class="icon-edit bigger-120"></i>
+										</span>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="icon-trash bigger-120"></i>
-																				</span>
+    									<span class="red">
+    										<i class="icon-trash bigger-120"></i>
+    									</span>
                                     </a>
                                 </li>
                             </ul>
