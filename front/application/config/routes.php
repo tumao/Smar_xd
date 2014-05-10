@@ -51,7 +51,7 @@ $route['lesson/lessoninfo'] = "lesson/index/less_info";
 $route['guide'] = "guide/index/index";
 $route['guide/guideinfo'] = "guide/index/daogou_info";
 
-$route['consult'] = "company/index/index";
+$route['consult'] = "consult/index/index";
 $route['connect'] = "company/index/index";
 
 $route['login']	= "admin/index/login";

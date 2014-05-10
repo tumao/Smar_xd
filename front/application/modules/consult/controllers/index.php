@@ -3,11 +3,14 @@
 class Index extends BaseController {
 	public function __construct(){
 		parent::__construct();
+		$this->load->model('consult_model');
 	}
 	
 	public function index()
 	{
-		$this->load->view('index');
+		$zixun = $this->consult_model->search('zixun',array(),'id asc');
+		$data['zixun'] = $zixun;
+		$this->load->view('index', $data);
 	}
 
 }
