@@ -144,6 +144,12 @@ var PropApp = (function($){
 			});
 		}
 	};
+	this.paddElite = function(pid){
+		$.ajax({
+			url:'/admin/index/product_add_elite?pid='+pid
+			type:'get'
+		});
+	};
 	this.addpage = function(){
 		window.location.href = "/redbud_admin/upsertproduct";
 	}

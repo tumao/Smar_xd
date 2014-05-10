@@ -5,7 +5,6 @@
         <script type="text/javascript">
             try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
         </script>
- <?php //var_dump( $result); ?> 
         <ul class="breadcrumb">
             <li>
                 <i class="icon-home home-icon"></i>
@@ -98,6 +97,12 @@
 
                         <a class="red" href="javascript:void(0)" onclick="PropApp.delproduct(<?php echo $result[$i]['id']; ?>)">
                             <i class="icon-trash bigger-130"></i>
+                        </a>
+                        <a class="blue" href="javascript:void(0)" onclick="">
+                            <label>
+                                <input type="checkbox" class="ace" />
+                                <span class="lbl">精选</span>
+                            </label>
                         </a>
                     </div>
 

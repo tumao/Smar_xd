@@ -128,6 +128,7 @@ class Index extends AbaseController {
         $this->products_model->delete('products',array('id'=>$pid));
         echo 1;
     }
+    public function product_add_elite
     public function company() {
         $this->output->cache(1/60);
         $this->load->model("company_model");
