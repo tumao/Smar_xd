@@ -96,7 +96,7 @@
                             <i class="icon-pencil bigger-130"></i>
                         </a>
 
-                        <a class="red" href="#">
+                        <a class="red" href="javascript:void(0)" onclick="PropApp.delproduct(<?php echo $result[$i]['id']; ?>)">
                             <i class="icon-trash bigger-130"></i>
                         </a>
                     </div>

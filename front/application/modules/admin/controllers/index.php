@@ -122,6 +122,12 @@ class Index extends AbaseController {
         $id = $this->products_model->upsert('products',$data);
         echo $id;
     }
+    public function delproduct(){
+        $this->load->model('products_model');
+        $pid = $this->input->get_post('pid');
+        $this->products_model->delete('products',array('id'=>$pid));
+        echo 1;
+    }
     public function company() {
         $this->output->cache(1/60);
         $this->load->model("company_model");

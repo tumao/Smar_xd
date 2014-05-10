@@ -130,6 +130,20 @@ var PropApp = (function($){
 
 
 	};
+	this.delproduct = function(pid){
+		var r = confirm('确认要删除这条数据?');
+		if(r){
+			$.ajax({
+				url: '/admin/index/delproduct?pid='+pid,
+				type: 'get',
+				success : function( r){
+					if(r){
+						window.location.href = "/redbud_admin/product";
+					}
+				}
+			});
+		}
+	};
 	this.addpage = function(){
 		window.location.href = "/redbud_admin/upsertproduct";
 	}
