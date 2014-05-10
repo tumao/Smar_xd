@@ -1,5 +1,6 @@
 <?php echo $this->load->view('admin/header');?>
 <?php echo $this->load->view('admin/sidebar');?>
+<script type="text/javascript" src="/resources/js/company.js"></script>
 <div class="main-content">
     <div class="breadcrumbs" id="breadcrumbs">
         <script type="text/javascript">
@@ -94,6 +95,14 @@
                                         <a class="red" href="#" onclick="delete_company('<?php echo $result[$i]['id'];?>')">
                                             <i class="icon-trash bigger-130"></i>
                                         </a>
+                                        <a href="#" class="green">
+                                        <!--     <input type="checkbox" class="ace" onclick="Company.ishot(this)" value=<?php echo $result[$i]['id']; ?>>
+                                            <span>热门信托机构</span> -->
+                                             <label>
+                                                <input type="checkbox" class="ace"  onclick="Company.ishot(this)" value="<?php echo $result[$i]['id']; ?>" <?php if($result[$i]['ishot']==1) echo "checked"; ?> />
+                                                <span class="lbl">热门信托机构</span>
+                                            </label>
+                                        </a>
                                     </div>
 
                                     <div class="visible-xs visible-sm hidden-md hidden-lg">
@@ -105,25 +114,25 @@
                                             <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
                                                 <li>
                                                     <a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="icon-zoom-in bigger-120"></i>
-																				</span>
+    													<span class="blue">
+    														<i class="icon-zoom-in bigger-120"></i>
+    													</span>
                                                     </a>
                                                 </li>
 
                                                 <li>
                                                     <a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="icon-edit bigger-120"></i>
-																				</span>
+														<span class="green">
+															<i class="icon-edit bigger-120"></i>
+														</span>
                                                     </a>
                                                 </li>
 
                                                 <li>
                                                     <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="icon-trash bigger-120"></i>
-																				</span>
+														<span class="red">
+															<i class="icon-trash bigger-120"></i>
+														</span>
                                                     </a>
                                                 </li>
                                             </ul>

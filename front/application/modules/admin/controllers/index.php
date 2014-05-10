@@ -196,6 +196,14 @@ class Index extends AbaseController {
         redirect("/redbud_admin/company");
     }
 
+    public function add_hot_company(){
+        $this->load->model('company_model');
+        $stat = $this->input->get_post('stat');
+        $cid = $this->input->get_post('cid');
+        $stat = $stat == 'true' ? '1' : '0';
+        $this->company_model->updateWhere('company',array('ishot'=>$stat),array('id'=>$cid));
+    }
+
     public function del_company() {
         $this->load->model('company_model');
         $id = $_POST['id'];
