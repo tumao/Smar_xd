@@ -14,14 +14,10 @@
             <h2>信托导购</h2>
 
             <div class="jzallmap">
-                <ul class="">
-                    <?php foreach($result as $val){ ?>
-                    <li style="font-size:14px;">
-                        <a href="/guide/guideinfo?id=<?php echo $val['id']; ?>">
-                            <?php echo $val['title']; ?>
-                        </a>
-                    </li>
-                    <?php } ?>
+                <ul class="" style="padding:20px;">
+                     <p style="font-size:20px; width:400px; margin:0 auto;"><?php echo $result['title']; ?> </p>
+                     <p style="width:200px; margin:0 auto;"> <?php echo $result['ctime']; ?></p>
+                      <div style="border-top:1px solid gray;"><?php echo $result['content']; ?></div>
                 </ul>
             </div>
 

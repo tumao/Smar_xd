@@ -15,9 +15,9 @@
 
             <div class="jzallmap">
                 <ul class="">
-                  <p><?php echo $result['title']; ?> </p>
-                  <?php echo $result['ctime']; ?>
-                  <div><?php echo $result['content']; ?></div>
+                  <p style="font-size:18px; margin:0 auto; width:200px;"><?php echo $result['title']; ?> </p>
+                  <p style="width:200px;font-size:12px; margin:0 auto;"><?php echo $result['ctime']; ?></p>
+                  <div style="border-top:1px solid gray; padding:10px;"><?php echo $result['content']; ?></div>
                 </ul>
             </div>
 

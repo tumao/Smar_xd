@@ -30,9 +30,9 @@
             <div class="col-xs-12">
                 <!-- PAGE CONTENT BEGINS -->
                  <h3 class="smaller lighter blue" style="display: inline;">信托导购列表</h3>
-                <button class="btn btn-primary" style="float: right;margin-right: 10px;" onclick="Poc.addpage()">
+             <!--    <button class="btn btn-primary" style="float: right;margin-right: 10px;" onclick="Poc.addpage()">
                     <i class="icon-plus align-top bigger-125"></i>添加
-                </button>
+                </button> -->
                  <table id="sample-table-2" class="table table-striped table-bordered table-hover">
             <thead>
             <tr>
@@ -69,17 +69,17 @@
            
                 <td>
                     <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-                        <a class="blue" href="#">
+                     <!--    <a class="blue" href="#">
                             <i class="icon-zoom-in bigger-130"></i>
-                        </a>
+                        </a> -->
 
                         <a class="green" href="/redbud_admin/upsertdaogou?cid=<?php echo $result[$i]['id']; ?>">
                             <i class="icon-pencil bigger-130"></i>
                         </a>
 
-                        <a class="red" href="#">
+                       <!--  <a class="red" href="#">
                             <i class="icon-trash bigger-130"></i>
-                        </a>
+                        </a> -->
                     </div>
 
                     <div class="visible-xs visible-sm hidden-md hidden-lg">

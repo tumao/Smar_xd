@@ -2,9 +2,9 @@
 
                                                     <div class="sm-mod-site">
   <span class="banfirtxt">当前位置：</span>
-<a href="{$this->createUrl('/xt/default/index')}">首页</a>
+<a href="/">首页</a>
 <span class="icon-arrl">&gt;&gt;</span>
-<a href="http://www.jinfuzi.com/xintuo/company">信托课堂</a>
+<a href="/lesson">信托课堂</a>
 </div>
 <div class="xtmain">
 
@@ -23,6 +23,7 @@
                     </li>
                     <?php } ?>
                 </ul>
+                <a href="">-1-</a>
             </div>
 
         </div>
@@ -77,57 +78,12 @@
                 </tr>
             </thead>
             <tbody>
-                                <tr>
+                <tr>
                     <td class="cen"><span class="tbiconnum numred">1</span></td>
                     <td><p><a target="_blank" title="普仁7号财富管理基金（I级） " href="http://www.jinfuzi.com/product/0113204">普仁银行</a></p></td>
                     <td class="cen"><span class="c_sy">11.00%</span></td>
                 </tr>
-                                <tr>
-                    <td class="cen"><span class="tbiconnum numred">2</span></td>
-                    <td><p><a target="_blank" title="华澳信托·郎溪商会大厦项目（二期） " href="http://www.jinfuzi.com/product/0113183">郎溪商会大厦（二期） </a></p></td>
-                    <td class="cen"><span class="c_sy">10.50%</span></td>
-                </tr>
-                                <tr>
-                    <td class="cen"><span class="tbiconnum numred">3</span></td>
-                    <td><p><a target="_blank" title="中融信托-大华融享集合资金信托计划1期" href="http://www.jinfuzi.com/product/0113173">大华融享1期</a></p></td>
-                    <td class="cen"><span class="c_sy">10.00%</span></td>
-                </tr>
-                                <tr>
-                    <td class="cen"><span class="tbiconnum">4</span></td>
-                    <td><p><a target="_blank" title="四川信托-睿宝42号股权收益权投资集合资金信托计划" href="http://www.jinfuzi.com/product/0113193">睿宝42号</a></p></td>
-                    <td class="cen"><span class="c_sy">10.00%</span></td>
-                </tr>
-                                <tr>
-                    <td class="cen"><span class="tbiconnum">5</span></td>
-                    <td><p><a target="_blank" title="中融信托-融石新源燕府项目集合信托计划" href="http://www.jinfuzi.com/product/0113206">融石新源燕府</a></p></td>
-                    <td class="cen"><span class="c_sy">10.00%</span></td>
-                </tr>
-                                <tr>
-                    <td class="cen"><span class="tbiconnum">6</span></td>
-                    <td><p><a target="_blank" title="国民信托-贵州思州润峰股权收益权投资集合资金信托计划" href="http://www.jinfuzi.com/product/0113207">贵州思州润峰</a></p></td>
-                    <td class="cen"><span class="c_sy">10.00%</span></td>
-                </tr>
-                                <tr>
-                    <td class="cen"><span class="tbiconnum">7</span></td>
-                    <td><p><a target="_blank" title="四川信托-绵阳兴源环亚股权投资集合资金信托计划" href="http://www.jinfuzi.com/product/0113210">绵阳兴源环亚</a></p></td>
-                    <td class="cen"><span class="c_sy">10.00%</span></td>
-                </tr>
-                                <tr>
-                    <td class="cen"><span class="tbiconnum">8</span></td>
-                    <td><p><a target="_blank" title="方正东亚-辽滨沿海集合资金信托计划" href="http://www.jinfuzi.com/product/0113000">辽滨沿海集合资金</a></p></td>
-                    <td class="cen"><span class="c_sy">10.00%</span></td>
-                </tr>
-                                <tr>
-                    <td class="cen"><span class="tbiconnum">9</span></td>
-                    <td><p><a target="_blank" title="华澳信托-上海三盛宏业融资项目集合信托计划" href="http://www.jinfuzi.com/product/0113208">上海三盛宏业</a></p></td>
-                    <td class="cen"><span class="c_sy">9.80%</span></td>
-                </tr>
-                                <tr>
-                    <td class="cen"><span class="tbiconnum">10</span></td>
-                    <td><p><a target="_blank" title="中融信托-中城建1号信托贷款集合资金信托计划" href="http://www.jinfuzi.com/product/0113177">中城建1号</a></p></td>
-                    <td class="cen"><span class="c_sy">9.50%</span></td>
-                </tr>
-                            </tbody>
+            </tbody>
         </table>
     </div>
 </div>    <div class="clear"></div>
