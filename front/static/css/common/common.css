@@ -65,7 +65,7 @@ a:hover{text-decoration:none;color:#f60;cursor:pointer;}
 .md_hd_logowrap{padding:20px 0;}
 /*logo*/
 .md_hd_logo{float:left;width:520px;}
-.md_hd_logo .logo{float:left;width:240px;background:url(../../img/common/logo.gif) no-repeat left center;}
+.md_hd_logo .logo{float:left;width:270px;background:url(../../img/common/logo.jpg) no-repeat left center;}
 .md_hd_logo .logo a{display:block;height:64px;text-indent:-99999em;}
 .md_hd_logo .logo_info{float:left;margin-top:17px;padding-left:18px;border-left:1px solid #228BD5;line-height:1em;}
 .md_hd_logo .logo_info .city{height:20px;position:relative;z-index:901;}

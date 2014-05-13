@@ -290,14 +290,10 @@
     <tr>
         <td width="40">序号</td>
         <td>信托产品名称</td>
-        <td> 起始资金(万)<a target="_self" class="ic-arrowdown"
-                       href="http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-0-0-1-1#anchor_page_turning"></a></td>
-        <td> 产品期限(月)<a target="_self" class="ic-arrowdown"
-                       href="http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-0-0-3-1#anchor_page_turning"></a></td>
-        <td> 预期收益(年化)<a target="_self" class="ic-arrowdown"
-                        href="http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-0-0-5-1#anchor_page_turning"></a></td>
-        <td> 发售日期<a target="_self" class="ic-arrowup"
-                    href="http://www.jinfuzi.com/xintuo/xtlist-0-0-0-0-0-0-0-0-0-8-1#anchor_page_turning"></a></td>
+        <td> 起始资金(万)</td>
+        <td> 产品期限(月)</td>
+        <td> 预期收益(年化)</td>
+        <td> 发售日期</td>
         <td>投资方向</td>
         <td>信托分类</td>
         <td>信托公司</td>
