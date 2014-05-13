@@ -34,7 +34,7 @@ var PropApp = (function($){
 		var formdata = {};
 		for( x in fields ){
 			formdata[fields[x]] = $(xform[fields[x]]).val();
-			console.log( formdata);
+			// console.log( formdata);
 			// alert(xform[x].val());
 		}
 		if(  !$.isNumeric( formdata.circulation) ){

@@ -98,10 +98,10 @@ class Index extends AbaseController {
     public function save_product(){
         $this->load->model('products_model');
         // $data = $this->input->get_post('');
-        if( $_REQUEST['id'] == ''){
-            unset( $_REQUEST['id']);
+        if( $_POST['id'] == ''){
+            unset( $_POST['id']);
         }
-        $data = $_REQUEST;
+        $data = $_POST;
         if( $data['company_name']){
             $data['companyid'] = $this->get_company_id( $data['company_name']);
             unset( $data['company_name']);
