@@ -284,7 +284,7 @@
     <div class="clear">
     </div>
 
-    <div id='J_prds_list' curUrl="http://www.jinfuzi.com/xintuo/xtlist">
+    <div id='J_prds_list' curUrl="/product">
     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="index-products-table  tbtheadline shadow">
     <thead>
     <tr>
@@ -303,14 +303,12 @@
     <tbody>
     <?php
     for($i = 0; $i < count($products); $i++) {
-
     ?>
     <tr <?php if(($i+1)%2==0) echo 'class="bgf7f7f7"';?>>
         <td><span class="<?php $c = $i<3?"index-NB-yellow":"index-NB"; echo $c;?>"><?php echo $i+1 + ($params[11]-1) * $limit;?></span></td>
-        <td id="index-producs-name">
-
+        <td id="index-products-name">
             <div class="pdnamepop">
-                <a title="<?php echo $products[$i]['full_name']?>" target="_blank" href="http://www.jinfuzi.com/product/014245"><?php echo $products[$i]['short_name']?></a>
+                <a title="<?php echo $products[$i]['full_name']?>" target="_blank" href="/productdetail/<?php echo $products[$i]['id'];?>"><?php echo $products[$i]['short_name']?></a>
                 <div style="left:150px; z-index:9999; display: none" class="namepopcon shadow">
                     <span class="popiconarr"></span>
 
@@ -321,43 +319,38 @@
                             <tbody>
                             <tr>
                                 <th width="150">信托公司：</th>
-                                <td width="180"><?php echo $products[$i]['company_name']?></td>
+                                <td width="180"><?php echo $products[$i]['company_name'];?></td>
                                 <th width="120">投资行业：</th>
-                                <td width="120">基础设施</td>
+                                <td width="120"><?php if(isset($products[$i]['investorientation_name'])) echo $products[$i]['investorientation_name'];?></td>
                             </tr>
                             <tr>
                                 <th width="120">发售日期：</th>
-                                <td>2014-04-10</td>
+                                <td><?php echo date('Y-m-d',strtotime($products[$i]['sell_date']));?></td>
                                 <th width="120">预期收益：</th>
-                                <td>9.00%</td>
+                                <td><?php echo $products[$i]['income_rate'];?>.00%</td>
                             </tr>
                             <tr>
                                 <th width="120">预计发行规模(万)：</th>
-                                <td>20000万</td>
+                                <td><?php echo ($products[$i]['circulation']/10000).'万';?></td>
                                 <th width="120">最低认购资金(万)：</th>
-                                <td>100万</td>
+                                <td><?php echo ($products[$i]['min_sub_amount']/10000).'万'?></td>
                             </tr>
 
                             <tr>
                                 <th valign="top" rowspan="1">收益说明</th>
                                 <td bgcolor="#EFFBFF" style="border-style:dashed">
-                                    100万及以上
+                                    <?php echo $products[$i]['income_explain'];?>
                                 </td>
-                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2">年化收益率为 9%</td>
+                                <td bgcolor="#EFFBFF" style="border-style:dashed" colspan="2"><?php echo $products[$i]['income_explain'];?></td>
                             </tr>
 
                             <tr>
                                 <th valign="top">风险控制</th>
-                                <td colspan="3"><p>(1)保证担保：中国城建六局集团及安徽公司为融资人偿还信托本息承担无限连带责任保证担保。</p>
-
-                                    <p>(2)资金监管：我司拟对第二还款来源中涉及的回款账户进行监管，保证市政项目的政府回购资金全部进入该监管账户。</p>
-
-                                    <p>(3)质押担保：亳州市财政局出具了《关于亳州市市政道路及公园水系治理工程BT项目回购承诺函》，承诺财政收入优先安排支付项目回购款作为第二还款来源。</p>
-                                </td>
+                                <td colspan="3"><?php echo $products[$i]['risk_control_info'];?></td>
                             </tr>
                             <tr>
                                 <th valign="top">产品说明</th>
-                                <td colspan="3"><br/></td>
+                                <td colspan="3"><?php echo $products[$i]['productinfo'];?></td>
                             </tr>
                             </tbody>
                         </table>
@@ -369,11 +362,11 @@
         <td><?php echo $products[$i]['duration'];?>个月</td>
         <td><?php echo $products[$i]['income_rate'];?>.00%</td>
         <td><?php echo date('Y-m-d',strtotime($products[$i]['sell_date']));?></td>
-        <td>基础设施</td>
-        <td>贷款类</td>
+        <td><?php echo $products[$i]['investorientation_name'];?></td>
+        <td><?php echo $products[$i]['xintuo_type_name'];?></td>
 
-        <td><a href="http://www.jinfuzi.com/xintuo/c-6" target="_blank">中融信托</a></td>
-        <td><a class="index-details" href="http://www.jinfuzi.com/product/014245" target="_blank">查看详情</a></td>
+        <td><a href="company/detail?cid=<?php echo $products[$i]['companyid'];?>" target="_blank"><?php echo $products[$i]['company_name'];?></a></td>
+        <td><a class="index-details" href="/productdetail/<?php echo $products[$i]['id'];?>" target="_blank">查看详情</a></td>
     </tr>
     <?php
     }

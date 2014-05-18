@@ -1,20 +1,4 @@
 <?php echo $this->load->view('header'); ?>
-<!-- 二级菜单 -->
-<!-- <div class="hd_subnav"> -->
-<!--     <div class="layout"> -->
-<!--         <div class="hd_subnav_con clearfix"> -->
-          <!--  如果是右侧二级菜单，在subnav_list上增加一个class类right -->
-<!-- 			 <ul class="subnav_list" id="yw2"> -->
-<!-- 				<li class="active"><a href="http://www.jinfuzi.com/xintuo/"><span>信托首页</span></a><span class='act_shadow'><i class='arrow'></i></span></li> -->
-<!-- 				<li><a href="http://www.jinfuzi.com/xintuo/list"><span>信托产品</span></a><span class='act_shadow'><i class='arrow'></i></span></li> -->
-<!-- 				<li><a href="http://www.jinfuzi.com/xintuo/company"><span>信托公司</span></a><span class='act_shadow'><i class='arrow'></i></span></li> -->
-<!-- 				<li class="last"><a href="/xintuo/xe.html"><span>优选小额</span></a><span class='act_shadow'><i class='arrow'></i></span></li> -->
-<!-- 			</ul>	                    	 -->
-<!-- 			<p class="subnav_msg">组团就能做到10万起！加入金斧子信托产品团购QQ群 <a title="金斧子—理财交流" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=fbb9d9b53f7c39ccdbf4074b6a2b0a23baf34e30518e1346359aa8787784f610">236163656</a></p> -->
-<!--          </div> -->
-<!--     </div>    -->
-<!-- </div> -->
-
 // <script type="text/javascript">
 // 	jQuery(function(){
 // 		$("div.JFZ_Slider").jfz_slider();
