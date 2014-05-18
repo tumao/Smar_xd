@@ -132,7 +132,7 @@
         <li class="mi-long <?php if( $this->uri->segment(1) == 'company') echo 'active';?>"><a href="/company">信托公司</a></li>
         <li class="mi-short <?php if( $this->uri->segment(1) == 'lesson') echo 'active';?>"><a href="/lesson">信托课堂</a></li>
         <li class="mi-short <?php if( $this->uri->segment(1) == 'guide') echo 'active';?>"><a href="/guide">信托导购</a></li>
-        <li class="mi-long <?php if( $this->uri->segment(1) == 'consult') echo 'active';?>"><a href="/consult">信托咨询</a></li>
+        <li class="mi-long <?php if( $this->uri->segment(1) == 'consult') echo 'active';?>"><a href="/consult">信托资讯</a></li>
         <li class="mi-short <?php if( $this->uri->segment(1) == 'connect') echo 'active';?>"><a href="/connect">联系我们</a></li>
         </ul>
 

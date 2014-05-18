@@ -19,6 +19,7 @@
                     <li style="font-size:14px;">
                         <a href="/lesson/lessoninfo?id=<?php echo $val['id']; ?>">
                             <?php echo $val['title']; ?>
+                             <span style="float:right;"> <?php echo $val['ctime']; ?> </span>
                         </a>
                     </li>
                     <?php } ?>

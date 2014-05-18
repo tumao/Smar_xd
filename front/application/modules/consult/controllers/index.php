@@ -12,6 +12,12 @@ class Index extends BaseController {
 		$data['zixun'] = $zixun;
 		$this->load->view('index', $data);
 	}
+	public function info(){
+		$id = $this->input->get_post('id');
+		$info = $this->consult_model->search('zixun',array('id'=>$id),null,1);
+		$data['info'] = $info;
+		$this->load->view('consult_info', $data);
+	}
 
 }
 
