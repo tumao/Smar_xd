@@ -318,7 +318,11 @@ class Index extends AbaseController {
         $this->load->view('contactus');
     }
     public function editaccount() {
-        $this->load->view('editaccount');
+        $condition = array();
+        $this->load->model('admin_model');
+        $users = $this->admin_model->user_list();
+        $data['users'] = $users;
+        $this->load->view('editaccount',$data);
     }
 
     public function login(){
