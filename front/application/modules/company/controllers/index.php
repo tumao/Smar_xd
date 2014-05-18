@@ -41,12 +41,8 @@ class Index extends BaseController {
             'id' => $company_id
         );
 
-        $company = $this->company_model->search('company', $condition)[0];
+        $company = $this->company_model->search('company', $condition);
         $data['company'] = $company;
-        /*
-        echo '<pre>';
-        var_dump($company);exit;
-        */
 
         $this->load->view('detail', $data);
     }
