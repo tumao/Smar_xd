@@ -22,11 +22,15 @@ class Admin_model extends BaseModel {
 	}
 
 	/*修改密码*/
-	public function chg_passwd( $email, $npasswd){
+	public function chg_passwd( $uid, $npasswd, $opasswd){
+		$r = $this->search('user',array('passwd'=>$opasswd),null,1);
+		if( empty( $r)){
+			return false;
+		}
 		//md5(密码+密码的第三位到最后)
 		$id = $this->updataWhere('user',
 				array( 'passwd' => md5($npasswd.substr($npasswd, 3)) ), 
-				array('email' => $email));
+				array('id' => $uid));
 
 		return true;
 	}

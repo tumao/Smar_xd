@@ -30,20 +30,35 @@
         <div class="row">
             <div class="col-xs-12">
                 <!-- PAGE CONTENT BEGINS -->
-                <form name="x-form"  class="form-horizontal" id="x-form" role="form" action="/redbud_admin/savexintuotype" method="post">
-                    <div class="form-group" <?php if(!isset($result['id']) || $result['id'] == '') echo 'style="display:none;"' ?>>
-                        <label class="col-sm-3 control-label no-padding-right" for="id"> id: </label>
+                <form name="x-form"  class="form-horizontal" id="x-form" role="form" action="/redbud_admin/changepass" method="post">
+                <input type="hidden" name = "uid" value="<?php echo $id ?>" />
+                    <div class="form-group" >
+                        <label class="col-sm-3 control-label no-padding-right" for="id">  </label>
                         <div class="col-sm-9">
-                            <input type="hidden" name="result[id]" id="id" class="col-xs-10 col-sm-5" value="<?php echo $result['id']; ?>" />
-                            <label class="col-sm-3 control-label no-padding-right" for="id" style="text-align: left; padding-top:4px"><?php echo $result['id']?> </label>
+                            <input type="hidden" name="result[id]" id="id" class="col-xs-10 col-sm-5" value="<?php //echo $result['id']; ?>" />
+                            <label class="col-sm-3 control-label no-padding-right" for="id" style="text-align: left; padding-top:4px"><?php //echo $result['id']?> </label>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label class="col-sm-3 control-label no-padding-right" for="name"> 名称: </label>
+                        <label class="col-sm-3 control-label no-padding-right" for="name"> 旧密码: </label>
 
                         <div class="col-sm-9">
-                            <input type="text" name="result[name]" id="name" class="col-xs-10 col-sm-5" value="<?php echo $result['name']; ?>"  />
+                            <input type="text" name="oldpass" id="oldpass" class="col-xs-10 col-sm-5" value="<?php //echo $result['name']; ?>"  />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="name"> 新密码: </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" name="newpass" id="newpass" class="col-xs-10 col-sm-5" value="<?php //echo $result['name']; ?>"  />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="name"> 确认新密码: </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" name="sur_pass" id="sur_pass" class="col-xs-10 col-sm-5" value="<?php //echo $result['name']; ?>"  />
                         </div>
                     </div>
 

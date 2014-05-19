@@ -72,7 +72,7 @@
                                 <i class="icon-zoom-in bigger-130"></i>
                             </a> -->
 
-                            <a class="green" href="/redbud_admin/changepass?uid=<?php echo $users[$i]['id']; ?>">
+                            <a class="green" href="/admin/index/accountInfo?uid=<?php echo $users[$i]['id']; ?>">
                                 <i class="icon-pencil bigger-130"></i>修改密码
                             </a>
 

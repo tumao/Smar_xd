@@ -71,6 +71,7 @@ $route['redbud_admin/upsertzixun'] = "admin/index/upsert_zixun";
 
 $route['redbud_admin/contactus'] = "admin/index/contactus";
 $route['redbud_admin/editaccount'] = "admin/index/editaccount";
+$route['redbud_admin/changepass'] = "admin/index/changepasswd";
 $route['redbud_admin/upsertproduct'] = "admin/index/upsert_product";
 
 //course
