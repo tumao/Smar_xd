@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="/static//plugin/jquery.jfz.rsvform.js"></script>
 	<script type="text/javascript" src="/static/js/common/citys.js"></script>
 	<script type="text/javascript" src="/static/js/common/public.js"></script>
-	<title>金斧子 - 登录</title>
+	<title>跃盈财富 - 登录</title>
 </head>
 <body>
 	<!--logo模块-->

@@ -3,7 +3,7 @@
   <span class="banfirtxt">当前位置：</span>
 <a href="{$this->createUrl('/xt/default/index')}">首页</a>
 <span class="icon-arrl">&gt;&gt;</span>
-<a href="http://www.jinfuzi.com/xintuo/company">信托公司列表</a>
+<a href="/company">信托公司列表</a>
 </div>
 <div class="xtmain">
 
@@ -118,7 +118,7 @@
     <div class="xttitbox">
         <h2 class="sidtits kuaitit">快速搜索</h2>
         <div class="titsublink">
-            <a href="http://www.jinfuzi.com/xintuo/xtlist" target="_blank">&gt;&gt;更多</a>
+            <a href="/product" target="_blank">&gt;&gt;更多</a>
         </div>
     </div>
     <!-- xttitbox end -->
@@ -223,8 +223,23 @@
         <div class="clear"></div>
     </div>
 </div></div><!-- xtmain end --> <!--<script type='text/javascript' src='http://tb.53kf.com/kf.php?arg=10018445&style=1'></script>-->
-<script type="text/javascript">
-    document.write("<script type='text/javascript' src='http://tb.53kf.com/kf.php?arg=10018445&style=1'><\/script>");
-</script>
-<div style='display:none;'><a href='http://www.53kf.com'>在线客服系统</a></div>
 <?php echo $this->load->view('footer'); ?>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    jQuery(function($) {
+
+        $(".suoyinbox").each(function() {
+            var root = $(this);
+            root.find(".suoyinnum em").each(function(i){
+                $(this).mouseover(function(){
+                    root.find(".suoyincon").hide().eq(i).show();
+                    $(this).addClass("on").siblings("em").removeClass("on");
+                })
+            });
+        });
+
+        jQuery('body').on('click','#kf_btn_yy',function(){jQuery.yii.submitForm(this,'',{});return false;});
+        document.getElementById("bdshell_js").src="http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion="+Math.ceil(new Date()/3600000);
+    });
+    /*]]>*/
+</script>

@@ -38,7 +38,7 @@
         <div class="xt-navli">
             <ul class="tb-tabbar">
                 <li class="current">
-                    <a href="http://www.jinfuzi.com/product/014245" class="cpxq-tab">产品详情</a>
+                    <a class="cpxq-tab">产品详情</a>
                 </li>
             </ul>
         </div>

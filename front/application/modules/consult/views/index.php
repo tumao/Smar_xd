@@ -37,7 +37,7 @@
     <div class="xttitbox">
         <h2 class="sidtits kuaitit">快速搜索</h2>
         <div class="titsublink">
-            <a href="http://www.jinfuzi.com/xintuo/xtlist" target="_blank">&gt;&gt;更多</a>
+            <a href="/product" target="_blank">&gt;&gt;更多</a>
         </div>
     </div>
     <!-- xttitbox end -->
@@ -102,8 +102,4 @@
         <div class="clear"></div>
     </div>
 </div></div><!-- xtmain end --> <!--<script type='text/javascript' src='http://tb.53kf.com/kf.php?arg=10018445&style=1'></script>-->
-<script type="text/javascript">
-    document.write("<script type='text/javascript' src='http://tb.53kf.com/kf.php?arg=10018445&style=1'><\/script>");
-</script>
-<div style='display:none;'><a href='http://www.53kf.com'>在线客服系统</a></div>
 <?php echo $this->load->view('footer'); ?>

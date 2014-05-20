@@ -73,7 +73,7 @@
 							</div>
 							<div class="submit_wrap clearfix">								
 								<div class="input_control">
-									<a href="/" id="search_submit" target="_blank">
+									<a href="/product" id="search_submit" target="_blank">
 										<input type="submit" value="提交"  class="input_btn heiti" style="background-color:blue;">
 									</a>
 								</div>														
@@ -116,7 +116,6 @@
 			<div class="xt_left_item md_uc_box">
 				<div class="md_uc_hd hd_1 clearfix">
 					<div class="hd_title">
-						<span class="hd_txt heiti">金斧子精选</span>
 						<em class="hd_shadow_1"></em>
 						<em class="hd_shadow_2"></em>
 					</div>
@@ -426,47 +425,13 @@
 	function init() {
 		placeholder("WdQuestion[title]", "提交问题后，将有专家五分钟内给出最专业答疑");
 		handleSelect();
-		ads();
+		//ads();
 		search();
 		//信托产品收益排行
 	    proExpProfitSort();
 	    //信托热门信托机构
 	    hotOrganization();
 	    hotcompany();
-	    //订阅邮箱
-	    subscriptionEmail();
-	    
-	    //订阅手机号
-	    subscriptionPhone();
-		// 提问
-		$('#ask').click(function(e){
-			e.preventDefault(); // required
-			var content = $('#WdQuestion_content').val();
-			if (content) {
-				
-				$.ajax({
-					type: 'POST',
-					url: '/public/topic/ajaxAsk',
-					data: $("#ask_form").serialize(),
-					dataType: 'json',
-					async: false,
-					timeout: 5000, // 5秒超时
-					success: function(data) {
-						if (data && data['success'] === true) {
-							window.top.open("/question/detail-" + data['id'] + ".html", "_blank");
-						} else {
-							alert(data['error']['title']);
-						}
-					},
-					error: function(XMLHttpRequest, textStatus) {
-						if (textStatus === 'timeout') {
-							alert('请求超时，请稍候重试');
-						}
-					}
-				});
-			}
-
-		});
 	}
 	
 	function placeholder(name, message) {
@@ -511,8 +476,8 @@
 	}
 
 	function search() {
-		var url = "/xintuo/list-0-0-0-0-0-{init_capital}-{prd_exp_profit}-0-0-0-1.html";
-		var default_url = "/";
+		var url = "/product-{init_capital}-0-{prd_exp_profit}-0-0-0-0-0-0-0-1";
+		var default_url = "/product";
 		var capital_pattern = /\{init_capital\}/,
 			profit_pattern = /\{prd_exp_profit\}/;
 		
@@ -709,5 +674,4 @@
 
 
 </script>
-<!-- <div style='display:none;'><a href='http://www.53kf.com'>在线客服系统</a></div> -->
 <?php echo $this->load->view('footer'); ?>

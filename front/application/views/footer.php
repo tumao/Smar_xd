@@ -31,7 +31,7 @@
 	});
 })(jQuery);
 </script>
-<!--金斧子备案信息模块-->
+<!--跃盈财富备案信息模块-->
 <div class="md_ft_copyright bg_twill">
 	<div class="layout">
 		<p class="copyright">

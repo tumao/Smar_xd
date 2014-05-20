@@ -33,7 +33,7 @@
     <div class="xttitbox">
         <h2 class="sidtits kuaitit">快速搜索</h2>
         <div class="titsublink">
-            <a href="http://www.jinfuzi.com/xintuo/xtlist" target="_blank">&gt;&gt;更多</a>
+            <a href="/product" target="_blank">&gt;&gt;更多</a>
         </div>
     </div>
     <!-- xttitbox end -->
