@@ -314,9 +314,34 @@ class Index extends AbaseController {
         $data['ctime'] = date('Y-m-d H:i:s',time());
         $id = $this->daogou_model->upsert('zixun',$data);
     }
+
+    //联系我们
     public function contactus() {
-        $this->load->view('contactus');
+
+        $this->load->model('contact_model');
+        $result = $this->contact_model->search('contact',array('id <>'=> ''),'id asc');
+
+        $data['result'] = $result;
+        $this->load->view('contactus', $data);
     }
+    public function upsert_contact(){
+        $this->load->model('contact_model');
+        $result = $this->contact_model->search('contact',array('id' => 1),null,1);
+        
+        $data['result'] = $result;
+        $this->load->view('upsertcontact', $data);
+    }
+    public function save_contact(){
+        $this->load->model('contact_model');
+        $data = $_REQUEST;
+        // var_dump( $data);
+        $data['ctime'] = date('Y-m-d H:i:s',time());
+
+        // $id = $this->daogou_model->upsert('daogou',$data);
+        $this->contact_model->updateWhere('contact',array('content'=>$data['content']),array('id'=>1));
+        return 1;
+    }
+
     public function editaccount() {
         $condition = array();
         $this->load->model('admin_model');

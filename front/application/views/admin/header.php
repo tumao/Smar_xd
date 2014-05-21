@@ -78,14 +78,14 @@
         <img class="nav-user-photo" src="/static/admin/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
-									Jason
+									Admin
 								</span>
 
         <i class="icon-caret-down"></i>
     </a>
 
     <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-        <li>
+       <!--  <li>
             <a href="#">
                 <i class="icon-cog"></i>
                 Settings
@@ -97,12 +97,12 @@
                 <i class="icon-user"></i>
                 Profile
             </a>
-        </li>
+        </li> -->
 
         <li class="divider"></li>
 
         <li>
-            <a href="#">
+            <a href="/admin/index/logout">
                 <i class="icon-off"></i>
                 Logout
             </a>
