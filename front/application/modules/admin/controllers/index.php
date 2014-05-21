@@ -325,7 +325,8 @@ class Index extends AbaseController {
         $this->load->view('editaccount',$data);
     }
     public function accountInfo(){
-        $data['id'] = $this->input->get('uid');
+        // $data['id'] = $this->input->get('uid');
+        $data['id'] = 1;
         $this->load->view('upsertuser',$data);
     }
     public function changepasswd(){
@@ -336,18 +337,18 @@ class Index extends AbaseController {
             $opass = $this->input->post('oldpass');
             $npass = $this->input->post('newpass');
             $sur_pass = $this->input->post('sur_pass');
-            if( $npass != $sur_pass){
+            if( $npass == $sur_pass){
                 echo "<script>alert('新密码与确认密码不一致！');</script>";
-                header("location:/redbud_amdin/changepass",$data);
+                header("location:/redbud_amdin/index/accountInfo");
             }
 
-            $result = $this->admin_model->chg_passwd($uid, $npass, $opass);
-            if( $result == false){
-                echo "<script>alert('旧密码输入不正确！');</script>";
-                header("location:/redbud_amdin/changepass");
-            }else{
-                header('location:/redbud_amdin/editaccount');
-            }
+            // $result = $this->admin_model->chg_passwd($uid, $npass, $opass);
+            // if( $result == false){
+            //     echo "<script>alert('旧密码输入不正确！');</script>";
+            //     header("location:/redbud_amdin/changepass");
+            // }else{
+            //     header('location:/redbud_amdin/editaccount');
+            // }
         }
     }
 

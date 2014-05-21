@@ -31,7 +31,7 @@
             <div class="col-xs-12">
                 <!-- PAGE CONTENT BEGINS -->
                 <form name="x-form"  class="form-horizontal" id="x-form" role="form" action="/redbud_admin/changepass" method="post">
-                <input type="hidden" name = "uid" value="<?php echo $id ?>" />
+                <input type="hidden" name = "uid" value="1" />
                     <div class="form-group" >
                         <label class="col-sm-3 control-label no-padding-right" for="id">  </label>
                         <div class="col-sm-9">
