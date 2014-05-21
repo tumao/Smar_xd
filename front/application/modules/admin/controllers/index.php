@@ -336,19 +336,13 @@ class Index extends AbaseController {
             $data['id'] = $uid;
             $opass = $this->input->post('oldpass');
             $npass = $this->input->post('newpass');
-            $sur_pass = $this->input->post('sur_pass');
-            if( $npass == $sur_pass){
-                echo "<script>alert('新密码与确认密码不一致！');</script>";
-                header("location:/redbud_amdin/index/accountInfo");
+            $result = $this->admin_model->chg_passwd($uid, $npass, $opass);
+            if( $result == false){
+                echo 0;
+            }else{
+                // header('location:/admin/index/editaccount');
+                echo 1;
             }
-
-            // $result = $this->admin_model->chg_passwd($uid, $npass, $opass);
-            // if( $result == false){
-            //     echo "<script>alert('旧密码输入不正确！');</script>";
-            //     header("location:/redbud_amdin/changepass");
-            // }else{
-            //     header('location:/redbud_amdin/editaccount');
-            // }
         }
     }
 
@@ -360,6 +354,7 @@ class Index extends AbaseController {
         }
         if( $user_name = $this->input->get_post('username')  ){
             $passwd = $this->input->get_post('password');
+            $passwd = md5($passwd.substr($passwd, 3));
             $result = $this->admin_model->search('user',array('user_name'=>$user_name, 'passwd' => $passwd), null, 1);
             if( !empty( $result)){
                $this->session->set_userdata($result);
@@ -552,6 +547,11 @@ class Index extends AbaseController {
             $xt['id'] = $id;
         }
         return $xt['id'];
+    }
+
+    public function logout(){
+        $this->session->sess_destroy();
+        header('location:/');
     }
 
 

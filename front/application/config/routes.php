@@ -55,6 +55,7 @@ $route['consult'] = "consult/index/index";
 $route['connect'] = "company/index/index";
 
 $route['login']	= "admin/index/login";
+$route['logout'] = 'admin/index/logout';
 $route['redbud_admin'] = "admin/index/index";
 $route['redbud_admin/product'] = "admin/index/product";
 

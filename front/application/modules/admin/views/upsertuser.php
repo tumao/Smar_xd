@@ -1,5 +1,6 @@
 <?php echo $this->load->view('admin/header');?>
 <?php echo $this->load->view('admin/sidebar');?>
+<script type="text/javascript" src="/resources/js/admin.js"></script>
 <div class="main-content">
     <div class="breadcrumbs" id="breadcrumbs">
         <script type="text/javascript">
@@ -30,12 +31,12 @@
         <div class="row">
             <div class="col-xs-12">
                 <!-- PAGE CONTENT BEGINS -->
-                <form name="x-form"  class="form-horizontal" id="x-form" role="form" action="/redbud_admin/changepass" method="post">
+                <form name="x-form"  class="form-horizontal" id="x-form" role="form" >
                 <input type="hidden" name = "uid" value="1" />
                     <div class="form-group" >
                         <label class="col-sm-3 control-label no-padding-right" for="id">  </label>
                         <div class="col-sm-9">
-                            <input type="hidden" name="result[id]" id="id" class="col-xs-10 col-sm-5" value="<?php //echo $result['id']; ?>" />
+                            <input type="hidden" name="result[id]" id="id"  class="col-xs-10 col-sm-5" value="<?php echo $id; ?>" />
                             <label class="col-sm-3 control-label no-padding-right" for="id" style="text-align: left; padding-top:4px"><?php //echo $result['id']?> </label>
                         </div>
                     </div>
@@ -44,35 +45,35 @@
                         <label class="col-sm-3 control-label no-padding-right" for="name"> 旧密码: </label>
 
                         <div class="col-sm-9">
-                            <input type="text" name="oldpass" id="oldpass" class="col-xs-10 col-sm-5" value="<?php //echo $result['name']; ?>"  />
+                            <input type="password" name="oldpass" id="oldpass" class="col-xs-10 col-sm-5" value="<?php //echo $result['name']; ?>"  />
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label no-padding-right" for="name"> 新密码: </label>
 
                         <div class="col-sm-9">
-                            <input type="text" name="newpass" id="newpass" class="col-xs-10 col-sm-5" value="<?php //echo $result['name']; ?>"  />
+                            <input type="password" name="newpass" id="newpass" class="col-xs-10 col-sm-5" value="<?php //echo $result['name']; ?>"  />
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label no-padding-right" for="name"> 确认新密码: </label>
 
                         <div class="col-sm-9">
-                            <input type="text" name="sur_pass" id="sur_pass" class="col-xs-10 col-sm-5" value="<?php //echo $result['name']; ?>"  />
+                            <input type="password" name="sur_pass" id="sur_pass" class="col-xs-10 col-sm-5" value="<?php //echo $result['name']; ?>"  />
                         </div>
                     </div>
 
                     <div class="clearfix form-actions">
                         <div class="col-md-offset-3 col-md-9">
-                            <button class="btn btn-info" type="submit">
+                           <!--  <button class="btn">
                                 <i class="icon-ok bigger-110"></i>
                                 Submit
-                            </button>
+                            </button> -->
 
                             &nbsp; &nbsp; &nbsp;
-                            <button class="btn" type="reset">
+                            <button class="btn" type="reset" onclick="Admin.save()">
                                 <i class="icon-undo bigger-110"></i>
-                                Reset
+                                提交
                             </button>
                         </div>
                     </div>
