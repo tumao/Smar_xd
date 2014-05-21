@@ -11,32 +11,25 @@ class Index extends BaseController {
 
         $params = $this->deal_product_url_params();
 
-        /*
-        echo '<pre>';
-        var_dump($params);
-        var_dump(implode('-', $params));
-        */
-        //$str_params = implode('-', $params);
-
         $limit = 15;
         $condition = array(
-            'isdel' => 0
+            'products.isdel' => 0
         );
 
         switch($params[1]) {
             case 1:
-                $condition['min_sub_amount <']=500000;
+                $condition['products.min_sub_amount <']=500000;
                 break;
             case 2:
-                $condition['min_sub_amount <'] = 1000000;
-                $condition['min_sub_amount >='] = 500000;
+                $condition['products.min_sub_amount <'] = 1000000;
+                $condition['products.min_sub_amount >='] = 500000;
                 break;
             case 3:
-                $condition['min_sub_amount <'] = 3000000;
-                $condition['min_sub_amount >='] = 1000000;
+                $condition['products.min_sub_amount <'] = 3000000;
+                $condition['products.min_sub_amount >='] = 1000000;
                 break;
             case 4:
-                $condition['min_sub_amount >='] = 3000000;
+                $condition['products.min_sub_amount >='] = 3000000;
                 break;
             default:
                 break;
@@ -44,18 +37,18 @@ class Index extends BaseController {
 
         switch($params[2]) {
             case 1:
-                $condition['duration <'] = 12;
+                $condition['products.duration <'] = 12;
                 break;
             case 2:
-                $condition['duration <'] = 24;
-                $condition['duration >='] = 12;
+                $condition['products.duration <'] = 24;
+                $condition['products.duration >='] = 12;
                 break;
             case 3:
-                $condition['duration <'] = 36;
-                $condition['duration >='] = 24;
+                $condition['products.duration <'] = 36;
+                $condition['products.duration >='] = 24;
                 break;
             case 4:
-                $condition['duration >='] = 36;
+                $condition['products.duration >='] = 36;
                 break;
             default:
                 break;
@@ -63,18 +56,18 @@ class Index extends BaseController {
 
         switch($params[3]) {
             case 1:
-                $condition['income_rate <'] = 6;
+                $condition['products.income_rate <'] = 6;
                 break;
             case 2:
-                $condition['income_rate <'] = 8;
-                $condition['income_rate >='] = 6;
+                $condition['products.income_rate <'] = 8;
+                $condition['products.income_rate >='] = 6;
                 break;
             case 3:
-                $condition['income_rate <'] = 10;
-                $condition['income_rate >='] = 8;
+                $condition['products.income_rate <'] = 10;
+                $condition['products.income_rate >='] = 8;
                 break;
             case 4:
-                $condition['income_rate >='] = 10;
+                $condition['products.income_rate >='] = 10;
                 break;
             default:
                 break;
@@ -129,26 +122,19 @@ class Index extends BaseController {
         $count = count($count_result);
         $pagenum = ceil($count/$limit);
 
-        /*
-        if(!intval($params[11]) || $params[11] > $pagenum)
-            redirect('404_override');
-        */
+        $this->db->select('products.*, iint.name as iint_name, company.name as company_name'.
+         ', investorientation.name as investorientation_name'.
+        ', xintuo_type.name as xintuo_type_name');
+        $this->db->from('products');
+        $this->db->join('iint', 'iint.id = products.interest_distribution_id', 'left');
+        $this->db->join('company', 'company.id = products.companyid', 'left');
+        $this->db->join('investorientation', 'investorientation.id = products.invest_orientation_id', 'left');
+        $this->db->join('xintuo_type', 'xintuo_type.id = products.xintuo_type_id', 'left');
 
-
-
-        $result = $this->products_model->search('products', $condition,'id desc', $limit, '', $params[11]);
-        foreach ($result as & $val) {
-            if( $val['xintuo_type_id']){
-                $val['xintuo_type_name'] = $this->xt_type($val['xintuo_type_id']);
-            }else{
-                $val['xintuo_type_name'] = '';
-            }
-            if( $val['companyid']){
-                $val['company_name'] = $this->get_company_name($val['companyid']);
-            }else{
-                $val['company_name'] = '';
-            }
-        }
+        $this->db->order_by('products.id', 'desc');
+        $this->db->where($condition);
+        $query = $this->db->get('', $limit, $limit * ($params[11]-1));
+        $result = $query->result_array();
 
 
         $data['products'] = $result;
@@ -163,9 +149,30 @@ class Index extends BaseController {
 	}
 
     public function productdetail() {
-    	$pid = $this->input->get_post('pid');
-    	$prod_detail = $this->products_model->search('products',array('id'=> $pid),null,1);
-    	$data['prod_detail'] = $prod_detail;
+        $params = explode('/', uri_string());
+        if(is_numeric($params[1])) {
+            $condition = array(
+                'products.id' => $params[1]
+            );
+        } else {
+            redirect('404_override');
+        }
+
+
+        $this->db->select('products.*, iint.name as iint_name, company.name as company_name'.
+            ', investorientation.name as investorientation_name'.
+            ', xintuo_type.name as xintuo_type_name');
+        $this->db->from('products');
+        $this->db->join('iint', 'iint.id = products.interest_distribution_id', 'left');
+        $this->db->join('company', 'company.id = products.companyid', 'left');
+        $this->db->join('investorientation', 'investorientation.id = products.invest_orientation_id', 'left');
+        $this->db->join('xintuo_type', 'xintuo_type.id = products.xintuo_type_id', 'left');
+
+        $this->db->where($condition);
+        $query = $this->db->get();
+        $result = $query->row_array();
+
+    	$data['product'] = $result;
         $this->load->view('productdetail',$data);
     }
 

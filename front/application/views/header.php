@@ -22,7 +22,7 @@
         <script type="text/javascript" src="/static//plugin/jquery.jfz.rsvform.js"></script>
         <script type="text/javascript" src="/static/js/common/citys.js"></script>
         <script type="text/javascript" src="/static/js/common/public.js"></script>
-        <title>信托产品-金斧子</title>
+        <title>跃盈财富</title>
     </head>
     <body>
         <!-- toolbar -->
@@ -31,13 +31,13 @@
                 <!-- login wrap -->
                 <ul class="login_wrap">
                     <li class="hd_login_info login_off">
-                        <span>欢迎您光临金斧子！</span>
+                        <span>欢迎您光临跃盈财富！</span>
                         <a href="/public/login.html">登录</a>                <span class="sep">|</span>
                         <a href="/public/register.html">注册</a>            </li>
                     <li class="hd_user_info login_on" style="display:none">
                         <span id="login_name">欢迎您</span>
                         <a href="/public/logout.html">退出登陆</a>                 <span class="sep">|</span>
-                        <a href="/ucenter/identity/apply.html">您是理财顾问吗？请认证加入金斧子吧！</a>            </li>
+                    </li>
                 </ul>
                 <!-- toolbar menu -->
                 <ul class="tb_list">
@@ -85,7 +85,7 @@
             <!-- logo -->
             <div class="md_hd_logo">
                 <h1 class="logo">
-                    <a class="logo_link" title="金斧子首页" href="/">金斧子，聪明您的投资</a>        </h1>
+                    <a class="logo_link" title="跃盈财富" href="/">跃盈财富，聪明您的投资</a>        </h1>
                 <div class="logo_info">
                 </div>
             </div>

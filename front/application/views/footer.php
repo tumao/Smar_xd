@@ -31,20 +31,18 @@
 	});
 })(jQuery);
 </script>
-<!--金斧子备案信息模块-->
+<!--跃盈财富备案信息模块-->
 <div class="md_ft_copyright bg_twill">
 	<div class="layout">
 		<p class="copyright">
-			<span ><a href="http://www.jinfuzi.com/topic/dict.html">&copy;</a><a target="_blank" href="http://www.jinfuzi.com/qihuo/list-dict-region.html">2</a><a target="_blank" href="http://www.jinfuzi.com/qihuo/list-dict-landmark.html">0</a><a href="http://www.jinfuzi.com/sitemap/ct-A.html">1</a><a target="_blank" href="http://www.jinfuzi.com/index/topic.html">0</a><a href="http://www.jinfuzi.com/sitemap/cf-A.html">-</a><a href="http://www.jinfuzi.com/adict/xq-A.html">2</a><a href="http://www.jinfuzi.com/trader/rank.html">0</a><a target="_blank" href="http://www.jinfuzi.com/qihuo/company.html">1</a><a href="http://www.jinfuzi.com/question/allQuestions.html">3</a>  www.jinfuzi.com <a target="_blank" href="http://www.jinfuzi.com/index/dict.html">金</a><a target="_blank" href="http://www.jinfuzi.com/index/allxt.html">斧</a><a target="_blank" href="http://www.jinfuzi.com/sitemap/xintuo/compare-A-1">子</a><a href='http://www.jinfuzi.com/index/ugc.html'>版</a>权所有</span>
-			<span>粤ICP<a target="_blank" href="/index/spArticles.html">备</a> 12050282号-2</span>
-		</p>
-		<p class="imglist">
-			<a href="javascript:;" title="" target="" class="f_ib"> <img src="/static/img/common/kx.png" alt=""  class="" title=""/> </a>
+			<span>
+                <a>&copy;</a>
+                <a>2014 跃盈财富 版权所有</a>
+                </span>
+			<span>
+                沪ICP备1400872</span>
 		</p>
 	</div>
 </div>
-	<div style="display: none">
-	    <a href="http://www.anquan.org/s/www.jinfuzi.com" name="T8W3HDvuKXC1XCBRQNvRn1DaEsNj7xekuMkGl3cYlthVEGbLiG" >安全联盟</a>
-	</div>
 </body>
 </html>

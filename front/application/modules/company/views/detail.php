@@ -70,29 +70,29 @@
 <div class="xtnolbox" id="anchor_page_turning" style="margin-top: 20px;">
 
 </div>
-
+<!--
 <div class="xt-listbox">
     <div class="xtinfolist" style="width: 1000px">
         <div class="xtinfocon">
-            <h3><a target="_blank" title="爱建信托-苏州金品常熟地产项目投资集合资金信托计划" href="http://www.jinfuzi.com/product/0113229">苏州金品常熟地产</a></h3>
+            <h3><a target="_blank" title="爱建信托-苏州金品常熟地产项目投资集合资金信托计划" href="/product/0113229">苏州金品常熟地产</a></h3>
             <p><span class="tpmag"><em class="txttit">门槛：</em>100万</span><em class="txttit">产品期限：</em>30个月</p>
             <p><span class="tpmag"><em class="txttit">类型：</em>房地产</span><em class="txttit">发售日期：</em>2014-03-26</p>
         </div>
         <div class="clear"></div>
-    </div><!-- xtinfolist end -->
+    </div>
     <div class="listpage">
         <a class="linksup pglinks-no" target="_self" href="javascript:;">上一页</a>
-        <a class="on" target="_self" href="http://www.jinfuzi.com/xintuo/c-8-7-1#anchor_page_turning">1</a>
-        <a class="" target="_self" href="http://www.jinfuzi.com/xintuo/c-8-7-2#anchor_page_turning">2</a>
-        <a class="" target="_self" href="http://www.jinfuzi.com/xintuo/c-8-7-3#anchor_page_turning">3</a>
-        <a class="" target="_self" href="http://www.jinfuzi.com/xintuo/c-8-7-4#anchor_page_turning">4</a>
-        <a class="" target="_self" href="http://www.jinfuzi.com/xintuo/c-8-7-5#anchor_page_turning">5</a>
-        <a class="" target="_self" href="http://www.jinfuzi.com/xintuo/c-8-7-6#anchor_page_turning">6</a>
-        <a class="" target="_self" href="http://www.jinfuzi.com/xintuo/c-8-7-7#anchor_page_turning">7</a>
-        <a class="" target="_self" href="http://www.jinfuzi.com/xintuo/c-8-7-8#anchor_page_turning">8</a>
-        <a class="linksnext" target="_self" href="http://www.jinfuzi.com/xintuo/c-8-7-2#anchor_page_turning">下一页</a>
+        <a class="on" target="_self" href="/xintuo/c-8-7-1#anchor_page_turning">1</a>
+        <a class="" target="_self" href="/xintuo/c-8-7-2#anchor_page_turning">2</a>
+        <a class="" target="_self" href="/xintuo/c-8-7-3#anchor_page_turning">3</a>
+        <a class="" target="_self" href="/xintuo/c-8-7-4#anchor_page_turning">4</a>
+        <a class="" target="_self" href="/xintuo/c-8-7-5#anchor_page_turning">5</a>
+        <a class="" target="_self" href="/xintuo/c-8-7-6#anchor_page_turning">6</a>
+        <a class="" target="_self" href="/xintuo/c-8-7-7#anchor_page_turning">7</a>
+        <a class="" target="_self" href="/xintuo/c-8-7-8#anchor_page_turning">8</a>
+        <a class="linksnext" target="_self" href="/xintuo/c-8-7-2#anchor_page_turning">下一页</a>
     </div>
 </div>
-
+-->
 </div>
 <?php echo $this->load->view('footer'); ?>

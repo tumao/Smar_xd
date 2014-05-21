@@ -42,9 +42,14 @@ class Index extends BaseController {
         );
 
         $company = $this->company_model->search('company', $condition);
-        $data['company'] = $company;
 
-        $this->load->view('detail', $data);
+        if(count($company) == 0) {
+            redirect('404_override');
+        } else {
+            $data['company'] = $company[0];
+            $this->load->view('detail', $data);
+        }
+
     }
 
 }
