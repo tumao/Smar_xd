@@ -5,35 +5,42 @@
             <img src="../static/img/xintuo/da_1.jpg" alt="">
         </a>
     </div>
+    <?php $hot_company =  $this->sidebar->output(); 
+        // var_dump( $list);
+    ?>
     <!-- article -->
     <div class="xt_right_item">
-        <h5 class="xt_r_hd heiti">信托－高端投资客的首选</h5>
+        <h5 class="xt_r_hd heiti">信托－热门公司</h5>
 
         <div class="xt_r_bd">
             <div class="advantage_list bg_dashed clearfix">
                 <dl class="advantage_item">
                     <dt class="tit">投资灵活</dt>
-                    <dd class="con">唯一可投资实业领域的金融产品</dd>
+                    <dd class="con"><?php echo $hot_company[0]['name']; ?></dd>
                 </dl>
                 <dl class="advantage_item">
                     <dt class="tit">收益较高</dt>
-                    <dd class="con">益数倍于银行定期存款</dd>
+                    <dd class="con"><?php echo $hot_company[1]['name']; ?></dd>
                 </dl>
                 <dl class="advantage_item">
                     <dt class="tit">风险可控</dt>
-                    <dd class="con">融资方资产抵押，多重安全保障</dd>
+                    <dd class="con"><?php echo $hot_company[2]['name']; ?></dd>
                 </dl>
                 <dl class="advantage_item">
                     <dt class="tit">期限明确</dt>
-                    <dd class="con">一般1-3年，令投资计划性更强</dd>
+                    <dd class="con"><?php echo $hot_company[3]['name']; ?></dd>
                 </dl>
                 <dl class="advantage_item">
                     <dt class="tit">资金安全</dt>
-                    <dd class="con">保管银行开设专户、专款专用</dd>
+                    <dd class="con"><?php echo $hot_company[4]['name']; ?></dd>
                 </dl>
                 <dl class="advantage_item">
                     <dt class="tit">发售期短</dt>
-                    <dd class="con">一般一两周可以结束，限人限量</dd>
+                    <dd class="con"><?php echo $hot_company[5]['name']; ?></dd>
+                </dl>
+                <dl class="advantage_item">
+                    <dt class="tit">发售期短</dt>
+                    <dd class="con"><?php echo $hot_company[6]['name']; ?></dd>
                 </dl>
             </div>
             <!-- article list-->
