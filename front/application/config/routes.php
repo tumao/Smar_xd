@@ -52,7 +52,7 @@ $route['guide'] = "guide/index/index";
 $route['guide/guideinfo'] = "guide/index/daogou_info";
 
 $route['consult'] = "consult/index/index";
-$route['connect'] = "company/index/index";
+$route['connect'] = "connect/index/index";
 
 $route['login']	= "admin/index/login";
 $route['logout'] = 'admin/index/logout';
