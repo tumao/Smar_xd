@@ -9,6 +9,8 @@ class Index extends BaseController {
 	public function index()
 	{
 		$result = $this->course_model->search('course',array('id <> ' => ''), 'id desc');
+		$hot_company = $this->course_model->search('company',array('ishot'=>1),null,10);
+		$data['hot_company'] = $hot_company;
 		$data['result'] = $result;
 		$this->load->view('index', $data);
 	}

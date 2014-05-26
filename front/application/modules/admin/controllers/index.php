@@ -183,7 +183,6 @@ class Index extends AbaseController {
     public function save_company() {
         $this->load->model('company_model');
         $this->load->library('pinyin_mini');
-
         $company = $_REQUEST['company'];
         if($company['id'] == '') {
             unset($company['id']);

@@ -5,7 +5,7 @@
             <img src="../static/img/xintuo/da_1.jpg" alt="">
         </a>
     </div>
-    <?php $hot_company =  $this->sidebar->output(); 
+    <?php //$hot_company =  $this->sidebar->output(); 
         // var_dump( $list);
     ?>
     <!-- article -->
