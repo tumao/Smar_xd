@@ -3,40 +3,67 @@ var PropApp = (function($){
 		var xform = document.forms['x-form'];
 		// alert( $(xform['short_name']).val());
 		var fields= [
-				'id',
-				'short_name',
-				'full_name',
-				'sell_date',
-				'tip',
-				'company_name',
-				'circulation',
-				'duration',
-				'income_rate',
-				'min_sub_amount',
-				// interest_ distribution_id,
-				'interest_distribution_name',
-				// invest_orientation_id,
-				'invest_name',
-				// xintuo_type_id,
-				'xintuo_name',
-				'income_explain',
-				'pledge_object',
-				'pledge_rate',
-				'productinfo',
-				'purpose_info',
-				'risk_control_info',
-				'payment_info',
-				'guarantor_info',
-				'financingpart_info',
-				'depositary_info',
-				'more_info',
+		    "product[id]",
+            "product[short_name]",
+            "product[full_name]",
+            "product[sell_date]",
+            "product[tip]",
+            "product[companyid]",
+            "product[circulation]",
+            "product[duration]",
+            "product[income_rate]",
+            "product[min_sub_amount]",
+            "product[interest_ distribution_id]",
+            "product[invest_orientation_id]",
+            "product[xintuo_type_id]",
+            "product[income_explain]",
+            "product[pledge_object]",
+            "product[pledge_rate]",
+            "product[productinfo]",
+            "product[purpose_info]",
+            "product[risk_control_info]",
+            "product[payment_info]",
+            "product[guarantor_info]",
+            "product[financingpart_info]",
+            "product[depositary_info]",
+            "product[more_info]",
 			];
+        var product_fields= [
+            'id',
+            'short_name',
+            'full_name',
+            'sell_date',
+            'tip',
+            'companyid',
+            'circulation',
+            'duration',
+            'income_rate',
+            'min_sub_amount',
+            'interest_distribution_id',
+            'invest_orientation_id',
+            'xintuo_type_id',
+            'income_explain',
+            'pledge_object',
+            'pledge_rate',
+            'productinfo',
+            'purpose_info',
+            'risk_control_info',
+            'payment_info',
+            'guarantor_info',
+            'financingpart_info',
+            'depositary_info',
+            'more_info',
+        ];
 		var formdata = {};
-		for( x in fields ){
-			formdata[fields[x]] = $(xform[fields[x]]).val();
-			// console.log( formdata);
-			// alert(xform[x].val());
+		for( x in product_fields ){
+            //console.log('product['+product_fields[x] + ']');
+			formdata[product_fields[x]] = $(xform["product["+product_fields[x] + "]"]).val();
 		}
+        /*
+        for(x1 in fields) {
+            product[fields[x1]] = $(xform["product["+product_fields[x1] + "]"]).val();
+        }
+        */
 		if(  !$.isNumeric( formdata.circulation) ){
 			alert('预计发行规模 为数字！');
 			return;
@@ -75,6 +102,7 @@ var PropApp = (function($){
 			return false;
 		}
 
+        /*
 		else if( formdata.pledge_object == ''){
 			alert('抵押物 不可为空！');
 			return false;
@@ -115,6 +143,7 @@ var PropApp = (function($){
 			alert('相关信息 不可为空！');
 			return false;
 		}
+		*/
 
 
 		$.ajax({

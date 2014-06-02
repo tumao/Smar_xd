@@ -83,7 +83,7 @@
                 <td class="hidden-480">
                     <span class="label label-sm label-inverse arrowed-in"><?php echo $result[$i]['sell_date'];?></span>
                 </td>
-                <td><?php echo $result[$i]['purpose_info']; ?></td>
+                <td><?php echo $result[$i]['invest_orientation_name']; ?></td>
                 <td><?php echo $result[$i]['xintuo_type_name']; ?></td>
                 <td><?php echo $result[$i]['company_name']; ?></td>
                 <td>

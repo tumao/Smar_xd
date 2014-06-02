@@ -31,12 +31,12 @@
 <div class="col-xs-12">
 <!-- PAGE CONTENT BEGINS -->
 <form name="x-form"  class="form-horizontal" id="x-form" role="form">
-    <input type="hidden" name="id" id="id" value="<?php echo $product['id']; ?>">
+    <input type="hidden" name="product[id]" id="product[id]" value="<?php echo $product['id']; ?>">
 <div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 产品简称 </label>
 
     <div class="col-sm-9">
-        <input type="text" name="short_name" id="short_name" class="col-xs-10 col-sm-5" value="<?php echo $product['short_name']; ?>" />
+        <input type="text" name="product[short_name]" id="product[short_name]" class="col-xs-10 col-sm-5" value="<?php echo $product['short_name']; ?>" />
     </div>
 </div>
 
@@ -46,7 +46,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> 产品全称 </label>
 
     <div class="col-sm-9">
-        <input type="text" name="full_name" id="full_name" class="col-xs-10 col-sm-5" value="<?php echo $product['full_name']; ?>"  />
+        <input type="text" name="product[full_name]" id="product[full_name]" class="col-xs-10 col-sm-5" value="<?php echo $product['full_name']; ?>"  />
     </div>
 </div>
 
@@ -54,14 +54,14 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-3"> 发售日期 </label>
 
     <div class="col-sm-9 input-group">
-        <input class="date-picker col-xs-10 col-sm-5" name="sell_date" id="sell_date" type="text" data-date-format="yyyy-mm-dd" value="<?php echo $product['sell_date']; ?>" />
+        <input class="date-picker col-xs-10 col-sm-5" name="product[sell_date]" id="sell_date" type="text" data-date-format="yyyy-mm-dd" value="<?php echo $product['sell_date']; ?>" />
     </div>
 </div>
 
 <div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="form-field-4"> 产品简介 </label>
     <div class="col-sm-9">
-        <input type="text" id="tip" name="tip" class="col-xs-10 col-sm-5" value="<?php echo $product['tip']; ?>" />
+        <input type="text" id="tip" name="product[tip]" class="col-xs-10 col-sm-5" value="<?php echo $product['tip']; ?>" />
     </div>
 </div>
 
@@ -70,10 +70,9 @@
 <div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="form-field-5"> 信托公司 </label>
     <div class="col-sm-9">
-        <select id="form-field-5" name="company_name" class="col-xs-10 col-sm-5">
-            <option value="<?php echo $product['company_name']; ?>"><?php echo $product['company_name']; ?></option>
-            <?php foreach ($product['company_group'] as $val) { ?>
-                <option value="<?php echo $val['name']; ?>"><?php echo $val['name']; ?></option>
+        <select id="form-field-5" name="product[companyid]" class="col-xs-10 col-sm-5">
+            <?php foreach ($company_group as $val) { ?>
+                <option value="<?php echo $val['id']; ?>" <?php if(isset($product['companyid']) && $product['companyid'] == $val['id']) echo 'selected'?>><?php echo $val['name']; ?></option>
             <?php  } ?>
         </select>
     </div>
@@ -85,7 +84,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-6"> 预计发行规模 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="circulation" class="col-xs-10 col-sm-5" name="circulation" value="<?php echo $product['circulation']; ?>" />
+        <input type="text" id="product[circulation]" class="col-xs-10 col-sm-5" name="product[circulation]" value="<?php echo $product['circulation']; ?>" />
     </div>
 </div>
 
@@ -95,7 +94,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-7"> 存续期 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="duration" class="col-xs-10 col-sm-5" name="duration" value="<?php echo $product['duration']; ?>" />
+        <input type="text" id="product[duration]" class="col-xs-10 col-sm-5" name="product[duration]" value="<?php echo $product['duration']; ?>" />
     </div>
 </div>
 
@@ -105,7 +104,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-8"> 预期年收益率 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="income_rate" class="col-xs-10 col-sm-5" name="income_rate" value="<?php echo $product['income_rate']; ?>" />
+        <input type="text" id="product[income_rate]" class="col-xs-10 col-sm-5" name="product[income_rate]" value="<?php echo $product['income_rate']; ?>" />
     </div>
 </div>
 
@@ -115,17 +114,21 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-9"> 最低认购金额 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="min_sub_amount" class="col-xs-10 col-sm-5" name="min_sub_amount" value="<?php echo $product['min_sub_amount']; ?>" />
+        <input type="text" id="product[min_sub_amount]" class="col-xs-10 col-sm-5" name="product[min_sub_amount]" value="<?php echo $product['min_sub_amount']; ?>" />
     </div>
 </div>
 
 <div class="space-4"></div>
 
 <div class="form-group">
-    <label class="col-sm-3 control-label no-padding-right" for="form-field-10"> 利息分配 </label>
+    <label class="col-sm-3 control-label no-padding-right" for="form-field-10"> 利息分配方式 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="interest_distribution_name" class="col-xs-10 col-sm-5" name="interest_distribution_name" value="<?php echo $product['interest_distribution_name']; ?>" />
+        <select id="form-field-5" name="product[interest_distribution_id]" class="col-xs-10 col-sm-5">
+            <?php foreach ($iint_list as $val) { ?>
+                <option value="<?php echo $val['id']; ?>" <?php if( isset($product['interest_distribution_id']) && $product['interest_distribution_id'] == $val['id']) echo 'selected'; ?> ><?php echo $val['name']; ?></option>
+            <?php  } ?>
+        </select>
     </div>
 </div>
 
@@ -135,7 +138,11 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-11"> 投资行业 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="invest_name" class="col-xs-10 col-sm-5" name="invest_name" value="<?php echo $product['invest_name']; ?>" />
+        <select id="form-field-5" name="product[invest_orientation_id]" class="col-xs-10 col-sm-5">
+            <?php foreach ($invest_list as $val) { ?>
+                <option value="<?php echo $val['id']; ?>" <?php if( isset($product['invest_orientation_id']) && $product['invest_orientation_id'] == $val['id']) echo 'selected'; ?> ><?php echo $val['name']; ?></option>
+            <?php  } ?>
+        </select>
     </div>
 </div>
 
@@ -145,7 +152,11 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-12"> 信托类型 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="xintuo_name" class="col-xs-10 col-sm-5" value="<?php echo $product['xintuo_name']; ?>" />
+        <select id="form-field-5" name="product[xintuo_type_id]" class="col-xs-10 col-sm-5">
+            <?php foreach ($xt_list as $val) { ?>
+                <option value="<?php echo $val['id']; ?>" <?php if( isset($product['xintuo_type_id']) && $product['xintuo_type_id'] == $val['id']) echo 'selected'; ?> ><?php echo $val['name']; ?></option>
+            <?php  } ?>
+        </select>
     </div>
 </div>
 
@@ -155,7 +166,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-13"> 收益说明 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="income_explain" class="col-xs-10 col-sm-5" name="income_explain" value="<?php echo $product['income_explain'] ?>" />
+        <input type="text" id="product[income_explain]" class="col-xs-10 col-sm-5" name="product[income_explain]" value="<?php echo $product['income_explain'] ?>" />
     </div>
 </div>
 
@@ -165,7 +176,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-14"> 抵押物 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="pledge_object" class="col-xs-10 col-sm-5" name="pledge_object" value="<?php echo $product['pledge_object']; ?>" />
+        <input type="text" id="product[pledge_object]" class="col-xs-10 col-sm-5" name="product[pledge_object]" value="<?php echo $product['pledge_object']; ?>" />
     </div>
 </div>
 
@@ -175,7 +186,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-15"> 抵押率 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="pledge_rate" class="col-xs-10 col-sm-5" name="pledge_rate" value="<?php echo $product['pledge_rate']; ?>" />
+        <input type="text" id="product[pledge_rate]" class="col-xs-10 col-sm-5" name="product[pledge_rate]" value="<?php echo $product['pledge_rate']; ?>" />
     </div>
 </div>
 
@@ -185,7 +196,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-16"> 产品说明 </label>
 
     <div class="col-sm-9">
-        <input type="text" id="productinfo" class="col-xs-10 col-sm-5" name="productinfo" value="<?php echo $product['productinfo']; ?>" />
+        <input type="text" id="product[productinfo]" class="col-xs-10 col-sm-5" name="product[productinfo]" value="<?php echo $product['productinfo']; ?>" />
     </div>
 </div>
 <div class="space-4"></div>
@@ -194,7 +205,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-17"> 资金用途 </label>
 
     <div class="col-sm-9">
-        <textarea id="purpose_info" class="autosize-transition col-xs-10 col-sm-9" name="purpose_info" style="height: 80px;"><?php echo $product['purpose_info']; ?></textarea>
+        <textarea id="purpose_info" class="autosize-transition col-xs-10 col-sm-9" name="product[purpose_info]" style="height: 80px;"><?php echo $product['purpose_info']; ?></textarea>
     </div>
 </div>
 <div class="space-4"></div>
@@ -203,7 +214,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-18"> 风险控制 </label>
 
     <div class="col-sm-9">
-        <textarea id="risk_control_info" class="autosize-transition col-xs-10 col-sm-9" name="risk_control_info" style="height: 80px;"><?php echo $product['risk_control_info']; ?></textarea>
+        <textarea id="risk_control_info" class="autosize-transition col-xs-10 col-sm-9" name="product[risk_control_info]" style="height: 80px;"><?php echo $product['risk_control_info']; ?></textarea>
     </div>
 </div>
 <div class="space-4"></div>
@@ -212,7 +223,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-19"> 还款来源 </label>
 
     <div class="col-sm-9">
-        <textarea id="payment_info" class="autosize-transition col-xs-10 col-sm-9" name="payment_info" style="height: 80px;"><?php echo $product['payment_info']; ?></textarea>
+        <textarea id="payment_info" class="autosize-transition col-xs-10 col-sm-9" name="product[payment_info]" style="height: 80px;"><?php echo $product['payment_info']; ?></textarea>
     </div>
 </div>
 <div class="space-4"></div>
@@ -221,7 +232,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-20"> 担保方介绍 </label>
 
     <div class="col-sm-9">
-        <textarea id="guarantor_info" class="autosize-transition col-xs-10 col-sm-9" name="guarantor_info" style="height: 80px;"><?php echo $product['guarantor_info']; ?></textarea>
+        <textarea id="guarantor_info" class="autosize-transition col-xs-10 col-sm-9" name="product[guarantor_info]" style="height: 80px;"><?php echo $product['guarantor_info']; ?></textarea>
     </div>
 </div>
 <div class="space-4"></div>
@@ -230,7 +241,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-21"> 融资方介绍 </label>
 
     <div class="col-sm-9">
-        <textarea id="financingpart_info" class="autosize-transition col-xs-10 col-sm-9" name="financingpart_info" style="height: 80px;"><?php echo $product['financingpart_info']; ?></textarea>
+        <textarea id="financingpart_info" class="autosize-transition col-xs-10 col-sm-9" name="product[financingpart_info]" style="height: 80px;"><?php echo $product['financingpart_info']; ?></textarea>
     </div>
 </div>
 <div class="space-4"></div>
@@ -239,7 +250,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-22"> 受托人 </label>
 
     <div class="col-sm-9">
-        <textarea id="depositary_info" class="autosize-transition col-xs-10 col-sm-9" name="depositary_info" style="height: 80px;"><?php echo $product['depositary_info']; ?></textarea>
+        <textarea id="depositary_info" class="autosize-transition col-xs-10 col-sm-9" name="product[depositary_info]" style="height: 80px;"><?php echo $product['depositary_info']; ?></textarea>
     </div>
 </div>
 <div class="space-4"></div>
@@ -248,7 +259,7 @@
     <label class="col-sm-3 control-label no-padding-right" for="form-field-23"> 相关信息 </label>
 
     <div class="col-sm-9">
-        <textarea id="more_info" class="autosize-transition col-xs-10 col-sm-9" name="more_info" style="height: 80px;"><?php echo $product['more_info']; ?></textarea>
+        <textarea id="more_info" class="autosize-transition col-xs-10 col-sm-9" name="product[more_info]" style="height: 80px;"><?php echo $product['more_info']; ?></textarea>
     </div>
 </div>
 <div class="space-4"></div>

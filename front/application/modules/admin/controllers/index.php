@@ -24,6 +24,13 @@ class Index extends AbaseController {
             }else{
                 $val['xintuo_type_name'] = '';
             }
+
+            if(isset($val['invest_orientation_id'])) {
+                $val['invest_orientation_name'] = $this->get_invest_name($val['invest_orientation_id']);
+            } else {
+                $val['invest_orientation_name'] = '';
+            }
+
             if( $val['companyid']){
                 $val['company_name'] = $this->get_company_name($val['companyid']);
             }else{
@@ -38,6 +45,16 @@ class Index extends AbaseController {
         $this->load->model('products_model');
         $pid = $this->input->get_post('pid');
         $company_group = $this->company_list();
+
+        //利息分配方式列表
+        $iint_list = $this->get_iint_list();
+
+        //投资方向列表
+        $invest_list = $this->get_invest_list();
+
+        $xt_list = $this->get_xt_list();
+
+
         if( $pid ){
             $product = $this->products_model->search('products',array('id' => $pid), null,1);
             $company = $this->company_list( $product['companyid']);
@@ -93,29 +110,38 @@ class Index extends AbaseController {
         
 
         $data['product'] = $product;
+        $data['company_group'] = $company_group;
+        $data['iint_list'] = $iint_list;
+        $data['invest_list'] = $invest_list;
+        $data['xt_list'] = $xt_list;
+        /*
+        echo '<pre>';
+        var_dump($invest_list);
+        */
+
         $this->load->view("upsertproduct", $data);
     }
     public function save_product(){
         $this->load->model('products_model');
-        // $data = $this->input->get_post('');
+
         if( $_POST['id'] == ''){
             unset( $_POST['id']);
         }
         $data = $_POST;
-        if( $data['company_name']){
+        if(isset($data['company_name'])){
             $data['companyid'] = $this->get_company_id( $data['company_name']);
             unset( $data['company_name']);
         }
-        //???????
-        if( $data['interest_distribution_name']){
+
+        if( isset($data['interest_distribution_name'])){
             $data['interest_distribution_id'] = $this->get_iint_id( $data['interest_distribution_name']);
             unset( $data['interest_distribution_name']);
         }
-        if( $data['invest_name']){
+        if( isset($data['invest_name'])){
             $data['invest_orientation_id'] = $this->get_invest_id( $data['invest_name']);
             unset( $data['invest_name']);
         }
-        if( $data['xintuo_name']){
+        if( isset($data['xintuo_name'])){
             $data['xintuo_type_id'] =  $this->get_xt_id( $data['xintuo_name']);
             unset( $data['xintuo_name']);
         }
@@ -518,6 +544,12 @@ class Index extends AbaseController {
         $company = $this->products_model->search('company',array('id'=>$id),null,1);
         return $company['name'];
     }
+
+    /**
+     * 获取信托公司列表
+     * @param null $id
+     * @return mixed
+     */
     private function company_list( $id = null){
         $this->load->model('products_model');
         if( $id ){                              //获取某个公司的信息
@@ -534,6 +566,14 @@ class Index extends AbaseController {
         $company = $this->products_model->search('company',array('name'=>$company_name),null,1);
         return $company['id'];
     }
+
+    private function get_iint_list() {
+        $this->load->model('iint_model');
+        $condition = array('id <>' => '');
+        $list = $this->iint_model->search('iint', $condition, null);
+        return $list;
+    }
+
     private function get_iint_name( $iint_id ){
         $this->load->model('products_model');
         $condition = array(
@@ -555,6 +595,14 @@ class Index extends AbaseController {
         }
         return $iint['id'];
     }
+
+    private function get_invest_list() {
+        $this->load->model('investorientation_model');
+        $condition = array('id <>' => '');
+        $list = $this->investorientation_model->search('investorientation', $condition, null);
+        return $list;
+    }
+
     private function get_invest_name( $inv_id){
         $this->load->model('products_model');
         $inv = $this->products_model->search('investorientation',array('id' => $inv_id),null,1);
@@ -569,6 +617,14 @@ class Index extends AbaseController {
         }
         return $inv['id'];
     }
+
+    private function get_xt_list() {
+        $this->load->model('xintuo_type_model');
+        $condition = array('id <>' => '');
+        $list = $this->xintuo_type_model->search('xintuo_type', $condition, null);
+        return $list;
+    }
+
     private function get_xt_name( $xt_id){
         $this->load->model('products_model');
         $xt = $this->products_model->search('xintuo_type',array('id'=>$xt_id),null,1);
