@@ -181,6 +181,13 @@ class Index extends AbaseController {
     }
 
     public function save_company() {
+        $upload = UPLOAD_BASE."upload/company_logo/";
+        if( !empty($_FILES['logo'])){
+            $pname  = '';
+            $ext    = '';
+            $name   = $_FILES['logo']['name'];
+            list($pname, $ext)  = explode(".", $name);
+        }
         $this->load->model('company_model');
         $this->load->library('pinyin_mini');
         $company = $_REQUEST['company'];
@@ -192,6 +199,10 @@ class Index extends AbaseController {
             $company['first_character'] = strtoupper($first_character);
         }
         $id = $this->company_model->upsert('company',$company);
+        if( !empty($_FILES['logo']) ){
+            move_uploaded_file($_FILES['logo']['tmp_name'], $upload.$id.'.'.$ext);
+            $this->company_model->updateWhere('company',array('logo'=>'/upload/company_logo/'.$id.'.'.$ext),array('id'=>$id));
+        }
         redirect("/redbud_admin/company");
     }
 

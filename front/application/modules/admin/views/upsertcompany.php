@@ -30,7 +30,7 @@
 <div class="row">
 <div class="col-xs-12">
 <!-- PAGE CONTENT BEGINS -->
-<form name="x-form"  class="form-horizontal" id="x-form" role="form" action="/redbud_admin/savecompany" method="post" enctype="text/plain">
+<form name="x-form"  class="form-horizontal" id="x-form" role="form" action="/redbud_admin/savecompany" method="post" enctype="multipart/form-data">
 <input type="hidden" name="company[id]" id="id" value="<?php echo $company['id']; ?>">
 <div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="name"> 公司简称 </label>
@@ -50,14 +50,14 @@
     </div>
 </div>
 
-<!-- <div class="form-group">
+<div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="full_name"> 公司logo </label>
 
     <div class="col-sm-9">
         <input type="file" name="logo" id="logo" class="col-xs-10 col-sm-5"  />
     </div>
 </div>
- -->
+
 <div class="form-group">
     <label class="col-sm-3 control-label no-padding-right" for="register_capital"> 注册资本 </label>
 

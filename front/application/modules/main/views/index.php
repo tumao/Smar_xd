@@ -316,7 +316,7 @@
 								<div class="subtab_con active">
 									<div class="xt_companty_detail clearfix">
 										<div class="com_img">
-											<a target="_blank" href="http://www.jinfuzi.com/xintuo/c-6"><img width="50" height="50" src="/static/cmpt/root/image/xt/comlogo/6.jpg" alt="中融国际信托有限公司" /></a>
+											<a target="_blank" href=""><img width="50" height="50" src="<?php echo $prod['hot_company'][0]['logo']; ?>" alt="中融国际信托有限公司" /></a>
 										</div>
 										<div class="com_info">
 											<p class="p_1 clearfix">
@@ -571,7 +571,7 @@
 								con = /*'<div class="subtab_con active">'+*/
 										'<div class="xt_companty_detail clearfix">'+
 											'<div class="com_img">'+
-												'<a target="_blank" href="http://www.jinfuzi.com/xintuo/c-6"><img width="50" height="50" src="/static/cmpt/root/image/xt/comlogo/6.jpg" alt="中融国际信托有限公司" /></a></div>'+
+												'<a target="_blank" href=""><img width="50" height="50" src="'+data.logo+'" alt="中融国际信托有限公司" /></a></div>'+
 											'<div class="com_info">'+
 												'<p class="p_1 clearfix">'+
 													'<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span>'+data.register_capital+'</span>'+
