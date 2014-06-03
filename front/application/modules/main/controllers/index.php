@@ -22,6 +22,8 @@ class Index extends BaseController {
 		}
 		$prod['hot_company'] = $hot_company;
 		$data['prod'] = $prod;
+        //echo '<pre>';
+        //var_dump($prod);
 		$this->load->view('index',$data);
 	}
 	

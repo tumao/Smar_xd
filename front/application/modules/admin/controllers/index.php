@@ -413,7 +413,7 @@ class Index extends AbaseController {
             // header("Location:/admin/index/index");
             redirect('/admin/index/index');
         }
-        if( $user_name = $this->input->get_post('username')  ){
+        if( $user_name = $this->input->get_post('username')){
             $passwd = $this->input->get_post('password');
             $passwd = md5($passwd.substr($passwd, 3));
             $result = $this->admin_model->search('user',array('user_name'=>$user_name, 'passwd' => $passwd), null, 1);

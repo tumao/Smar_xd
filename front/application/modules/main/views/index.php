@@ -1,9 +1,9 @@
 <?php echo $this->load->view('header'); ?>
-// <script type="text/javascript">
+<script type="text/javascript">
 // 	jQuery(function(){
 // 		$("div.JFZ_Slider").jfz_slider();
 // 	});
-// </script>
+</script>
 <div class="xt_top">
 	<!-- banner -->
 	<div class="xt_banner_wrap">
@@ -89,7 +89,7 @@
 				<ul class="xt_banner_steps clearfix">
 					<li class="item i_1">
 						<span class="tit">在线预约</span>
-						<span class="info">或拨打4000-181-131</span>
+						<span class="info">或拨打021-51351659</span>
 					</li>
 					<li class="item i_2">
 						<span class="tit">确定意向</span>
