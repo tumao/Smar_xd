@@ -89,6 +89,7 @@
         //$('#editor1').ace_wysiwyg();//this will create the default editor will all buttons
 
         //but we want to change a few buttons colors for the third style
+
         $('#editor1').ace_wysiwyg({
             toolbar:
                 [
