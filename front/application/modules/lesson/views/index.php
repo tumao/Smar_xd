@@ -25,6 +25,20 @@
                     <?php } ?>
                 </ul>
                <!--  <a href="">-1-</a> -->
+               <div style="padding:10px; width:200px; margin:0 auto;">
+                    <?php if( $pages > 1){ ?>
+                    <?php if( $page_now > 1){ ?>
+                   <a href="/lesson?page=<?php echo $page_now-1; ?>">[上一页]</a>
+                   <?php } ?>
+                   <?php for( $i=1; $i<=$pages; $i++){ ?>
+                    <a href="/lesson?page=<?php echo $i; ?>">[<?php echo $i; ?>]</a>
+                    <?php } ?>
+                    <?php if( $page_now +1< $pages){ ?>
+                    <a href="/lesson?page=<?php echo $page_now+1; ?>">[下一页]</a> 
+                    <?php } ?>
+                    <?php } ?>
+               </div>
+               
             </div>
 
         </div>
@@ -85,7 +99,9 @@
                     <td class="cen"><span class="c_sy">11.00%</span></td>
                 </tr>
             </tbody>
+
         </table>
+
     </div>
 </div>    <div class="clear"></div>
     </div><!-- colsidbox end -->

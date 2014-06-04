@@ -8,7 +8,16 @@ class Index extends BaseController {
 	
 	public function index()
 	{
-		$zixun = $this->consult_model->search('zixun',array(),'id asc');
+		$page = $this->input->get_post('page');
+		$limit = '20';
+		$offset = ( $page - 1 ) * $limit;
+		$offset = $offset >= 0 ? $offset : 0;
+		$zixun = $this->consult_model->search('zixun',array(),'id asc',$limit,$offset);
+		$count = $this->consult_model->search('zixun',array(),null);
+		$count = count( $count);
+		$mainpg = ceil( $count/20);
+		$data['pages'] = $mainpg;
+		$data['page_now'] = $page;
 		$data['zixun'] = $zixun;
 		$this->load->view('index', $data);
 	}
