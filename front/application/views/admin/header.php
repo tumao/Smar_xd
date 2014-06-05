@@ -25,7 +25,6 @@
 
     <!-- fonts -->
 
-
     <!-- ace styles -->
 
     <link rel="stylesheet" href="/static/admin/css/ace.min.css" />

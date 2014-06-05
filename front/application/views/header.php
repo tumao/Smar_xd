@@ -32,50 +32,11 @@
                 <ul class="login_wrap">
                     <li class="hd_login_info login_off">
                         <span>欢迎您光临跃盈财富！</span>
-                        <a href="/public/login.html">登录</a>                <span class="sep">|</span>
-                        <a href="/public/register.html">注册</a>            </li>
-                    <li class="hd_user_info login_on" style="display:none">
-                        <span id="login_name">欢迎您</span>
-                        <a href="/public/logout.html">退出登陆</a>                 <span class="sep">|</span>
-                    </li>
                 </ul>
                 <!-- toolbar menu -->
                 <ul class="tb_list">
-                    <li class="sep">|</li>
-                    <li class="tb_uc">
-                        <div class="tb_menu">
-                            <div class="tb_menu_hd">
-                                <a target="_blank" class="login_on" href="/ucenter.html">个人中心</a>                        <a class="login_off" style="display: none" href="/public/login.html">个人中心</a>                        <i class="arrow"></i>
-                            </div>
-                            <div class="tb_menu_bd"></div>
-                        </div>
-                    </li>
-                    <li class="sep">|</li>
-                    <li>
-                        <a target="_blank" href="/public/about/help.html">帮助</a>            </li>
-                    <li class="sep">|</li>
-                    <li>
-                       <a id="j_collect" title="添加收藏" href="javascript:;">收藏</a>
-                    </li>
-                    <li class="sep">|</li>
-                    <li id="weixin" class="tb_wx">
-                        <a href="javascript:;" title="微信关注" target=""><i class="ico_wx"></i>关注我们</a>
-                        <div class="popwxour" style="display: none">
-                            <i class="arrow arrow_1"></i>
-                            <i class="arrow arrow_2"></i>
-                            <div class="wxinter clearfix">
-                                <span class="wximg"><a rel="nofollow" href="javascript:;"><img src="/static/img/common/wx_zx_92.gif" alt=""></a></span>
-                                <div class="info">
-                                    <p>预约理财顾问，对比金融产品查找证券、期货、银行网点…</p>
-                                    <p class="txtwxp">微信号：<span class="f_blue">jinfuzi-wx</span></p>
-                                    <p>或直接扫描左侧二维码</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="sep">|</li>
                     <li class="tb_tel">
-                        <span class="f_f60"><i class="ico_tel"></i>4000-181-131</span>
+                        <span class="f_f60"><i class="ico_tel"></i>021-51351659</span>
                     </li>
                 </ul>
             </div>
@@ -90,7 +51,7 @@
                 </div>
             </div>
             <!-- search -->
-            <div class="md_hd_search">
+            <div class="md_hd_search" style="display: none;">
                 <div class="search_wrap">
                     <form id="searchForm" class="search_form clearfix"  action="/xt/list/search" method="get" target="_blank">
                         <!-- 选中状态增加active -->

@@ -68,7 +68,7 @@
             </li>
             <li class="sep">|</li>
             <li class="tb_tel">
-                <span class="f_f60"><i class="ico_tel"></i>4000-181-131</span>
+                <span class="f_f60"><i class="ico_tel"></i>021-51351659</span>
             </li>                       
         </ul>
     </div>                                      
@@ -358,7 +358,7 @@ if(console && console.log)
             <dl class="tel">
                 <div class="wrap">
                     <span class="t1">客服电话</span>
-                    <span class="t2">4000-181-131</span>
+                    <span class="t2">021-51351659</span>
                 </div>                      
             </dl>
         </div>
