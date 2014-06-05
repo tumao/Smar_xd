@@ -20,6 +20,7 @@
                     <?php echo $result['content']; ?>
 
                   </div>
+                <?php require('ditu.php'); ?>
                 </ul>
             </div>
 

@@ -1,9 +1,9 @@
 <?php echo $this->load->view('header'); ?>
-<script type="text/javascript">
+// <script type="text/javascript">
 // 	jQuery(function(){
 // 		$("div.JFZ_Slider").jfz_slider();
 // 	});
-</script>
+// </script>
 <div class="xt_top">
 	<!-- banner -->
 	<div class="xt_banner_wrap">
@@ -89,7 +89,7 @@
 				<ul class="xt_banner_steps clearfix">
 					<li class="item i_1">
 						<span class="tit">在线预约</span>
-						<span class="info">或拨打021-51351659</span>
+						<span class="info">或拨打4000-181-131</span>
 					</li>
 					<li class="item i_2">
 						<span class="tit">确定意向</span>
@@ -320,14 +320,14 @@
 										</div>
 										<div class="com_info">
 											<p class="p_1 clearfix">
-												<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span><?php echo $prod['hot_company'][0]['register_capital'] ?></span>
+												<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span><?php echo $prod['hot_company'][0]['register_capital']/10000; ?></span>
 												<!-- <span class="s_2 f_fl"><span class="f_999">股东背景：</span>中央企业控股</span> -->
 												<span class="s_3 f_fl"><span class="f_999">公司所在地：</span>  <?php echo $prod['hot_company'][0]['area']; ?></span>
 											</p>
 											<p class="p_2 clearfix">
 												<?php //var_dump( $prod['hot_company'][0]['products']); ?>
-												<span class="s_4 f_fl">产品数量<span class="num"><?php echo $prod['hot_company'][0]['count'] ?></span>款</span>
-												<span class="s_4 f_fl">平均收益率<span class="num">9.03%</span></span>
+												<span class="s_4 f_fl">产品数量<span class="num"><?php echo $prod['hot_company'][0]['count']; ?></span>款</span>
+												<!-- <span class="s_4 f_fl">平均收益率<span class="num">9.03%</span></span> -->
 											</p>
 										</div>
 									</div>
@@ -574,11 +574,11 @@
 												'<a target="_blank" href=""><img width="50" height="50" src="'+data.logo+'" alt="中融国际信托有限公司" /></a></div>'+
 											'<div class="com_info">'+
 												'<p class="p_1 clearfix">'+
-													'<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span>'+data.register_capital+'</span>'+
+													'<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span>'+data.register_capital/10000+'</span>'+
 													'<span class="s_3 f_fl"><span class="f_999">公司所在地：</span>  '+data.area+'</span>'+
 												'</p>'+
 												'<p class="p_2 clearfix">'+
-													'<span class="s_4 f_fl">产品数量<span class="num">'+data.p_count+'</span>款</span>'+
+													'<span class="s_4 f_fl">产品数量<span class="num">'+data.p_count/+'</span>款</span>'+
 													/*'<span class="s_4 f_fl">平均收益率<span class="num">'+11+'</span></span>'+*/
 												'</p>'+
 											'</div>'+
