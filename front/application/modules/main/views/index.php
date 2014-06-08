@@ -1,5 +1,5 @@
 <?php echo $this->load->view('header'); ?>
-// <script type="text/javascript">
+<script type="text/javascript">
 // 	jQuery(function(){
 // 		$("div.JFZ_Slider").jfz_slider();
 // 	});
@@ -320,7 +320,7 @@
 										</div>
 										<div class="com_info">
 											<p class="p_1 clearfix">
-												<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span><?php echo $prod['hot_company'][0]['register_capital']/10000; ?></span>
+												<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span><?php echo $prod['hot_company'][0]['register_capital']/10000; ?>万</span>
 												<!-- <span class="s_2 f_fl"><span class="f_999">股东背景：</span>中央企业控股</span> -->
 												<span class="s_3 f_fl"><span class="f_999">公司所在地：</span>  <?php echo $prod['hot_company'][0]['area']; ?></span>
 											</p>
