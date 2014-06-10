@@ -9,6 +9,7 @@ class Index extends BaseController {
 	public function index()
 	{
 		$page = $this->input->get_post('page');
+		$page = $page ? $page : 1;
 		$limit = '20';
 		$offset = ( $page - 1 ) * $limit;
 		$offset = $offset >= 0 ? $offset : 0;

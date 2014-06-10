@@ -28,12 +28,12 @@
                <div style="padding:10px; width:200px; margin:0 auto;">
                     <?php if( $pages > 1){ ?>
                     <?php if( $page_now > 1){ ?>
-                   <a href="/lesson?page=<?php echo $page_now-1; ?>">[上一页]</a>
-                   <?php } ?>
-                   <?php for( $i=1; $i<=$pages; $i++){ ?>
+                    <a href="/lesson?page=<?php echo $page_now-1; ?>">[上一页]</a>
+                    <?php } ?>
+                    <?php for( $i=1; $i<=$pages; $i++){ ?>
                     <a href="/lesson?page=<?php echo $i; ?>">[<?php echo $i; ?>]</a>
                     <?php } ?>
-                    <?php if( $page_now +1< $pages){ ?>
+                    <?php if( $page_now < $pages){ ?>
                     <a href="/lesson?page=<?php echo $page_now+1; ?>">[下一页]</a> 
                     <?php } ?>
                     <?php } ?>

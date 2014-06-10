@@ -33,7 +33,7 @@
                        <?php for( $i=1; $i<=$pages; $i++){ ?>
                         <a href="/consult?page=<?php echo $i; ?>">[<?php echo $i; ?>]</a>
                         <?php } ?>
-                        <?php if( $page_now+1 < $pages){ ?>
+                        <?php if( $page_now < $pages){ ?>
                         <a href="/consult?page=<?php echo $page_now+1; ?>">[下一页]</a>
                         <?php } ?>
                         <?php } ?>
