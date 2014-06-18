@@ -113,7 +113,7 @@
 /*right*/
 .xt_right{float: right; width: 300px;}
 .xt_right_ad{}
-.xt_right_item{margin-top: 15px; border: 1px solid #e3e5e5; background-color: #fff;}
+.xt_right_item{border: 1px solid #e3e5e5; background-color: #fff;}
 .xt_right_item .xt_r_hd{height: 24px; padding: 7px 15px; border-bottom: 1px solid #e3e5e5; background-color: #f7f7f7; font-size: 16px; color: #2B8CC9;}
 .xt_right_item .xt_r_bd{}
 /*xt*/

@@ -89,7 +89,7 @@
 				<ul class="xt_banner_steps clearfix">
 					<li class="item i_1">
 						<span class="tit">在线预约</span>
-						<span class="info">或拨打4000-181-131</span>
+						<span class="info">或拨打021-51351659</span>
 					</li>
 					<li class="item i_2">
 						<span class="tit">确定意向</span>
@@ -116,6 +116,7 @@
 			<div class="xt_left_item md_uc_box">
 				<div class="md_uc_hd hd_1 clearfix">
 					<div class="hd_title">
+                        <span class="hd_txt heiti">信托产品推荐</span>
 						<em class="hd_shadow_1"></em>
 						<em class="hd_shadow_2"></em>
 					</div>

@@ -1,10 +1,5 @@
 <div class="xt_right">
-    <!-- ad -->
-    <div class="xt_right_ad">
-        <a>
-            <img src="../static/img/xintuo/da_1.jpg" alt="">
-        </a>
-    </div>
+
     <?php //$hot_company =  $this->sidebar->output(); 
         // var_dump( $list);
     ?>
