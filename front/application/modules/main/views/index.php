@@ -567,7 +567,6 @@
 						'type'	: 'post',
 						'dataType': 'json',
 						'success' : function(data){
-							console.log(data);
 							var con;
 							_content.eq(_index).empty();
 								con = /*'<div class="subtab_con active">'+*/
