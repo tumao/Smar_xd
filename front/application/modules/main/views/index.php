@@ -130,11 +130,11 @@
 									<div class="pro_wrap_left">
 										<span class="pro_income_tit">预期收益</span>
 										<p class="pro_income"><span class="num">9.00%</span></p>
-										<a href="http://www.jinfuzi.com/product/0112698" class="pro_btn" target="_blank">预 约</a>
+										<a href="/productdetail/<?php echo $elite['id']; ?>" class="pro_btn" target="_blank">预 约</a>
 									</div>
 									<div class="pro_wrap_right">
 										<p class="pro_info_wrap bg_dashed">
-											<a href="/productdetail?pid=<?php echo $elite['id']; ?>" class="pro_name" target="_blank">
+											<a href="/productdetail/<?php echo $elite['id']; ?>" class="pro_name" target="_blank">
 												<?php echo $elite['short_name']; ?>
 												<span class="pro_gift">返现2500元（100万以上）</span>
 																							</a>
@@ -193,7 +193,7 @@
 									<td class="tc"><span class="num top"><?php echo $key+1; ?></span></td>
 										<td>
 											<div class="pro_name">
-												<a href="/productdetail?pid=<?php echo $val['id']; ?>" target="_blank"><?php echo $val['short_name']; ?></a>
+												<a href="/productdetail/<?php echo $val['id']; ?>" target="_blank"><?php echo $val['short_name']; ?></a>
 											</div>
 										</td>
 									<td>
@@ -512,7 +512,7 @@
                         			con = "<tr><td class='tc'><span class='num top'>"+ i+"</span></td>"+
 										"<td>"+
 											"<div class='pro_name'>"+
-												"<a href='/productdetail?pid="+data[i].id+"' target='_blank'>"+data[i].short_name+"</a>"+
+												"<a href='/productdetail/"+data[i].id+"' target='_blank'>"+data[i].short_name+"</a>"+
 											"</div>"+
 										"</td>"+
 									"<td>"+
@@ -567,12 +567,13 @@
 						'type'	: 'post',
 						'dataType': 'json',
 						'success' : function(data){
+							console.log(data);
 							var con;
 							_content.eq(_index).empty();
 								con = /*'<div class="subtab_con active">'+*/
 										'<div class="xt_companty_detail clearfix">'+
 											'<div class="com_img">'+
-												'<a target="_blank" href=""><img width="50" height="50" src="'+data.logo+'" alt="中融国际信托有限公司" /></a></div>'+
+												'<a target="_blank" href="/company/detail?cid='+data.id+'"><img width="50" height="50" src="'+data.logo+'" alt="中融国际信托有限公司" /></a></div>'+
 											'<div class="com_info">'+
 												'<p class="p_1 clearfix">'+
 													'<span class="s_1 f_fl"><span class="f_999">注册资本(万)：</span>'+data.register_capital/10000+'</span>'+
@@ -600,7 +601,7 @@
 												for(var i=0; i<data.products.length; i++){
 												con1+='<tr>'+
 														'<td class="pro_name">'+
-															'<a href="" target="_blank">'+data.products[i].short_name+'</a>'+
+															'<a href="/productdetail/'+data.products[i].id+'" target="_blank">'+data.products[i].short_name+'</a>'+
 														'</td>'+
 														'<td class="pro_sum"><span class="f_f60">'+data.products[i].min_sub_amount+'万</span></td>'+
 														'<td class="pro_deadline">'+data.products[i].duration+'个月</td>'+
